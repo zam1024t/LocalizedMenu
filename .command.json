@@ -1,0 +1,35 @@
+
+[
+	{
+		"caption": "LocalizedMenu: Detect",
+		"command": "localize_run",
+		"args":
+		{
+			"action": "detect"
+		}
+	},
+	{
+		"caption": "LocalizedMenu: Reset",
+		"command": "localize_run",
+		"args":
+		{
+			"action": "reset"
+		}
+	},
+	{
+		"caption": "LocalizedMenu: Add Language…",
+		"command": "localize_run",
+		"args":
+		{
+			"action": "add"
+		}
+	},
+	{
+		"caption": "LocalizedMenu: Submit Language…",
+		"command": "localize_run",
+		"args":
+		{
+			"action": "submit"
+		}
+	}
+]
