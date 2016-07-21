@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
-import os, re, json, codecs
+import os, re, json, codecs, zipfile
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 p = sublime.platform()
 version = sublime.version()
@@ -226,6 +226,17 @@ def restoreMenu():
 			target = os.path.join(dDir, item[:-5])
 			open(target, 'wb').write(open(filename, 'rb').read())
 
+def unpackMenu(dFile, eDir):
+	z = zipfile.ZipFile(dFile, 'r')
+	files = [i.filename for i in z.infolist()]
+	for item in files:
+		if item.endswith(mExt[:-5]):
+			z.extract(item, eDir)
+			file = os.path.join(eDir, item)
+			target = os.path.join(eDir, item + '.json');
+			os.rename(file, target);
+	z.close()
+
 def getSetting(key, value = None):
 	conf = sublime.load_settings(sFile)
 	return conf.get(key, value)
@@ -273,6 +284,11 @@ def init():
 		backupMenu()
 		open(fFile, 'wt').write('')
 		locale = getSetting('locale', '')
+	eDir = os.path.join(mDir, version, 'en');
+	if v == '3' and not os.path.isdir(eDir):
+		eFile = sublime.executable_path();
+		dFile = os.path.join(os.path.dirname(eFile), 'Packages', 'Default.sublime-package');
+		unpackMenu(dFile, eDir);
 	makeMenu(locale, firstRun)
 	makeCommand(locale, firstRun)
 	setLocale(locale, firstRun)
