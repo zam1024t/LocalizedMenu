@@ -34,7 +34,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3](http
 - 手动下载安装(以下任选一)
 	- 下载[master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)安装包，解压到`Packages`目录中，然后将`LocalizedMenu-master`命名为`LocalizedMenu`
 	- 使用git克隆到`Packages`目录中
-	```shellscript
+	```
 	git clone https://github.com/zam1024t/LocalizedMenu
 	```
 
@@ -53,7 +53,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3](http
 	- 进入`locale`目录, 复制`en`目录并命名为`my`
 	- 进入`my`目录把`en.json`改名为`my.json`, 并修改为
 
-	```javascript
+	```JavaScript
 	{
 		"link": "",
 		"hidden": false,

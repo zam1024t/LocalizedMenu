@@ -32,7 +32,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 - Manually
 	- donwload [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)，unpack to `Packages`，then rename `LocalizedMenu-master` to `LocalizedMenu`
 	- git clone to `Packages`
-	```shellscript
+	```
 	git clone https://github.com/zam1024t/LocalizedMenu
 	```
 
@@ -50,7 +50,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 	- enter `locale`, copy `en` to `my`
 	- enter `my`, rename `en.json` to `my.json`, edit as:
 
-	```javascript
+	```JavaScript
 	{
 		"link": "",
 		"hidden": false,
