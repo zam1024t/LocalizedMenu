@@ -8,22 +8,23 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3](http
 - 支持自动生成新版本的英文菜单
 
 # README.md同时有以下语言的版本
-- en [English](README.md)
-- zh_CN [简体中文](readme/README.zh_CN.md)
-- zh_TW [繁体中文](readme/README.zh_TW.md)
+- en [English](../README.md)
+- zh_CN [简体中文](README.zh_CN.md)
+- zh_TW [繁体中文](README.zh_TW.md)
 
 # 本项目同时托管在
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
 - [OSC开源中国](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/zam1024t/LocalizedMenu)
+- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
+
 *主要是为了方便中国大陆的用户，GitHub有时访问会慢。*
 
 # 使用截图
-- 在Windows中使用
+#### 在Windows中使用
 ![在Windows中使用](https://raw.githubusercontent.com/zam1024t/LocalizedMenu/shots/shots/LocalizedMenu_win.gif)
-- 在OS X中使用
+#### 在OS X中使用
 ![在OS X中使用](https://raw.githubusercontent.com/zam1024t/LocalizedMenu/shots/shots/LocalizedMenu_osx.gif)
-- 在Ubuntu(Linux)中使用
+#### 在Ubuntu(Linux)中使用
 ![在Ubuntu(Linux)中使用](https://raw.githubusercontent.com/zam1024t/LocalizedMenu/shots/shots/LocalizedMenu_linux.gif)
 
 # 安装方法
@@ -33,9 +34,9 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3](http
 - 手动下载安装(以下任选一)
 	- 下载[master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)安装包，解压到`Packages`目录中，然后将`LocalizedMenu-master`命名为`LocalizedMenu`
 	- 使用git克隆到`Packages`目录中
-```ShellScript
-git clone https://github.com/zam1024t/LocalizedMenu
-```
+	```shellscript
+	git clone https://github.com/zam1024t/LocalizedMenu
+	```
 
 # 使用方法
 - 选择菜单切换语言
@@ -51,18 +52,20 @@ git clone https://github.com/zam1024t/LocalizedMenu
 	- 打开`LocalizedMenu`插件目录`Preference` -> `Languages` -> `Add a language`
 	- 进入`locale`目录, 复制`en`目录并命名为`my`
 	- 进入`my`目录把`en.json`改名为`my.json`, 并修改为
-```JavaScript
-{
-	"link": "",
-	"hidden": false,
-	"caption": "本帅专用翻译",
-	"mnemonic": "m"
-}
-```
-	> **locale配置项说明**
-	> link： 要链接到的语言代码
-	> hidden： 是否隐藏菜单项
-	> caption： 语言名，语言代码会在菜单中加括号自动带上
+
+	```javascript
+	{
+		"link": "",
+		"hidden": false,
+		"caption": "本帅专用翻译",
+		"mnemonic": "m"
+	}
+	```
+
+	> **locale配置项说明**<br>
+	> link： 要链接到的语言代码<br>
+	> hidden： 是否隐藏菜单项<br>
+	> caption： 语言名，语言代码会在菜单中加括号自动带上<br>
 	> mnemonic： 热键，可选，请确保caption有这个字母，区分大小写
 
 	- 进入目录`menu/3999`, 复制`en`目录并命名为`my`, 并将各菜单文件中的`caption`项汉化，如果有，记得后面附加上热键`(<字母>)`。
@@ -85,8 +88,8 @@ git clone https://github.com/zam1024t/LocalizedMenu
 - [zam1024t@gmail.com](mailto:zam1024t@gmail.com)
 
 # 常见问题(FAQ)
-- 问：安装插件后不小心把原始的en翻译给改乱或改错了怎么办？
-	答：卸载本插件后重新安装即可。
+- 问：安装插件后不小心把原始的en翻译给改乱或改错了怎么办？<br>
+  答：卸载本插件后重新安装即可。
 
 # 项目关联讨论
 - https://github.com/wbond/package_control_channel/pull/5665

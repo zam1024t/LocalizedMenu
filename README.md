@@ -15,14 +15,14 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 # This project is also hosted at
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
 - [OSC开源中国](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/zam1024t/LocalizedMenu)
+- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
 
 # Shots
-- Work on Windows
+#### Work on Windows
 ![Work on Windows](https://raw.githubusercontent.com/zam1024t/LocalizedMenu/shots/shots/LocalizedMenu_win.gif)
-- Work on OS X
+#### Work on OS X
 ![Work on OS X](https://raw.githubusercontent.com/zam1024t/LocalizedMenu/shots/shots/LocalizedMenu_osx.gif)
-- Work on Ubuntu
+#### Work on Ubuntu
 ![Work on Ubuntu](https://raw.githubusercontent.com/zam1024t/LocalizedMenu/shots/shots/LocalizedMenu_linux.gif)
 
 # Installtion
@@ -32,9 +32,9 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 - Manually
 	- donwload [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)，unpack to `Packages`，then rename `LocalizedMenu-master` to `LocalizedMenu`
 	- git clone to `Packages`
-```ShellScript
-git clone https://github.com/zam1024t/LocalizedMenu
-```
+	```shellscript
+	git clone https://github.com/zam1024t/LocalizedMenu
+	```
 
 # Usage
 - Toggle in menu
@@ -48,19 +48,21 @@ git clone https://github.com/zam1024t/LocalizedMenu
 - For example, now add locale named `my` for Sublime Text Build 3999
 	- open `LocalizedMenu` dir, via `Preference` -> `Languages` -> `Add a language`
 	- enter `locale`, copy `en` to `my`
-	- enter `my`, rename `en.json` to `my.json`, edit as
-```JavaScript
-{
-	"link": "",
-	"hidden": false,
-	"caption": "MyLanguage",
-	"mnemonic": "m"
-}
-```
-	> **locale configs**
-	> link： the target locale linked to
-	> hidden： hide menu item
-	> caption： language name，locale code will auto add extraly
+	- enter `my`, rename `en.json` to `my.json`, edit as:
+
+	```javascript
+	{
+		"link": "",
+		"hidden": false,
+		"caption": "MyLanguage",
+		"mnemonic": "m"
+	}
+	```
+
+	> **locale configs**<br>
+	> link： the target locale linked to<br>
+	> hidden： hide menu item<br>
+	> caption： language name，locale code will auto add extraly<br>
 	> mnemonic： hotkey，optional，make sure caption contain it，Case sensitive
 
 	- enter`menu/3999`, copy `en` to `my`, and tranlate all `caption` in menu files
