@@ -59,14 +59,14 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 	}
 	```
 
+	- enter`menu/3999`, copy `en` to `my`, and tranlate all `caption` in menu files
+	- detect language via `Preference` -> `Languages` -> `Detect`, then `MyLanguage (my)` display
+
 	> **locale configs**<br>
 	> link： the target locale linked to<br>
 	> hidden： hide menu item<br>
 	> caption： language name，locale code will auto add extraly<br>
 	> mnemonic： hotkey，optional，make sure caption contain it，Case sensitive
-
-	- enter`menu/3999`, copy `en` to `my`, and tranlate all `caption` in menu files
-	- detect language via `Preference` -> `Languages` -> `Detect`, then `MyLanguage (my)` display
 
 # Submit A Language
 - locale name must be named as `<languageCode>` or `<languageCode>_<countryCode>`

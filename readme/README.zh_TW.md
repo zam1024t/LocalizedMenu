@@ -62,14 +62,14 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 	}
 	```
 
+	- 進入目錄`menu/3999`, 復制`en`目錄並命名為`my`, 並將各菜單文件中的`caption`項漢化，如果有，記得後面附加上熱鍵`(<字母>)`。
+	- 發現新添加的語言`Preference` -> `Languages` -> `Detect`,然後語言菜單中就有剛添加的`本帥專用翻譯 (my)`的菜單項了。
+
 	> **locale配置項說明**<br>
 	> link： 要鏈接到的語言代碼<br>
 	> hidden： 是否隱藏菜單項<br>
 	> caption： 語言名，語言代碼會在菜單中加括號自動帶上<br>
 	> mnemonic： 熱鍵，可選，請確保caption有這個字母，區分大小寫
-
-	- 進入目錄`menu/3999`, 復制`en`目錄並命名為`my`, 並將各菜單文件中的`caption`項漢化，如果有，記得後面附加上熱鍵`(<字母>)`。
-	- 發現新添加的語言`Preference` -> `Languages` -> `Detect`,然後語言菜單中就有剛添加的`本帥專用翻譯 (my)`的菜單項了。
 
 # <a name="submit-a-language"></a>怎樣提交翻譯語言
 - 語言代碼的命名必須是這樣的：`<languageCode>`或`<languageCode>_<countryCode>`
