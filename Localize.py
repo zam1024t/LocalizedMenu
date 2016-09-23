@@ -59,7 +59,7 @@ def setLocale(locale, force = False):
 
 	sDir = ''
 	d = os.path.join(mDir, version)
-	if not os.path.isdir(d):
+	if (not os.path.isdir(d)) and getSetting('findSimilarVer'):
 		sDir = findSimilarVer()
 		if not sDir:
 			return
