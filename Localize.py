@@ -9,6 +9,8 @@ v = version[0]
 
 ps = os.path.abspath(__file__).split(os.sep)
 pName = ps[-2]
+if '.' in pName:
+	pName = os.path.splitext(pName)[0]
 pkgs = sublime.packages_path()
 if not pkgs:
 	pkgs = os.sep.join(ps[:-2])
@@ -237,6 +239,13 @@ def unpackMenu(dFile, eDir):
 			os.rename(file, target);
 	z.close()
 
+def unpackSelf(pkgFile, pkgDir):
+	z = zipfile.ZipFile(pkgFile, 'r')
+	files = [i.filename for i in z.infolist()]
+	for item in files:
+		z.extract(item, pkgDir)
+	z.close()
+
 def getSetting(key, value = None):
 	conf = sublime.load_settings(sFile)
 	return conf.get(key, value)
@@ -276,6 +285,12 @@ def plugin_loaded():
 	sublime.set_timeout(init, 200)
 
 def init():
+	if v == '3' and (sublime.installed_packages_path() in pDir):
+		pkgDir = os.path.join(sublime.packages_path(), pName);
+		if not os.path.isdir(pkgDir):
+			pkgFile = os.path.dirname(os.path.abspath(__file__))
+			unpackSelf(pkgFile, pkgDir)
+			return
 	locale = ''
 	firstRun = False
 	fFile = os.path.join(pDir, '.firstRun')
