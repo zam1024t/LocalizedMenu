@@ -1,8 +1,6 @@
 import sublime, sublime_plugin
 import os, re, json, codecs, zipfile
 
-__version__ = '1.0.1'
-
 p = sublime.platform()
 version = sublime.version()
 v = version[0]
