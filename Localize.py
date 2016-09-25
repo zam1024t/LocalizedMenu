@@ -14,10 +14,10 @@ if '.' in pName:
 pkgs = sublime.packages_path()
 if not pkgs:
 	pkgs = os.sep.join(ps[:-2])
-dDir = pkgs+os.sep+'Default'
-pDir = pkgs+os.sep+pName
-mDir = pDir+os.sep+'menu'
-lDir = pDir+os.sep+'locale'
+dDir = pkgs + os.sep + 'Default'
+pDir = pkgs + os.sep + pName
+mDir = pDir + os.sep + 'menu'
+lDir = pDir + os.sep + 'locale'
 
 mExt = '.sublime-menu.json'
 sFile = pName + '.sublime-settings'
@@ -36,7 +36,7 @@ class LocalizeRunCommand(sublime_plugin.WindowCommand):
 		elif action == 'add':
 			self.window.run_command("open_dir", {"dir": pDir})
 		elif action == 'submit':
-			self.window.run_command("open_url", {"url": "https://github.com/zam1024t/"+pName+"#submit-a-language"})
+			self.window.run_command("open_url", {"url": "https://github.com/zam1024t/" + pName + "#submit-a-language"})
 
 class LocalizeCommand(sublime_plugin.ApplicationCommand):
 	def run(self, locale):
@@ -82,7 +82,7 @@ def setLocale(locale, force = False):
 	sublime.status_message('Locale ' + locale + ' has loaded.')
 
 def getLink(locale):
-	f = os.path.join(lDir, locale, locale+'.json')
+	f = os.path.join(lDir, locale, locale + '.json')
 	if not os.path.isfile(f):
 		return locale
 	conf = getJson(f)
@@ -109,7 +109,7 @@ def updateHotkey(menu):
 	for idx, value in enumerate(menu):
 		if isset(value, 'mnemonic') and isset(value, 'caption'):
 			if value['mnemonic'] not in value['caption']:
-				altKey = '('+value['mnemonic'].upper()+')'
+				altKey = '(' + value['mnemonic'].upper() + ')'
 				if altKey in value['caption']:
 					value['mnemonic'] = value['mnemonic'].upper()
 		if isset(value, 'children'):
@@ -127,7 +127,7 @@ def makeCommand(locale, force = False):
 	command = getJson(f)
 
 	for item in sorted(os.listdir(lDir)):
-		f = os.path.join(lDir, item, item+'.json')
+		f = os.path.join(lDir, item, item + '.json')
 		if os.path.isfile(f):
 			conf = getJson(f)
 			if isset(conf, 'hidden') and conf['hidden']:
@@ -140,7 +140,7 @@ def makeCommand(locale, force = False):
 				"args": {
 					"locale": item
 				},
-				"caption": pName+': ' + caption + ' ('+item+')'
+				"caption": pName + ': ' + caption + ' (' + item + ')'
 			})
 	saveJson(os.path.join(pDir, cFile), command)
 
@@ -167,7 +167,7 @@ def makeMenu(locale, force = False):
 	menu = getJson(f)
 
 	for item in sorted(os.listdir(lDir)):
-		f = os.path.join(lDir, item, item+'.json')
+		f = os.path.join(lDir, item, item + '.json')
 		if os.path.isfile(f):
 			conf = getJson(f)
 			if isset(conf, 'hidden') and conf['hidden']:
@@ -181,7 +181,7 @@ def makeMenu(locale, force = False):
 				"args": {
 					"locale": item
 				},
-				"caption": caption + ' ('+item+')'
+				"caption": caption + ' (' + item + ')'
 			})
 	mFile = os.path.join(pDir, 'Main.sublime-menu')
 	saveJson(mFile, menu)
