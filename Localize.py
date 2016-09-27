@@ -18,6 +18,7 @@ mDir = pDir + os.sep + 'menu'
 lDir = pDir + os.sep + 'locale'
 
 mExt = '.sublime-menu.json'
+mMenu = 'Main.sublime-menu'
 sFile = pName + '.sublime-settings'
 cFile = pName + '.sublime-commands'
 
@@ -77,6 +78,8 @@ def setLocale(locale, force = False):
 	m.update(findMenu(d))
 
 	updateMenu(m)
+	if getSetting('updateTopMenu', True):
+		updateTopMenu()
 	sublime.status_message('Locale ' + locale + ' has loaded.')
 
 def getLink(locale):
@@ -181,7 +184,7 @@ def makeMenu(locale, force = False):
 				},
 				"caption": caption + ' (' + item + ')'
 			})
-	mFile = os.path.join(pDir, 'Main.sublime-menu')
+	mFile = os.path.join(pDir, mMenu)
 	saveJson(mFile, menu)
 
 def updateMenu(m):
@@ -191,10 +194,23 @@ def updateMenu(m):
 		target = os.path.join(dDir, k[:-5])
 		menu = getJson(m[k])
 		menu = updateHotkey(menu)
-		if p == 'osx' and target[-17:].upper() == 'Main.sublime-menu'.upper():
+		if p == 'osx' and target[-17:] == mMenu:
 			menu[8]['caption'] = 'Preferences'
 			menu[8]['mnemonic'] = 'n'
 		saveJson(target, menu)
+
+def updateTopMenu():
+	tDir = pkgs + os.sep + 'ZZZZZZZZ-' + pName
+	if not os.path.isdir(tDir):
+		os.makedirs(tDir)
+	topMenu = []
+	menu = getJson(dDir + os.sep + mMenu)
+	for idx, subMenu in enumerate(menu):
+		if isset(subMenu, 'children'):
+			del(subMenu['children'])
+		topMenu.append(subMenu)
+	target = os.path.join(tDir, mMenu)
+	saveJson(target, topMenu)
 
 def backupMenu():
 	if not os.path.isdir(dDir):
