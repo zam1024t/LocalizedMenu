@@ -1,4 +1,4 @@
-[/*[
+[
 	{ "caption": "Новый файл", "command": "new_file_at", "args": {"dirs": []} },
 	{ "caption": "Переименовать…", "command": "rename_path", "args": {"paths": []} },
 	{ "caption": "Удалить файл", "command": "delete_file", "args": {"files": []} },
@@ -9,4 +9,3 @@
 	{ "caption": "Найти в папке…", "command": "find_in_folder", "args": {"dirs": []} },
 	{ "caption": "-", "id": "end" }
 ]
-*/]
