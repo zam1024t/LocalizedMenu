@@ -11,6 +11,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 - en [English](README.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
 - zh_TW [繁体中文](readme/README.zh_TW.md)
+- ru [Русский](readme/README.zh_TW.md)
 
 # This project is also hosted at
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
@@ -79,6 +80,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 # Locales & Contributors
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*
+- ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 
 # Related discuss
 - https://github.com/wbond/package_control_channel/pull/5665
