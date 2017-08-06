@@ -11,7 +11,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 - en [English](README.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
 - zh_TW [繁体中文](readme/README.zh_TW.md)
-- ru [Русский](readme/README.zh_TW.md)
+- ru [Русский](readme/README.ru.md)
 
 # This project is also hosted at
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
