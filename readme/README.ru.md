@@ -8,10 +8,10 @@
 - Автоматическая распаковка новых английских меню
 
 # README.md
-- en [English](README.md)
-- zh_CN [简体中文](readme/README.zh_CN.md)
-- zh_TW [繁体中文](readme/README.zh_TW.md)
-- ru [Русский](readme/README.zh_TW.md)
+- en [English](../README.md)
+- ru [Русский](README.ru.md)
+- zh_CN [简体中文](README.zh_CN.md)
+- zh_TW [繁体中文](README.zh_TW.md)
 
 # Этот проект также размещен на
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
