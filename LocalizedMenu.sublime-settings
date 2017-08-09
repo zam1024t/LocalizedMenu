@@ -1,0 +1,9 @@
+{
+	// locale code
+	// en|en_GB|en_US|zh|zh_CN|zh_TW|ru
+	"locale": "en",
+
+	// allow to find localized menu of similar version for current locale
+	// true|false
+	"findSimilarVer": true
+}
