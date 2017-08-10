@@ -7,11 +7,29 @@
 # ./push.sh
 
 # set remote osc
-# git remote add osc https://git.oschina.net/zam1024t/LocalizedMenu
-git remote add osc https://gitee.com/zam1024t/LocalizedMenu
+osc_exists=false
+for remote in `git remote`; do
+	if [[ $remote == "osc" ]]; then
+		osc_exists=true
+		break
+	fi
+done
+if [[ $osc_exists == false ]]; then
+	# git remote add osc https://git.oschina.net/zam1024t/LocalizedMenu
+	git remote add osc https://gitee.com/zam1024t/LocalizedMenu
+fi
 
 # set remote coding
-git remote add coding https://coding.net/zam1024t/LocalizedMenu
+coding_exists=false
+for remote in `git remote`; do
+	if [[ $remote == "coding" ]]; then
+		coding_exists=true
+		break
+	fi
+done
+if [[ $coding_exists == false ]]; then
+	git remote add coding https://coding.net/zam1024t/LocalizedMenu
+fi
 
 git checkout master
 if [[ `git diff --name-only` != '' ]]; then
