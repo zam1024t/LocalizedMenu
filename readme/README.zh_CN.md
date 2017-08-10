@@ -9,9 +9,9 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3](http
 
 # README.md同时有以下语言的版本
 - en [English](../README.md)
+- ru [Русский](README.ru.md)
 - zh_CN [简体中文](README.zh_CN.md)
 - zh_TW [繁体中文](README.zh_TW.md)
-- ru [Русский](readme/README.zh_TW.md)
 
 # 本项目同时托管在
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
