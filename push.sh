@@ -6,6 +6,13 @@
 # chmod +x push.sh
 # ./push.sh
 
+# set remote osc
+# git remote add osc https://git.oschina.net/zam1024t/LocalizedMenu
+git remote add osc https://gitee.com/zam1024t/LocalizedMenu
+
+# set remote coding
+git remote add coding https://coding.net/zam1024t/LocalizedMenu
+
 git checkout master
 if [[ `git diff --name-only` != '' ]]; then
 	echo 'Has uncommit changes.'
