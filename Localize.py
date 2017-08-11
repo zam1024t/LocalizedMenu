@@ -176,7 +176,7 @@ def makeMenu(locale, force = False):
 			caption = item
 			if isset(conf, 'caption') and conf['caption']:
 				caption = conf['caption']
-			menu[0]['children'][1]['children'].append({
+			menu[0]['children'][2]['children'].append({
 				"command": "localize",
 				"checkbox": True,
 				"args": {
