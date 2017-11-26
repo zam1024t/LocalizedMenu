@@ -9,11 +9,11 @@
 
 # README.md
 - en [English](README.md)
-- es_ES [Español](readme/README.es_ES.md)
-- hy [Հայերեն](readme/README.hy.md)
-- ru [Русский](readme/README.ru.md)
-- zh_CN [简体中文](readme/README.zh_CN.md)
-- zh_TW [繁体中文](readme/README.zh_TW.md)
+- es_ES [Español](README.es_ES.md)
+- hy [Հայերեն](README.hy.md)
+- ru [Русский](README.ru.md)
+- zh_CN [简体中文](README.zh_CN.md)
+- zh_TW [繁体中文](README.zh_TW.md)
 
 # Այս նախագիծը նաև ներկայացված է այստեղ՝
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
@@ -31,7 +31,7 @@
 # Տեղադրում
 - Package Control-ը օգտագործելու միջոցով
 	- տեղադրել [Package Control](https://packagecontrol.io/installation)
-	- հետո սեղմել `ctrl + shift + p`, մուտքագրել `install package`, սեղմել Enter և որոնել `LocalizedMenu`, սեղմել Enter
+	- սեղմել `ctrl + shift + p`, մուտքագրել `install package`, սեղմել Enter և որոնել `LocalizedMenu`, սեղմել Enter
 - Ձեռքով
 	- ներբեռնել [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)，ապափաթեթավորել `Data\Packages` պանակի մեջ，հետո անվանափոխել `LocalizedMenu-master`-ը `LocalizedMenu`-ի
 	- git clone to `Packages`
