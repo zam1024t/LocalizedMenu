@@ -8,7 +8,7 @@
 - Անգլերեն նոր ընտրացուցակների ինքնաշխատ ապափաթեթավորում
 
 # README.md
-- en [English](README.md)
+- en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - hy [Հայերեն](README.hy.md)
 - ru [Русский](README.ru.md)
