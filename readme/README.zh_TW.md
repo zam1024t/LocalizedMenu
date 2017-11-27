@@ -9,9 +9,11 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 
 # README.md同時有以下語言的版本
 - en [English](../README.md)
+- es_ES [Español](README.es_ES.md)
+- hy [Հայերեն](README.hy.md)
 - ru [Русский](README.ru.md)
-- zh_CN [簡體中文](README.zh_CN.md)
-- zh_TW [繁體中文](README.zh_TW.md)
+- zh_CN [简体中文](README.zh_CN.md)
+- zh_TW [繁体中文](README.zh_TW.md)
 
 # 本項目同時托管在
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
@@ -81,9 +83,11 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 - 添加的語言翻譯後提交pull request
 
 # 語言及貢獻者
-- zh_CN 簡體中文 *by [Zam](https://github.com/zam1024t)*
-- zh_TW 繁體中文 *by [Zam](https://github.com/zam1024t)*
-- ru Русский *by [Dimox](http://dimox.name) and [Ant0sh](https://github.com/Ant0sh)*
+- es_ES Español by [Dastillero](https://github.com/dap39)*
+- hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
+- ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
+- zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
+- zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*
 
 # 問題反饋
 - [GitHub issues](https://github.com/zam1024t/LocalizedMenu/issues)
