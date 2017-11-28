@@ -4,7 +4,7 @@
 - Erbjuder ett enkelt sätt att lägga till nya språk
 - Stödjer flera versioner/plattformar
 - Stödjer delning av vanliga menyer
-- Automatisk säkerhetskopiering av lokala menyer
+- Automatisk säkerhetskopiering av språkmenyer
 - Automatisk uppackning av nybyggda engelska menyer
 
 # README.md
