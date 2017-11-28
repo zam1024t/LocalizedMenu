@@ -1,0 +1,100 @@
+[
+    {
+        "args": {
+            "action": "detect"
+        }, 
+        "caption": "LocalizedMenu: Upptäck", 
+        "command": "localize_run"
+    }, 
+    {
+        "args": {
+            "action": "reset"
+        }, 
+        "caption": "LocalizedMenu: Återställ", 
+        "command": "localize_run"
+    }, 
+    {
+        "args": {
+            "action": "add"
+        }, 
+        "caption": "LocalizedMenu: Lägg till språk…", 
+        "command": "localize_run"
+    }, 
+    {
+        "args": {
+            "action": "submit"
+        }, 
+        "caption": "LocalizedMenu: Skicka in språk…", 
+        "command": "localize_run"
+    }, 
+    {
+        "args": {
+            "locale": "en"
+        }, 
+        "caption": "LocalizedMenu: English (en)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "en_GB"
+        }, 
+        "caption": "LocalizedMenu: English (en_GB)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "en_US"
+        }, 
+        "caption": "LocalizedMenu: English (en_US)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "es_ES"
+        }, 
+        "caption": "LocalizedMenu: Español (es_ES)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "hy"
+        }, 
+        "caption": "LocalizedMenu: Armenian (hy)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "ru"
+        }, 
+        "caption": "LocalizedMenu: Русский (ru)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "sv_SE"
+        }, 
+        "caption": "LocalizedMenu: Svenska (sv_SE)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "zh"
+        }, 
+        "caption": "LocalizedMenu: 中文 (zh)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "zh_CN"
+        }, 
+        "caption": "LocalizedMenu: 简体中文 (zh_CN)", 
+        "command": "localize"
+    }, 
+    {
+        "args": {
+            "locale": "zh_TW"
+        }, 
+        "caption": "LocalizedMenu: 繁体中文 (zh_TW)", 
+        "command": "localize"
+    }
+]

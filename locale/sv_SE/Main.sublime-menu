@@ -1,0 +1,157 @@
+[
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "caption": "LocalizedMenu", 
+                        "children": [
+                            {
+                                "args": {
+                                    "file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
+                                }, 
+                                "caption": "Inställningar – Standard", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "args": {
+                                    "file": "${packages}/User/LocalizedMenu.sublime-settings"
+                                }, 
+                                "caption": "Inställningar – Användare", 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ], 
+                "id": "package-settings"
+            }, 
+            {
+                "caption": "-"
+            }, 
+            {
+                "children": [
+                    {
+                        "args": {
+                            "action": "detect"
+                        }, 
+                        "caption": "Upptäck", 
+                        "command": "localize_run"
+                    }, 
+                    {
+                        "args": {
+                            "action": "reset"
+                        }, 
+                        "caption": "Återställ", 
+                        "command": "localize_run"
+                    }, 
+                    {
+                        "args": {
+                            "action": "add"
+                        }, 
+                        "caption": "Lägg till språk…", 
+                        "command": "localize_run"
+                    }, 
+                    {
+                        "args": {
+                            "action": "submit"
+                        }, 
+                        "caption": "Skicka in språk…", 
+                        "command": "localize_run"
+                    }, 
+                    {
+                        "caption": "-"
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "English (en)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "en"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "English (en_GB)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "en_GB"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "English (en_US)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "en_US"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "Español (es_ES)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "es_ES"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "Armenian (hy)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "hy"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "Русский (ru)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "ru"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "Svenska (sv_SE)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "sv_SE"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "中文 (zh)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "zh"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "简体中文 (zh_CN)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "zh_CN"
+                        }
+                    }, 
+                    {
+                        "checkbox": true, 
+                        "caption": "繁体中文 (zh_TW)", 
+                        "command": "localize", 
+                        "args": {
+                            "locale": "zh_TW"
+                        }
+                    }
+                ], 
+                "caption": "Språk", 
+                "id": "locales"
+            }, 
+            {
+                "caption": "-"
+            }
+        ], 
+        "id": "preferences"
+    }
+]
