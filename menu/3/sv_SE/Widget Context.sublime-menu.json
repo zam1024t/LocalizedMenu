@@ -1,0 +1,7 @@
+[
+    { "command": "copy", "caption": "Kopiera" },
+    { "command": "cut", "caption": "Klipp ut" },
+    { "command": "paste", "caption": "Klistra in" },
+    { "caption": "-" },
+    { "command": "select_all", "caption": "Välj alla" },
+]

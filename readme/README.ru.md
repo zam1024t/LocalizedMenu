@@ -12,6 +12,7 @@
 - es_ES [Español](README.es_ES.md)
 - hy [Հայերեն](README.hy.md)
 - ru [Русский](README.ru.md)
+- sv_SE [Svenska](README.sv_SE.md)
 - zh_CN [简体中文](README.zh_CN.md)
 - zh_TW [繁体中文](README.zh_TW.md)
 
@@ -81,9 +82,10 @@
 - Сделать запрос на pull request
 
 # Переводчики & Участники
-- es_ES Español by [Dastillero](https://github.com/dap39)*
+- es_ES Español *by [Dastillero](https://github.com/dap39)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
+- sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*
 
