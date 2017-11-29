@@ -12,7 +12,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 - es_ES [Español](README.es_ES.md)
 - hy [Հայերեն](README.hy.md)
 - ru [Русский](README.ru.md)
-- sv_SE [Svenska](readme/README.sv_SE.md)
+- sv_SE [Svenska](README.sv_SE.md)
 - zh_CN [简体中文](README.zh_CN.md)
 - zh_TW [繁体中文](README.zh_TW.md)
 
