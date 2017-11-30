@@ -1,0 +1,77 @@
+[
+	{
+		"children": [
+			{
+				"children": [
+					{
+						"caption": "LocalizedMenu",
+						"children": [
+							{
+								"args": {
+									"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Inställningar – Standard",
+								"command": "open_file"
+							},
+							{
+								"args": {
+									"file": "${packages}/User/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Inställningar – Användare",
+								"command": "open_file"
+							},
+							{
+								"caption": "-"
+							}
+						]
+					}
+				],
+				"id": "package-settings"
+			},
+			{
+				"caption": "-"
+			},
+			{
+				"children": [
+					{
+						"args": {
+							"action": "detect"
+						},
+						"caption": "Upptäck",
+						"command": "localize_run"
+					},
+					{
+						"args": {
+							"action": "reset"
+						},
+						"caption": "Återställ",
+						"command": "localize_run"
+					},
+					{
+						"args": {
+							"action": "add"
+						},
+						"caption": "Lägg till språk…",
+						"command": "localize_run"
+					},
+					{
+						"args": {
+							"action": "submit"
+						},
+						"caption": "Skicka in språk…",
+						"command": "localize_run"
+					},
+					{
+						"caption": "-"
+					}
+				],
+				"caption": "Språk",
+				"id": "locales"
+			},
+			{
+				"caption": "-"
+			}
+		],
+		"id": "preferences"
+	}
+]
