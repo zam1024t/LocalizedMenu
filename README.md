@@ -75,13 +75,14 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 # Submit A Language
 - locale name must be named as `<languageCode>` or `<languageCode>_<countryCode>`
 	- `<languageCode>` lowercase, `<countryCode>` uppercase, (ignore this if work on local)
-	- Language: http://www.wikipedia.org/wiki/ISO_639-1
-	- Country: http://www.wikipedia.org/wiki/ISO_3166-1
+	- Language: https://www.wikipedia.org/wiki/ISO_639-1
+	- Country: https://www.wikipedia.org/wiki/ISO_3166-1
 - Fork repo
 - Make pull request
 
 # Locales & Contributors
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
+- fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
