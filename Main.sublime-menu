@@ -1,0 +1,106 @@
+[
+    {
+        "children": [
+            {
+                "caption": "-"
+            }, 
+            {
+                "children": [
+                    {
+                        "command": "localize_run", 
+                        "args": {
+                            "action": "detect"
+                        }, 
+                        "caption": "Detect"
+                    }, 
+                    {
+                        "command": "localize_run", 
+                        "args": {
+                            "action": "reset"
+                        }, 
+                        "caption": "Reset"
+                    }, 
+                    {
+                        "command": "localize_run", 
+                        "args": {
+                            "action": "add"
+                        }, 
+                        "caption": "Add Language…"
+                    }, 
+                    {
+                        "command": "localize_run", 
+                        "args": {
+                            "action": "submit"
+                        }, 
+                        "caption": "Submit Language…"
+                    }, 
+                    {
+                        "caption": "-"
+                    }, 
+                    {
+                        "caption": "English (en)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "en"
+                        }
+                    }, 
+                    {
+                        "caption": "English (en_GB)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "en_GB"
+                        }
+                    }, 
+                    {
+                        "caption": "English (en_US)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "en_US"
+                        }
+                    }, 
+                    {
+                        "caption": "Français (fr_FR)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "fr_FR"
+                        }
+                    }, 
+                    {
+                        "caption": "中文 (zh)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "zh"
+                        }
+                    }, 
+                    {
+                        "caption": "简体中文 (zh_CN)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "zh_CN"
+                        }
+                    }, 
+                    {
+                        "caption": "繁体中文 (zh_TW)", 
+                        "command": "localize", 
+                        "checkbox": true, 
+                        "args": {
+                            "locale": "zh_TW"
+                        }
+                    }
+                ], 
+                "caption": "Languages", 
+                "id": "locales"
+            }, 
+            {
+                "caption": "-"
+            }
+        ], 
+        "id": "preferences"
+    }
+]
