@@ -1,15 +1,19 @@
 # LocalizedMenu
-Localize Tool & Localized Menu for Sublime Text 2/3 End User
+Outil de localisation et menu localisé pour l'utilisateur final de Sublime Text 2/3
 
-- Provide a easy way to add new languages
-- Support multiple version/platform
-- Support share common menus
-- Auto backup local menus
-- Auto unpack new build english menus
+- Fournit un moyen facile d’ajouter de nouvelles langues
+- Support de plusieurs versions/plateformes
+ -Support des menus communs
+- Sauvegarde automatique des menus traduits
+- Décompactage automatique des nouveaux menus en anglais
 
 # README.md
 - en [English](README.md)
+- es_ES [Español](readme/README.es_ES.md)
 - fr_FR [Français](readme/README.fr_FR.md)
+- hy [Հայերեն](readme/README.hy.md)
+- ru [Русский](readme/README.ru.md)
+- sv_SE [Svenska](readme/README.sv_SE.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
 - zh_TW [繁体中文](readme/README.zh_TW.md)
 
@@ -28,59 +32,67 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 
 # Installation
 - Avec le Package Control
-	- installez [Package Control](https://packagecontrol.io/installation)
-	- cherchez `LocalizedMenu`
+	- Installez [Package Control](https://packagecontrol.io/installation)
+	- Cherchez `LocalizedMenu`
 - Manuellement
-	- téléchargez [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)，unzippez dans `Packages`，puis renommez-le de `LocalizedMenu-master` en `LocalizedMenu`
+	- Téléchargez [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip), unzippez dans `Packages`, puis renommez-le de `LocalizedMenu-master` en `LocalizedMenu`
 	- git clone dans `Packages`
 	```
 	git clone https://github.com/zam1024t/LocalizedMenu
 	```
 
 # Utilisation
-- Toggle in menu
-	- via `Preference` -> `Languages`
-- Toggle in command panel
-	- `Ctrl+Shift+P`, type`lmxx`(*xx* is the locale code) to toggle
+- Depuis le menu
+	- via `Preferences` -> `Languages`
+- Depuis le panneau de contrôle
+	- `Ctrl+Shift+P`, tapez `lmxx`(*xx* est le code de la locale) à utiliser
 
-# Add A Language
-- copy `locale/en/en.json` to `locale/<locale>/<locale>.json`, localize to your language
-- copy `menu/<version>/en/*` to `menu/<version>/<locale>/*`, localize to your language
-- For example, now add locale named `my` for Sublime Text Build 3999
-	- open `LocalizedMenu` dir, via `Preference` -> `Languages` -> `Add a language`
-	- enter `locale`, copy `en` to `my`
-	- enter `my`, rename `en.json` to `my.json`, edit as:
+# Ajout d’une langue
+- Copiez `locale/en/en.json` dans `locale/<locale>/<locale>.json`, traduisez dans votre langue
+- Copiez `menu/<version>/en/*` dans `menu/<version>/<locale>/*`, traduisez dans votre langue
+- Par exemple, now add locale named `vl` pour Sublime Text Build 3999
+	- Ouvrez `LocalizedMenu` dir, via `Preference` -> `Languages` -> `Add a language`
+	- Dans `locale`, copiez `en` en `vl`
+	- Dans `vl`, renommez `en.json` en `vl.json`, modifiez ainsi :
 
 	```JavaScript
 	{
 		"link": "",
 		"hidden": false,
-		"caption": "MyLanguage",
+		"caption": "VotreLocale",
 		"mnemonic": "m"
 	}
 	```
 
-	- allez dans `menu/3999`, copiez `en` en `my`, et traduisez tous les `caption` présents dans le fichier
-	- detectez la langue dans `Preference` -> `Languages` -> `Detect`, puis affichez `MyLanguage (my)`
+	- Allez dans `menu/3999`, copiez `en` en `vl`, et traduisez tous les `caption` présents dans le fichier
+	- Detectez la langue dans `Preference` -> `Languages` -> `Detect`, puis affichez `VotreLocale (vl)`
 
 	> **locale configs**<br>
-	> link： the target locale linked to<br>
-	> hidden： hide menu item<br>
-	> caption： language name，locale code will auto add extraly<br>
-	> mnemonic： hotkey，optional，make sure caption contain it，Case sensitive
+	> link: the target locale linked to<br>
+	> hidden: hide menu item<br>
+	> caption: language name, locale code will auto add extraly<br>
+	> mnemonic: hotkey, optional, make sure caption contain it, Case sensitive
 
 # Proposer une langue
-- locale name must be named as `<languageCode>` or `<languageCode>_<countryCode>`
-	- `<languageCode>` lowercase, `<countryCode>` uppercase, (ignore this if work on local)
-	- Langue: http://www.wikipedia.org/wiki/ISO_639-1
-	- Pays: http://www.wikipedia.org/wiki/ISO_3166-1
+- Le nom de la langue doit être : `<languageCode>` ou `<languageCode>_<countryCode>`
+	- `<languageCode>` en minuscule, `<countryCode>` en majuscule
+	- Langue : https://www.wikipedia.org/wiki/ISO_639-1
+	- Pays : https://www.wikipedia.org/wiki/ISO_3166-1
 - Forkez le repo
-- Faites une pull request
+- Faîtes une pull request
+
+# Proposer des améliorations/corrections au français
+- Forkez le repo [GitHub](https://github.com/fxbenard/LocalizedMenu)
+- Faîtes votre pull request
 
 # Locales & Contributors
+- es_ES Español *by [Dastillero](https://github.com/dap39)*
+- fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
+- hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
+- ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
+- sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*
-- fr_FR Français *by [fxbenard](https://github.com/zam1024t)*
 
 # Related discuss
 - https://github.com/wbond/package_control_channel/pull/5665
