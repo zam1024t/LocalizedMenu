@@ -1,0 +1,292 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tran",
+				"transmission-daemon"
+			],
+			[
+				"_web_p",
+				"_web_password"
+			],
+			[
+				"_web",
+				"_web_user"
+			],
+			[
+				"de",
+				"debian-transmission"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"_p",
+				"_present_ftp_user"
+			],
+			[
+				"_",
+				"_present_ftp_user"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Context.sublime-menu.json",
+			"settings":
+			{
+				"buffer_size": 823,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Add Channel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"Package Control: Install Package",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/karpovan/Library/Application Support/Sublime Text 3/Packages/LocalizedMenu/menu/3157/ru/Context.sublime-menu.json",
+		"/Users/karpovan/Library/Application Support/Sublime Text 3/Packages/LocalizedMenu/menu/3126/ru/Context.sublime-menu.json",
+		"/Users/karpovan/Documents/GitHub/private_repo/colors",
+		"/Users/karpovan/Documents/GitHub/private_repo/install_transmission",
+		"/Users/karpovan/Documents/GitHub/private_repo/ftpuser",
+		"/Users/karpovan/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/karpovan/Documents/GitHub/private_repo/install_vsftpd",
+		"/Users/karpovan/Documents/GitHub/private_repo/colors.sh",
+		"/Users/karpovan/Documents/int.html",
+		"/Users/karpovan/Documents/tested_scripts/install_vsftpd",
+		"/Users/karpovan/Documents/transmissioninstall_1.sh",
+		"/Users/karpovan/Documents/install_transmission",
+		"/Users/karpovan/Documents/tested_scripts/install_transmission",
+		"/Users/karpovan/Documents/tested_scripts/ftpuser",
+		"/Users/karpovan/Documents/rTorrent_Auto_Install.sh",
+		"/Users/karpovan/Documents/install_transmission_new.sh",
+		"/Users/karpovan/Documents/ftpuser",
+		"/Users/karpovan/Documents/end_of_transmission.sh",
+		"/Users/karpovan/Documents/ftpuser.sh",
+		"/Users/karpovan/Documents/ftp_add_user",
+		"/Users/karpovan/Documents/addftpuser.sh",
+		"/Users/karpovan/Documents/vsftpd+ssl.sh",
+		"/Users/karpovan/Documents/addftpuser",
+		"/Users/karpovan/Documents/ftp_add_user.sh",
+		"/Users/karpovan/Documents/rTorrent_Auto_Install",
+		"/Users/karpovan/Library/Mobile Documents/com~apple~CloudDocs/Скриптики/mac_mwand.hint",
+		"/Users/karpovan/Downloads/rTorrent_Auto_Install.sh",
+		"/Users/karpovan/Documents/Rtorrent-Auto-Install-4.0.0-Debian-Jessie.sh",
+		"/Users/karpovan/Documents/vsftpd.conf",
+		"/Users/karpovan/Documents/##### Настройка vsftpd #####.hint",
+		"/Users/karpovan/Documents/untitled_1.sh",
+		"/Users/karpovan/Documents/ftps.hint",
+		"/Users/karpovan/Documents/untitled.sh",
+		"/Volumes/files/SystemFolderLocalizations.strings",
+		"/System/Library/CoreServices/SystemFolderLocalizations/ru.lproj/SystemFolderLocalizations.strings",
+		"/Users/karpovan/Desktop/.localized",
+		"/Volumes/files/АудиоКниги/Ааргх на троне/Ааргх 2. Ааргх на троне.cue",
+		"/Users/karpovan/Downloads/.localized",
+		"/private/var/folders/yp/1bc_kfhd6ksc1rz17tpc02q80000gn/T/BetterZip Temporary Folder.8Evi8b/BetterZip Temporary Folder.RrIjSP/TWRP_nikel_Flasher_D_Godunov_20170419/flash_twrp_en.bat",
+		"/private/var/folders/yp/1bc_kfhd6ksc1rz17tpc02q80000gn/T/BetterZip Temporary Folder.0NLRPz/BetterZip Temporary Folder.0KKp9g/resources.arsc",
+		"/Volumes/files/recovery.log",
+		"/Volumes/files/dmesg_2.log",
+		"/Volumes/files/dmesg_1.log",
+		"/Volumes/files/_bkp/Разбор/superlite_mini_mm_v2.11_m-lang/config/configure.sh",
+		"/Users/karpovan/Documents/applist.hint"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Context.sublime-menu.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/ShellScript/ShellScript.sublime-build",
+	"project": "ru_menu.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
