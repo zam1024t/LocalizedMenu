@@ -300,7 +300,7 @@
         ]
     },
     {
-        "caption": "Selection",
+        "caption": "Выделение",
         "mnemonic": "S",
         "id": "selection",
         "children":
