@@ -146,7 +146,7 @@
             { "command": "undo", "mnemonic": "U" },
             { "command": "redo_or_repeat", "mnemonic": "R" },
             {
-                "caption": "Undo Selection",
+                "caption": "Отменить выделение",
                 "children":
                 [
                     { "command": "soft_undo" },
@@ -154,147 +154,146 @@
                 ]
             },
             { "caption": "-", "id": "clipboard" },
-            { "command": "copy", "mnemonic": "C" },
-            { "command": "cut", "mnemonic": "t" },
-            { "command": "paste", "mnemonic": "P" },
-            { "command": "paste_and_indent", "mnemonic": "I" },
-            { "command": "paste_from_history", "caption": "Paste from History" },
+            { "command": "copy", "caption": "Копировать", "mnemonic": "C" },
+            { "command": "cut", "caption": "Вырезать", "mnemonic": "t" },
+            { "command": "paste", "caption": "Вставить",  "mnemonic": "P" },
+            { "command": "paste_and_indent", "caption": "Вставить с отступами",  "mnemonic": "I" },
+            { "command": "paste_from_history",  "caption": "Вставить из истории" },
             { "caption": "-" },
             {
-                "caption": "Line", "mnemonic": "L",
+                "caption": "Строка", "mnemonic": "L",
                 "id": "line",
                 "children":
                 [
-                    { "command": "indent" },
-                    { "command": "unindent" },
-                    { "command": "reindent", "args": {"single_line": true} },
-                    { "command": "swap_line_up" },
-                    { "command": "swap_line_down" },
-                    { "command": "duplicate_line" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Delete Line" },
-                    { "command": "join_lines" }
+                    { "command": "indent", "caption": "Увеличить отступ" },
+                    { "command": "unindent", "caption": "Уменьшить отступ" },
+                    { "command": "reindent", "caption": "Расставить правильные отступы", "args": {"single_line": true} },
+                    { "command": "swap_line_up", "caption": "Переместить строку вверх" },
+                    { "command": "swap_line_down", "caption": "Переместить строку вниз" },
+                    { "command": "duplicate_line", "caption": "Дублировать строку" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Удалить строку" },
+                    { "command": "join_lines", "caption": "Объединить строки" }
                 ]
             },
             {
-                "caption": "Comment", "mnemonic": "m",
+                "caption": "Комментирование", "mnemonic": "m",
                 "id": "comment",
                 "children":
                 [
-                    { "command": "toggle_comment", "args": {"block": false}, "caption": "Toggle Comment" },
-                    { "command": "toggle_comment", "args": {"block": true}, "caption": "Toggle Block Comment" }
+                    { "command": "toggle_comment", "args": {"block": false}, "caption": "Переключить комментарий" },
+                    { "command": "toggle_comment", "args": {"block": true}, "caption": "Переключить блочный комментарий" }
                 ]
             },
             {
-                "caption": "Text", "mnemonic": "T",
+                "caption": "Текст", "mnemonic": "T",
                 "id": "text",
                 "children":
                 [
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Insert Line Before" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Insert Line After" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Вставить строку перед текущей строкой" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Вставить строку после текущей строки" },
                     { "caption": "-" },
-                    { "command": "delete_word", "args": { "forward": true }, "caption": "Delete Word Forward" },
-                    { "command": "delete_word", "args": { "forward": false }, "caption": "Delete Word Backward" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Delete Line" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Delete to End" },
-                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Delete to Beginning" },
+                    { "command": "delete_word", "args": { "forward": true }, "caption": "Удалить слово после курсора" },
+                    { "command": "delete_word", "args": { "forward": false }, "caption": "Удалить слово перед курсором" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Удалить строку" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Удалить от курсора до конца строки" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Удалить от курсора до начала строки" },
                     { "caption": "-" },
-                    { "command": "transpose" }
+                    { "command": "transpose", "caption": "Поменять местами" }
                 ]
             },
             {
-                "caption": "Tag",
+                 "caption": "Тег",
                 "id": "tag",
                 "children":
                 [
-                    { "command": "close_tag" },
-                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Expand Selection to Tag" },
-                    { "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/long-tag.sublime-snippet" }, "caption": "Wrap Selection With Tag" }
+                    { "command": "close_tag", "caption": "Закрыть тег" },
+                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Выделить до тега" },
+                    { "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/long-tag.sublime-snippet" }, "caption": "Обернуть выделенное тегом" }
                 ]
             },
             {
-                "caption": "Mark",
+                "caption": "Метка",
                 "id": "mark",
                 "children":
                 [
-                    { "command": "set_mark" },
-                    { "command": "select_to_mark", "caption": "Select to Mark" },
-                    { "command": "delete_to_mark", "caption": "Delete to Mark" },
-                    { "command": "swap_with_mark", "caption": "Swap with Mark" },
-                    { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Clear Mark" },
+                    { "command": "set_mark", "caption": "Установить метку" },
+                    { "command": "select_to_mark", "caption": "Выделить текст до метки", "caption": "Выделить до метки" },
+                    { "command": "delete_to_mark", "caption": "Выделить текст до метки", "caption": "Удалить до метки" },
+                    { "command": "swap_with_mark", "caption": "Поменять местами строку с меткой и текущую строку", "caption": "Поменяться с меткой" },
+                    { "command": "clear_bookmarks", "caption": "Удалить закладки", "args": {"name": "mark"}, "caption": "Удалить метку" },
                     { "caption": "-" },
-                    { "command": "yank" }
+                    { "command": "yank", "caption": "Вставить" }
                 ]
             },
-            {
-                "caption": "Code Folding",
+                       {
+                "caption": "Сворачивание кода",
                 "id": "fold",
                 "children":
                 [
-                    { "command": "fold" },
-                    { "command": "unfold" },
-                    { "command": "unfold_all", "caption": "Unfold All" },
+                    { "command": "fold", "caption": "Свернуть" },
+                    { "command": "unfold", "caption": "Развернуть" },
+                    { "command": "unfold_all", "caption": "Развернуть все" },
                     { "caption": "-" },
-                    { "caption": "Fold All", "command": "fold_by_level", "args": {"level": 1} },
-                    { "caption": "Fold Level 2", "command": "fold_by_level", "args": {"level": 2} },
-                    { "caption": "Fold Level 3", "command": "fold_by_level", "args": {"level": 3} },
-                    { "caption": "Fold Level 4", "command": "fold_by_level", "args": {"level": 4} },
-                    { "caption": "Fold Level 5", "command": "fold_by_level", "args": {"level": 5} },
-                    { "caption": "Fold Level 6", "command": "fold_by_level", "args": {"level": 6} },
-                    { "caption": "Fold Level 7", "command": "fold_by_level", "args": {"level": 7} },
-                    { "caption": "Fold Level 8", "command": "fold_by_level", "args": {"level": 8} },
-                    { "caption": "Fold Level 9", "command": "fold_by_level", "args": {"level": 9} },
+                    { "caption": "Свернуть все", "command": "fold_by_level", "args": {"level": 1} },
+                    { "caption": "Свернуть 2-й уровень", "command": "fold_by_level", "args": {"level": 2} },
+                    { "caption": "Свернуть 3-й уровень", "command": "fold_by_level", "args": {"level": 3} },
+                    { "caption": "Свернуть 4-й уровень", "command": "fold_by_level", "args": {"level": 4} },
+                    { "caption": "Свернуть 5-й уровень", "command": "fold_by_level", "args": {"level": 5} },
+                    { "caption": "Свернуть 6-й уровень", "command": "fold_by_level", "args": {"level": 6} },
+                    { "caption": "Свернуть 7-й уровень", "command": "fold_by_level", "args": {"level": 7} },
+                    { "caption": "Свернуть 8-й уровень", "command": "fold_by_level", "args": {"level": 8} },
+                    { "caption": "Свернуть 9-й уровень", "command": "fold_by_level", "args": {"level": 9} },
                     { "caption": "-" },
-                    { "command": "fold_tag_attributes", "caption": "Fold Tag Attributes" }
+                    { "command": "fold_tag_attributes", "caption": "Свернуть атрибуты тегов" }
                 ]
             },
             {
-                "caption": "Convert Case", "mnemonic": "a",
+                "caption": "Изменить регистр", "mnemonic": "a",
                 "id": "convert_case",
                 "children":
                 [
-                    { "command": "title_case", "caption": "Title Case" },
-                    { "command": "upper_case", "caption": "Upper Case" },
-                    { "command": "lower_case", "caption": "Lower Case" },
-                    { "command": "swap_case", "caption": "Swap Case" }
+                    { "command": "title_case", "caption": "Все Слова С Заглавной" },
+                    { "command": "upper_case", "caption": "ПРОПИСНЫЕ" },
+                    { "command": "lower_case", "caption": "строчные" },
+                    { "command": "swap_case", "caption": "Инвертировать" }
                 ]
             },
             {
-                "caption": "Wrap",
+                "caption": "Ограничение текста",
                 "id": "wrap",
                 "children":
                 [
-                    { "command": "wrap_lines", "caption": "Wrap Paragraph at Ruler" },
-                    { "command": "wrap_lines", "args": {"width": 70}, "caption": "Wrap paragraph at 70 characters" },
-                    { "command": "wrap_lines", "args": {"width": 72}, "caption": "Wrap paragraph at 72 characters" },
-                    { "command": "wrap_lines", "args": {"width": 78}, "caption": "Wrap paragraph at 78 characters" },
-                    { "command": "wrap_lines", "args": {"width": 80}, "caption": "Wrap paragraph at 80 characters" },
-                    { "command": "wrap_lines", "args": {"width": 100}, "caption": "Wrap paragraph at 100 characters" },
-                    { "command": "wrap_lines", "args": {"width": 120}, "caption": "Wrap paragraph at 120 characters" }
+                    { "command": "wrap_lines", "caption": "Ограничить текст по линейке" },
+                    { "command": "wrap_lines", "args": {"width": 70}, "caption": "Ограничить текст 70 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 78}, "caption": "Ограничить текст 78 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 80}, "caption": "Ограничить текст 80 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 100}, "caption": "Ограничить текст 100 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 120}, "caption": "Ограничить текст 120 знаками" }
                 ]
             },
-            { "command": "auto_complete", "caption": "Show Completions" },
+            { "command": "auto_complete", "caption": "Показать список автозавершения" },
             { "caption": "-", "id": "permute" },
 
-            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Sort Lines", "mnemonic": "S" },
-            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Sort Lines (Case Sensitive)" },
+            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Сортировать строки", "mnemonic": "S" },
+            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Сортировать строки (с учетом регистра)" },
             {
-                "caption": "Permute Lines",
+                "caption": "Упорядочить строки",
                 "children":
                 [
-                    { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Reverse" },
-                    { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Unique" },
-                    { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Shuffle" }
+                    { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "В обратном порядке" },
+                    { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Удалить повторы" },
+                    { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Перемешать" }
                 ]
             },
             {
-                "caption": "Permute Selections",
+                "caption": "Упорядочить выделенные участки",
                 "children":
                 [
-                    { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sort" },
-                    { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sort (Case Sensitive)" },
-                    { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Reverse" },
-                    { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Unique" },
-                    { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Shuffle" }
+                    { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Сортировать" },
+                    { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Сортировать (с учетом регистра)" },
+                    { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "В обратном порядке" },
+                    { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Удалить повторы" },
+                    { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Перемешать" }
                 ]
             },
             { "caption": "-", "id": "end" }
