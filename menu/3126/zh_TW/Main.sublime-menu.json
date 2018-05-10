@@ -623,7 +623,7 @@
             { "caption": "-" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "轉跳到符號處…" },
             { "command": "goto_symbol_in_project", "caption": "轉跳到項目符號處…" },
-            { "command": "goto_definition", "caption": "轉跳到設定處…" },
+            { "command": "goto_definition", "caption": "轉跳到定義處…" },
             // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "轉跳到詞組…" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "轉跳到行…" },
             { "caption": "-" },

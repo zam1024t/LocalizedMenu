@@ -626,7 +626,7 @@
             { "caption": "-" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "转跳到符号处…" },
             { "command": "goto_symbol_in_project", "caption": "转跳到项目符号处…" },
-            { "command": "goto_definition", "caption": "转跳到设定处…" },
+            { "command": "goto_definition", "caption": "转跳到定义处…" },
             // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "转跳到词组…" },
             { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "转跳到行…" },
             { "caption": "-" },
