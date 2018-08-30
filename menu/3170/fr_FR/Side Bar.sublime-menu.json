@@ -1,0 +1,12 @@
+[
+	{ "caption": "Nouveau fichier", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "Renommer…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "Supprimer le fichier", "command": "delete_file", "args": {"files": []} },
+	{ "caption": "Ouvrir le dossier conteneur…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "Révéler le lien source", "command": "reveal_link_source", "args": {"dirs": []} },
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Nouveau dossier…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "Supprimer le dossier", "command": "delete_folder", "args": {"dirs": []} },
+	{ "caption": "Trouver dans le dossier…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]

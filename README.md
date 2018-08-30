@@ -10,6 +10,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 # README.md
 - en [English](README.md)
 - es_ES [Español](readme/README.es_ES.md)
+- fr_FR [Français](readme/README.fr_FR.md)
 - hy [Հայերեն](readme/README.hy.md)
 - ru [Русский](readme/README.ru.md)
 - sv_SE [Svenska](readme/README.sv_SE.md)
