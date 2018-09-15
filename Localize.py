@@ -1,5 +1,5 @@
 import sublime, sublime_plugin
-import os, re, json, codecs, zipfile
+import os, re, json, codecs, shutil, zipfile
 
 p = sublime.platform()
 version = sublime.version()
@@ -80,7 +80,7 @@ def setLocale(locale, force = False):
 
 	updateMenu(m)
 	if getSetting('updateTopMenu', True):
-		updateTopMenu()
+		updateTopMenu(locale)
 	sublime.status_message('Locale ' + locale + ' has loaded.')
 
 def getLink(locale):
@@ -200,8 +200,12 @@ def updateMenu(m):
 			menu[8]['mnemonic'] = 'n'
 		saveJson(target, menu)
 
-def updateTopMenu():
+def updateTopMenu(locale):
 	tDir = pkgs + os.sep + 'ZZZZZZZZ-' + pName
+	if locale[:2] == 'en':
+		if os.path.isdir(tDir):
+			shutil.rmtree(tDir)
+		return
 	if not os.path.isdir(tDir):
 		os.makedirs(tDir)
 	topMenu = []
@@ -300,12 +304,12 @@ def plugin_loaded():
 	sublime.set_timeout(init, 200)
 
 def init():
-	if v == '3' and (sublime.installed_packages_path() in pDir):
+	absDir = os.path.dirname(os.path.abspath(__file__))
+	if v == '3' and os.path.isfile(absDir):
 		pkgDir = os.path.join(sublime.packages_path(), pName);
 		if not os.path.isdir(pkgDir):
-			pkgFile = os.path.dirname(os.path.abspath(__file__))
-			unpackSelf(pkgFile, pkgDir)
-			return
+			unpackSelf(absDir, pkgDir)
+		return
 	locale = ''
 	firstRun = False
 	fFile = os.path.join(pDir, '.firstRun')
