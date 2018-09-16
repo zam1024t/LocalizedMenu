@@ -93,12 +93,14 @@ def getLink(locale):
 	return locale
 
 def findSimilarVer():
-	sVer = ''
+	sVer = 0
 	for item in os.listdir(mDir):
 		subDir = os.path.join(mDir, item)
-		if os.path.isdir(subDir) and item.isdigit() and item < version:
-			sVer = item
-	return sVer
+		if item.isdigit() and os.path.isdir(subDir):
+			int_item = int(item)
+			if int_item > sVer and int_item < int(version):
+				sVer = int_item
+	return str(sVer)
 
 def isset(dict, key):
 	try:
