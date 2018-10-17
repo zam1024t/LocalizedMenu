@@ -204,10 +204,11 @@ def updateMenu(m):
 
 def updateTopMenu(locale):
 	tDir = pkgs + os.sep + 'ZZZZZZZZ-' + pName
-	if locale[:2] == 'en':
-		if os.path.isdir(tDir):
-			shutil.rmtree(tDir)
-		return
+	if not (p == 'osx' and v == '2'):
+		if locale[:2] == 'en':
+			if os.path.isdir(tDir):
+				shutil.rmtree(tDir)
+			return
 	if not os.path.isdir(tDir):
 		os.makedirs(tDir)
 	topMenu = []
