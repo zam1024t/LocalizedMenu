@@ -4,6 +4,7 @@
 		"children": [
 			{
 				"id": "package-settings",
+				"caption": "插件设置(P)",
 				"children":
 				[
 					{
