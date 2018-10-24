@@ -4,6 +4,7 @@
 		"children": [
 			{
 				"id": "package-settings",
+				"caption": "Package Settings",
 				"children":
 				[
 					{
