@@ -1,7 +1,10 @@
 [
 	{
+		"id": "preferences",
 		"children": [
 			{
+				"id": "package-settings",
+				"caption": "Package Settings",
 				"children": [
 					{
 						"caption": "LocalizedMenu",
