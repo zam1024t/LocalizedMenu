@@ -62,7 +62,7 @@ def setLocale(locale, force = False):
 	d = os.path.join(mDir, version)
 	ld = os.path.join(d, locale)
 	if (not os.path.isdir(ld)) and getSetting('findSimilarVer', True):
-		sDir = findSimilarVer()
+		sDir = findSimilarVer(locale)
 		if not sDir:
 			return
 		d = os.path.join(mDir, sDir)
@@ -92,10 +92,10 @@ def getLink(locale):
 		locale = conf['link']
 	return locale
 
-def findSimilarVer():
+def findSimilarVer(locale):
 	sVer = 0
 	for item in os.listdir(mDir):
-		subDir = os.path.join(mDir, item)
+		subDir = os.path.join(mDir, item, locale)
 		if item.isdigit() and os.path.isdir(subDir):
 			int_item = int(item)
 			if int_item > sVer and int_item < int(version):
