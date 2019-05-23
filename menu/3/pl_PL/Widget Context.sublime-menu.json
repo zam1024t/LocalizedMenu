@@ -1,0 +1,7 @@
+[
+    { "command": "copy", "caption": "Kopiuj" },
+    { "command": "cut", "caption": "Wytnij" },
+    { "command": "paste", "caption": "Wklej" },
+    { "caption": "-" },
+    { "command": "select_all", "caption": "Zaznacz wszystko" },
+]

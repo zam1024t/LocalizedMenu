@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Składnia",
+        "children": [ { "command": "$file_types" } ]
+    }
+]

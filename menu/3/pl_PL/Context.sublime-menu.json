@@ -1,0 +1,16 @@
+[
+    { "command": "open_context_url" },
+    { "command": "context_goto_definition", "caption": "Idź do definicji" },
+    { "caption": "-", "id": "clipboard" },
+    { "command": "copy", "caption": "Kopiuj" },
+    { "command": "cut", "caption": "Wytnij" },
+    { "command": "paste", "caption": "Wklej" },
+    { "caption": "-", "id": "selection" },
+    { "command": "select_all", "caption": "Zaznacz wszystkie" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_in_browser", "caption": "Otwórz w przeglądarce" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Otwórz folder…" },
+    { "command": "copy_path", "caption": "Kopiuj ścieżkę" },
+    { "command": "reveal_in_side_bar", "caption": "Pokaż na panelu bocznym" },
+    { "caption": "-", "id": "end" }
+]

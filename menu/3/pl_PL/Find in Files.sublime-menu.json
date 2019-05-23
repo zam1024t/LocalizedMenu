@@ -1,0 +1,9 @@
+[
+    { "command": "clear_location", "caption": "Wyczyść historię lokalizacji" },
+    { "command": "add_directory", "caption": "Dodaj folder" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Włącznie z" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Wyłącznie z" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Otwarte foldery" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Otwarte pliki" },
+    { "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Obecny plik" },
+]

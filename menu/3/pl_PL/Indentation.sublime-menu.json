@@ -1,0 +1,17 @@
+[
+     { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Indentuj używając spacji", "checkbox": true },
+     { "caption": "-" },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Szerokość tablucaji: 1", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Szerokość tablucaji: 2", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Szerokość tablucaji: 3", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Szerokość tablucaji: 4", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Szerokość tablucaji: 5", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Szerokość tablucaji: 6", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Szerokość tablucaji: 7", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Szerokość tablucaji: 8", "checkbox": true },
+     { "caption": "-" },
+     { "command": "detect_indentation", "caption": "Wydefukuj indentację z bufora" },
+     { "caption": "-" },
+     { "command": "expand_tabs", "caption": "Zamień indentację na spacje", "args": {"set_translate_tabs": true} },
+     { "command": "unexpand_tabs", "caption": "Zamień indentację na tabulatory", "args": {"set_translate_tabs": true} }
+ ]
