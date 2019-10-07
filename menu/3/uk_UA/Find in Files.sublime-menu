@@ -1,0 +1,8 @@
+[
+    { "command": "clear_location", "caption": "Очистити" },
+    { "command": "add_directory", "caption": "Додати теку" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Фільтр файлів по масці" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Виключити файли по масці" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Додати відкриті теки" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Додати відкриті файли" }
+]

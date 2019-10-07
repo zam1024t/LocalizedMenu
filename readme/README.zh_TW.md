@@ -13,6 +13,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 - hy [Հայերեն](README.hy.md)
 - ru [Русский](README.ru.md)
 - sv_SE [Svenska](README.sv_SE.md)
+- uk_UA [Українська](README.uk_UA.md)
 - zh_CN [简体中文](README.zh_CN.md)
 - zh_TW [繁体中文](README.zh_TW.md)
 
@@ -88,6 +89,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
+- uk_UA Українська *by [Andrii Kondratiev](https://github.com/keedhost)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*
 

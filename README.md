@@ -14,6 +14,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 - hy [Հայերեն](readme/README.hy.md)
 - ru [Русский](readme/README.ru.md)
 - sv_SE [Svenska](readme/README.sv_SE.md)
+- uk_UA [Українська](README.uk_UA.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
 - zh_TW [繁体中文](readme/README.zh_TW.md)
 
@@ -87,6 +88,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3 End User
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
+- uk_UA Українська *by [Andrii Kondratiev](https://github.com/keedhost)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *by [Zam](https://github.com/zam1024t)*
 

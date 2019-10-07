@@ -1,0 +1,11 @@
+[
+	{ "caption": "Новий файл", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "Перейменувати…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "Видалити файл", "command": "delete_file", "args": {"files": []} },
+	{ "caption": "Відкрити теку файлу...", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Нова тека…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "Видалити теку", "command": "delete_folder", "args": {"dirs": []} },
+	{ "caption": "Знайти в теці…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]

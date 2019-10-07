@@ -1,0 +1,882 @@
+[
+    {
+        "caption": "Файл",
+        "mnemonic": "F",
+        "id": "file",
+        "children":
+        [
+            { "command": "new_file", "caption": "Новий файл", "caption": "Новий файл", "mnemonic": "N" },
+
+            { "command": "prompt_open_file", "caption": "Відкрити файл…", "mnemonic": "O", "platform": "!OSX" },
+            { "command": "prompt_open_folder", "caption": "Відкрити теку…", "platform": "!OSX" },
+            { "command": "prompt_open", "caption": "Відкрити", "platform": "OSX" },
+            {
+                "caption": "Нещодавно відкриті",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "reopen_last_file", "caption": "Перевідкрити останній закритий файл" },
+                    { "caption": "-" },
+                    { "command": "open_recent_file", "args": {"index": 0 } },
+                    { "command": "open_recent_file", "args": {"index": 1 } },
+                    { "command": "open_recent_file", "args": {"index": 2 } },
+                    { "command": "open_recent_file", "args": {"index": 3 } },
+                    { "command": "open_recent_file", "args": {"index": 4 } },
+                    { "command": "open_recent_file", "args": {"index": 5 } },
+                    { "command": "open_recent_file", "args": {"index": 6 } },
+                    { "command": "open_recent_file", "args": {"index": 7 } },
+                    { "caption": "-" },
+                    { "command": "open_recent_folder", "args": {"index": 0 } },
+                    { "command": "open_recent_folder", "args": {"index": 1 } },
+                    { "command": "open_recent_folder", "args": {"index": 2 } },
+                    { "command": "open_recent_folder", "args": {"index": 3 } },
+                    { "command": "open_recent_folder", "args": {"index": 4 } },
+                    { "command": "open_recent_folder", "args": {"index": 5 } },
+                    { "command": "open_recent_folder", "args": {"index": 6 } },
+                    { "command": "open_recent_folder", "args": {"index": 7 } },
+                    { "caption": "-" },
+                    { "command": "clear_recent_files", "caption": "Очистити список" }
+                ]
+            },
+            {
+                "caption": "Перевідкрити в іншому кодуванні",
+                "children":
+                [
+                    { "caption": "UTF-8", "command": "reopen", "args": {"encoding": "utf-8" } },
+                    { "caption": "UTF-16 LE", "command": "reopen", "args": {"encoding": "utf-16 le" } },
+                    { "caption": "UTF-16 BE", "command": "reopen", "args": {"encoding": "utf-16 be" } },
+                    { "caption": "-" },
+                    { "caption": "Western (Windows 1252)", "command": "reopen", "args": {"encoding": "Western (Windows 1252)" } },
+                    { "caption": "Western (ISO 8859-1)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-1)" } },
+                    { "caption": "Western (ISO 8859-3)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-3)" } },
+                    { "caption": "Western (ISO 8859-15)", "command": "reopen", "args": {"encoding": "Western (ISO 8859-15)" } },
+                    { "caption": "Western (Mac Roman)", "command": "reopen", "args": {"encoding": "Western (Mac Roman)" } },
+                    { "caption": "DOS (CP 437)", "command": "reopen", "args": {"encoding": "DOS (CP 437)" } },
+                    { "caption": "Arabic (Windows 1256)", "command": "reopen", "args": {"encoding": "Arabic (Windows 1256)" } },
+                    { "caption": "Arabic (ISO 8859-6)", "command": "reopen", "args": {"encoding": "Arabic (ISO 8859-6)" } },
+                    { "caption": "Baltic (Windows 1257)", "command": "reopen", "args": {"encoding": "Baltic (Windows 1257)" } },
+                    { "caption": "Baltic (ISO 8859-4)", "command": "reopen", "args": {"encoding": "Baltic (ISO 8859-4)" } },
+                    { "caption": "Celtic (ISO 8859-14)", "command": "reopen", "args": {"encoding": "Celtic (ISO 8859-14)" } },
+                    { "caption": "Central European (Windows 1250)", "command": "reopen", "args": {"encoding": "Central European (Windows 1250)" } },
+                    { "caption": "Central European (ISO 8859-2)", "command": "reopen", "args": {"encoding": "Central European (ISO 8859-2)" } },
+                    { "caption": "Cyrillic (Windows 1251)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 1251)" } },
+                    { "caption": "Cyrillic (Windows 866)", "command": "reopen", "args": {"encoding": "Cyrillic (Windows 866)" } },
+                    { "caption": "Cyrillic (ISO 8859-5)", "command": "reopen", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
+                    { "caption": "Cyrillic (KOI8-R)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-R)" } },
+                    { "caption": "Cyrillic (KOI8-U)", "command": "reopen", "args": {"encoding": "Cyrillic (KOI8-U)" } },
+                    { "caption": "Estonian (ISO 8859-13)", "command": "reopen", "args": {"encoding": "Estonian (ISO 8859-13)" } },
+                    { "caption": "Greek (Windows 1253)", "command": "reopen", "args": {"encoding": "Greek (Windows 1253)" } },
+                    { "caption": "Greek (ISO 8859-7)", "command": "reopen", "args": {"encoding": "Greek (ISO 8859-7)" } },
+                    { "caption": "Hebrew (Windows 1255)", "command": "reopen", "args": {"encoding": "Hebrew (Windows 1255)" } },
+                    { "caption": "Hebrew (ISO 8859-8)", "command": "reopen", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
+                    { "caption": "Nordic (ISO 8859-10)", "command": "reopen", "args": {"encoding": "Nordic (ISO 8859-10)" } },
+                    { "caption": "Romanian (ISO 8859-16)", "command": "reopen", "args": {"encoding": "Romanian (ISO 8859-16)" } },
+                    { "caption": "Turkish (Windows 1254)", "command": "reopen", "args": {"encoding": "Turkish (Windows 1254)" } },
+                    { "caption": "Turkish (ISO 8859-9)", "command": "reopen", "args": {"encoding": "Turkish (ISO 8859-9)" } },
+                    { "caption": "Vietnamese (Windows 1258)", "command": "reopen", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+                    { "caption": "-" },
+                    { "caption": "Hexadecimal", "command": "reopen", "args": {"encoding": "Hexadecimal" } }
+                ]
+            },
+            { "command": "clone_file", "caption": "Дублювати активну вкладку", "mnemonic": "e" },
+            { "command": "save", "caption": "Зберегти", "mnemonic": "S" },
+            {
+                "caption": "Зберегти в кодуванні",
+                "children":
+                [
+                    { "caption": "UTF-8", "command": "save", "args": {"encoding": "utf-8" } },
+                    { "caption": "UTF-8 + BOM", "command": "save", "args": {"encoding": "utf-8 with bom" } },
+                    { "caption": "UTF-16 LE", "command": "save", "args": {"encoding": "utf-16 le" } },
+                    { "caption": "UTF-16 LE + BOM", "command": "save", "args": {"encoding": "utf-16 le with bom" } },
+                    { "caption": "UTF-16 BE", "command": "save", "args": {"encoding": "utf-16 be" } },
+                    { "caption": "UTF-16 BE + BOM", "command": "save", "args": {"encoding": "utf-16 be with bom" } },
+                    { "caption": "-" },
+                    { "caption": "Western (Windows 1252)", "command": "save", "args": {"encoding": "Western (Windows 1252)" } },
+                    { "caption": "Western (ISO 8859-1)", "command": "save", "args": {"encoding": "Western (ISO 8859-1)" } },
+                    { "caption": "Western (ISO 8859-3)", "command": "save", "args": {"encoding": "Western (ISO 8859-3)" } },
+                    { "caption": "Western (ISO 8859-15)", "command": "save", "args": {"encoding": "Western (ISO 8859-15)" } },
+                    { "caption": "Western (Mac Roman)", "command": "save", "args": {"encoding": "Western (Mac Roman)" } },
+                    { "caption": "DOS (CP 437)", "command": "save", "args": {"encoding": "DOS (CP 437)" } },
+                    { "caption": "Arabic (Windows 1256)", "command": "save", "args": {"encoding": "Arabic (Windows 1256)" } },
+                    { "caption": "Arabic (ISO 8859-6)", "command": "save", "args": {"encoding": "Arabic (ISO 8859-6)" } },
+                    { "caption": "Baltic (Windows 1257)", "command": "save", "args": {"encoding": "Baltic (Windows 1257)" } },
+                    { "caption": "Baltic (ISO 8859-4)", "command": "save", "args": {"encoding": "Baltic (ISO 8859-4)" } },
+                    { "caption": "Celtic (ISO 8859-14)", "command": "save", "args": {"encoding": "Celtic (ISO 8859-14)" } },
+                    { "caption": "Central European (Windows 1250)", "command": "save", "args": {"encoding": "Central European (Windows 1250)" } },
+                    { "caption": "Central European (ISO 8859-2)", "command": "save", "args": {"encoding": "Central European (ISO 8859-2)" } },
+                    { "caption": "Cyrillic (Windows 1251)", "command": "save", "args": {"encoding": "Cyrillic (Windows 1251)" } },
+                    { "caption": "Cyrillic (Windows 866)", "command": "save", "args": {"encoding": "Cyrillic (Windows 866)" } },
+                    { "caption": "Cyrillic (ISO 8859-5)", "command": "save", "args": {"encoding": "Cyrillic (ISO 8859-5)" } },
+                    { "caption": "Cyrillic (KOI8-R)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-R)" } },
+                    { "caption": "Cyrillic (KOI8-U)", "command": "save", "args": {"encoding": "Cyrillic (KOI8-U)" } },
+                    { "caption": "Estonian (ISO 8859-13)", "command": "save", "args": {"encoding": "Estonian (ISO 8859-13)" } },
+                    { "caption": "Greek (Windows 1253)", "command": "save", "args": {"encoding": "Greek (Windows 1253)" } },
+                    { "caption": "Greek (ISO 8859-7)", "command": "save", "args": {"encoding": "Greek (ISO 8859-7)" } },
+                    { "caption": "Hebrew (Windows 1255)", "command": "save", "args": {"encoding": "Hebrew (Windows 1255)" } },
+                    { "caption": "Hebrew (ISO 8859-8)", "command": "save", "args": {"encoding": "Hebrew (ISO 8859-8)" } },
+                    { "caption": "Nordic (ISO 8859-10)", "command": "save", "args": {"encoding": "Nordic (ISO 8859-10)" } },
+                    { "caption": "Romanian (ISO 8859-16)", "command": "save", "args": {"encoding": "Romanian (ISO 8859-16)" } },
+                    { "caption": "Turkish (Windows 1254)", "command": "save", "args": {"encoding": "Turkish (Windows 1254)" } },
+                    { "caption": "Turkish (ISO 8859-9)", "command": "save", "args": {"encoding": "Turkish (ISO 8859-9)" } },
+                    { "caption": "Vietnamese (Windows 1258)", "command": "save", "args": {"encoding": "Vietnamese (Windows 1258)" } },
+                    { "caption": "-" },
+                    { "caption": "Hexadecimal", "command": "save", "args": {"encoding": "Hexadecimal" } }
+                ]
+            },
+            { "command": "prompt_save_as", "caption": "Зберегти як…", "mnemonic": "A" },
+            { "command": "save_all", "caption": "Зберегти все", "mnemonic": "l" },
+            { "caption": "-", "id": "window" },
+            { "command": "new_window", "caption": "Нове вікно", "mnemonic": "W" },
+            { "command": "close_window", "caption": "Закрити вікно" },
+            { "caption": "-", "id": "close" },
+            { "command": "close", "caption": "Закрити файл", "mnemonic": "C" },
+            { "command": "revert", "caption": "Перезавантажити файл", "mnemonic": "v" },
+            { "command": "close_all", "caption": "Закрити всі файли" },
+            { "caption": "-", "id": "exit" },
+            { "command": "exit", "caption": "Вихід", "mnemonic": "x" }
+        ]
+    },
+    {
+        "caption": "Правка",
+        "mnemonic": "E",
+        "id": "edit",
+        "children":
+        [
+            { "command": "undo", "caption": "Відмінити", "mnemonic": "U" },
+            { "command": "redo_or_repeat", "caption": "Повернути назад", "mnemonic": "R" },
+            {
+                "caption": "Відмінити декілька виділень",
+                "children":
+                [
+                    { "command": "soft_undo", "caption": "М'яка відміна" },
+                    { "command": "soft_redo", "caption": "М'який повтор" }
+                ]
+            },
+            { "caption": "-", "id": "clipboard" },
+            { "command": "copy", "caption": "Копіювати", "mnemonic": "C" },
+            { "command": "cut", "caption": "Вирізати", "mnemonic": "n" },
+            { "command": "paste", "caption": "Вставити", "mnemonic": "P" },
+            { "command": "paste_and_indent", "caption": "Вставити з відступами", "mnemonic": "I" },
+            { "command": "paste_from_history", "caption": "Вставити з історії" },
+            { "caption": "-" },
+            {
+                "caption": "Рядок", "mnemonic": "L",
+                "id": "line",
+                "children":
+                [
+                    { "command": "indent", "caption": "Збільшити відступ" },
+                    { "command": "unindent", "caption": "Зменшити відступ" },
+                    { "command": "reindent", "caption": "Розставити правильні відступи", "args": {"single_line": true} },
+                    { "command": "swap_line_up", "caption": "Пересунути рядок вгору" },
+                    { "command": "swap_line_down", "caption": "Пересунути рядок вниз" },
+                    { "command": "duplicate_line", "caption": "Копіювати рядок" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Видалити рядок" },
+                    { "command": "join_lines", "caption": "Об'єднати рядки" }
+                ]
+            },
+            {
+                "caption": "Коментування", "mnemonic": "m",
+                "id": "comment",
+                "children":
+                [
+                    { "command": "toggle_comment", "args": {"block": false}, "caption": "Переключити коментар" },
+                    { "command": "toggle_comment", "args": {"block": true}, "caption": "Переключити блочний коментар" }
+                ]
+            },
+            {
+                "caption": "Текст", "mnemonic": "T",
+                "id": "text",
+                "children":
+                [
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Вставити рядок попереду поточного" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Вставити рядок після поточного" },
+                    { "caption": "-" },
+                    { "command": "delete_word", "args": { "forward": true }, "caption": "Видалити слово після каретки" },
+                    { "command": "delete_word", "args": { "forward": false }, "caption": "Видалити слово перед кареткою" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Видалити рядок" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Видалити від курсору до кінця рядка" },
+                    { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Видалити від курсору до початку рядка" },
+                    { "caption": "-" },
+                    { "command": "transpose", "caption": "Поміняти місцями" }
+                ]
+            },
+            {
+                "caption": "Тег",
+                "id": "tag",
+                "children":
+                [
+                    { "command": "close_tag", "caption": "Закрити тег" },
+                    { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Виділити до позначки" },
+                    { "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" }, "caption": "Обернути виділення тегом" }
+                ]
+            },
+            {
+                "caption": "Мітка",
+                "id": "mark",
+                "children":
+                [
+                    { "command": "set_mark", "caption": "Встановити мітку" },
+                    { "command": "select_to_mark", "caption": "Виділити текст до мітки", "caption": "Виділити до мітки" },
+                    { "command": "delete_to_mark", "caption": "Видалити текст до мітки", "caption": "Видалити до мітки" },
+                    { "command": "swap_with_mark", "caption": "Поміняти місцями рядок з міткою та поточний рядок", "caption": "Помінятись з міткою" },
+                    { "command": "clear_bookmarks", "caption": "Видалити закладки", "args": {"name": "mark"}, "caption": "Видалити мітку" },
+                    { "caption": "-" },
+                    { "command": "yank" }
+                ]
+            },
+            {
+                "caption": "Згортання коду",
+                "id": "fold",
+                "children":
+                [
+                    { "command": "fold", "caption": "Згорнути" },
+                    { "command": "unfold", "caption": "Розгорнути" },
+                    { "command": "unfold_all", "caption": "Розгорнути все" },
+                    { "caption": "-" },
+                    { "caption": "Згорнути все", "command": "fold_by_level", "args": {"level": 1} },
+                    { "caption": "Згорнути 2-й рівень", "command": "fold_by_level", "args": {"level": 2} },
+                    { "caption": "Згорнути 3-й рівень", "command": "fold_by_level", "args": {"level": 3} },
+                    { "caption": "Згорнути 4-й рівень", "command": "fold_by_level", "args": {"level": 4} },
+                    { "caption": "Згорнути 5-й рівень", "command": "fold_by_level", "args": {"level": 5} },
+                    { "caption": "Згорнути 6-й рівень", "command": "fold_by_level", "args": {"level": 6} },
+                    { "caption": "Згорнути 7-й рівень", "command": "fold_by_level", "args": {"level": 7} },
+                    { "caption": "Згорнути 8-й рівень", "command": "fold_by_level", "args": {"level": 8} },
+                    { "caption": "Згорнути 9-й рівень", "command": "fold_by_level", "args": {"level": 9} },
+                    { "caption": "-" },
+                    { "command": "fold_tag_attributes", "caption": "Згорнути атрибути тегів" }
+                ]
+            },
+            {
+                "caption": "Змінити регістр", "mnemonic": "a",
+                "id": "convert_case",
+                "children":
+                [
+                    { "command": "title_case", "caption": "Всі слова з великої" },
+                    { "command": "upper_case", "caption": "ВЕЛИКІ" },
+                    { "command": "lower_case", "caption": "маленькі" },
+                    { "command": "swap_case", "caption": "Інвертувати" }
+                ]
+            },
+            {
+                "caption": "Обмеження тексту",
+                "id": "wrap",
+                "children":
+                [
+                    { "command": "wrap_lines", "caption": "Обмежити текст по лінійці" },
+                    { "command": "wrap_lines", "args": {"width": 70}, "caption": "Обмежити текст 70 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 78}, "caption": "Обмежити текст 78 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 80}, "caption": "Обмежити текст 80 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 100}, "caption": "Обмежити текст 100 знаками" },
+                    { "command": "wrap_lines", "args": {"width": 120}, "caption": "Обмежити текст 120 знаками" }
+                ]
+            },
+            { "command": "auto_complete", "caption": "Показати перелік автодоповнення" },
+            { "caption": "-", "id": "permute" },
+
+            { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Сортувати рядки", "mnemonic": "S" },
+            { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Сортувати рядки (з урахуванням регістру)" },
+            {
+                "caption": "Упорядкувати рядки",
+                "children":
+                [
+                    { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "У зворотньому порядку" },
+                    { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Видалити повторювання" },
+                    { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Перемішати" }
+                ]
+            },
+            {
+                "caption": "упорядкувати виділені ділянки",
+                "children":
+                [
+                    { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Сортувати" },
+                    { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Сортувати (з урахуванням регістру)" },
+                    { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "У зворотньому порядку" },
+                    { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Видалити повторювання" },
+                    { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Перемішати" }
+                ]
+            },
+            { "caption": "-", "id": "end" }
+        ]
+    },
+    {
+        "caption": "Виділення",
+        "mnemonic": "S",
+        "id": "selection",
+        "children":
+        [
+            { "command": "split_selection_into_lines", "caption": "Розділити по рядкам" },
+            { "command": "select_lines", "args": {"forward": false}, "caption": "Додати попередній рядок" },
+            { "command": "select_lines", "args": {"forward": true}, "caption": "Додати наступний рядок" },
+            { "command": "single_selection", "caption": "Відмінити множинне виділення" },
+            { "command": "invert_selection", "caption": "Інвертувати виділення" },
+            { "caption": "-" },
+            { "command": "select_all", "caption": "Виділити все" },
+            { "command": "expand_selection", "args": {"to": "line"}, "caption": "Виділити рядок" },
+            { "command": "find_under_expand", "caption": "Виділити слово" },
+            { "command": "expand_selection_to_paragraph", "caption": "Виділити абзац" },
+            { "command": "expand_selection", "args": {"to": "scope"}, "caption": "Виділити до рамок" },
+            { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Виділити до дужок" },
+            { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Виділити до відступа" },
+            { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Виділити до тегу" }
+        ]
+    },
+    {
+        "caption": "Пошук",
+        "mnemonic": "i",
+        "id": "find",
+        "children":
+        [
+            { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "find", "reverse": false}, "caption": "Знайти…" },
+            { "command": "find_next", "caption": "Знайти наступне" },
+            { "command": "find_prev", "caption": "Знайти попереднє" },
+            { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Пошук ''на лету''" },
+            { "caption": "-" },
+            { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "replace", "reverse": false}, "caption": "Замінити…" },
+            { "command": "replace_next", "caption": "Замінити наступне" },
+            { "caption": "-" },
+            { "command": "find_under", "caption": "Швидко знайти" },
+            { "command": "find_all_under", "caption": "Швидко знайти все" },
+            { "command": "find_under_expand", "caption": "Швидко додати наступне" },
+            { "command": "find_under_expand_skip", "caption": "Швидко пропустити наступне", "platform": "!OSX" },
+            { "caption": "-" },
+            { "command": "slurp_find_string", "caption": "Викориcтовувати виділене для пошуку" },
+            { "command": "slurp_replace_string", "caption": "Викориcтовувати виділене для заміни" },
+            { "caption": "-" },
+            { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "find_in_files"}, "caption": "Знайти у файлах…" },
+            {
+                "caption": "Результати пошуку",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "output.find_results"}, "caption": "Показати вікно з результатами пошуку" },
+                    { "command": "next_result", "caption": "Наступний результат" },
+                    { "command": "prev_result", "caption": "Попередній результат" }
+                ]
+            }
+        ]
+    },
+    {
+        "caption": "Вигляд",
+        "mnemonic": "V",
+        "id": "view",
+        "children":
+        [
+            {
+                "caption": "Бічна панель",
+                "id": "side_bar",
+                "children":
+                [
+                    { "command": "toggle_side_bar", "caption": "Показати/Сховати" },
+                    { "caption": "-" },
+                    { "command": "toggle_show_open_files", "caption": "Показати/Сховати відкриті файли" }
+                ]
+            },
+            { "command": "toggle_minimap", "caption": "Показати/Сховати мінікарту" },
+            { "command": "toggle_tabs", "caption": "Показати/Сховати вкладки" },
+            { "command": "toggle_status_bar", "caption": "Показати/Сховати панель стану" },
+            { "command": "toggle_menu", "caption": "Показати/Сховати меню" },
+            { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "console", "toggle": true} },
+            { "caption": "-", "id": "full_screen" },
+            { "command": "toggle_full_screen", "caption": "Переключити режим повноекранного перегляду" },
+            { "command": "toggle_distraction_free", "caption": "Переключити в зосереджений режим" },
+            { "caption": "-", "id": "groups" },
+            {
+                "caption": "Розділення екрану",
+                "mnemonic": "L",
+                "id": "layout",
+                "children":
+                [
+                    {
+                        "caption": "Один",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1]]
+                        }
+                    },
+                    {
+                        "caption": "2 стовпця",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.5, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+                        }
+                    },
+                    {
+                        "caption": "3 стовпця",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.33, 0.66, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+                        }
+                    },
+                    {
+                        "caption": "4 стовпця",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+                            "rows": [0.0, 1.0],
+                            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+                        }
+                    },
+                    {
+                        "caption": "2 рядки",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 1.0],
+                            "rows": [0.0, 0.5, 1.0],
+                            "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+                        }
+                    },
+                    {
+                        "caption": "3 рядки",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 1.0],
+                            "rows": [0.0, 0.33, 0.66, 1.0],
+                            "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+                        }
+                    },
+                    {
+                        "caption": "Сітка 2х2",
+                        "command": "set_layout",
+                        "args":
+                        {
+                            "cols": [0.0, 0.5, 1.0],
+                            "rows": [0.0, 0.5, 1.0],
+                            "cells":
+                            [
+                                [0, 0, 1, 1], [1, 0, 2, 1],
+                                [0, 1, 1, 2], [1, 1, 2, 2]
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "caption": "Групи",
+                "children":
+                [
+                    { "command": "new_pane", "caption": "Перемістити файл в нову групу" },
+                    { "command": "new_pane", "args": {"move": false}, "caption": "Нова група" },
+                    { "command": "close_pane", "caption": "Закрити групу" },
+
+                    { "caption": "-" },
+
+                    {
+                        "caption": "Максимум стовбців: 1",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 1 }
+                    },
+                    {
+                        "caption": "Максимум стовбців: 2",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 2 }
+                    },
+                    {
+                        "caption": "Максимум стовбців: 3",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 3 }
+                    },
+                    {
+                        "caption": "Максимум стовбців: 4",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 4 }
+                    },
+                    {
+                        "caption": "Максимум стовбців: 5",
+                        "command": "set_max_columns",
+                        "checkbox": true,
+                        "args": { "columns": 5 }
+                    },
+                ]
+            },
+            {
+                "caption": "Фокус-група",
+                "mnemonic": "F",
+                "children":
+                [
+
+                    { "command": "focus_neighboring_group", "caption": "наступна" },
+                    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Попередня" },
+                    { "caption": "-" },
+                    { "command": "focus_group", "args": {"group": 0}, "caption": "Група 1" },
+                    { "command": "focus_group", "args": {"group": 1}, "caption": "Група 2" },
+                    { "command": "focus_group", "args": {"group": 2}, "caption": "Група 3" },
+                    { "command": "focus_group", "args": {"group": 3}, "caption": "Група 4" }
+                ]
+            },
+            {
+                "caption": "Перемістити файл у групу",
+                "mnemonic": "M",
+                "children":
+                [
+                    { "command": "move_to_neighboring_group", "caption": "Наступна" },
+                    { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Попередня" },
+                    { "caption": "-" },
+                    { "command": "move_to_group", "args": {"group": 0}, "caption": "Група 1" },
+                    { "command": "move_to_group", "args": {"group": 1}, "caption": "Група 2" },
+                    { "command": "move_to_group", "args": {"group": 2}, "caption": "Група 3" },
+                    { "command": "move_to_group", "args": {"group": 3}, "caption": "Група 4" }
+                ]
+            },
+            { "caption": "-" },
+            {
+                "caption": "Синтаксис",
+                "mnemonic": "S",
+                "id": "syntax",
+                "children": [ { "command": "$file_types" } ]
+            },
+            {
+                "caption": "Відступи",
+                "mnemonic": "I",
+                "id": "indentation",
+                "children":
+                [
+                    { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Викориcтовувати у відступах пробіли", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Розмір відступу: 1", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Розмір відступу: 2", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Розмір відступу: 3", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Розмір відступу: 4", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Розмір відступу: 5", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Розмір відступу: 6", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Розмір відступу: 7", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Розмір відступу: 8", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "detect_indentation", "caption": "Визначити параметри з буферу" },
+                    { "caption": "-" },
+                    { "command": "expand_tabs", "caption": "Перетворювати відступи в пробіли", "args": {"set_translate_tabs": true} },
+                    { "command": "unexpand_tabs", "caption": "Перетворювати відступи в табуляцію", "args": {"set_translate_tabs": true} }
+                ]
+            },
+            {
+                "caption": "Формат кінця рядка",
+                "mnemonic": "n",
+                "id": "line_endings",
+                "children":
+                [
+                    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows", "checkbox": true },
+                    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix", "checkbox": true },
+                    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
+                ]
+            },
+            { "caption": "-", "id": "settings" },
+            { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Перенос рядків", "mnemonic": "w", "checkbox": true },
+            {
+                "caption": "Ширина рядків",
+                "children":
+                [
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Автоматична", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}, "caption": "78 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}, "caption": "80 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}, "caption": "100 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}, "caption": "120 символів", "checkbox": true }
+                ]
+            },
+            {
+                "caption": "Вертикальна границя",
+                "children":
+                [
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "Ні", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [78]}, "caption": "78 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [80]}, "caption": "80 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [100]}, "caption": "100 символів", "checkbox": true },
+                    { "command": "set_setting", "args": {"setting": "rulers", "value": [120]}, "caption": "120 символів", "checkbox": true }
+                ]
+            },
+            { "caption": "-" },
+            { "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Перевірка правопису", "checkbox": true },
+            { "command": "next_misspelling", "caption": "Наступна помилка правопису" },
+            { "command": "prev_misspelling", "caption": "Попередня помилка правопису" },
+            {
+                "caption": "Словник",
+                "children": [ { "command": "$dictionaries" } ]
+            }
+        ]
+    },
+    {
+        "caption": "Перейти",
+        "mnemonic": "G",
+        "id": "goto",
+        "children":
+        [
+            { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Перейти до чого-небудь…", "mnemonic": "A" },
+            { "caption": "-" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Перейти до ідентифікатора…" },
+            { "command": "goto_symbol_in_project", "caption": "Перейти до ідентифікатора в проекті…" },
+            { "command": "goto_definition", "caption": "Перейти до визначення…" },
+            // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Перейти к слову…" },
+            { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Перейти до рядка…" },
+            { "caption": "-" },
+            { "command": "jump_back", "caption": "На попередню позицію" },
+            { "command": "jump_forward", "caption": "На наступну позицію" },
+            { "caption": "-" },
+            {
+                "caption": "Перемикання файлів",
+                "mnemonic": "t",
+                "id": "switch_file",
+                "children":
+                [
+                    { "command": "next_view", "caption": "Наступний файл" },
+                    { "command": "prev_view", "caption": "Попередній файл" },
+                    { "caption": "-" },
+                    { "command": "next_view_in_stack", "caption": "Наступний файл в стеку" },
+                    { "command": "prev_view_in_stack", "caption": "Попередній файл в стеку" },
+                    { "caption": "-" },
+                    { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "h", "ipp", "inl", "m", "mm"]}, "caption": "До об'яви/реалізації", "mnemonic": "H" },
+                    { "caption": "-" },
+                    { "command": "select_by_index", "args": { "index": 0 } },
+                    { "command": "select_by_index", "args": { "index": 1 } },
+                    { "command": "select_by_index", "args": { "index": 2 } },
+                    { "command": "select_by_index", "args": { "index": 3 } },
+                    { "command": "select_by_index", "args": { "index": 4 } },
+                    { "command": "select_by_index", "args": { "index": 5 } },
+                    { "command": "select_by_index", "args": { "index": 6 } },
+                    { "command": "select_by_index", "args": { "index": 7 } },
+                    { "command": "select_by_index", "args": { "index": 8 } },
+                    { "command": "select_by_index", "args": { "index": 9 } }
+                ]
+            },
+            { "caption": "-" },
+            {
+                "caption": "Прокрутка",
+                "mnemonic": "S",
+                "id": "scroll",
+                "children":
+                [
+                    { "command": "show_at_center", "caption": "Прокрутити до виділеного" },
+                    { "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "На рядок вгору" },
+                    { "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "На рядок вниз" }
+                ]
+            },
+            {
+                "caption": "Закладки",
+                "mnemonic": "b",
+                "id": "bookmarks",
+                "children":
+                [
+                    { "command": "toggle_bookmark", "caption": "Перемкнути закладку" },
+                    { "command": "next_bookmark", "caption": "Наступна закладка" },
+                    { "command": "prev_bookmark", "caption": "Попередня закладка" },
+                    { "command": "clear_bookmarks", "caption": "Видалити закладки" },
+                    { "command": "select_all_bookmarks", "caption": "Виділити усі закладки" },
+                    { "caption": "-" },
+                    { "command": "select_bookmark", "args": {"index": 0} },
+                    { "command": "select_bookmark", "args": {"index": 1} },
+                    { "command": "select_bookmark", "args": {"index": 2} },
+                    { "command": "select_bookmark", "args": {"index": 3} },
+                    { "command": "select_bookmark", "args": {"index": 4} },
+                    { "command": "select_bookmark", "args": {"index": 5} },
+                    { "command": "select_bookmark", "args": {"index": 6} },
+                    { "command": "select_bookmark", "args": {"index": 7} },
+                    { "command": "select_bookmark", "args": {"index": 8} },
+                    { "command": "select_bookmark", "args": {"index": 9} },
+                    { "command": "select_bookmark", "args": {"index": 10} },
+                    { "command": "select_bookmark", "args": {"index": 11} },
+                    { "command": "select_bookmark", "args": {"index": 12} },
+                    { "command": "select_bookmark", "args": {"index": 13} },
+                    { "command": "select_bookmark", "args": {"index": 14} },
+                    { "command": "select_bookmark", "args": {"index": 15} }
+                ]
+            },
+            { "caption": "-" },
+            { "command": "move_to", "args": {"to": "brackets"}, "caption": "Перейти до парної дужки" }
+        ]
+    },
+    {
+        "caption": "Інструменти",
+        "mnemonic": "І",
+        "id": "tools",
+        "children":
+        [
+            { "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Командна панель…" },
+            { "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Сніпети" },
+            { "caption": "-", "id": "build" },
+            {
+                "caption": "Система збірки",
+                "mnemonic": "u",
+                "children":
+                [
+                    { "command": "set_build_system", "args": { "file": "" }, "caption": "Автоматична", "checkbox": true },
+                    { "caption": "-" },
+                    { "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 2}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 3}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 4}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
+                    { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
+                    { "command": "$build_systems" },
+                    { "caption": "-" },
+                    { "command": "new_build_system", "caption": "Нова система збірки..." }
+                ]
+            },
+            { "command": "build", "caption": "Створити", "mnemonic": "B" },
+            { "command": "build", "caption": "Створити", "args": {"variant": "Run"}, "mnemonic": "R" },
+            { "command": "exec", "args": {"kill": true}, "caption": "Відмінити створення", "mnemonic": "C" },
+            {
+                "caption": "Результати створення",
+                "mnemonic": "R",
+                "children":
+                [
+                    { "command": "show_panel", "caption": "Показати/Сховати консоль", "args": {"panel": "output.exec"}, "caption": "Показати результати створення", "mnemonic": "S" },
+                    { "command": "next_result", "caption": "Наступний результат", "mnemonic": "N" },
+                    { "command": "prev_result", "caption": "Попередній результат", "mnemonic": "P" }
+                ]
+            },
+            { "command": "toggle_save_all_on_build", "caption": "Зберегти все після створення", "mnemonic": "A", "checkbox": true },
+            { "caption": "-", "id": "macros" },
+            { "command": "toggle_record_macro", "caption": "Почати/Зупинити запис макросу", "mnemonic": "M" },
+            { "command": "run_macro", "caption": "Запустити макрос", "mnemonic": "P" },
+            { "command": "save_macro", "caption": "Зберегти макрос…", "mnemonic": "v" },
+            {
+                "caption": "Макрос",
+                "children": [ { "command": "$macros" } ]
+            },
+            { "caption": "-" },
+            { "command": "new_plugin", "caption": "Новий плагін…" },
+            { "command": "new_snippet", "caption": "Новий сніпет…" },
+            { "caption": "-", "id": "end" }
+        ]
+    },
+    {
+        "caption": "Проект",
+        "id": "project",
+        "mnemonic": "p",
+        "children":
+        [
+            { "command": "prompt_open_project_or_workspace", "caption": "Відкрити проект…" },
+            { "command": "prompt_switch_project_or_workspace", "caption": "Перемкнути проект…" },
+            { "command": "prompt_select_workspace", "caption": "Швидко перемкнути проект…", "mnemonic": "S" },
+            {
+                "caption": "Нещодавно відкриті",
+                "children":
+                [
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 1 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 2 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 3 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 4 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 5 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
+                    { "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
+                    { "caption": "-" },
+                    { "command": "clear_recent_workspaces", "caption": "Очистить список" }
+                ]
+            },
+            { "caption": "-" },
+            { "command": "save_project_and_workspace_as", "caption": "Зберегти проект як…", "mnemonic": "A" },
+            { "command": "close_workspace", "caption": "Закрити проект", "mnemonic": "C" },
+            { "command": "open_file", "args": {"file": "${project}"}, "caption": "Редагувати проект" },
+            { "caption": "-" },
+            { "command": "new_window_for_project", "caption": "Новий робочий простір для проекту" },
+            { "command": "save_workspace_as", "caption": "Зберегти робочий простір як...", "mnemonic": "A" },
+            { "caption": "-" },
+            { "command": "prompt_add_folder", "caption": "Додати теку в проект…", "mnemonic": "d" },
+            { "command": "close_folder_list", "caption": "Видалити всі теки з проекту", "mnemonic": "m" },
+            { "command": "refresh_folder_list", "caption": "Оновити теки", "mnemonic": "e" },
+        ]
+    },
+    {
+        "caption": "Опції",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            { "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Перегляд плагінів…", "mnemonic": "B" },
+            { "caption": "-" },
+            { "command": "open_file", "args": {"file": "${packages}/Default/Preferences.sublime-settings"}, "caption": "Налаштування - за замовчуванням" },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/User/Preferences.sublime-settings",
+                    "contents": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by file type specific settings.\n{\n\t$0\n}\n"
+                },
+                "caption": "Налаштування - Користувача"
+            },
+            {
+                "caption": "Налаштування - Додатково",
+                "children":
+                [
+                    { "command": "open_file_settings", "caption": "Спеціальний синтаксис - Користувача" },
+                    {
+                        "command": "open_file", "args":
+                        {
+                            "file": "${packages}/User/Distraction Free.sublime-settings",
+                            "contents": "{\n\t$0\n}\n"
+                        },
+                        "caption": "Відсторонений режим - Користувача"
+                    }
+                ]
+            },
+            { "caption": "-" },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/Default/Default ($platform).sublime-keymap"
+                },
+                "caption": "Гарячі клавіші - По замовчуванню"
+            },
+            {
+                "command": "open_file", "args":
+                {
+                    "file": "${packages}/User/Default ($platform).sublime-keymap",
+                    "contents": "[\n\t$0\n]\n"
+                },
+                "caption": "Гарячі клавіші - Користувача"
+            },
+            { "caption": "-" },
+            {
+                "caption": "Розмір тексту",
+                "children":
+                [
+                    { "command": "increase_font_size", "caption": "Більший" },
+                    { "command": "decrease_font_size", "caption": "Менший" },
+                    { "caption": "-" },
+                    { "command": "reset_font_size", "caption": "Скинути" }
+                ]
+            },
+            {
+                "caption": "Кольорова схема",
+                "children": [ { "command": "$color_schemes" } ]
+            }
+        ]
+    },
+    {
+        "caption": "Довідка",
+        "mnemonic": "H",
+        "id": "help",
+        "children":
+        [
+            { "command": "open_url", "args": {"url": "http://www.sublimetext.com/docs/3/"}, "caption": "Документація" },
+            { "command": "open_url", "args": {"url": "http://twitter.com/sublimehq"}, "caption": "Twitter" },
+            { "command": "open_url", "args": {"url": "https://github.com/keedhost/sublime-text-3-uk_UA"}, "caption": "Сторінка українського перекладу" },
+            { "caption": "-" },
+            { "command": "purchase_license", "caption": "Придбати ліцензію"},
+            { "command": "show_license_window", "caption": "Ввести ліцензію" },
+            { "command": "remove_license", "caption": "Видалити ліцензію"},
+            { "caption": "-" },
+            { "command": "update_check", "caption": "Перевірити наявність оновлень…", "platform": "!Linux" },
+            { "command": "show_about_window", "caption": "Про програму...", "mnemonic": "A" }
+        ]
+    }
+]

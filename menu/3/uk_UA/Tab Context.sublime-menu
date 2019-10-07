@@ -1,0 +1,8 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрити" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрити неактивні" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрити вкладки праворуч" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "Новий файл" },
+	{ "command": "prompt_open_file", "caption": "Відкрити файл" }
+]

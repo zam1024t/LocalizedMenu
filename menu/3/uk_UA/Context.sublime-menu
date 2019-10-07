@@ -1,0 +1,13 @@
+[
+    { "command": "copy", "caption": "Копіювати" },
+    { "command": "cut", "caption": "Вирізати" },
+    { "command": "paste", "caption": "Вставити" },
+    { "caption": "-", "id": "selection" },
+    { "command": "select_all", "caption": "Виділити все" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_in_browser", "caption": "Відкрити в браузері" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Відкрити теку файла..." },
+    { "command": "copy_path", "caption": "Копіювати шлях до файла" },
+    { "command": "reveal_in_side_bar", "caption": "Показати в боковій панелі" },
+    { "caption": "-", "id": "end" }
+]

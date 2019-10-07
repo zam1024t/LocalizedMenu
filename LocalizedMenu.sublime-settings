@@ -1,6 +1,6 @@
 {
 	// locale code
-	// en|en_GB|en_US|zh|zh_CN|zh_TW|ru
+	// en|en_GB|en_US|zh|zh_CN|zh_TW|ru|uk_UA
 	"locale": "en",
 
 	// allow to find localized menu of similar version for current locale

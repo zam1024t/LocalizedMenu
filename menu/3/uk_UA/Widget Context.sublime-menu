@@ -1,0 +1,7 @@
+[
+    { "command": "copy", "caption": "Копіювати" },
+    { "command": "cut", "caption": "Вирізати" },
+    { "command": "paste", "caption": "Вставити" },
+    { "caption": "-" },
+    { "command": "select_all", "caption": "Виділити все" }
+]

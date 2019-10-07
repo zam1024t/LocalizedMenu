@@ -1,0 +1,4 @@
+[
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Видалити теку з проекту", "command": "remove_folder", "args": { "dirs": []} }
+]

@@ -13,6 +13,7 @@
 - hy [Հայերեն](readme/README.hy.md)
 - ru [Русский](readme/README.ru.md)
 - sv_SE [Svenska](readme/README.sv_SE.md)
+- uk_UA [Українська](README.uk_UA.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
 - zh_TW [繁体中文](readme/README.zh_TW.md)
 
@@ -85,6 +86,7 @@
 - hy Հայերեն *av [Arman High Foundation](https://github.com/ArmanHigh)*
 - ru Русский *av [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *av [H2SO4JB](https://github.com/H2SO4JB)*
+- uk_UA Українська *av [Andrii Kondratiev](https://github.com/keedhost)*
 - zh_CN 简体中文 *av [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *av [Zam](https://github.com/zam1024t)*
 
