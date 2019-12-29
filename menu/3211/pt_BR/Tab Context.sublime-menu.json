@@ -1,0 +1,8 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "Fechar" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Fechar Outras Abas" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Fechar Abas à Direita" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "Novo Arquivo" },
+	{ "command": "prompt_open_file", "caption": "Abrir Arquivo" }
+]

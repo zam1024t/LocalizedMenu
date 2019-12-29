@@ -1,0 +1,9 @@
+[
+    { "command": "clear_location", "caption": "Limpar" },
+    { "command": "add_directory", "caption": "Adicionar Pasta" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Adicionar Filtro de Inclusão" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Adicionar Filtro de Exclusão" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Adicionar Pastas Abertas" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Adicionar Arquivos Abertos" },
+    { "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Adicionar Arquivo Atual" },
+]
