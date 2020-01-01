@@ -10,7 +10,9 @@
 # README.md
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
+- fr_FR [Français](README.fr_FR.md)
 - hy [Հայերեն](README.hy.md)
+- pt_BR [Português do Brasil](README.pt_BR.md)
 - ru [Русский](README.ru.md)
 - sv_SE [Svenska](README.sv_SE.md)
 - zh_CN [简体中文](README.zh_CN.md)

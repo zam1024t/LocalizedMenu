@@ -8,13 +8,15 @@
 - Automatisk uppackning av nybyggda engelska menyer
 
 # README.md
-- en [English](README.md)
-- es_ES [Español](readme/README.es_ES.md)
-- hy [Հայերեն](readme/README.hy.md)
-- ru [Русский](readme/README.ru.md)
-- sv_SE [Svenska](readme/README.sv_SE.md)
-- zh_CN [简体中文](readme/README.zh_CN.md)
-- zh_TW [繁体中文](readme/README.zh_TW.md)
+- en [English](../README.md)
+- es_ES [Español](README.es_ES.md)
+- fr_FR [Français](README.fr_FR.md)
+- hy [Հայերեն](README.hy.md)
+- pt_BR [Português do Brasil](README.pt_BR.md)
+- ru [Русский](README.ru.md)
+- sv_SE [Svenska](README.sv_SE.md)
+- zh_CN [简体中文](README.zh_CN.md)
+- zh_TW [繁体中文](README.zh_TW.md)
 
 # Detta projekt är också värd hos
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
@@ -82,7 +84,9 @@
 
 # Språk & Bidragsgivare
 - es_ES Español *av [Dastillero](https://github.com/dap39)*
+- fr_FR Français *av [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *av [Arman High Foundation](https://github.com/ArmanHigh)*
+- pt Português do Brasil *av [JNylson](https://github.com/jnylson)*
 - ru Русский *av [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *av [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *av [Zam](https://github.com/zam1024t)*
