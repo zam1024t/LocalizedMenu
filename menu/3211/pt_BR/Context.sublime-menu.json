@@ -1,0 +1,23 @@
+[
+    { "command": "open_context_url" },
+    { "command": "context_goto_definition", "caption": "Ir para Definição" },
+    { "caption": "-", "id": "diff" },
+    { "command": "toggle_inline_diff" , "caption": "Mostrar Pedaço de Diferente" },
+    { "caption": "-", "id": "clipboard" },
+    { "command": "cut" , "caption": "Recortar" },
+    { "command": "copy" , "caption": "Copiar" },
+    { "command": "paste" , "caption": "Colar" },
+    { "caption": "-", "id": "selection" },
+    { "command": "select_all" , "caption": "Selecionar Todos" },
+    { "caption": "-", "id": "repo_commands" },
+    { "caption": "Abrir Repositório Git…", "command": "sublime_merge_open_repo" },
+    { "caption": "Histórico de Arquivo…", "command": "sublime_merge_file_history" },
+    { "caption": "Histórico da Linha…", "command": "sublime_merge_line_history" },
+    { "caption": "Blame File…", "command": "sublime_merge_blame_file" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_in_browser", "caption": "Abrir no Navegador" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Abrir Conteúdo da Pasta…" },
+    { "command": "copy_path", "caption": "Copiar Caminho do Arquivo" },
+    { "command": "reveal_in_side_bar", "caption": "Revelar na Barra Lateral" },
+    { "caption": "-", "id": "end" }
+]

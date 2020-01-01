@@ -1,0 +1,72 @@
+[
+	{
+		"id": "preferences",
+		"children": [
+			{
+				"id": "package-settings",
+				"caption": "Configurações do Pacotes",
+				"children":
+				[
+					{
+						"caption": "LocalizedMenu",
+						"children":
+						[
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Configurações - Padrão"
+							},
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Configurações - Usuário"
+							},
+							{ "caption": "-" }
+						]
+					}
+				]
+			},
+			{ "caption": "-" },
+			{
+				"id": "locales",
+				"caption": "Idiomas", "mnemonic": "I",
+				"children": [
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "detect"
+						},
+						"caption": "Detectar"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "reset"
+						},
+						"caption": "Redefinir"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "add"
+						},
+						"caption": "Adicionar"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "submit"
+						},
+						"caption": "Enviar"
+					},
+					{ "caption": "-" }
+				]
+			},
+			{ "caption": "-" }
+		]
+	}
+]

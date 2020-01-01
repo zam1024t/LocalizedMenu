@@ -1,0 +1,7 @@
+[
+    { "command": "cut" },
+    { "command": "copy" },
+    { "command": "paste" },
+    { "caption": "-" },
+    { "command": "select_all" }
+]
