@@ -5,17 +5,18 @@ Localize Tool & Localized Menu para Sublime Text 2/3 Usuário Final
 - Suporte a múltipla versão/plataforma
 - Suporte a compartilhamento de menus comuns
 - Backup automático de menus locais
-- Auto descompactar novas build de menus em inglês
+- Descompacta automáticamente novas build de menus em inglês
 
 # README.md
-- en [English](README.md)
-- es_ES [Español](readme/README.es_ES.md)
-- hy [Հայերեն](readme/README.hy.md)
-- pt_BR [Português do Brasil](readme/README.pt_BR.md)
-- ru [Русский](readme/README.ru.md)
-- sv_SE [Svenska](readme/README.sv_SE.md)
-- zh_CN [简体中文](readme/README.zh_CN.md)
-- zh_TW [繁体中文](readme/README.zh_TW.md)
+- en [English](../README.md)
+- es_ES [Español](README.es_ES.md)
+- fr_FR [Français](README.fr_FR.md)
+- hy [Հայերեն](README.hy.md)
+- pt_BR [Português do Brasil](README.pt_BR.md)
+- ru [Русский](README.ru.md)
+- sv_SE [Svenska](README.sv_SE.md)
+- zh_CN [简体中文](README.zh_CN.md)
+- zh_TW [繁体中文](README.zh_TW.md)
 
 # Este projeto também está hospedado em
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
@@ -44,7 +45,7 @@ Localize Tool & Localized Menu para Sublime Text 2/3 Usuário Final
 # Uso
 - Alterne no menu
 	- via `Preference` -> `Languages`
-- Alterne no painel de comando
+- Alterne na paleta de comando
 	- `Ctrl+Shift+P`, digite `lmxx`(*xx* é o código local) para alternar
 
 # Adicionar um Idioma
@@ -73,16 +74,17 @@ Localize Tool & Localized Menu para Sublime Text 2/3 Usuário Final
 	> caption： nome da linguagem, código local irá adicionar extramente<br>
 	> mnemonic： atalho, opcional, certifique-se de contê-lo em caption, diferencia maiúscula e minúscula
 
-# Enviar um idioma
+# Enviar um Idioma
 - nome do local deve ser nomeado como `<languageCode>` ou `<languageCode>_<countryCode>`
-	- `<languageCode>` lowercase, `<countryCode>` uppercase, (ignore this if work on local)
-	- Language: http://www.wikipedia.org/wiki/ISO_639-1
-	- Country: http://www.wikipedia.org/wiki/ISO_3166-1
-- Fork repo
-- Make pull request
+	- `<languageCode>` minúscula, `<countryCode>` maiúscula, (ignore isso se trabalhar localmente)
+	- Language: https://www.wikipedia.org/wiki/ISO_639-1
+	- Country: https://www.wikipedia.org/wiki/ISO_3166-1
+- Fork o repositório
+- Faça um pull request
 
 # Idiomas e Colaboradores
 - es_ES Español *por [Dastillero](https://github.com/dap39)*
+- fr_FR Français *por [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *por [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *por [JNylson](https://github.com/jnylson)*
 - ru Русский *por [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
