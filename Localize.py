@@ -322,7 +322,7 @@ def init():
 		open(fFile, 'wt').write('')
 		locale = getSetting('locale', '')
 	eDir = os.path.join(mDir, version, 'en');
-	if v == '3' and not os.path.isdir(eDir):
+	if v >= '3' and not os.path.isdir(eDir):
 		eFile = sublime.executable_path();
 		dFile = os.path.join(os.path.dirname(eFile), 'Packages', 'Default.sublime-package');
 		unpackMenu(dFile, eDir);

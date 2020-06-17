@@ -1,5 +1,5 @@
 # LocalizedMenu
-Localize Tool & Localized Menu for Sublime Text 2/3 End User
+Localize Tool & Localized Menu for Sublime Text 2/3/4-Alpha End User
 
 - Provide a easy way to add new languages
 - Support multiple version/platform
