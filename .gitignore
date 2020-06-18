@@ -1,6 +1,7 @@
 
 *.sublime-commands
 *.sublime-menu
+*backup/
 
 .firstRun
 .lastRun
