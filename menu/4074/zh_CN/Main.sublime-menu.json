@@ -11,11 +11,11 @@
 			{ "command": "prompt_open_folder", "caption": "打开文件夹…", "platform": "!OSX" },
 			{ "command": "prompt_open", "caption": "打开…", "platform": "OSX" },
 			{
-				"caption": "打开历史记录",
+				"caption": "最近打开的文件/文件夹",
 				"mnemonic": "R",
 				"children":
 				[
-					{ "command": "reopen_last_file", "caption": "重新打开关闭的文件" },
+					{ "command": "reopen_last_file", "caption": "重新打开已关闭的文件" },
 					{ "caption": "-" },
 					{ "command": "open_recent_file", "args": {"index": 0 } },
 					{ "command": "open_recent_file", "args": {"index": 1 } },
@@ -47,7 +47,7 @@
 				]
 			},
 			{
-				"caption": "重新用...编码打开",
+				"caption": "指定编码方式打开",
 				"children":
 				[
 					{ "caption": "UTF-8", "command": "reopen", "args": {"encoding": "utf-8" } },
@@ -89,7 +89,7 @@
 			{ "command": "clone_file", "caption": "克隆文件", "mnemonic": "e" },
 			{ "command": "save", "args": {"async": true}, "caption": "保存", "mnemonic": "S" },
 			{
-				"caption": "以...编码保存",
+				"caption": "指定编码方式保存",
 				"children":
 				[
 					{ "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
@@ -323,7 +323,7 @@
 			{ "command": "invert_selection", "caption": "反向选择" },
 			{ "caption": "-" },
 			{ "command": "select_all", "caption": "选择全部" },
-			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "Expand Selection" },
+			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "扩展选区" },			
 			{ "command": "expand_selection", "args": {"to": "line"}, "caption": "选择至整行" },
 			{ "command": "find_under_expand", "caption": "选择至单词" },
 			{ "command": "expand_selection_to_paragraph", "caption": "选择至段落" },
@@ -482,7 +482,7 @@
 				"caption": "分组",
 				"children":
 				[
-					{ "command": "new_pane", "caption": "文件移到新组" },
+					{ "command": "new_pane", "caption": "移动文件到新组" },
 					{ "command": "new_pane", "args": {"move": false}, "caption": "新建组" },
 					{ "command": "close_pane", "caption": "关闭组" },
 
@@ -809,7 +809,7 @@
 			{ "command": "prompt_switch_project_or_workspace", "caption": "切换项目…" },
 			{ "command": "prompt_select_workspace", "caption": "快速切换项目…", "mnemonic": "S" },
 			{
-				"caption": "最近项目",
+				"caption": "最近打开的项目",
 				"children":
 				[
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
@@ -905,7 +905,7 @@
 		[
 			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/3/"}, "caption": "官方文档" },
 			{ "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "官方Twitter" },
-			{ "command": "open_url", "args": {"url": "https://i.rexdf.org"}, "caption": "汉化 by Rexdf" },
+			{ "command": "open_url", "args": {"url": "https://github.com/maboloshi/sublime-text-chinese"}, "caption": "汉化 by maboloshi" },
 			{ "caption": "-" },
 			{ "command": "show_progress_window", "caption": "索引状态…" },
 			{ "caption": "-" },
