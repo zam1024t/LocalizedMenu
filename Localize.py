@@ -308,7 +308,7 @@ def plugin_loaded():
 
 def init():
 	absDir = os.path.dirname(os.path.abspath(__file__))
-	if v == '3' and os.path.isfile(absDir):
+	if os.path.isfile(absDir):
 		pkgDir = os.path.join(sublime.packages_path(), pName);
 		if not os.path.isdir(pkgDir):
 			unpackSelf(absDir, pkgDir)
@@ -322,7 +322,7 @@ def init():
 		open(fFile, 'wt').write('')
 		locale = getSetting('locale', '')
 	eDir = os.path.join(mDir, version, 'en');
-	if v == '3' and not os.path.isdir(eDir):
+	if not os.path.isdir(eDir):
 		eFile = sublime.executable_path();
 		dFile = os.path.join(os.path.dirname(eFile), 'Packages', 'Default.sublime-package');
 		unpackMenu(dFile, eDir);
