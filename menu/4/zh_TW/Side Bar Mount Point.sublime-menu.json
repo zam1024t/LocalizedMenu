@@ -1,0 +1,4 @@
+[
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "從項目中移除文件夾", "command": "remove_folder", "args": { "dirs": []} }
+]

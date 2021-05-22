@@ -1,0 +1,5 @@
+[
+    { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows (CRLF)", "checkbox": true },
+    { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix (LF)", "checkbox": true },
+    { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS X (CR)", "checkbox": true }
+]

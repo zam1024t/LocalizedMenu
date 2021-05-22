@@ -1,0 +1,10 @@
+[
+    { "command": "clear_location", "caption": "清除当前路径" },
+    { "command": "add_directory", "caption": "添加搜索文件夹" },
+    { "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "添加包括过滤(通配符)" },
+    { "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "添加排除过滤(通配符)" },
+    { "command": "add_where_snippet", "args": {"snippet": "<project filters>"}, "caption": "添加排除过滤项目" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "添加打开的文件夹" },
+    { "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "添加打开的文件" },
+    { "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "添加当前文件" },
+]

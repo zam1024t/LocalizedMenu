@@ -1,0 +1,13 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "关闭" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "关闭其它选项卡" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "关闭右侧选项卡" },
+	{ "command": "close_unmodified", "args": { "group": -1, "index": -1 }, "caption": "关闭未改" },
+	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "关闭右侧未改" },
+	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "关闭已删" },
+	{ "caption": "-" },
+	{ "command": "clone_file", "args": { "add_to_selection": true, "group": -1, "index": -1 }, "caption": "拆分视图" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "新建文件" },
+	{ "command": "prompt_open_file", "caption": "打开文件" }
+]
