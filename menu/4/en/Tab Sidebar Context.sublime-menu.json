@@ -1,0 +1,11 @@
+[
+	{ "command": "close_selected", "args": { "group": -1 }, "caption": "Close" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Close Others" },
+	{ "command": "close_unmodified", "args": { "group": -1, "index": -1 }, "caption": "Close Unmodified" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Close Others Below" },
+	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Close Unmodified Below" },
+	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "Close Deleted Files" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "New File" },
+	{ "command": "prompt_open_file", "caption": "Open File" }
+]
