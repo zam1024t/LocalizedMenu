@@ -1,5 +1,5 @@
 # LocalizedMenu
-LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](https://www.sublimetext.com)終端用戶(非git用戶/非開發者)設計，用來做菜單多語言化(漢化)的簡單易用工具，包含各種語言菜單。
+LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3/4](https://www.sublimetext.com)終端用戶(非git用戶/非開發者)設計，用來做菜單多語言化(漢化)的簡單易用工具，包含各種語言菜單。
 
 - 提供了一個簡單快捷添加多語言的途徑
 - 支持多種語言/多個版本/多個平臺同時使用
@@ -20,8 +20,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3](http
 
 # 本項目同時托管在
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
-- [OSC開源中國](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
+- [Gitee](https://gitee.com/zam1024t/LocalizedMenu)
 
 *主要是為了方便中國大陸的用戶，GitHub有時訪問會慢。*
 

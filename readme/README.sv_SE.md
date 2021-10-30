@@ -1,5 +1,5 @@
 # LocalizedMenu
-Översättningsverktyg & Översättningsmeny för Sublime Text 2/3 slutanvändare
+Översättningsverktyg & Översättningsmeny för Sublime Text 2/3/4 slutanvändare
 
 - Erbjuder ett enkelt sätt att lägga till nya språk
 - Stödjer flera versioner/plattformar
@@ -20,8 +20,7 @@
 
 # Detta projekt är också värd hos
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
-- [OSC开源中国](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
+- [Gitee](https://gitee.com/zam1024t/LocalizedMenu)
 
 # Skärmdumpar
 #### Fungerar i Windows

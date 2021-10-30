@@ -1,5 +1,5 @@
 # LocalizedMenu
-Տեղայնացման գործիք և տեղայնացված ընտրացուցակ Sublime Text 2/3 վերջնական օգտվողի համար
+Տեղայնացման գործիք և տեղայնացված ընտրացուցակ Sublime Text 2/3/4 վերջնական օգտվողի համար
 
 - Տրամադրված է նոր լեզուներ ավելացնելու հեշտ եղանակ
 - Մի քանի տարբերակների/հարթակների օժանդակում
@@ -20,8 +20,7 @@
 
 # Այս նախագիծը նաև ներկայացված է այստեղ՝
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
-- [OSC开源中国](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
+- [Gitee](https://gitee.com/zam1024t/LocalizedMenu)
 
 # Էկրանահաններ
 #### Աշխատանքը Windows-ում

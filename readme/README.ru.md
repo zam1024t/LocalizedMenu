@@ -1,5 +1,5 @@
 # LocalizedMenu
-Инструмент локализации и локализованное меню для Sublime Text 2/3  Для конечного пользователя
+Инструмент локализации и локализованное меню для Sublime Text 2/3/4  Для конечного пользователя
 
 - Обеспечен простой способ добавления новых языков
 - Поддержка нескольких версий/платформ
@@ -20,8 +20,7 @@
 
 # Этот проект также размещен на
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
-- [OSC开源中国](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
+- [Gitee](https://gitee.com/zam1024t/LocalizedMenu)
 
 # Скриншоты
 #### Работа в Windows

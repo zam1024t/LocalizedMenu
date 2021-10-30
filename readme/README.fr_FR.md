@@ -1,5 +1,5 @@
 # LocalizedMenu
-Outil de localisation et menu localisé pour l'utilisateur final de Sublime Text 2/3
+Outil de localisation et menu localisé pour l'utilisateur final de Sublime Text 2/3/4
 
 - Fournit un moyen facile d’ajouter de nouvelles langues
 - Support de plusieurs versions/plateformes
@@ -20,8 +20,7 @@ Outil de localisation et menu localisé pour l'utilisateur final de Sublime Text
 
 # Ce projet est aussi hébergé sur
 - [GitHub](https://github.com/zam1024t/LocalizedMenu)
-- [OSC开源中国](https://git.oschina.net/zam1024t/LocalizedMenu)
-- [Coding.net](https://coding.net/u/zam1024t/p/LocalizedMenu/git)
+- [Gitee](https://gitee.com/zam1024t/LocalizedMenu)
 
 # Captures
 #### Fonctionne sur Windows
