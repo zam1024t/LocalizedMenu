@@ -43,22 +43,11 @@ read -p "Start set shots for oschina... (press any key to continue, wait 9s)" -t
 git push osc master -f
 sed -i 's/<br>//g' *.md
 sed -i 's/<br>//g' readme/*.md
-sed -i 's/raw.githubusercontent.com\/zam1024t\/LocalizedMenu/git.oschina.net\/zam1024t\/LocalizedMenu\/raw/g' *.md
-sed -i 's/raw.githubusercontent.com\/zam1024t\/LocalizedMenu/git.oschina.net\/zam1024t\/LocalizedMenu\/raw/g' readme/*.md
+sed -i 's/raw.githubusercontent.com\/zam1024t\/LocalizedMenu/gitee.com\/zam1024t\/LocalizedMenu\/raw/g' *.md
+sed -i 's/raw.githubusercontent.com\/zam1024t\/LocalizedMenu/gitee.com\/zam1024t\/LocalizedMenu\/raw/g' readme/*.md
 git commit -m"set shots for oschina" .
 git push osc master
 read -p "set shots for oschina, Done. (press any key to continue, wait 9s)" -t 9 -n 1
-
-# push to coding
-git reset $lastcommit
-git checkout .
-read -p "Start set shots for coding... (press any key to continue, wait 9s)" -t 9 -n 1
-git push coding master -f
-sed -i 's/raw.githubusercontent.com\/zam1024t\/LocalizedMenu/coding.net\/u\/zam1024t\/p\/LocalizedMenu\/git\/raw/g' *.md
-sed -i 's/raw.githubusercontent.com\/zam1024t\/LocalizedMenu/coding.net\/u\/zam1024t\/p\/LocalizedMenu\/git\/raw/g' readme/*.md
-git commit -m"set shots for coding" .
-git push coding master
-read -p "set shots for coding, Done. (press any key to continue, wait 9s)" -t 9 -n 1
 
 # clean changes
 git reset $lastcommit
