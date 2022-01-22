@@ -8,6 +8,7 @@ Outil de localisation et menu localisé pour l'utilisateur final de Sublime Text
 - Décompactage automatique des nouveaux menus en anglais
 
 # README.md
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
@@ -86,6 +87,7 @@ Outil de localisation et menu localisé pour l'utilisateur final de Sublime Text
 - Faîtes votre pull request
 
 # Locales & Contributors
+- de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*

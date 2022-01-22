@@ -1,0 +1,9 @@
+[
+    {"caption": "URL öffnen", "command": "open_context_url"},
+    {"caption": "-"},
+    {"caption": "Ausschneiden", "command": "cut"},
+    {"caption": "Kopieren", "command": "copy"},
+    {"caption": "Einfügen", "command": "paste"},
+    {"caption": "-"},
+    {"caption": "Alles auswählen", "command": "select_all"}
+]

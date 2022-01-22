@@ -1,0 +1,25 @@
+// Kontextmenü im Editorfenster
+[
+    { "command": "open_context_url"},
+    { "caption": "Gehe zu Definition", "command": "goto_definition" },
+    { "caption": "-", "id": "diff"},
+    { "caption": "Änderungen: Original anzeigen/ausblenden", "command": "toggle_inline_diff"},
+    { "caption": "Änderungen: Auf Original zurücksetzen", "command": "revert_hunk" },
+    { "caption": "-", "id": "clipboard"},
+    { "caption": "Ausschneiden", "command": "cut" },
+    { "caption": "Kopieren", "command": "copy" },
+    { "caption": "Einfügen", "command": "paste" },
+    { "caption": "-", "id": "selection"},
+    { "caption": "Alles auswählen", "command": "select_all" },
+    { "caption": "-", "id": "repo_commands"},
+    { "caption": "Git-Repository öffnen…", "command": "sublime_merge_open_repo" },
+    { "caption": "Datei-History…", "command": "sublime_merge_file_history" },
+    { "caption": "Zeilen-History…", "command": "sublime_merge_line_history" },
+    { "caption": "Dateiänderungen nachverfolgen…", "command": "sublime_merge_blame_file" },
+    { "caption": "-", "id": "file"},
+    { "caption": "Im Browser öffnen", "command": "open_in_browser" },
+    { "caption": "Im Finder anzeigen…", "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+    { "caption": "Dateipfad kopieren", "command": "copy_path"},
+    { "caption": "In Seitenleiste anzeigen", "command": "reveal_in_side_bar"},
+    { "caption": "-", "id": "end"}
+]

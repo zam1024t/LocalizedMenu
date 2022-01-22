@@ -1,0 +1,14 @@
+// Kontextmenü über Reitern
+[
+    {"caption": "Schließen", "args": {"group": -1, "index": -1 }, "command": "close_by_index"},
+    {"caption": "Schließen: andere Tabs", "args": {"group": -1, "index": -1 }, "command": "close_others_by_index"},
+    {"caption": "Schließen: andere Tabs rechts", "args": {"group": -1, "index": -1 }, "command": "close_to_right_by_index"},
+    {"caption": "Schließen: unveränderte Tabs", "args": {"group": -1 }, "command": "close_unmodified"},
+    {"caption": "Schließen: unveränderte Tabs rechts", "args": {"group": -1, "index": -1 }, "command": "close_unmodified_to_right_by_index"},
+    {"caption": "Schließen: Tabs mit gelöschten Dateien", "args": {"group": -1 }, "command": "close_deleted_files"},
+    {"caption": "-"},
+    {"caption": "Anzeige aufteilen", "args": {"add_to_selection": true, "index": -1, "group": -1 }, "command": "clone_file"},
+    {"caption": "-"},
+    {"caption": "Neue Datei", "command": "new_file"},
+    {"caption": "Datei öffnen…", "command": "prompt_open_file"}
+]

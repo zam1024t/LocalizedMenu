@@ -8,6 +8,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3/4](ht
 - 支持自动生成新版本的英文菜单
 
 # README.md同时有以下语言的版本
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
@@ -85,6 +86,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3/4](ht
 - 添加的语言翻译后提交pull request
 
 # 语言及贡献者
+- de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*

@@ -1,0 +1,12 @@
+// Kontextmenü in linker Seitenleiste
+[
+    {"caption": "Schließen", "args": {"group": -1 }, "command": "close_selected"},
+    {"caption": "Schließen: andere Dateien", "args": {"group": -1, "index": -1 }, "command": "close_others_by_index"},
+    {"caption": "Schließen: andere Dateien darunter", "args": {"group": -1, "index": -1 }, "command": "close_to_right_by_index"},
+    {"caption": "Schließen: unveränderte Dateien", "args": {"group": -1, "index": -1 }, "command": "close_unmodified"},
+    {"caption": "Schließen: unveränderte Dateien darunter", "args": {"group": -1, "index": -1 }, "command": "close_unmodified_to_right_by_index"},
+    {"caption": "Schließen: gelöschte Dateien", "args": {"group": -1 }, "command": "close_deleted_files"},
+    {"caption": "-"},
+    {"caption": "Neue Datei", "command": "new_file"},
+    {"caption": "Datei öffnen…", "command": "prompt_open_file"}
+]

@@ -1,0 +1,18 @@
+// Einzugmenü unten links im Fenster
+[
+    {"caption": "Einzug mit Leerzeichen", "checkbox": true, "args": {"setting": "translate_tabs_to_spaces"}, "command": "toggle_setting"},
+    {"caption": "-"},
+    {"caption": "Einzugbreite: 1", "checkbox": true, "args": {"setting": "tab_size", "value": 1 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 2", "checkbox": true, "args": {"setting": "tab_size", "value": 2 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 3", "checkbox": true, "args": {"setting": "tab_size", "value": 3 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 4", "checkbox": true, "args": {"setting": "tab_size", "value": 4 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 5", "checkbox": true, "args": {"setting": "tab_size", "value": 5 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 6", "checkbox": true, "args": {"setting": "tab_size", "value": 6 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 7", "checkbox": true, "args": {"setting": "tab_size", "value": 7 }, "command": "set_setting"},
+    {"caption": "Einzugbreite: 8", "checkbox": true, "args": {"setting": "tab_size", "value": 8 }, "command": "set_setting"},
+    {"caption": "-"},
+    {"caption": "Einzug aus Inhalt ermitteln", "command": "detect_indentation"},
+    {"caption": "-"},
+    {"caption": "Einzug umwandeln in Leerzeichen", "args": {"set_translate_tabs": true }, "command": "expand_tabs"},
+    {"caption": "Einzug umwandeln in Tabstopps", "args": {"set_translate_tabs": true }, "command": "unexpand_tabs"}
+]
