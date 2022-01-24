@@ -1,0 +1,18 @@
+[
+    {"caption": "Neue Datei", "args": {"dirs": []}, "command": "new_file_at"},
+    {"caption": "Datei umbenennen…", "args": {"paths": [] }, "command": "rename_path"},
+    {"caption": "Datei löschen", "args": {"files": [], "prompt": false }, "command": "delete_file"},
+    {"caption": "Ordner öffnen…", "args": {"dirs": [] }, "command": "open_folder"},
+    {"caption": "Unterordner öffnen…", "args": {"files": [] }, "command": "open_containing_folder"},
+    {"caption": "Link-Quelle anzeigen", "args": {"dirs": [] }, "command": "reveal_link_source"},
+    {"caption": "-", "id": "repo_commands"},
+    {"caption": "Git-Repository öffnen…", "args": {"paths": [] }, "command": "sublime_merge_open_repo"},
+    {"caption": "Datei-Historie…", "args": {"files": [] }, "command": "sublime_merge_file_history"},
+    {"caption": "Ordner-Historie…", "args": {"paths": [] }, "command": "sublime_merge_folder_history"},
+    {"caption": "Dateiänderungen nachverfolgen…", "args": {"files": [] }, "command": "sublime_merge_blame_file"},
+    {"caption": "-", "id": "folder_commands"},
+    {"caption": "Neuer Ordner…", "args": {"dirs": [] }, "command": "new_folder"},
+    {"caption": "Ordner löschen", "args": {"prompt": true, "dirs": [] }, "command": "delete_folder"},
+    {"caption": "Im Ordner suchen…", "args": {"dirs": [] }, "command": "find_in_folder"},
+    {"caption": "-", "id": "end"}
+]

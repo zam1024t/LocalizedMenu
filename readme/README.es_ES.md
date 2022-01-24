@@ -8,6 +8,7 @@ Herramienta de traducción & menú traducido para usuarios finales de Sublime Te
 - Desempaquetado automático de nuevas builds de los menús en inglés
 
 # README.md
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
@@ -82,6 +83,7 @@ Herramienta de traducción & menú traducido para usuarios finales de Sublime Te
 - Enviar pull request
 
 # Idiomas & Contribuyentes
+- de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*

@@ -8,6 +8,7 @@
 - Автоматическая распаковка новых английских меню
 
 # README.md
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
@@ -83,8 +84,11 @@
 - Сделать запрос на pull request
 
 # Переводчики & Участники
+- de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
+- fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
+- pt Português do Brasil *por [JNylson](https://github.com/jnylson)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*

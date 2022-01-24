@@ -1,0 +1,11 @@
+// Drei-Punkte-Button (...) im Menü "In Dateien suchen..."
+[
+    {"caption": "Löschen", "command": "clear_location"},
+    {"caption": "Ordner hinzufügen", "command": "add_directory"},
+    {"caption": "Include-Filter hinzufügen", "args": {"snippet": "*.${0:txt}"}, "command": "add_where_snippet"},
+    {"caption": "Exclude-Filter hinzufügen", "args": {"snippet": "-*.${0:txt}"}, "command": "add_where_snippet"},
+    {"caption": "Projekt-Filter hinzufügen", "args": {"snippet": "<project filters>"}, "command": "add_where_snippet"},
+    {"caption": "Geöffnete Ordner hinzufügen", "args": {"snippet": "<open folders>"}, "command": "add_where_snippet"},
+    {"caption": "Geöffnete Dateien hinzufügen", "args": {"snippet": "<open files>"}, "command": "add_where_snippet"},
+    {"caption": "Aktuelle Datei hinzufügen", "args": {"snippet": "<current file>"}, "command": "add_where_snippet"}
+]

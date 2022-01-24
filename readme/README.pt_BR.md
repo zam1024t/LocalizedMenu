@@ -8,6 +8,7 @@ Localize Tool & Localized Menu para Sublime Text 2/3/4 Usuário Final
 - Descompacta automáticamente novas build de menus em inglês
 
 # README.md
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
@@ -82,6 +83,7 @@ Localize Tool & Localized Menu para Sublime Text 2/3/4 Usuário Final
 - Faça um pull request
 
 # Idiomas e Colaboradores
+- de_DE Deutsch *por [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *por [Dastillero](https://github.com/dap39)*
 - fr_FR Français *por [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *por [Arman High Foundation](https://github.com/ArmanHigh)*

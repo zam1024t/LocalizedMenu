@@ -1,0 +1,5 @@
+[
+    {"caption": "Windows-Zeilenende (CRLF)", "args": {"type": "windows"}, "command": "set_line_ending", "checkbox": true },
+    {"caption": "Unix-Zeilenende (LF)", "args": {"type": "unix"}, "command": "set_line_ending", "checkbox": true },
+    {"caption": "Mac OS 9-Zeilenende (CR)", "args": {"type": "cr"}, "command": "set_line_ending", "checkbox": true }
+]

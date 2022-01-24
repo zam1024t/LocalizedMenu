@@ -8,6 +8,7 @@
 - Automatisk uppackning av nybyggda engelska menyer
 
 # README.md
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
@@ -82,6 +83,7 @@
 - Gör en Pull request
 
 # Språk & Bidragsgivare
+- de_DE Deutsch *av [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *av [Dastillero](https://github.com/dap39)*
 - fr_FR Français *av [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *av [Arman High Foundation](https://github.com/ArmanHigh)*

@@ -8,9 +8,12 @@ Localize Tool & Localized Menu for Sublime Text 2/3/4 End User
 - Auto unpack new build english menus
 
 # README.md
+- de_DE [Deutsch](readme/README.de_DE.md)
 - en [English](README.md)
 - es_ES [Español](readme/README.es_ES.md)
+- fr_FR [Français](readme/README.fr_FR.md)
 - hy [Հայերեն](readme/README.hy.md)
+- pt_BR [Português do Brasil](readme/README.pt_BR.md)
 - ru [Русский](readme/README.ru.md)
 - sv_SE [Svenska](readme/README.sv_SE.md)
 - zh_CN [简体中文](readme/README.zh_CN.md)
@@ -74,14 +77,17 @@ Localize Tool & Localized Menu for Sublime Text 2/3/4 End User
 # Submit A Language
 - locale name must be named as `<languageCode>` or `<languageCode>_<countryCode>`
 	- `<languageCode>` lowercase, `<countryCode>` uppercase, (ignore this if work on local)
-	- Language: http://www.wikipedia.org/wiki/ISO_639-1
-	- Country: http://www.wikipedia.org/wiki/ISO_3166-1
+	- Language: https://www.wikipedia.org/wiki/ISO_639-1
+	- Country: https://www.wikipedia.org/wiki/ISO_3166-1
 - Fork repo
 - Make pull request
 
 # Locales & Contributors
+- de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
+- fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
+- pt Português do Brasil *by [JNylson](https://github.com/jnylson)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*
