@@ -1,0 +1,13 @@
+[
+    {
+        "caption": "-", 
+        "id": "folder_commands"
+    }, 
+    {
+        "caption": "Retirer le dossier du projet",
+        "command": "remove_folder", 
+        "args": {
+            "dirs": []
+        }
+    }
+]

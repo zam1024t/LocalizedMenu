@@ -1,0 +1,17 @@
+[
+    {
+        "command": "cut", "caption": "Couper"
+    }, 
+    {
+        "command": "copy", "caption": "Copier"
+    }, 
+    {
+        "command": "paste", "caption": "Coller"
+    }, 
+    {
+        "caption": "-"
+    }, 
+    {
+        "command": "select_all", "caption": "Tout sélectionner"
+    }
+]

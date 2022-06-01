@@ -1,0 +1,45 @@
+[
+    {
+        "caption": "Effacer",
+        "command": "clear_location"
+    }, 
+    {
+        "caption": "Ajouter un dossier",
+        "command": "add_directory"
+    }, 
+    {
+        "caption": "Ajouter un filtre d'inclusion",
+        "command": "add_where_snippet", 
+        "args": {
+            "snippet": "*.${0:txt}"
+        }
+    }, 
+    {
+        "caption": "Ajouter un filtre d'exclusion",
+        "command": "add_where_snippet", 
+        "args": {
+            "snippet": "-*.${0:txt}"
+        }
+    }, 
+    {
+        "caption": "Ajouter les dossiers ouverts",
+        "command": "add_where_snippet", 
+        "args": {
+            "snippet": "<open folders>"
+        }
+    }, 
+    {
+        "caption": "Ajouter les fichiers ouverts",
+        "command": "add_where_snippet", 
+        "args": {
+            "snippet": "<open files>"
+        }
+    }, 
+    {
+        "caption": "Ajouter le fichier courant",
+        "command": "add_where_snippet", 
+        "args": {
+            "snippet": "<current file>"
+        }
+    }
+]
