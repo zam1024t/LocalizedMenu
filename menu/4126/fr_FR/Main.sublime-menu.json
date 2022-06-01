@@ -7,8 +7,8 @@
         [
             { "command": "new_file", "caption": "Nouveau fichier", "mnemonic": "N" },
 
-            { "command": "prompt_open_file", "caption": "Ouvrir fichier…", "mnemonic": "O", "platform": "!OSX" },
-            { "command": "prompt_open_folder", "caption": "Ouvrir dossier…", "platform": "!OSX" },
+            { "command": "prompt_open_file", "caption": "Ouvrir un fichier…", "mnemonic": "O", "platform": "!OSX" },
+            { "command": "prompt_open_folder", "caption": "Ouvrir un dossier…", "platform": "!OSX" },
             { "command": "prompt_open", "caption": "Ouvrir…", "platform": "OSX" },
             {
                 "caption": "Ouvrir un fichier récent",
