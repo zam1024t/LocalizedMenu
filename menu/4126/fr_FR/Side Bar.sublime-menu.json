@@ -28,7 +28,7 @@
         }
     }, 
     {
-        "caption": "Révéler le lien source", 
+        "caption": "Révéler la source du lien", 
         "command": "reveal_link_source", 
         "args": {
             "dirs": []
@@ -53,7 +53,7 @@
         }
     }, 
     {
-        "caption": "Trouver dans le dossier…", 
+        "caption": "Rechercher dans le dossier…", 
         "command": "find_in_folder", 
         "args": {
             "dirs": []
