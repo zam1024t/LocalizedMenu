@@ -147,7 +147,7 @@
             { "command": "close_window", "caption": "Fermer la fenêtre" },
             { "caption": "-", "id": "close" },
             { "command": "close", "caption": "Fermer le fichier", "mnemonic": "F" },
-            { "command": "revert", "caption": "Rouvrir le fichier depuis le disque", "mnemonic": "d" },
+            { "command": "revert", "caption": "Recharger le fichier depuis le disque", "mnemonic": "d" },
             { "command": "close_all", "caption": "Fermer tous les fichiers" },
             { "caption": "-", "id": "exit" },
             { "command": "exit", "caption": "Quitter", "mnemonic": "Q", "platform": "Windows" },
