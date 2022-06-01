@@ -11,6 +11,7 @@
         "id": "diff"
     }, 
     {
+        "caption": "Afficher/Masquer la modification",
         "command": "toggle_inline_diff"
     }, 
     {
