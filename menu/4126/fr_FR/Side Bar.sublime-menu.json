@@ -28,7 +28,7 @@
         }
     }, 
     {
-        "caption": "Révéler la source du lien", 
+        "caption": "Montrer la source du lien", 
         "command": "reveal_link_source", 
         "args": {
             "dirs": []
