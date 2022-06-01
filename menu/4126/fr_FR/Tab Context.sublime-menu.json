@@ -31,7 +31,7 @@
         "command": "new_file"
     }, 
     {
-        "caption": "Ouvrir fichier",
+        "caption": "Ouvrir un fichier",
         "command": "prompt_open_file"
     }
 ]
