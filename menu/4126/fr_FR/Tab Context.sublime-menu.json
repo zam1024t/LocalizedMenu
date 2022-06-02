@@ -1,0 +1,37 @@
+[
+    {
+        "caption": "Fermer",
+        "command": "close_by_index", 
+        "args": {
+            "group": -1, 
+            "index": -1
+        }
+    }, 
+    {
+        "caption": "Fermer les autres onglets",
+        "command": "close_others_by_index", 
+        "args": {
+            "group": -1, 
+            "index": -1
+        }
+    }, 
+    {
+        "caption": "Fermer les onglets à droite",
+        "command": "close_to_right_by_index", 
+        "args": {
+            "group": -1, 
+            "index": -1
+        }
+    }, 
+    {
+        "caption": "-"
+    }, 
+    {
+        "caption": "Nouveau fichier",
+        "command": "new_file"
+    }, 
+    {
+        "caption": "Ouvrir un fichier",
+        "command": "prompt_open_file"
+    }
+]

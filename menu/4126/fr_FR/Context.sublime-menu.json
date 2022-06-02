@@ -1,0 +1,89 @@
+[
+    {
+        "command": "open_context_url"
+    }, 
+    {
+        "caption": "Aller à la définition",
+        "command": "context_goto_definition"
+    }, 
+    {
+        "caption": "-", 
+        "id": "diff"
+    }, 
+    {
+        "caption": "Afficher/Masquer la modification",
+        "command": "toggle_inline_diff"
+    }, 
+    {
+        "caption": "-", 
+        "id": "clipboard"
+    }, 
+    {
+        "caption": "Couper",
+        "command": "cut"
+    }, 
+    {
+        "caption": "Copier",
+        "command": "copy"
+    }, 
+    {
+        "caption": "Coller",
+        "command": "paste"
+    }, 
+    {
+        "caption": "-", 
+        "id": "selection"
+    }, 
+    {
+        "caption": "Tout sélectionner",
+        "command": "select_all"
+    }, 
+    {
+        "caption": "-", 
+        "id": "repo_commands"
+    }, 
+    {
+        "caption": "Ouvrir le dépôt Git…",
+        "command": "sublime_merge_open_repo"
+    }, 
+    {
+        "caption": "Historique du fichier…",
+        "command": "sublime_merge_file_history"
+    }, 
+    {
+        "caption": "Historique de la ligne…",
+        "command": "sublime_merge_line_history"
+    }, 
+    {
+        "caption": "Commande 'blame'…",
+        "command": "sublime_merge_blame_file"
+    }, 
+    {
+        "caption": "-", 
+        "id": "file"
+    }, 
+    {
+        "caption": "Ouvrir dans le navigateur",
+        "command": "open_in_browser"
+    }, 
+    {
+        "caption": "Ouvrir le dossier parent…",
+        "command": "open_dir", 
+        "args": {
+            "dir": "$file_path", 
+            "file": "$file_name"
+        }
+    }, 
+    {
+        "caption": "Copier le chemin du fichier",
+        "command": "copy_path"
+    }, 
+    {
+        "caption": "Montrer dans le panneau latéral",
+        "command": "reveal_in_side_bar"
+    }, 
+    {
+        "caption": "-", 
+        "id": "end"
+    }
+]
