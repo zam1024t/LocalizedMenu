@@ -88,7 +88,7 @@
 - fr_FR Français *av [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *av [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *av [JNylson](https://github.com/jnylson)*
-- ru Русский *av [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
+- ru Русский *av [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*
 - sv_SE Svenska *av [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *av [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *av [Zam](https://github.com/zam1024t)*

@@ -88,7 +88,7 @@ Localize Tool & Localized Menu para Sublime Text 2/3/4 Usuário Final
 - fr_FR Français *por [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *por [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *por [JNylson](https://github.com/jnylson)*
-- ru Русский *por [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh)*
+- ru Русский *por [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*
 - sv_SE Svenska *por [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *por [Zam](https://github.com/zam1024t)*
 - zh_TW 繁体中文 *por [Zam](https://github.com/zam1024t)*
