@@ -1,0 +1,26 @@
+[
+    {
+        "caption": "Окончания строк Windows (CRLF)",
+        "checkbox": true,
+        "command": "set_line_ending",
+        "args": {
+            "type": "windows"
+        }
+    },
+    {
+        "caption": "Окончания строк Unix (LF)",
+        "checkbox": true,
+        "command": "set_line_ending",
+        "args": {
+            "type": "unix"
+        }
+    },
+    {
+        "caption": "Окончания строк Mac OS 9 (CR)",
+        "checkbox": true,
+        "command": "set_line_ending",
+        "args": {
+            "type": "cr"
+        }
+    }
+]
