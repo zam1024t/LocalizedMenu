@@ -93,7 +93,7 @@
             { "command": "clone_file", "caption": "Cloner", "mnemonic": "e" },
             { "command": "save", "caption": "Enregistrer", "mnemonic": "s" },
             {
-                "caption": "Enregistrer avec encodage",
+                "caption": "Enregistrer avec l'encodage",
                 "id": "save_with_encoding",
                 "children":
                 [
@@ -163,7 +163,7 @@
             { "command": "undo",  "caption": "Annuler", "mnemonic": "A" },
             { "command": "redo_or_repeat", "caption": "Rétablir", "mnemonic": "R" },
             {
-                "caption": "Annuler la sélection",
+                "caption": "Manipulation de la sélection",
                 "children":
                 [
                     { "command": "soft_undo", "caption": "Annuler" },
@@ -684,8 +684,8 @@
             { "command": "next_modification", "caption": "Prochaine modification" },
             { "command": "prev_modification", "caption": "Précédente modification" },
             { "caption": "-" },
-            { "command": "jump_back", "caption": "Précédent" },
-            { "command": "jump_forward", "caption": "Suivant" },
+            { "command": "jump_back", "caption": "Naviguer en arrière" },
+            { "command": "jump_forward", "caption": "Naviguer en avant" },
             { "caption": "-" },
             {
                 "caption": "Changer de fichier",
@@ -891,14 +891,14 @@
                 },
                 "caption": "Préférences"
             },
-            { "command": "edit_syntax_settings", "caption": "Préférences - Spécifiques à la syntaxe" },
+            { "command": "edit_syntax_settings", "caption": "Préférences – Spécifiques à la syntaxe" },
             {
                 "command": "edit_settings", "args":
                 {
                     "base_file": "${packages}/Default/Distraction Free.sublime-settings",
                     "default": "{\n\t$0\n}\n"
                 },
-                "caption": "Préférences - Mode sans distraction"
+                "caption": "Préférences – Mode sans distraction"
             },
             { "caption": "-" },
             {
