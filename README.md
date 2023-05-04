@@ -36,7 +36,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3/4 End User
 	- install [Package Control](https://packagecontrol.io/installation)
 	- search for `LocalizedMenu`
 - Manually
-	- donwload [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)，unpack to `Packages`，then rename `LocalizedMenu-master` to `LocalizedMenu`
+	- download [master.zip](https://github.com/zam1024t/LocalizedMenu/archive/master.zip)，unpack to `Packages`，then rename `LocalizedMenu-master` to `LocalizedMenu`
 	- git clone to `Packages`
 	```
 	git clone https://github.com/zam1024t/LocalizedMenu
