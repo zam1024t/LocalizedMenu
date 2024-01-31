@@ -686,7 +686,7 @@
 			{ "command": "goto_symbol_in_project", "caption": "Ir a un Símbolo en el Proyecto…" },
 			{ "command": "goto_definition", "caption": "Ir a una Definición…" },
 			{ "command": "goto_reference", "caption": "Ir a una Referencia…" },
-			// { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ir a la Palabra…" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Ir a una Línea…" },
 			{ "caption": "-" },
 			{ "command": "next_modification", "caption": "Siguiente Modificación" },
