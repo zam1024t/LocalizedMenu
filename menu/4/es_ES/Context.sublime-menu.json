@@ -1,5 +1,5 @@
 [
-	{ "command": "open_context_url", "caption": "Abrir" },
+	{ "command": "open_context_url", "caption": "Abrir enlace" },
 	{ "command": "goto_definition", "caption": "Ir a la definición" },
 	{ "caption": "-", "id": "diff" },
 	{ "command": "toggle_inline_diff", "caption": "Alternar Vista de Cambios" },

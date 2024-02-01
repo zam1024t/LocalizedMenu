@@ -1,5 +1,5 @@
 [
-	{ "command": "open_context_url", "caption": "Abrir" },
+	{ "command": "open_context_url", "caption": "Abrir enlace" },
 	{ "caption": "-" },
 	{ "command": "cut", "caption": "Cortar" },
 	{ "command": "copy", "caption": "Copiar" },
