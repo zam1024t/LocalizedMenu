@@ -1,18 +1,18 @@
 [
 	{
 		"caption": "Archivo",
-		"mnemonic": "F",
+		"mnemonic": "A",
 		"id": "file",
 		"children":
 		[
 			{ "command": "new_file", "caption": "Nuevo Archivo", "mnemonic": "N" },
 
-			{ "command": "prompt_open_file", "caption": "Abrir Archivo…", "mnemonic": "O", "platform": "!OSX" },
+			{ "command": "prompt_open_file", "caption": "Abrir Archivo…", "mnemonic": "A", "platform": "!OSX" },
 			{ "command": "prompt_open_folder", "caption": "Abrir Carpeta…", "platform": "!OSX" },
 			{ "command": "prompt_open", "caption": "Abrir…", "platform": "OSX" },
 			{
 				"caption": "Abiertos recientemente",
-				"mnemonic": "R",
+				"mnemonic": "r",
 				"children":
 				[
 					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Reabrir archivo cerrado" },
@@ -91,8 +91,8 @@
 					{ "caption": "Hexadecimal", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Dividir la Vista", "mnemonic": "e" },
-			{ "command": "save", "args": {"async": true}, "caption": "Guardar", "mnemonic": "S" },
+			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Dividir la Vista", "mnemonic": "D" },
+			{ "command": "save", "args": {"async": true}, "caption": "Guardar", "mnemonic": "G" },
 			{
 				"caption": "Guardar con la codificación",
 				"id": "save_with_encoding",
@@ -141,19 +141,19 @@
 					{ "caption": "Hexadecimal", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "prompt_save_as", "caption": "Guardar como…", "mnemonic": "A" },
-			{ "command": "save_all", "caption": "Guardar todo", "mnemonic": "l" },
-			{ "command": "html_print", "caption": "Imprimir…", "mnemonic": "P" },
+			{ "command": "prompt_save_as", "caption": "Guardar como…", "mnemonic": "c" },
+			{ "command": "save_all", "caption": "Guardar todo", "mnemonic": "t" },
+			{ "command": "html_print", "caption": "Imprimir…", "mnemonic": "I" },
 			{ "caption": "-", "id": "window" },
-			{ "command": "new_window", "caption": "Nueva Ventana", "mnemonic": "W" },
+			{ "command": "new_window", "caption": "Nueva Ventana", "mnemonic": "N" },
 			{ "command": "close_window", "caption": "Cerrar Ventana" },
 			{ "caption": "-", "id": "close" },
 			{ "command": "close", "caption": "Cerrar Archivo", "mnemonic": "C" },
 			{ "command": "revert", "caption": "Revertir Archivo", "mnemonic": "v" },
 			{ "command": "close_all", "caption": "Cerrar Todos los Archivos" },
 			{ "caption": "-", "id": "exit" },
-			{ "command": "exit", "caption": "Salir", "mnemonic": "x", "platform": "Windows" },
-			{ "command": "exit", "caption": "Salir", "mnemonic": "Q", "platform": "Linux" },
+			{ "command": "exit", "caption": "Salir", "mnemonic": "S", "platform": "Windows" },
+			{ "command": "exit", "caption": "Cerrar", "mnemonic": "C", "platform": "Linux" },
 		]
 	},
 	{
@@ -303,7 +303,7 @@
 			{ "command": "auto_complete", "caption": "Mostrar Completaciones" },
 			{ "caption": "-", "id": "permute" },
 
-			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Clasificar Líneas", "mnemonic": "S" },
+			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Clasificar Líneas", "mnemonic": "L" },
 			{ "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Clasificar líneas (Sensible al “Case”)" },
 			{
 				"caption": "Permutar Líneas",
@@ -381,7 +381,7 @@
 	},
 	{
 		"caption": "Buscar",
-		"mnemonic": "i",
+		"mnemonic": "B",
 		"id": "find",
 		"children":
 		[
@@ -442,7 +442,7 @@
 			{ "caption": "-", "id": "groups" },
 			{
 				"caption": "Diseño",
-				"mnemonic": "L",
+				"mnemonic": "D",
 				"id": "layout",
 				"children":
 				[
@@ -566,7 +566,7 @@
 			},
 			{
 				"caption": "Grupos en foco",
-				"mnemonic": "F",
+				"mnemonic": "f",
 				"children":
 				[
 
@@ -635,7 +635,7 @@
 				]
 			},
 			{ "caption": "-", "id": "Ajustes" },
-			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Envoltura de Palabras", "mnemonic": "W", "checkbox": true },
+			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Envoltura de Palabras", "mnemonic": "P", "checkbox": true },
 			{
 				"caption": "Columna de Envoltura de Palabras",
 				"children":
@@ -676,17 +676,17 @@
 	},
 	{
 		"caption": "Ir a",
-		"mnemonic": "G",
+		"mnemonic": "I",
 		"id": "goto",
 		"children":
 		[
-			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Ir a lo que sea…", "mnemonic": "A" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Ir a lo que sea…", "mnemonic": "a" },
 			{ "caption": "-" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Ir a un Símbolo…" },
 			{ "command": "goto_symbol_in_project", "caption": "Ir a un Símbolo en el Proyecto…" },
 			{ "command": "goto_definition", "caption": "Ir a una Definición…" },
 			{ "command": "goto_reference", "caption": "Ir a una Referencia…" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ir a la Palabra…" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ir a la palabra…" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Ir a una Línea…" },
 			{ "caption": "-" },
 			{ "command": "next_modification", "caption": "Siguiente Modificación" },
@@ -697,7 +697,7 @@
 			{ "caption": "-" },
 			{
 				"caption": "Cambiar Archivo",
-				"mnemonic": "t",
+				"mnemonic": "C",
 				"id": "switch_file",
 				"children":
 				[
@@ -707,7 +707,7 @@
 					{ "command": "next_view_in_stack", "caption": "Siguiente Archivo de la Pila" },
 					{ "command": "prev_view_in_stack", "caption": "Archivo Anterior de la Pila" },
 					{ "caption": "-" },
-					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Cambiar Cabecera/Implementación", "mnemonic": "H" },
+					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Cambiar Cabecera/Implementación", "mnemonic": "C" },
 					{ "caption": "-" },
 					{ "command": "select_by_index", "args": { "index": 0 } },
 					{ "command": "select_by_index", "args": { "index": 1 } },
@@ -724,7 +724,7 @@
 			{ "caption": "-" },
 			{
 				"caption": "Desplazamiento",
-				"mnemonic": "S",
+				"mnemonic": "D",
 				"id": "scroll",
 				"children":
 				[
@@ -735,7 +735,7 @@
 			},
 			{
 				"caption": "Marcadores",
-				"mnemonic": "B",
+				"mnemonic": "M",
 				"id": "bookmarks",
 				"children":
 				[
@@ -769,7 +769,7 @@
 	},
 	{
 		"caption": "Herramientas",
-		"mnemonic": "T",
+		"mnemonic": "H",
 		"id": "tools",
 		"children":
 		[
@@ -809,16 +809,16 @@
 				"mnemonic": "R",
 				"children":
 				[
-					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Mostrar los resultados de la construcción", "mnemonic": "S" },
+					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Mostrar los resultados de la construcción", "mnemonic": "l" },
 					{ "command": "next_result", "mnemonic": "N" },
-					{ "command": "prev_result", "caption": "Resultado Anterior", "mnemonic": "P" }
+					{ "command": "prev_result", "caption": "Resultado Anterior", "mnemonic": "R" }
 				]
 			},
-			{ "command": "toggle_save_all_on_build", "caption": "Guardar todo en la Construcción", "mnemonic": "A", "checkbox": true },
+			{ "command": "toggle_save_all_on_build", "caption": "Guardar todo en la Construcción", "mnemonic": "e", "checkbox": true },
 			{ "caption": "-", "id": "macros" },
 			{ "command": "toggle_record_macro", "mnemonic": "M" },
-			{ "command": "run_macro", "caption": "Macro de Reproducción", "mnemonic": "P" },
-			{ "command": "save_macro", "caption": "Guardar en una Macro…", "mnemonic": "v" },
+			{ "command": "run_macro", "caption": "Macro de Reproducción", "mnemonic": "M" },
+			{ "command": "save_macro", "caption": "Guardar en una Macro…", "mnemonic": "G" },
 			{
 				"caption": "Macros",
 				"children": [ { "command": "$macros" } ]
@@ -852,7 +852,7 @@
 		[
 			{ "command": "prompt_open_project_or_workspace", "caption": "Abrir Proyecto…" },
 			{ "command": "prompt_switch_project_or_workspace", "caption": "Cambiar Proyecto…" },
-			{ "command": "prompt_select_workspace", "caption": "Cambiar Rápido de Proyecto…", "mnemonic": "S" },
+			{ "command": "prompt_select_workspace", "caption": "Cambiar Rápido de Proyecto…", "mnemonic": "P" },
 			{
 				"caption": "Abrir Recientes",
 				"children":
@@ -871,15 +871,15 @@
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "save_project_and_workspace_as", "caption": "Guardar Proyecto Como…", "mnemonic": "A" },
+			{ "command": "save_project_and_workspace_as", "caption": "Guardar Proyecto Como…", "mnemonic": "P" },
 			{ "command": "close_workspace", "caption": "Cerrar Proyecto", "mnemonic": "C" },
 			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Editar Proyecto" },
 			{ "caption": "-" },
 			{ "command": "new_window_for_project", "caption": "Nuevo Espacio de Trabajo Para el Proyecto" },
-			{ "command": "save_workspace_as", "caption": "Guardar Espacio de Trabajo Como…", "mnemonic": "A" },
+			{ "command": "save_workspace_as", "caption": "Guardar Espacio de Trabajo Como…", "mnemonic": "E" },
 			{ "caption": "-" },
-			{ "command": "prompt_add_folder", "caption": "Añadir Carpeta al Proyecto…", "mnemonic": "d" },
-			{ "command": "close_folder_list", "caption": "Borrar Todas las Carpetas del Proyecto", "mnemonic": "m" },
+			{ "command": "prompt_add_folder", "caption": "Añadir Carpeta al Proyecto…", "mnemonic": "a" },
+			{ "command": "close_folder_list", "caption": "Borrar Todas las Carpetas del Proyecto", "mnemonic": "B" },
 			{ "command": "refresh_folder_list", "caption": "Refrescar Carpetas", "mnemonic": "e" },
 		]
 	},
@@ -959,7 +959,7 @@
 	},
 	{
 		"caption": "Ayuda",
-		"mnemonic": "H",
+		"mnemonic": "A",
 		"id": "help",
 		"children":
 		[
