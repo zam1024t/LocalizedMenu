@@ -620,7 +620,7 @@
 					{ "command": "detect_indentation", "caption": "Detectar la configuración de indentación" },
 					{ "caption": "-" },
 					{ "command": "expand_tabs", "caption": "Convertir la Indentación en Espacios", "args": {"set_translate_tabs": true} },
-					{ "command": "unexpand_tabs", "caption": "Convertir Indentación en Tabulaciones", "args": {"set_translate_tabs": true} }
+					{ "command": "unexpand_tabs", "caption": "Convertir la Indentación en Tabulaciones", "args": {"set_translate_tabs": true} }
 				]
 			},
 			{

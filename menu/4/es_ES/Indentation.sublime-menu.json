@@ -1,5 +1,5 @@
 [
-	{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Alternar Indentación Con Espacios", "checkbox": true },
+	{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Alternar Indentación con espacios", "checkbox": true },
 	{ "caption": "-" },
 	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Ancho del tabulador: 1", "checkbox": true },
 	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Ancho del tabulador: 2", "checkbox": true },
@@ -13,5 +13,5 @@
 	{ "command": "detect_indentation", "caption": "Detectar la configuración de indentación" },
 	{ "caption": "-" },
 	{ "command": "expand_tabs", "caption": "Convertir la Indentación en Espacios", "args": {"set_translate_tabs": true} },
-	{ "command": "unexpand_tabs", "caption": "Convertir Indentación en Tabulaciones", "args": {"set_translate_tabs": true} }
+	{ "command": "unexpand_tabs", "caption": "Convertir la Indentación en Tabulaciones", "args": {"set_translate_tabs": true} }
  ]
