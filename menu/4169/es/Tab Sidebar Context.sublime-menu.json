@@ -1,0 +1,14 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "Cerrar Pestaña" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Cerrar Otras Pestañas" },
+	{ "caption": "-" },
+	{ "command": "close_selected", "args": {"group":-1, "index": -1}, "caption": "Cerrar Pestañas Seleccionadas" },
+	{ "command": "close_unselected", "args": {"group": -1, "index": -1}, "caption": "Cerrar Pestañas No Seleccionadas" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Cerrar Pestañas Inferiores" },
+	{ "command": "close_unmodified", "args": { "group": -1, "index": -1 }, "caption": "Cerrar Pestañas Sin Modificar" },
+	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Cerrar Pestañas Inferiores Sin Modificar" },
+	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "Cerrar Pestañas Con el Archivo Borrado" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "Nuevo Archivo" },
+	{ "command": "prompt_open_file", "caption": "Abrir Archivo" }
+]

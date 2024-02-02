@@ -1,0 +1,19 @@
+[
+	{ "caption": "Nuevo Archivo", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "Renombrar…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "Borrar Archivo", "command": "delete_file", "args": {"files": [], "prompt": false} },
+	{ "caption": "Abrir Carpeta…", "command": "open_folder", "args": {"dirs": []} },
+	{ "caption": "Abrir Carpeta Contenedora…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "Copiar Ruta", "command": "copy_path_sidebar", "args": {"paths": []} },
+	{ "caption": "Revelar enlace de la fuente", "command": "reveal_link_source", "args": {"dirs": []} },
+	{ "caption": "-", "id": "repo_commands" },
+	{ "caption": "Abrir Repositorio Git…", "command": "sublime_merge_open_repo", "args": {"paths": []}},
+	{ "caption": "Historial de Archivos…", "command": "sublime_merge_file_history", "args": {"files": []}},
+	{ "caption": "Historial de carpetas…", "command": "sublime_merge_folder_history", "args": {"paths": []}},
+	{ "caption": "Archivo Blame…", "command": "sublime_merge_blame_file", "args": {"files": []}},
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Nueva Carpeta…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "Borrar Carpeta", "command": "delete_folder", "args": {"dirs": [], "prompt": true} },
+	{ "caption": "Buscar en la Carpeta…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]
