@@ -84,8 +84,8 @@
 
 # Språk & Bidragsgivare
 - de_DE Deutsch *av [Standarduser](https://github.com/Standarduser)*
-- es_ES Español España *by [Dastillero](https://github.com/dap39)*
-- es Español Neutro *by [Christopher](https://t.me/Azriel_7589)*
+- es_ES Español*by [Dastillero](https://github.com/dap39)*
+- es Español *by [Christopher](https://t.me/Azriel_7589)*
 - fr_FR Français *av [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *av [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *av [JNylson](https://github.com/jnylson)*

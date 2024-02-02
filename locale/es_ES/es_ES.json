@@ -1,6 +1,7 @@
 
 {
 	"hidden": false,
-	"caption": "Español España",
-	"mnemonic": "E"
+	"caption": "Español",
+	"mnemonic": "e",
+    "link": "es"
 }
