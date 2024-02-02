@@ -84,7 +84,8 @@ Localize Tool & Localized Menu para Usuário Final do Sublime Text 2/3/4
 
 # Idiomas e Colaboradores
 - de_DE Deutsch *por [Standarduser](https://github.com/Standarduser)*
-- es_ES Español *por [Dastillero](https://github.com/dap39)*
+- es_ES Español España *by [Dastillero](https://github.com/dap39)*
+- es Español Neutro *by [Christopher](https://t.me/Azriel_7589)*
 - fr_FR Français *por [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *por [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *por [JNylson](https://github.com/jnylson)*

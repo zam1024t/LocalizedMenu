@@ -87,7 +87,8 @@ LocalizedMenu(Localize Tool & Localized Menu)是一個為[Sublime Text 2/3/4](ht
 
 # 語言及貢獻者
 - de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
-- es_ES Español *by [Dastillero](https://github.com/dap39)*
+- es_ES Español España *by [Dastillero](https://github.com/dap39)*
+- es Español Neutro *by [Christopher](https://t.me/Azriel_7589)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *by [JNylson](https://github.com/jnylson)*

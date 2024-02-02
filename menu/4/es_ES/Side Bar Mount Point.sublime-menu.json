@@ -1,4 +1,0 @@
-[
-	{ "caption": "-", "id": "folder_commands" },
-	{ "caption": "Cerrar Carpeta", "command": "remove_folder", "args": { "dirs": []} }
-]
