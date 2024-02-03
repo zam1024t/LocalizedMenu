@@ -85,11 +85,11 @@
 
 # Переводчики & Участники
 - de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
-- es_ES Español*by [Dastillero](https://github.com/dap39)*
 - es Español *by [Christopher](https://t.me/Azriel_7589)*
+- es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
-- pt Português do Brasil *por [JNylson](https://github.com/jnylson)*
+- pt Português do Brasil *by [JNylson](https://github.com/jnylson)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*
 - sv_SE Svenska *by [H2SO4JB](https://github.com/H2SO4JB)*
 - zh_CN 简体中文 *by [Zam](https://github.com/zam1024t)*

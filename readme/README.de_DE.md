@@ -84,8 +84,8 @@
 
 # Sprachen & Mitwirkende
 - de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
-- es_ES Español*by [Dastillero](https://github.com/dap39)*
 - es Español *by [Christopher](https://t.me/Azriel_7589)*
+- es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *by [JNylson](https://github.com/jnylson)*
