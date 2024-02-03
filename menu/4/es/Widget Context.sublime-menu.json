@@ -1,0 +1,9 @@
+[
+	{ "command": "open_context_url", "caption": "Abrir enlace" },
+	{ "caption": "-" },
+	{ "command": "cut", "caption": "Cortar" },
+	{ "command": "copy", "caption": "Copiar" },
+	{ "command": "paste", "caption": "Pegar" },
+	{ "caption": "-" },
+	{ "command": "select_all", "caption": "Seleccionar Todo" }
+]

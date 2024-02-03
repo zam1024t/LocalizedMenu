@@ -84,6 +84,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3/4 End User
 
 # Locales & Contributors
 - de_DE Deutsch *by [Standarduser](https://github.com/Standarduser)*
+- es Español *by [Christopher](https://t.me/Azriel_7589)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
