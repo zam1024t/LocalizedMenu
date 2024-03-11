@@ -194,7 +194,6 @@
       },
       {
         "caption": "Переоткрыть в кодировке",
-        "id": "reopen_with_encoding",
         "children": [
           {
             "caption": "UTF-8",
@@ -221,10 +220,45 @@
             "caption": "-"
           },
           {
-            "caption": "Arabic (ISO 8859-6)",
+            "caption": "Western (Windows 1252)",
             "command": "reopen",
             "args": {
-              "encoding": "Arabic (ISO 8859-6)"
+              "encoding": "Western (Windows 1252)"
+            }
+          },
+          {
+            "caption": "Western (ISO 8859-1)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Western (ISO 8859-1)"
+            }
+          },
+          {
+            "caption": "Western (ISO 8859-3)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Western (ISO 8859-3)"
+            }
+          },
+          {
+            "caption": "Western (ISO 8859-15)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Western (ISO 8859-15)"
+            }
+          },
+          {
+            "caption": "Western (Mac Roman)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Western (Mac Roman)"
+            }
+          },
+          {
+            "caption": "DOS (CP 437)",
+            "command": "reopen",
+            "args": {
+              "encoding": "DOS (CP 437)"
             }
           },
           {
@@ -235,10 +269,10 @@
             }
           },
           {
-            "caption": "Baltic (ISO 8859-4)",
+            "caption": "Arabic (ISO 8859-6)",
             "command": "reopen",
             "args": {
-              "encoding": "Baltic (ISO 8859-4)"
+              "encoding": "Arabic (ISO 8859-6)"
             }
           },
           {
@@ -249,10 +283,24 @@
             }
           },
           {
+            "caption": "Baltic (ISO 8859-4)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Baltic (ISO 8859-4)"
+            }
+          },
+          {
             "caption": "Celtic (ISO 8859-14)",
             "command": "reopen",
             "args": {
               "encoding": "Celtic (ISO 8859-14)"
+            }
+          },
+          {
+            "caption": "Central European (Windows 1250)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Central European (Windows 1250)"
             }
           },
           {
@@ -270,17 +318,17 @@
             }
           },
           {
-            "caption": "Central European (Windows 1250)",
+            "caption": "Cyrillic (Windows 1251)",
             "command": "reopen",
             "args": {
-              "encoding": "Central European (Windows 1250)"
+              "encoding": "Cyrillic (Windows 1251)"
             }
           },
           {
-            "caption": "Chinese (GB18030)",
+            "caption": "Cyrillic (Windows 866)",
             "command": "reopen",
             "args": {
-              "encoding": "Chinese (GB18030)"
+              "encoding": "Cyrillic (Windows 866)"
             }
           },
           {
@@ -305,38 +353,10 @@
             }
           },
           {
-            "caption": "Cyrillic (Windows 1251)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Cyrillic (Windows 1251)"
-            }
-          },
-          {
-            "caption": "Cyrillic (Windows 866)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Cyrillic (Windows 866)"
-            }
-          },
-          {
-            "caption": "DOS (CP 437)",
-            "command": "reopen",
-            "args": {
-              "encoding": "DOS (CP 437)"
-            }
-          },
-          {
             "caption": "Estonian (ISO 8859-13)",
             "command": "reopen",
             "args": {
               "encoding": "Estonian (ISO 8859-13)"
-            }
-          },
-          {
-            "caption": "Greek (ISO 8859-7)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Greek (ISO 8859-7)"
             }
           },
           {
@@ -347,17 +367,10 @@
             }
           },
           {
-            "caption": "Hebrew (CP 862)",
+            "caption": "Greek (ISO 8859-7)",
             "command": "reopen",
             "args": {
-              "encoding": "Hebrew (CP 862)"
-            }
-          },
-          {
-            "caption": "Hebrew (ISO 8859-8)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Hebrew (ISO 8859-8)"
+              "encoding": "Greek (ISO 8859-7)"
             }
           },
           {
@@ -365,6 +378,13 @@
             "command": "reopen",
             "args": {
               "encoding": "Hebrew (Windows 1255)"
+            }
+          },
+          {
+            "caption": "Hebrew (ISO 8859-8)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Hebrew (ISO 8859-8)"
             }
           },
           {
@@ -382,13 +402,6 @@
             }
           },
           {
-            "caption": "Turkish (ISO 8859-9)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Turkish (ISO 8859-9)"
-            }
-          },
-          {
             "caption": "Turkish (Windows 1254)",
             "command": "reopen",
             "args": {
@@ -396,45 +409,17 @@
             }
           },
           {
+            "caption": "Turkish (ISO 8859-9)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Turkish (ISO 8859-9)"
+            }
+          },
+          {
             "caption": "Vietnamese (Windows 1258)",
             "command": "reopen",
             "args": {
               "encoding": "Vietnamese (Windows 1258)"
-            }
-          },
-          {
-            "caption": "Western (ISO 8859-1)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Western (ISO 8859-1)"
-            }
-          },
-          {
-            "caption": "Western (ISO 8859-15)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Western (ISO 8859-15)"
-            }
-          },
-          {
-            "caption": "Western (ISO 8859-3)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Western (ISO 8859-3)"
-            }
-          },
-          {
-            "caption": "Western (Mac Roman)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Western (Mac Roman)"
-            }
-          },
-          {
-            "caption": "Western (Windows 1252)",
-            "command": "reopen",
-            "args": {
-              "encoding": "Western (Windows 1252)"
             }
           },
           {
@@ -467,7 +452,6 @@
       },
       {
         "caption": "Сохранить в кодировке",
-        "id": "save_with_encoding",
         "children": [
           {
             "caption": "UTF-8",
@@ -521,11 +505,51 @@
             "caption": "-"
           },
           {
-            "caption": "Arabic (ISO 8859-6)",
+            "caption": "Western (Windows 1252)",
             "command": "save",
             "args": {
               "async": true,
-              "encoding": "Arabic (ISO 8859-6)"
+              "encoding": "Western (Windows 1252)"
+            }
+          },
+          {
+            "caption": "Western (ISO 8859-1)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Western (ISO 8859-1)"
+            }
+          },
+          {
+            "caption": "Western (ISO 8859-3)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Western (ISO 8859-3)"
+            }
+          },
+          {
+            "caption": "Western (ISO 8859-15)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Western (ISO 8859-15)"
+            }
+          },
+          {
+            "caption": "Western (Mac Roman)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Western (Mac Roman)"
+            }
+          },
+          {
+            "caption": "DOS (CP 437)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "DOS (CP 437)"
             }
           },
           {
@@ -537,11 +561,11 @@
             }
           },
           {
-            "caption": "Baltic (ISO 8859-4)",
+            "caption": "Arabic (ISO 8859-6)",
             "command": "save",
             "args": {
               "async": true,
-              "encoding": "Baltic (ISO 8859-4)"
+              "encoding": "Arabic (ISO 8859-6)"
             }
           },
           {
@@ -553,11 +577,27 @@
             }
           },
           {
+            "caption": "Baltic (ISO 8859-4)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Baltic (ISO 8859-4)"
+            }
+          },
+          {
             "caption": "Celtic (ISO 8859-14)",
             "command": "save",
             "args": {
               "async": true,
               "encoding": "Celtic (ISO 8859-14)"
+            }
+          },
+          {
+            "caption": "Central European (Windows 1250)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Central European (Windows 1250)"
             }
           },
           {
@@ -577,19 +617,19 @@
             }
           },
           {
-            "caption": "Central European (Windows 1250)",
+            "caption": "Cyrillic (Windows 1251)",
             "command": "save",
             "args": {
               "async": true,
-              "encoding": "Central European (Windows 1250)"
+              "encoding": "Cyrillic (Windows 1251)"
             }
           },
           {
-            "caption": "Chinese (GB18030)",
+            "caption": "Cyrillic (Windows 866)",
             "command": "save",
             "args": {
               "async": true,
-              "encoding": "Chinese (GB18030)"
+              "encoding": "Cyrillic (Windows 866)"
             }
           },
           {
@@ -617,43 +657,11 @@
             }
           },
           {
-            "caption": "Cyrillic (Windows 1251)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Cyrillic (Windows 1251)"
-            }
-          },
-          {
-            "caption": "Cyrillic (Windows 866)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Cyrillic (Windows 866)"
-            }
-          },
-          {
-            "caption": "DOS (CP 437)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "DOS (CP 437)"
-            }
-          },
-          {
             "caption": "Estonian (ISO 8859-13)",
             "command": "save",
             "args": {
               "async": true,
               "encoding": "Estonian (ISO 8859-13)"
-            }
-          },
-          {
-            "caption": "Greek (ISO 8859-7)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Greek (ISO 8859-7)"
             }
           },
           {
@@ -665,19 +673,11 @@
             }
           },
           {
-            "caption": "Hebrew (CP 862)",
+            "caption": "Greek (ISO 8859-7)",
             "command": "save",
             "args": {
               "async": true,
-              "encoding": "Hebrew (CP 862)"
-            }
-          },
-          {
-            "caption": "Hebrew (ISO 8859-8)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Hebrew (ISO 8859-8)"
+              "encoding": "Greek (ISO 8859-7)"
             }
           },
           {
@@ -686,6 +686,14 @@
             "args": {
               "async": true,
               "encoding": "Hebrew (Windows 1255)"
+            }
+          },
+          {
+            "caption": "Hebrew (ISO 8859-8)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Hebrew (ISO 8859-8)"
             }
           },
           {
@@ -705,14 +713,6 @@
             }
           },
           {
-            "caption": "Turkish (ISO 8859-9)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Turkish (ISO 8859-9)"
-            }
-          },
-          {
             "caption": "Turkish (Windows 1254)",
             "command": "save",
             "args": {
@@ -721,51 +721,19 @@
             }
           },
           {
+            "caption": "Turkish (ISO 8859-9)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Turkish (ISO 8859-9)"
+            }
+          },
+          {
             "caption": "Vietnamese (Windows 1258)",
             "command": "save",
             "args": {
               "async": true,
               "encoding": "Vietnamese (Windows 1258)"
-            }
-          },
-          {
-            "caption": "Western (ISO 8859-1)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Western (ISO 8859-1)"
-            }
-          },
-          {
-            "caption": "Western (ISO 8859-15)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Western (ISO 8859-15)"
-            }
-          },
-          {
-            "caption": "Western (ISO 8859-3)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Western (ISO 8859-3)"
-            }
-          },
-          {
-            "caption": "Western (Mac Roman)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Western (Mac Roman)"
-            }
-          },
-          {
-            "caption": "Western (Windows 1252)",
-            "command": "save",
-            "args": {
-              "async": true,
-              "encoding": "Western (Windows 1252)"
             }
           },
           {
@@ -1421,13 +1389,6 @@
       {
         "command": "expand_selection_to_paragraph",
         "caption": "Расширить выделение до Блок"
-      },
-      {
-        "command": "expand_selection_to_paragraph",
-        "args": {
-          "markup_aware": true
-        },
-        "caption": "Расширить выделение до Абзац"
       },
       {
         "command": "expand_selection",
@@ -3416,7 +3377,8 @@
       },
       {
         "command": "update_check",
-        "caption": "Проверить наличие обновлений…"
+        "caption": "Проверить наличие обновлений…",
+        "platform": "!Linux"
       },
       {
         "command": "show_changelog",

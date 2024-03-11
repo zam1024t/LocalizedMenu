@@ -1,0 +1,16 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрыть вкладку" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрыть другие вкладки" },
+	{ "caption": "-" },
+	{ "command": "close_selected", "args": {"group": -1, "index": -1}, "caption": "Закрыть выбранные вкладки" },
+	{ "command": "close_unselected", "args": {"group": -1, "index": -1}, "caption": "Закрыть другие вкладки" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрыть вкладки справа" },
+	{ "command": "close_unmodified", "args": { "group": -1, "index": -1 }, "caption": "Закрыть неизменённые вкладки" },
+	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Закрыть неизменённые вкладки справа" },
+	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "Закрыть вкладки чьи файлы удалены" },
+	{ "caption": "-" },
+	{ "command": "clone_file", "args": { "add_to_selection": true, "group": -1, "index": -1, "retain_viewport_position": true }, "caption": "Дублировать вкладку" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "Новый файл" },
+	{ "command": "prompt_open_file", "caption": "Открыть файл" },
+]
