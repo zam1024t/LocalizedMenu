@@ -31,6 +31,9 @@
         "children": [
           {
             "command": "reopen_last_file",
+            "args": {
+              "source": "window"
+            },
             "caption": "Открыть последний закрытый"
           },
           {
@@ -375,6 +378,13 @@
             }
           },
           {
+            "caption": "Nordic (Windows 865)",
+            "command": "reopen",
+            "args": {
+              "encoding": "Nordic (Windows 865)"
+            }
+          },
+          {
             "caption": "Romanian (ISO 8859-16)",
             "command": "reopen",
             "args": {
@@ -452,7 +462,8 @@
       {
         "command": "clone_file",
         "args": {
-          "add_to_selection": true
+          "add_to_selection": true,
+          "retain_viewport_position": true
         },
         "caption": "Дублировать активную вкладку",
         "mnemonic": "e"
@@ -694,6 +705,14 @@
             "args": {
               "async": true,
               "encoding": "Nordic (ISO 8859-10)"
+            }
+          },
+          {
+            "caption": "Nordic (Windows 865)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Nordic (Windows 865)"
             }
           },
           {
@@ -1230,6 +1249,37 @@
           {
             "command": "swap_case",
             "caption": "Инвертировать"
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "lowerCamelCase",
+            "args": {
+              "case": "title",
+              "first_case": "lower"
+            }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "UpperCamelCase",
+            "args": {
+              "case": "title"
+            }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "snake_case",
+            "args": {
+              "separator": "_",
+              "case": "lower"
+            }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "kebab-case",
+            "args": {
+              "separator": "-",
+              "case": "lower"
+            }
           }
         ]
       },
@@ -1413,6 +1463,13 @@
           "to": "line"
         },
         "caption": "Расширить выделение до Строка"
+      },
+      {
+        "command": "expand_selection",
+        "args": {
+          "to": "line_prev"
+        },
+        "caption": "Расширить выделение до Предыдущая строка"
       },
       {
         "command": "find_under_expand",
@@ -1676,9 +1733,11 @@
           {
             "command": "show_panel",
             "args": {
-              "panel": "output.find_results"
-            },
-            "caption": "Показать панель с результатами поиска"
+              "panel": "output.find_results",
+              "panel_name": "Панель результатов",
+              "toggle": true,
+              "toggle_when_not_focused": true
+            }
           },
           {
             "command": "next_result",
@@ -3009,10 +3068,10 @@
       },
       {
         "command": "build",
+        "caption": "Собрать с помощью…",
         "args": {
           "select": true
-        },
-        "caption": "Собрать с помощью…"
+        }
       },
       {
         "command": "cancel_build",
@@ -3025,10 +3084,10 @@
         "children": [
           {
             "command": "show_panel",
+            "caption": "Показать результаты сборки",
             "args": {
               "panel": "output.exec"
             },
-            "caption": "Показать результаты сборки",
             "mnemonic": "S"
           },
           {

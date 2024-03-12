@@ -1,0 +1,19 @@
+[
+	{"caption":"Новый файл","command":"new_file_at","args":{"dirs":[]}},
+	{"caption":"Переименовать…","command":"rename_path","args":{"paths":[]}},
+	{"caption":"Удалить файл","command":"delete_file","args":{"files":[],"prompt":false}},
+	{"caption":"Открыть папку…","command":"open_folder","args":{"dirs":[]}},
+	{"caption":"Открыть родительскую папку…","command":"open_containing_folder","args":{"files":[]}},
+	{"caption":"Скопировать путь","command":"copy_path_sidebar","args":{"paths":[]}},
+	{"caption":"Показать источник ссылки","command":"reveal_link_source","args":{"dirs":[]}},
+	{"caption":"-","id":"repo_commands"},
+	{"caption":"Открыть Git репозиторий…","command":"sublime_merge_open_repo","args":{"paths":[]}},
+	{"caption":"История файла…","command":"sublime_merge_file_history","args":{"files":[]}},
+	{"caption":"История папки…","command":"sublime_merge_folder_history","args":{"paths":[]}},
+	{"caption":"Команда 'blame'…","command":"sublime_merge_blame_file","args":{"files":[]}},
+	{"caption":"-","id":"folder_commands"},
+	{"caption":"Новая папка…","command":"new_folder","args":{"dirs":[]}},
+	{"caption":"Удалить папку","command":"delete_folder","args":{"dirs":[],"prompt":true}},
+	{"caption":"Найти в папке…","command":"find_in_folder","args":{"dirs":[]}},
+	{"caption":"-","id":"end"}
+]

@@ -1,0 +1,10 @@
+[
+	{"command":"cut","caption":"Вырезать"},
+	{"command":"copy","caption":"Копировать"},
+	{"command":"paste","caption":"Вставить"},
+	{"caption":"-"},
+	{"command":"select_all","caption":"Выделить всё"},
+	{"caption":"-"},
+	{"command":"console_python_version","args":{"version":"3.8"},"checkbox":true},
+	{"command":"console_python_version","args":{"version":"3.3"},"checkbox":true}
+]
