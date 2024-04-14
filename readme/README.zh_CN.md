@@ -12,6 +12,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3/4](ht
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
+- hu [Magyar](readme/README.hu.md)
 - hy [Հայերեն](README.hy.md)
 - pt_BR [Português do Brasil](README.pt_BR.md)
 - ru [Русский](README.ru.md)
@@ -90,6 +91,7 @@ LocalizedMenu(Localize Tool & Localized Menu)是一个为[Sublime Text 2/3/4](ht
 - es Español *by [Christopher](https://t.me/Azriel_7589)*
 - es_ES Español *by [Dastillero](https://github.com/dap39)*
 - fr_FR Français *by [fxbenard](https://github.com/fxbenard)*
+- hu Magyar *by [Tamás Balog](https://github.com/picimako)*
 - hy Հայերեն *by [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *by [JNylson](https://github.com/jnylson)*
 - ru Русский *by [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*

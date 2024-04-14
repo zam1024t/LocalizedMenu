@@ -1,0 +1,72 @@
+[
+	{
+		"id": "preferences",
+		"children": [
+			{
+				"id": "package-settings",
+				"caption": "Package Settings",
+				"children":
+				[
+					{
+						"caption": "LocalizedMenu",
+						"children":
+						[
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Beállítások – Alapértelmezett"
+							},
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Beállítások – Felhasználói"
+							},
+							{ "caption": "-" }
+						]
+					}
+				]
+			},
+			{ "caption": "-" },
+			{
+				"id": "locales",
+				"caption": "Languages",
+				"children": [
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "detect"
+						},
+						"caption": "Felismerés"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "reset"
+						},
+						"caption": "Visszaállítás"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "add"
+						},
+						"caption": "Nyelv hozzáadása…"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "submit"
+						},
+						"caption": "Nyelv beküldése…"
+					},
+					{ "caption": "-" }
+				]
+			},
+			{ "caption": "-" }
+		]
+	}
+]
