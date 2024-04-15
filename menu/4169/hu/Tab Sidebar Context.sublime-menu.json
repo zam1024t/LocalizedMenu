@@ -1,0 +1,14 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "Lap bezárása" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Többi lap bezárása" },
+	{ "caption": "-" },
+	{ "command": "close_selected", "args": {"group":-1, "index": -1}, "caption": "Kiválasztott lapok bezárása" },
+	{ "command": "close_unselected", "args": {"group": -1, "index": -1}, "caption": "Nem kiválasztott lapok bezárása" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Lenti lapok bezárása" },
+	{ "command": "close_unmodified", "args": { "group": -1, "index": -1 }, "caption": "Változatlan lapok bezárása" },
+	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Lenti, változatlan lapok bezárása" },
+	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "Törölt fájlokhoz tartozó lapok bezárása" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "Új fájl" },
+	{ "command": "prompt_open_file", "caption": "Fájl megnyitása" }
+]

@@ -12,6 +12,7 @@ Localize Tool & Localized Menu para Usuário Final do Sublime Text 2/3/4
 - en [English](README.md)
 - es_ES [Español](readme/README.es_ES.md)
 - fr_FR [Français](readme/README.fr_FR.md)
+- hu [Magyar](readme/README.hu.md)
 - hy [Հայերեն](readme/README.hy.md)
 - pt_BR [Português do Brasil](readme/README.pt_BR.md)
 - ru [Русский](readme/README.ru.md)
@@ -87,6 +88,7 @@ Localize Tool & Localized Menu para Usuário Final do Sublime Text 2/3/4
 - es Español *por [Christopher](https://t.me/Azriel_7589)*
 - es_ES Español *por [Dastillero](https://github.com/dap39)*
 - fr_FR Français *por [fxbenard](https://github.com/fxbenard)*
+- hu Magyar *by [Tamás Balog](https://github.com/picimako)*
 - hy Հայերեն *por [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *por [JNylson](https://github.com/jnylson)*
 - ru Русский *por [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*

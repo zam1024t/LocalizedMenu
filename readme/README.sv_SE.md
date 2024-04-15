@@ -12,6 +12,7 @@
 - en [English](../README.md)
 - es_ES [Español](README.es_ES.md)
 - fr_FR [Français](README.fr_FR.md)
+- hu [Magyar](readme/README.hu.md)
 - hy [Հայերեն](README.hy.md)
 - pt_BR [Português do Brasil](README.pt_BR.md)
 - ru [Русский](README.ru.md)
@@ -87,6 +88,7 @@
 - es Español *av [Christopher](https://t.me/Azriel_7589)*
 - es_ES Español *av [Dastillero](https://github.com/dap39)*
 - fr_FR Français *av [fxbenard](https://github.com/fxbenard)*
+- hu Magyar *av [Tamás Balog](https://github.com/picimako)*
 - hy Հայերեն *av [Arman High Foundation](https://github.com/ArmanHigh)*
 - pt Português do Brasil *av [JNylson](https://github.com/jnylson)*
 - ru Русский *av [Dimox](http://dimox.name) & [Ant0sh](https://github.com/Ant0sh) & [Maksim Arhipov](https://github.com/OSPanel)*

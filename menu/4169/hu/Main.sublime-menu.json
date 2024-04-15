@@ -1,0 +1,982 @@
+[
+	{
+		"caption": "Fájl",
+		"mnemonic": "F",
+		"id": "file",
+		"children":
+		[
+			{ "command": "new_file", "caption": "Új fájl", "mnemonic": "f" },
+
+			{ "command": "prompt_open_file", "caption": "Fájl megnyitása…", "mnemonic": "m", "platform": "!OSX" },
+			{ "command": "prompt_open_folder", "caption": "Mappa megnyitása…", "platform": "!OSX" },
+			{ "command": "prompt_open", "caption": "Megnyitás…", "platform": "OSX" },
+			{
+				"caption": "Korábbi fájlok",
+				"mnemonic": "K",
+				"children":
+				[
+					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Bezárt fájlok újranyitása" },
+					{ "caption": "-" },
+					{ "command": "open_recent_file", "args": {"index": 0 } },
+					{ "command": "open_recent_file", "args": {"index": 1 } },
+					{ "command": "open_recent_file", "args": {"index": 2 } },
+					{ "command": "open_recent_file", "args": {"index": 3 } },
+					{ "command": "open_recent_file", "args": {"index": 4 } },
+					{ "command": "open_recent_file", "args": {"index": 5 } },
+					{ "command": "open_recent_file", "args": {"index": 6 } },
+					{ "command": "open_recent_file", "args": {"index": 7 } },
+					{ "command": "open_recent_file", "args": {"index": 8 } },
+					{ "command": "open_recent_file", "args": {"index": 9 } },
+					{ "command": "open_recent_file", "args": {"index": 10 } },
+					{ "command": "open_recent_file", "args": {"index": 11 } },
+					{ "caption": "-" },
+					{ "command": "open_recent_folder", "args": {"index": 0 } },
+					{ "command": "open_recent_folder", "args": {"index": 1 } },
+					{ "command": "open_recent_folder", "args": {"index": 2 } },
+					{ "command": "open_recent_folder", "args": {"index": 3 } },
+					{ "command": "open_recent_folder", "args": {"index": 4 } },
+					{ "command": "open_recent_folder", "args": {"index": 5 } },
+					{ "command": "open_recent_folder", "args": {"index": 6 } },
+					{ "command": "open_recent_folder", "args": {"index": 7 } },
+					{ "command": "open_recent_folder", "args": {"index": 8 } },
+					{ "command": "open_recent_folder", "args": {"index": 9 } },
+					{ "command": "open_recent_folder", "args": {"index": 10 } },
+					{ "command": "open_recent_folder", "args": {"index": 11 } },
+					{ "caption": "-" },
+					{ "command": "clear_recent_files", "caption": "Lista törlése" }
+				]
+			},
+			{
+				"caption": "Újranyitás más karakterkódolással",
+				"id": "reopen_with_encoding",
+				"children":
+				[
+					{ "caption": "UTF-8", "command": "reopen", "args": { "encoding": "utf-8" } },
+					{ "caption": "UTF-16 LE", "command": "reopen", "args": { "encoding": "utf-16 le" } },
+					{ "caption": "UTF-16 BE", "command": "reopen", "args": { "encoding": "utf-16 be" } },
+					{ "caption": "-" },
+					{ "caption": "Arab (ISO 8859-6)", "command": "reopen", "args": { "encoding": "Arabic (ISO 8859-6)" } },
+					{ "caption": "Arab (Windows 1256)", "command": "reopen", "args": { "encoding": "Arabic (Windows 1256)" } },
+					{ "caption": "Balti (ISO 8859-4)", "command": "reopen", "args": { "encoding": "Baltic (ISO 8859-4)" } },
+					{ "caption": "Balti (Windows 1257)", "command": "reopen", "args": { "encoding": "Baltic (Windows 1257)" } },
+					{ "caption": "Kelta (ISO 8859-14)", "command": "reopen", "args": { "encoding": "Celtic (ISO 8859-14)" } },
+					{ "caption": "Közép-európai (ISO 8859-2)", "command": "reopen", "args": { "encoding": "Central European (ISO 8859-2)" } },
+					{ "caption": "Közép-európai (Mac)", "command": "reopen", "args": { "encoding": "Central European (Mac)" } },
+					{ "caption": "Közép-európai (Windows 1250)", "command": "reopen", "args": { "encoding": "Central European (Windows 1250)" } },
+					{ "caption": "Kínai (GB18030)", "command": "reopen", "args": { "encoding": "Chinese (GB18030)" } },
+					{ "caption": "Cirill (ISO 8859-5)", "command": "reopen", "args": { "encoding": "Cyrillic (ISO 8859-5)" } },
+					{ "caption": "Cirill (KOI8-R)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-R)" } },
+					{ "caption": "Cirill (KOI8-U)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-U)" } },
+					{ "caption": "Cirill (Windows 1251)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 1251)" } },
+					{ "caption": "Cirill (Windows 866)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 866)" } },
+					{ "caption": "DOS (CP 437)", "command": "reopen", "args": { "encoding": "DOS (CP 437)" } },
+					{ "caption": "Észt (ISO 8859-13)", "command": "reopen", "args": { "encoding": "Estonian (ISO 8859-13)" } },
+					{ "caption": "Görög (ISO 8859-7)", "command": "reopen", "args": { "encoding": "Greek (ISO 8859-7)" } },
+					{ "caption": "Görög (Windows 1253)", "command": "reopen", "args": { "encoding": "Greek (Windows 1253)" } },
+					{ "caption": "Héber (CP 862)", "command": "reopen", "args": { "encoding": "Hebrew (CP 862)" } },
+					{ "caption": "Héber (ISO 8859-8)", "command": "reopen", "args": { "encoding": "Hebrew (ISO 8859-8)" } },
+					{ "caption": "Héber (Windows 1255)", "command": "reopen", "args": { "encoding": "Hebrew (Windows 1255)" } },
+					{ "caption": "Északi (ISO 8859-10)", "command": "reopen", "args": { "encoding": "Nordic (ISO 8859-10)" } },
+					{ "caption": "Északi (Windows 865)", "command": "reopen", "args": { "encoding": "Nordic (Windows 865)" } },
+					{ "caption": "Román (ISO 8859-16)", "command": "reopen", "args": { "encoding": "Romanian (ISO 8859-16)" } },
+					{ "caption": "Török (ISO 8859-9)", "command": "reopen", "args": { "encoding": "Turkish (ISO 8859-9)" } },
+					{ "caption": "Török (Windows 1254)", "command": "reopen", "args": { "encoding": "Turkish (Windows 1254)" } },
+					{ "caption": "Vietnámi (Windows 1258)", "command": "reopen", "args": { "encoding": "Vietnamese (Windows 1258)" } },
+					{ "caption": "Nyugati (ISO 8859-1)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-1)" } },
+					{ "caption": "Nyugati (ISO 8859-15)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-15)" } },
+					{ "caption": "Nyugati (ISO 8859-3)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-3)" } },
+					{ "caption": "Nyugati (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
+					{ "caption": "Nyugati (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
+					{ "caption": "-" },
+					{ "caption": "Hexadecimális", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
+				]
+			},
+			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Hozzáadás osztott nézethez", "mnemonic": "o" },
+			{ "command": "save", "args": {"async": true}, "caption": "Mentés", "mnemonic": "M" },
+			{
+				"caption": "Mentés más karakterkódolással",
+				"id": "save_with_encoding",
+				"children":
+				[
+					{ "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
+					{ "caption": "UTF-8 BOM-mal", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
+					{ "caption": "UTF-16 LE", "command": "save", "args": { "async": true, "encoding": "utf-16 le" } },
+					{ "caption": "UTF-16 LE BOM-mal", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
+					{ "caption": "UTF-16 BE", "command": "save", "args": { "async": true, "encoding": "utf-16 be" } },
+					{ "caption": "UTF-16 BE BOM-mal", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
+					{ "caption": "-" },
+					{ "caption": "Arab (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
+					{ "caption": "Arab (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
+					{ "caption": "Balti (ISO 8859-4)", "command": "save", "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" } },
+					{ "caption": "Balti (Windows 1257)", "command": "save", "args": { "async": true, "encoding": "Baltic (Windows 1257)" } },
+					{ "caption": "Kelta (ISO 8859-14)", "command": "save", "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" } },
+					{ "caption": "Közép-európai (ISO 8859-2)", "command": "save", "args": { "async": true, "encoding": "Central European (ISO 8859-2)" } },
+					{ "caption": "Közép-európai (Mac)", "command": "save", "args": { "async": true, "encoding": "Central European (Mac)" } },
+					{ "caption": "Közép-európai (Windows 1250)", "command": "save", "args": { "async": true, "encoding": "Central European (Windows 1250)" } },
+					{ "caption": "Kínai (GB18030)", "command": "save", "args": { "async": true, "encoding": "Chinese (GB18030)" } },
+					{ "caption": "Cirill (ISO 8859-5)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" } },
+					{ "caption": "Cirill (KOI8-R)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" } },
+					{ "caption": "Cirill (KOI8-U)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" } },
+					{ "caption": "Cirill (Windows 1251)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" } },
+					{ "caption": "Cirill (Windows 866)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 866)" } },
+					{ "caption": "DOS (CP 437)", "command": "save", "args": { "async": true, "encoding": "DOS (CP 437)" } },
+					{ "caption": "Észt (ISO 8859-13)", "command": "save", "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" } },
+					{ "caption": "Görög (ISO 8859-7)", "command": "save", "args": { "async": true, "encoding": "Greek (ISO 8859-7)" } },
+					{ "caption": "Görög (Windows 1253)", "command": "save", "args": { "async": true, "encoding": "Greek (Windows 1253)" } },
+					{ "caption": "Héber (CP 862)", "command": "save", "args": { "async": true, "encoding": "Hebrew (CP 862)" } },
+					{ "caption": "Héber (ISO 8859-8)", "command": "save", "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" } },
+					{ "caption": "Héber (Windows 1255)", "command": "save", "args": { "async": true, "encoding": "Hebrew (Windows 1255)" } },
+					{ "caption": "Északi (ISO 8859-10)", "command": "save", "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" } },
+					{ "caption": "Északi (Windows 865)", "command": "save", "args": { "async": true, "encoding": "Nordic (Windows 865)" } },
+					{ "caption": "Román (ISO 8859-16)", "command": "save", "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" } },
+					{ "caption": "Török (ISO 8859-9)", "command": "save", "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" } },
+					{ "caption": "Török (Windows 1254)", "command": "save", "args": { "async": true, "encoding": "Turkish (Windows 1254)" } },
+					{ "caption": "Vietnámi (Windows 1258)", "command": "save", "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" } },
+					{ "caption": "Nyugati (ISO 8859-1)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-1)" } },
+					{ "caption": "Nyugati (ISO 8859-15)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-15)" } },
+					{ "caption": "Nyugati (ISO 8859-3)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-3)" } },
+					{ "caption": "Nyugati (Mac Roman)", "command": "save", "args": { "async": true, "encoding": "Western (Mac Roman)" } },
+					{ "caption": "Nyugati (Windows 1252)", "command": "save", "args": { "async": true, "encoding": "Western (Windows 1252)" } },
+					{ "caption": "-" },
+					{ "caption": "Hexadecimális", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
+				]
+			},
+			{ "command": "prompt_save_as", "caption": "Mentés másként…", "mnemonic": "n" },
+			{ "command": "save_all", "caption": "Minden fájl mentése", "mnemonic": "d" },
+			{ "command": "html_print", "caption": "Nyomtatás…", "mnemonic": "y" },
+			{ "caption": "-", "id": "window" },
+			{ "command": "new_window", "caption": "Új ablak", "mnemonic": "Ú" },
+			{ "command": "close_window", "caption": "Ablak bezárása" },
+			{ "caption": "-", "id": "close" },
+			{ "command": "close", "caption": "Fájl bezárása", "mnemonic": "b" },
+			{ "command": "revert", "caption": "Fájl visszavonása", "mnemonic": "v" },
+			{ "command": "close_all", "caption": "Minden fájl bezárása" },
+			{ "caption": "-", "id": "exit" },
+			{ "command": "exit", "caption": "Kilépés", "mnemonic": "é", "platform": "Windows" },
+			{ "command": "exit", "caption": "Kilépés", "mnemonic": "é", "platform": "Linux" }
+		]
+	},
+	{
+		"caption": "Szerkesztés",
+		"mnemonic": "e",
+		"id": "edit",
+		"children":
+		[
+			{ "command": "undo", "caption": "Visszavonás", "mnemonic": "V" },
+			{ "command": "redo_or_repeat", "caption": "Újra alkalmazás vagy ismétlés", "mnemonic": "a" },
+			{
+				"caption": "Kijelölés visszavonása",
+				"children":
+				[
+					{ "command": "soft_undo", "caption": "Visszavonás" },
+					{ "command": "soft_redo", "caption": "Újra alkalmazás" }
+				]
+			},
+			{ "caption": "-", "id": "clipboard" },
+			{ "command": "cut", "caption": "Kivágás", "mnemonic": "K" },
+			{ "command": "copy", "caption": "Másolás", "mnemonic": "M" },
+			{ "caption": "Másolás HTML-ként", "command": "copy_as_html", "args": {"enclosing_tags": true, "font_size": false} },
+			{ "command": "paste", "caption": "Beillesztés", "mnemonic": "B" },
+			{ "command": "paste_and_indent", "caption": "Beillesztés és igazítás","mnemonic": "i" },
+			{ "command": "paste_from_history", "caption": "Beillesztés az előzményekből" },
+			{ "caption": "-" },
+			{
+				"caption": "Sor", "mnemonic": "S",
+				"id": "line",
+				"children":
+				[
+					{ "command": "indent", "caption": "Behúzás jobbra" },
+					{ "command": "unindent", "caption": "Behúzás balra" },
+					{ "command": "reindent", "args": {"single_line": true}, "caption": "Igazítás" },
+					{ "command": "swap_line_up", "caption": "Sor cseréje a lenti sorral" },
+					{ "command": "swap_line_down", "caption": "Sor cseréje a fenti sorral" },
+					{ "command": "duplicate_line", "caption": "Sor duplikálása" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Sor törlése" },
+					{ "command": "join_lines", "caption": "Sorok összefűzése" }
+				]
+			},
+			{
+				"caption": "Komment", "mnemonic": "m",
+				"id": "comment",
+				"children":
+				[
+					{ "command": "toggle_comment", "args": {"block": false}, "caption": "Komment ki/be" },
+					{ "command": "toggle_comment", "args": {"block": true}, "caption": "Blokk-komment ki/be" }
+				]
+			},
+			{
+				"caption": "Szöveg", "mnemonic": "z",
+				"id": "text",
+				"children":
+				[
+					{ "command": "revert_hunk", "caption": "Szakasz visszavonása" },
+					{ "command": "revert_modification", "caption": "Módosítás visszavonása" },
+					{ "command": "toggle_inline_diff", "caption": "Szakasz összehasonlítása ki/be" },
+					{ "caption": "-" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Sor beszúrása az aktuális sor fölé" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Sor beszúrása az aktuális sor alá" },
+					{ "caption": "-" },
+					{ "command": "delete_word", "args": { "forward": true }, "caption": "Szó törlése előrefelé" },
+					{ "command": "delete_word", "args": { "forward": false }, "caption": "Szó törlése visszafelé" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Sor törlése" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Törlés a sor végéig" },
+					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Törlés a sor elejéig" },
+					{ "caption": "-" },
+					{ "command": "transpose", "caption": "Transzpozíció" }
+				]
+			},
+			{
+				"caption": "Címke",
+				"id": "tag",
+				"children":
+				[
+					{ "command": "close_tag", "caption": "Címke bezárása" },
+					{ "command": "expand_selection", "args": {"to": "tag"}, "caption": "Kijelölés kiterjesztése a címkére" },
+					{ "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" }, "caption": "Kijelölés körülzárása címkével" }
+				]
+			},
+			{
+				"caption": "Jelölő",
+				"id": "mark",
+				"children":
+				[
+					{ "command": "set_mark", "caption": "Jelölő elhelyezése" },
+					{ "command": "select_to_mark", "caption": "Kijelölés a jelölőig" },
+					{ "command": "delete_to_mark", "caption": "Törlés a jelölőig" },
+					{ "command": "swap_with_mark", "caption": "Jelölő áthelyezése a jelenlegi pozícióra" },
+					{ "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Jelölő törlése" },
+					{ "caption": "-" },
+					{ "command": "yank", "caption": "Beillesztés (Yank)" }
+				]
+			},
+			{
+				"caption": "Kódhajtogatás",
+				"id": "fold",
+				"children":
+				[
+					{ "command": "fold", "caption": "Összehajtás" },
+					{ "command": "unfold", "caption": "Kihajtás" },
+					{ "command": "unfold_all", "caption": "Mind kihajtása" },
+					{ "caption": "-" },
+					{ "caption": "Mind összehajtása", "command": "fold_by_level", "args": {"level": 1} },
+					{ "caption": "Összehajtás: 2-es szint", "command": "fold_by_level", "args": {"level": 2} },
+					{ "caption": "Összehajtás: 3-as szint", "command": "fold_by_level", "args": {"level": 3} },
+					{ "caption": "Összehajtás: 4-es szint", "command": "fold_by_level", "args": {"level": 4} },
+					{ "caption": "Összehajtás: 5-ös szint", "command": "fold_by_level", "args": {"level": 5} },
+					{ "caption": "Összehajtás: 6-os szint", "command": "fold_by_level", "args": {"level": 6} },
+					{ "caption": "Összehajtás: 7-es szint", "command": "fold_by_level", "args": {"level": 7} },
+					{ "caption": "Összehajtás: 8-as szint", "command": "fold_by_level", "args": {"level": 8} },
+					{ "caption": "Összehajtás: 9-es szint", "command": "fold_by_level", "args": {"level": 9} },
+					{ "caption": "-" },
+					{ "command": "fold_tag_attributes", "caption": "Címke attribútumainak összehajtása" }
+				]
+			},
+			{
+				"caption": "Írásmód", "mnemonic": "Í",
+				"id": "convert_case",
+				"children":
+				[
+					{ "command": "title_case", "caption": "Cím" },
+					{ "command": "upper_case", "caption": "Nagybetűs" },
+					{ "command": "lower_case", "caption": "Kisbetűs" },
+					{ "command": "swap_case", "caption": "Kis-/nagybetű váltása" },
+					{ "command": "convert_ident_case", "caption": "kisbetűsTeveMód", "args": {"case": "title", "first_case": "lower"} },
+					{ "command": "convert_ident_case", "caption": "NagybetűsTeveMód", "args": {"case": "title"} },
+					{ "command": "convert_ident_case", "caption": "kígyó_mód", "args": {"separator": "_", "case": "lower"} },
+					{ "command": "convert_ident_case", "caption": "kebab-mód", "args": {"separator": "-", "case": "lower"} }
+				]
+			},
+			{
+				"caption": "Sortörés",
+				"id": "wrap",
+				"children":
+				[
+					{ "command": "wrap_lines", "caption": "Bekezdés sortörése a vonalzónál" },
+					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Bekezdés sortörése 70 karakternél" },
+					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Bekezdés sortörése 72 karakternél" },
+					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Bekezdés sortörése 78 karakternél" },
+					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "Bekezdés sortörése 80 karakternél" },
+					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "Bekezdés sortörése 100 karakternél" },
+					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Bekezdés sortörése 120 karakternél" }
+				]
+			},
+			{ "command": "auto_complete", "caption": "Kódkiegészítések mutatása" },
+			{ "caption": "-", "id": "permute" },
+
+			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Sorok rendezése", "mnemonic": "r" },
+			{ "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Sorok rendezése (Kis-/nagybetűre érzékeny)" },
+			{
+				"caption": "Sorok permutálása",
+				"children":
+				[
+					{ "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Fordított sorrend" },
+					{ "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Egyedi sorok" },
+					{ "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Sorok megkeverése" }
+				]
+			},
+			{
+				"caption": "Kijelöltek permutálása",
+				"children":
+				[
+					{ "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Rendezés" },
+					{ "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Rendezés (Kis-/nagybetűre érzékeny)" },
+					{ "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Fordított sorrend" },
+					{ "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Egyedi" },
+					{ "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Megkeverés" }
+				]
+			},
+			{ "caption": "-", "id": "end" }
+		]
+	},
+	{
+		"caption": "Kijelölés",
+		"mnemonic": "j",
+		"id": "selection",
+		"children":
+		[
+			{ "command": "split_selection_into_lines", "caption": "Sorokra bontás" },
+			{ "command": "single_selection", "caption": "Egyetlen kijelölés" },
+			{ "caption": "-" },
+			{ "command": "select_all", "caption": "Összes kijelölése" },
+			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "Kijelölés kiterjesztése" },
+			{ "command": "expand_selection", "args": {"to": "line"}, "caption": "Kijelölés kiterjesztése a sorra" },
+			{ "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Kijelölés kiterjesztése a fenti sorig" },
+			{ "command": "find_under_expand", "caption": "Kijelölés kiterjesztése a szóra" },
+			{ "command": "expand_selection_to_paragraph", "caption": "Kijelölés kiterjesztése a blokkra" },
+			{ "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Kijelölés kiterjesztése a bekezdésre" },
+			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Kijelölés kiterjesztése a hatókörre" },
+			{ "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Kijelölés kiterjesztése a zárójelekre" },
+			{ "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Kijelölés kiterjesztése a behúzásra" },
+			{ "caption": "-" },
+			{ "command": "select_lines", "args": {"forward": false}, "caption": "Előző sor hozzáadása" },
+			{ "command": "select_lines", "args": {"forward": true}, "caption": "Következő sor hozzáadása" },
+			{ "caption": "-" },
+			{
+				"caption": "Lapok kiválasztása",
+				"children":
+				[
+					{ "command": "unselect_others", "caption": "Kiválasztás törlése a többi lapon" },
+					{ "command": "unselect_to_left", "caption": "Kiválasztás törlése a baloldali lapokon" },
+					{ "command": "unselect_to_right", "caption": "Kiválasztás törlése a jobboldali lapokon" },
+					{ "caption": "-" },
+					{ "command": "select_to_left", "caption": "Baloldali lap hozzáadása a kiválasztáshoz" },
+					{ "command": "select_to_right", "caption": "Jobboldali lap hozzáadása a kiválasztáshoz" },
+					{ "caption": "-" },
+					{ "command": "focus_to_left", "caption": "Fókusz a baloldali lapra" },
+					{ "command": "focus_to_right", "caption": "Fókusz a jobboldali lapra" },
+					{ "caption": "-" },
+					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Váltás erre: 1. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Váltás erre: 2. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Váltás erre: 3. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Váltás erre: 4. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Váltás erre: 5. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Váltás erre: 6. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Váltás erre: 7. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Váltás erre: 8. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Váltás erre: 9. kiválasztott lap" },
+					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Váltás erre: 10. kiválasztott lap" }
+				]
+			}
+		]
+	},
+	{
+		"caption": "Keresés",
+		"mnemonic": "K",
+		"id": "find",
+		"children":
+		[
+			{ "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Keresés…" },
+			{ "command": "find_next", "caption": "Következő találat" },
+			{ "command": "find_prev", "caption": "Előző találat" },
+			{ "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Inkrementális keresés" },
+			{ "caption": "-" },
+			{ "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Csere…" },
+			{ "command": "replace_next", "caption": "Következő cseréje" },
+			{ "caption": "-" },
+			{ "command": "find_under", "caption": "Gyorskeresés" },
+			{ "command": "find_all_under", "caption": "Gyorskeresés: minden előfodulás" },
+			{ "command": "find_under_expand", "caption": "Gyorskeresés: következő hozzáadása" },
+			{ "command": "find_under_expand_skip", "caption": "Gyorskeresés: következő átugrása", "platform": "!OSX" },
+			{ "caption": "-" },
+			{ "command": "slurp_find_string", "caption": "Kijelölés használata kereséshez" },
+			{ "command": "slurp_replace_string", "caption": "Kijelölés használata cseréhez" },
+			{ "caption": "-" },
+			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Keresés fájlokban…" },
+			{
+				"caption": "Keresési eredmények",
+				"mnemonic": "r",
+				"children":
+				[
+					{ "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "- Találatok panel", "toggle" : true, "toggle_when_not_focused": true} },
+					{ "command": "next_result", "caption": "Következő találat" },
+					{ "command": "prev_result", "caption": "Előző találat" }
+				]
+			},
+			{ "command": "cancel_find", "caption": "Fájlokban keresés megszakítása" }
+		]
+	},
+	{
+		"caption": "Nézet",
+		"mnemonic": "N",
+		"id": "view",
+		"children":
+		[
+			{
+				"caption": "Oldalsáv",
+				"id": "side_bar",
+				"children":
+				[
+					{ "command": "toggle_side_bar", "caption": "Oldalsáv ki/be" },
+					{ "caption": "-" },
+					{ "command": "toggle_show_open_files", "caption": "Megnyitott fájlok" }
+				]
+			},
+			{ "command": "toggle_minimap", "caption": "Minitérkép ki/be" },
+			{ "command": "toggle_tabs", "caption": "Lapsáv ki/be" },
+			{ "command": "toggle_status_bar", "caption": "Állapotsor ki/be" },
+			{ "command": "toggle_menu", "caption": "Menüsor ki/be" },
+			{ "command": "show_panel", "args": {"panel": "console", "toggle": true}, "caption": "Konzol ki/be" },
+			{ "caption": "-", "id": "full_screen" },
+			{ "command": "toggle_full_screen", "caption": "Teljes képernyő ki/be" },
+			{ "command": "toggle_distraction_free", "caption": "Zen mód ki/be" },
+			{ "caption": "-", "id": "groups" },
+			{
+				"caption": "Elrendezés",
+				"mnemonic": "E",
+				"id": "layout",
+				"children":
+				[
+					{
+						"caption": "Egy oszlop",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 1.0],
+							"rows": [0.0, 1.0],
+							"cells": [[0, 0, 1, 1]]
+						}
+					},
+					{
+						"caption": "2 oszlop",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 0.5, 1.0],
+							"rows": [0.0, 1.0],
+							"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+						}
+					},
+					{
+						"caption": "3 oszlop",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 0.33, 0.66, 1.0],
+							"rows": [0.0, 1.0],
+							"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+						}
+					},
+					{
+						"caption": "4 oszlop",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+							"rows": [0.0, 1.0],
+							"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+						}
+					},
+					{
+						"caption": "2 sor",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 1.0],
+							"rows": [0.0, 0.5, 1.0],
+							"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+						}
+					},
+					{
+						"caption": "3 sor",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 1.0],
+							"rows": [0.0, 0.33, 0.66, 1.0],
+							"cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+						}
+					},
+					{
+						"caption": "2x2-es rács",
+						"command": "set_layout",
+						"args":
+						{
+							"cols": [0.0, 0.5, 1.0],
+							"rows": [0.0, 0.5, 1.0],
+							"cells":
+							[
+								[0, 0, 1, 1], [1, 0, 2, 1],
+								[0, 1, 1, 2], [1, 1, 2, 2]
+							]
+						}
+					}
+				]
+			},
+			{
+				"caption": "Csoportok",
+				"children":
+				[
+					{ "command": "new_pane", "caption": "Fájl mozgatása új csoportba" },
+					{ "command": "new_pane", "args": {"move": false}, "caption": "Új csoport" },
+					{ "command": "close_pane", "caption": "Csoport bezárása" },
+
+					{ "caption": "-" },
+
+					{
+						"caption": "Max 1 oszlop",
+						"command": "set_max_columns",
+						"checkbox": true,
+						"args": { "columns": 1 }
+					},
+					{
+						"caption": "Max 2 oszlop",
+						"command": "set_max_columns",
+						"checkbox": true,
+						"args": { "columns": 2 }
+					},
+					{
+						"caption": "Max 3 oszlop",
+						"command": "set_max_columns",
+						"checkbox": true,
+						"args": { "columns": 3 }
+					},
+					{
+						"caption": "Max 4 oszlop",
+						"command": "set_max_columns",
+						"checkbox": true,
+						"args": { "columns": 4 }
+					},
+					{
+						"caption": "Max 5 oszlop",
+						"command": "set_max_columns",
+						"checkbox": true,
+						"args": { "columns": 5 }
+					}
+				]
+			},
+			{
+				"caption": "Fókuszálás csoportra",
+				"mnemonic": "f",
+				"children":
+				[
+
+					{ "command": "focus_neighboring_group", "caption": "Következő" },
+					{ "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Előző" },
+					{ "caption": "-" },
+					{ "command": "focus_group", "args": {"group": 0}, "caption": "1-es csoport" },
+					{ "command": "focus_group", "args": {"group": 1}, "caption": "2-es csoport" },
+					{ "command": "focus_group", "args": {"group": 2}, "caption": "3-as csoport" },
+					{ "command": "focus_group", "args": {"group": 3}, "caption": "4-es csoport" }
+				]
+			},
+			{
+				"caption": "Fájl mozgatása csoportba",
+				"mnemonic": "m",
+				"children":
+				[
+					{ "command": "move_to_neighboring_group", "caption": "Következő" },
+					{ "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Előző" },
+					{ "caption": "-" },
+					{ "command": "move_to_group", "args": {"group": 0}, "caption": "1-es csoport" },
+					{ "command": "move_to_group", "args": {"group": 1}, "caption": "2-es csoport" },
+					{ "command": "move_to_group", "args": {"group": 2}, "caption": "3-as csoport" },
+					{ "command": "move_to_group", "args": {"group": 3}, "caption": "4-es csoport" }
+				]
+			},
+			{ "caption": "-" },
+			{
+				"caption": "Szintaxis",
+				"mnemonic": "S",
+				"id": "syntax",
+				"children": [ { "command": "$file_types" } ]
+			},
+			{
+				"caption": "Behúzás",
+				"mnemonic": "B",
+				"id": "indentation",
+				"children":
+				[
+					{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Behúzás szóköz használatával", "checkbox": true },
+					{ "caption": "-" },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Tab szélessége: 1", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Tab szélessége: 2", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Tab szélessége: 3", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Tab szélessége: 4", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Tab szélessége: 5", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Tab szélessége: 6", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Tab szélessége: 7", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Tab szélessége: 8", "checkbox": true },
+					{ "caption": "-" },
+					{ "command": "detect_indentation", "caption": "Beállítás észlelése a pufferből" },
+					{ "caption": "-" },
+					{ "command": "expand_tabs", "caption": "Behúzások lecserélése szóközre", "args": {"set_translate_tabs": true} },
+					{ "command": "unexpand_tabs", "caption": "Behúzások lecserélése tabulátorokra", "args": {"set_translate_tabs": true} }
+				]
+			},
+			{
+				"caption": "Sorvégződések",
+				"mnemonic": "n",
+				"id": "line_endings",
+				"children":
+				[
+					{ "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows", "checkbox": true },
+					{ "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix", "checkbox": true },
+					{ "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
+				]
+			},
+			{ "caption": "-", "id": "settings" },
+			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Sortörés", "mnemonic": "S", "checkbox": true },
+			{
+				"caption": "Sortörés szélessége",
+				"children":
+				[
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Automatikus", "checkbox": true },
+					{ "caption": "-" },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 72}, "caption": "72", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}, "caption": "78", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}, "caption": "80", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}, "caption": "100", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}, "caption": "120", "checkbox": true }
+				]
+			},
+			{
+				"caption": "Vonalzó",
+				"children":
+				[
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "Nincs", "checkbox": true },
+					{ "caption": "-" },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": [72]}, "caption": "72", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": [78]}, "caption": "78", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": [80]}, "caption": "80", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": [100]}, "caption": "100", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "rulers", "value": [120]}, "caption": "120", "checkbox": true }
+				]
+			},
+			{ "caption": "-" },
+			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Helyesírás-ellenőrzés", "checkbox": true },
+			{ "command": "next_misspelling", "caption": "Következő elírás" },
+			{ "command": "prev_misspelling", "caption": "Előző elírás" },
+			{
+				"caption": "Szótár",
+				"children": [ { "command": "$dictionaries" } ]
+			}
+		]
+	},
+	{
+		"caption": "Navigáció",
+		"mnemonic": "N",
+		"id": "goto",
+		"children":
+		[
+			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Ugrás bárhova…", "mnemonic": "b" },
+			{ "caption": "-" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Ugrás szimbólumra…" },
+			{ "command": "goto_symbol_in_project", "caption": "Ugrás szimbólumra a projektben…" },
+			{ "command": "goto_definition", "caption": "Ugrás definícióra…" },
+			{ "command": "goto_reference", "caption": "Ugrás hivatkozásra…" },
+			// { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ugrás szóra…" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Ugrás sorra…" },
+			{ "caption": "-" },
+			{ "command": "next_modification", "caption": "Következő módosítás" },
+			{ "command": "prev_modification", "caption": "Előző módosítás" },
+			{ "caption": "-" },
+			{ "command": "jump_back", "caption": "Ugrás vissza" },
+			{ "command": "jump_forward", "caption": "Ugrás előre" },
+			{ "caption": "-" },
+			{
+				"caption": "Ugrás fájlra",
+				"mnemonic": "t",
+				"id": "switch_file",
+				"children":
+				[
+					{ "command": "next_view", "caption": "Következő fájl" },
+					{ "command": "prev_view", "caption": "Előző fájl" },
+					{ "caption": "-" },
+					{ "command": "next_view_in_stack", "caption": "Következő fájl a lapcsoportban" },
+					{ "command": "prev_view_in_stack", "caption": "Előző fájl a lapcsoportban" },
+					{ "caption": "-" },
+					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Váltás fejléc/implementáció között", "mnemonic": "f" },
+					{ "caption": "-" },
+					{ "command": "select_by_index", "args": { "index": 0 } },
+					{ "command": "select_by_index", "args": { "index": 1 } },
+					{ "command": "select_by_index", "args": { "index": 2 } },
+					{ "command": "select_by_index", "args": { "index": 3 } },
+					{ "command": "select_by_index", "args": { "index": 4 } },
+					{ "command": "select_by_index", "args": { "index": 5 } },
+					{ "command": "select_by_index", "args": { "index": 6 } },
+					{ "command": "select_by_index", "args": { "index": 7 } },
+					{ "command": "select_by_index", "args": { "index": 8 } },
+					{ "command": "select_by_index", "args": { "index": 9 } }
+				]
+			},
+			{ "caption": "-" },
+			{
+				"caption": "Görgetés",
+				"mnemonic": "G",
+				"id": "scroll",
+				"children":
+				[
+					{ "command": "show_at_center", "caption": "Görgetés a kijelöléshez" },
+					{ "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "Egy sorral feljebb" },
+					{ "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "Egy sorral lejjebb" }
+				]
+			},
+			{
+				"caption": "Könyvjelzők",
+				"mnemonic": "K",
+				"id": "bookmarks",
+				"children":
+				[
+					{ "command": "toggle_bookmark", "args": {"toggle_line": true }, "caption": "Könyvjelző ki/be" },
+					{ "command": "next_bookmark", "caption": "Következő könyvjelző" },
+					{ "command": "prev_bookmark", "caption": "Előző könyvjelző" },
+					{ "command": "clear_bookmarks", "caption": "Könyvjelzők törlése" },
+					{ "command": "select_all_bookmarks", "caption": "Minden könyvjelző kiválasztása" },
+					{ "caption": "-" },
+					{ "command": "select_bookmark", "args": {"index": 0} },
+					{ "command": "select_bookmark", "args": {"index": 1} },
+					{ "command": "select_bookmark", "args": {"index": 2} },
+					{ "command": "select_bookmark", "args": {"index": 3} },
+					{ "command": "select_bookmark", "args": {"index": 4} },
+					{ "command": "select_bookmark", "args": {"index": 5} },
+					{ "command": "select_bookmark", "args": {"index": 6} },
+					{ "command": "select_bookmark", "args": {"index": 7} },
+					{ "command": "select_bookmark", "args": {"index": 8} },
+					{ "command": "select_bookmark", "args": {"index": 9} },
+					{ "command": "select_bookmark", "args": {"index": 10} },
+					{ "command": "select_bookmark", "args": {"index": 11} },
+					{ "command": "select_bookmark", "args": {"index": 12} },
+					{ "command": "select_bookmark", "args": {"index": 13} },
+					{ "command": "select_bookmark", "args": {"index": 14} },
+					{ "command": "select_bookmark", "args": {"index": 15} }
+				]
+			},
+			{ "caption": "-" },
+			{ "command": "move_to", "args": {"to": "brackets"}, "caption": "Ugrás a zárójel másik párjához" }
+		]
+	},
+	{
+		"caption": "Eszközök",
+		"mnemonic": "E",
+		"id": "tools",
+		"children":
+		[
+			{ "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Parancstábla…" },
+			{ "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Kódsablonok…" },
+			{ "caption": "-", "id": "build" },
+			{
+				"caption": "Build rendszer",
+				"mnemonic": "u",
+				"children":
+				[
+					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Automatikus", "checkbox": true },
+					{ "caption": "-" },
+					{ "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 2}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 3}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 4}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 8}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 9}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 10}, "checkbox": true },
+					{ "command": "set_build_system", "args": {"index": 11}, "checkbox": true },
+					{ "caption": "-" },
+					{ "command": "$build_systems" },
+					{ "caption": "-" },
+					{ "command": "new_build_system", "caption": "Új build rendszer…" }
+				]
+			},
+			{ "command": "build", "caption": "Építés", "mnemonic": "É" },
+			{ "command": "build", "args": {"select": true}, "caption": "Építés ezzel…" },
+			{ "command": "cancel_build", "caption": "Építés megszakítása", "mnemonic": "m" },
+			{
+				"caption": "Építés eredményei",
+				"mnemonic": "e",
+				"children":
+				[
+					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Eredmények megjelenítése", "mnemonic": "m" },
+					{ "command": "next_result", "caption": "Következő eredmény", "mnemonic": "K" },
+					{ "command": "prev_result", "caption": "Előző eredmény", "mnemonic": "E" }
+				]
+			},
+			{ "command": "toggle_save_all_on_build", "caption": "Minden mentése építéskor", "mnemonic": "n", "checkbox": true },
+			{ "caption": "-", "id": "macros" },
+			{ "command": "toggle_record_macro", "caption": "Makró felvétele", "mnemonic": "f" },
+			{ "command": "run_macro", "caption": "Makró visszajátszása", "mnemonic": "v" },
+			{ "command": "save_macro", "caption": "Makró mentése…", "mnemonic": "t" },
+			{
+				"caption": "Makrók",
+				"children": [ { "command": "$macros" } ]
+			},
+			{ "caption": "-" },
+			{
+				"caption": "Fejlesztői",
+				"children":
+				[
+					{ "command": "new_plugin", "caption": "Új beépülő…" },
+					{ "command": "new_snippet", "caption": "Új kódsablon…" },
+					{ "command": "new_syntax", "caption": "Új szintaxis…" },
+					{ "command": "convert_syntax", "caption": "Új szintaxis a jelenlegi fájltípus alapján" },
+					{ "caption": "-" },
+					{ "caption": "-" },
+					{ "command": "profile_plugins", "caption": "Beépülők profilozása" },
+					{ "caption": "-" },
+					{ "command": "view_resource", "caption": "Csomagfájlok megtekintése…" },
+					{ "command": "show_scope_name", "caption": "Hatókör nevének megjelenítése" }
+				]
+			},
+			{ "command": "install_package_control", "caption": "Package Control telepítése…" },
+			{ "caption": "-", "id": "end" }
+		]
+	},
+	{
+		"caption": "Projekt",
+		"id": "project",
+		"mnemonic": "P",
+		"children":
+		[
+			{ "command": "prompt_open_project_or_workspace", "caption": "Projekt megnyitása…" },
+			{ "command": "prompt_switch_project_or_workspace", "caption": "Váltás projektre…" },
+			{ "command": "prompt_select_workspace", "caption": "Gyorsváltás projektre…", "mnemonic": "S" },
+			{
+				"caption": "Korábbi projektek",
+				"children":
+				[
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 1 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 2 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 3 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 4 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 5 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
+					{ "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
+					{ "caption": "-" },
+					{ "command": "clear_recent_projects_and_workspaces", "caption": "Lista törlése" },
+					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Töröltek eltávolítása" }
+				]
+			},
+			{ "caption": "-" },
+			{ "command": "save_project_and_workspace_as", "caption": "Projekt mentése másként…", "mnemonic": "m" },
+			{ "command": "close_workspace", "caption": "Projekt bezárása", "mnemonic": "b" },
+			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Projekt szerkesztése" },
+			{ "caption": "-" },
+			{ "command": "new_window_for_project", "caption": "Új munkaterület nyitása a projektnek" },
+			{ "command": "save_workspace_as", "caption": "Munkaterület mentése másként…", "mnemonic": "t" },
+			{ "caption": "-" },
+			{ "command": "prompt_add_folder", "caption": "Mappa hozzáadása a projekthez…", "mnemonic": "h" },
+			{ "command": "close_folder_list", "caption": "Minden mappa eltávolítása a projektből", "mnemonic": "v" },
+			{ "command": "refresh_folder_list", "caption": "Mappák frissítése", "mnemonic": "f" }
+		]
+	},
+	{
+		"caption": "Tulajdonságok",
+		"mnemonic": "T",
+		"id": "preferences",
+		"children":
+		[
+			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Csomagok tallózása…", "mnemonic": "t" },
+			{ "caption": "-" },
+			{
+				"command": "edit_settings", "args":
+				{
+					"base_file": "${packages}/Default/Preferences.sublime-settings",
+					"default": "// Az itt megadott beállítások felülírják a \"Default/Preferences.sublime-settings\"-ben lévőket,\n// az itt megadottakat pedig felülírják a szintaxishoz tartozó beállítások.\n{\n\t$0\n}\n"
+				},
+				"caption": "Beállítások"
+			},
+			{ "command": "edit_syntax_settings", "caption": "Beállítások – Szintaxis" },
+			{
+				"command": "edit_settings", "args":
+				{
+					"base_file": "${packages}/Default/Distraction Free.sublime-settings",
+					"default": "{\n\t$0\n}\n"
+				},
+				"caption": "Beállítások – Zen mód"
+			},
+			{ "caption": "-" },
+			{
+				"command": "edit_settings", "args":
+				{
+					"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+					"default": "[\n\t$0\n]\n"
+				},
+				"caption": "Gyorsbillentyűk"
+			},
+			{
+				"command": "edit_settings", "args":
+				{
+					"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+					"default": "[\n\t$0\n]\n"
+				},
+				"caption": "Egérmozdulatok"
+			},
+			{ "caption": "-" },
+			{
+				"caption": "Színséma választása…",
+				"command": "select_color_scheme"
+			},
+			{
+				"caption": "Színséma testreszabása",
+				"command": "customize_color_scheme"
+			},
+			{ "caption": "-" },
+			{
+				"caption": "Téma választása…",
+				"command": "select_theme"
+			},
+			{
+				"caption": "Téma testreszabása",
+				"command": "customize_theme"
+			},
+			{ "caption": "-" },
+			{
+				"caption": "Betűtípus",
+				"children":
+				[
+					{ "command": "choose_font", "caption": "Választás…" },
+					{ "command": "increase_font_size", "caption": "Nagyobb" },
+					{ "command": "decrease_font_size", "caption": "Kisebb" },
+					{ "caption": "-" },
+					{ "command": "reset_font_size", "caption": "Méret alaphelyzetbe állítása" }
+				]
+			}
+		]
+	},
+	{
+		"caption": "Súgó",
+		"mnemonic": "S",
+		"id": "help",
+		"children":
+		[
+			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Dokumentáció" },
+			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Hiba jelentése" },
+			{ "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "X (Twitter)" },
+			{ "caption": "-" },
+			{ "command": "show_progress_window", "caption": "Indexelés állapota…" },
+			{ "caption": "-" },
+			{ "command": "purchase_license", "caption": "Licenc vásárlása"},
+			{ "command": "upgrade_license", "caption": "Licenc megújítása"},
+			{ "command": "show_license_window", "caption": "Licenc megadása" },
+			{ "command": "remove_license", "caption": "Licenc eltávolítása"},
+			{ "caption": "-" },
+			{ "command": "update_check", "caption": "Frissítések keresése…" },
+			{ "command": "show_changelog", "caption": "Újdonságok…" },
+			{ "command": "show_about_window", "caption": "Sublime Text névjegye", "mnemonic": "n" }
+		]
+	}
+]
