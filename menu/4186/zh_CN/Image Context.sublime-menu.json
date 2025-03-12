@@ -1,0 +1,11 @@
+[
+    { "caption": "-", "id": "repo_commands" },
+    { "caption": "打开Git仓库…", "command": "sublime_merge_open_repo" },
+    { "caption": "文件历史…", "command": "sublime_merge_file_history" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "打开所在文件夹…" },
+    { "command": "copy_path", "caption": "复制文件路径" },
+    { "command": "reveal_in_side_bar", "caption": "在侧边栏中显示" },
+    { "command": "force_reopen_as", "args": {"type": "text"}, "caption": "作为文本重新打开" },
+    { "caption": "-", "id": "end" }
+]
