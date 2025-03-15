@@ -1,0 +1,11 @@
+[
+    { "caption": "-", "id": "repo_commands" },
+    { "caption": "Git adattár megnyitása…", "command": "sublime_merge_open_repo" },
+    { "caption": "Fájltörténet…", "command": "sublime_merge_file_history" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Megnyitás mappában…" },
+    { "command": "copy_path", "caption": "Fájlútvonal másolása" },
+    { "command": "reveal_in_side_bar", "caption": "Megjelenítés az oldalsávon" },
+    { "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Fájl újranyitása szövegként" },
+    { "caption": "-", "id": "end" }
+]
