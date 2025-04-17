@@ -6,5 +6,5 @@
 	{ "command": "select_all", "caption": "Seleccionar Todo" },
 	{ "caption": "-" },
 	{ "command": "console_python_version", "caption": "Usar Python 3.8", "args": {"version": "3.8"}, "checkbox": true },
-	{ "command": "console_python_version", "caption": "Usar Python 3.3", "args": {"version": "3.3"}, "checkbox": true },
+	{ "command": "console_python_version", "caption": "Usar Python 3.3", "args": {"version": "3.3"}, "checkbox": true }
 ]

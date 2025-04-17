@@ -43,7 +43,7 @@
 					{ "command": "open_recent_folder", "args": {"index": 10 } },
 					{ "command": "open_recent_folder", "args": {"index": 11 } },
 					{ "caption": "-" },
-					{ "command": "clear_recent_files", "caption": "Limpiar elementos" }
+					{ "command": "clear_recent_files", "caption": "Borrar archivos recientes" }
 				]
 			},
 			{
@@ -91,7 +91,7 @@
 					{ "caption": "Hexadecimal", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Clonar la Vista", "mnemonic": "C" },
+			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Clonar Vista", "mnemonic": "C" },
 			{ "command": "save", "args": {"async": true}, "caption": "Guardar", "mnemonic": "G" },
 			{
 				"caption": "Guardar con la codificación",
@@ -153,7 +153,7 @@
 			{ "command": "close_all", "caption": "Cerrar Todos los Archivos" },
 			{ "caption": "-", "id": "exit" },
 			{ "command": "exit", "caption": "Salir", "mnemonic": "S", "platform": "Windows" },
-			{ "command": "exit", "caption": "Cerrar", "mnemonic": "C", "platform": "Linux" },
+			{ "command": "exit", "caption": "Cerrar", "mnemonic": "C", "platform": "Linux" }
 		]
 	},
 	{
@@ -300,7 +300,7 @@
 					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Envolver párrafo de 120 caracteres" }
 				]
 			},
-			{ "command": "auto_complete", "caption": "Mostrar Completaciones" },
+			{ "command": "auto_complete", "caption": "Mostrar AutoCompletado" },
 			{ "caption": "-", "id": "permute" },
 
 			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Clasificar Líneas", "mnemonic": "C" },
@@ -374,9 +374,9 @@
 					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Enfocar Pestaña Seleccionada: 7" },
 					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Enfocar Pestaña Seleccionada: 8" },
 					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Enfocar Pestaña Seleccionada: 9" },
-					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Enfocar Pestaña Seleccionada: 10" },
+					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Enfocar Pestaña Seleccionada: 10" }
 				]
-			},
+			}
 		]
 	},
 	{
@@ -412,7 +412,7 @@
 					{ "command": "prev_result", "caption": "Resultado Anterior" }
 				]
 			},
-			{ "command": "cancel_find", "caption": "Cancelar la búsqueda en archivos" },
+			{ "command": "cancel_find", "caption": "Cancelar la búsqueda en archivos" }
 		]
 	},
 	{
@@ -561,7 +561,7 @@
 						"command": "set_max_columns",
 						"checkbox": true,
 						"args": { "columns": 5 }
-					},
+					}
 				]
 			},
 			{
@@ -665,11 +665,11 @@
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Alternar Corrección Ortográfica", "checkbox": true },
+			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Alternar Corrector Ortográfico", "checkbox": true },
 			{ "command": "next_misspelling", "caption": "Error Ortográfico Siguiente" },
 			{ "command": "prev_misspelling", "caption": "Error Ortográfico Anterior" },
 			{
-				"caption": "Diccionario de Idiomas",
+				"caption": "Diccionarios de Idiomas",
 				"children": [ { "command": "$dictionaries" } ]
 			}
 		]
@@ -689,7 +689,7 @@
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ir a la palabra…" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Ir a una Línea…" },
 			{ "caption": "-" },
-			{ "command": "next_modification", "caption": "Siguiente Modificación" },
+			{ "command": "next_modification", "caption": "Modificación Siguiente" },
 			{ "command": "prev_modification", "caption": "Modificación Anterior" },
 			{ "caption": "-" },
 			{ "command": "jump_back", "caption": "Saltar hacía Atrás" },
@@ -701,8 +701,8 @@
 				"id": "switch_file",
 				"children":
 				[
-					{ "command": "next_view", "caption": "Siguiente Archivo" },
-					{ "command": "prev_view", "caption": "Anterior Archivo" },
+					{ "command": "next_view", "caption": "Archivo Siguiente" },
+					{ "command": "prev_view", "caption": "Archivo Anterior" },
 					{ "caption": "-" },
 					{ "command": "next_view_in_stack", "caption": "Archivo siguiente de la Pila" },
 					{ "command": "prev_view_in_stack", "caption": "Archivo anterior de la Pila" },
@@ -740,9 +740,9 @@
 				"children":
 				[
 					{ "command": "toggle_bookmark", "caption": "Alternar Marcador", "args": {"toggle_line": true } },
-					{ "command": "next_bookmark", "caption": "Siguiente Marcador" },
-					{ "command": "prev_bookmark", "caption": "Anterior Marcador" },
-					{ "command": "clear_bookmarks", "caption": "Limpiar Marcadores" },
+					{ "command": "next_bookmark", "caption": "Marcador Siguiente" },
+					{ "command": "prev_bookmark", "caption": "Marcador Anterior" },
+					{ "command": "clear_bookmarks", "caption": "Borrar Marcadores" },
 					{ "command": "select_all_bookmarks", "caption": "Seleccionar Todos los Marcadores" },
 					{ "caption": "-" },
 					{ "command": "select_bookmark", "args": {"index": 0} },
@@ -777,7 +777,7 @@
 			{ "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Snippets…" },
 			{ "caption": "-", "id": "build" },
 			{
-				"caption": "Sistema de Construcción",
+				"caption": "Compiladores",
 				"mnemonic": "S",
 				"children":
 				[
@@ -798,14 +798,14 @@
 					{ "caption": "-" },
 					{ "command": "$build_systems" },
 					{ "caption": "-" },
-					{ "command": "new_build_system", "caption": "Nuevo Sistema de Construcción…" }
+					{ "command": "new_build_system", "caption": "Nuevo Compilador…" }
 				]
 			},
-			{ "command": "build", "caption": "Construir", "mnemonic": "C" },
-			{ "command": "build", "args": {"select": true}, "caption": "Construir con…" },
+			{ "command": "build", "caption": "Compilar", "mnemonic": "C" },
+			{ "command": "build", "args": {"select": true}, "caption": "Compilar con…" },
 			{ "command": "cancel_build", "caption": "Cancelar Construcción", "mnemonic": "C" },
 			{
-				"caption": "Resultados de la Construcción",
+				"caption": "Resultados del Compilador",
 				"mnemonic": "R",
 				"children":
 				[
@@ -814,7 +814,7 @@
 					{ "command": "prev_result", "caption": "Resultado Anterior", "mnemonic": "R" }
 				]
 			},
-			{ "command": "toggle_save_all_on_build", "caption": "Guardar todo en la Construcción", "mnemonic": "G", "checkbox": true },
+			{ "command": "toggle_save_all_on_build", "caption": "Guardar Todo en el Compilador", "mnemonic": "G", "checkbox": true },
 			{ "caption": "-", "id": "macros" },
 			{ "command": "toggle_record_macro", "caption": "Grabar una Macro", "mnemonic": "G" },
 			{ "command": "run_macro", "caption": "Reproducir Macro", "mnemonic": "R" },
@@ -837,7 +837,7 @@
 					{ "command": "profile_plugins", "caption": "Perfil de Paquetes" },
 					{ "caption": "-" },
 					{ "command": "view_resource", "caption": "Ver los Archivos de los Paquetes…" },
-					{ "command": "show_scope_name", "caption": "Mostrar nombre del Scope" },
+					{ "command": "show_scope_name", "caption": "Mostrar nombre del Scope" }
 				]
 			},
 			{ "command": "install_package_control", "caption": "Instalar el Panel de Paquetes…" },
@@ -866,8 +866,8 @@
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
 					{ "caption": "-" },
-					{ "command": "clear_recent_projects_and_workspaces", "caption": "Limpiar elementos" },
-					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Borrar lo eliminado" },
+					{ "command": "clear_recent_projects_and_workspaces", "caption": "Borrar proyectos recientes" },
+					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Borrar proyectos eliminados" }
 				]
 			},
 			{ "caption": "-" },
@@ -880,7 +880,7 @@
 			{ "caption": "-" },
 			{ "command": "prompt_add_folder", "caption": "Añadir Carpeta al Proyecto…", "mnemonic": "A" },
 			{ "command": "close_folder_list", "caption": "Borrar Todas las Carpetas del Proyecto", "mnemonic": "B" },
-			{ "command": "refresh_folder_list", "caption": "Refrescar Carpetas", "mnemonic": "R" },
+			{ "command": "refresh_folder_list", "caption": "Refrescar Carpetas", "mnemonic": "R" }
 		]
 	},
 	{
@@ -895,7 +895,7 @@
 				"command": "edit_settings", "args":
 				{
 					"base_file": "${packages}/Default/Preferences.sublime-settings",
-					"default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+					"default": "// Los ajustes de esta opción anulan los de \"Default/Preferences.sublime-settings\",\n// y son anulados a su vez por ajustes específicos de la sintaxis.\n{\n\t$0\n}\n"
 				},
 				"caption": "Ajustes"
 			},
@@ -927,11 +927,11 @@
 			},
 			{ "caption": "-" },
 			{
-				"caption": "Seleccionar Combinación de Colores…",
+				"caption": "Seleccionar Paleta de Colores…",
 				"command": "select_color_scheme"
 			},
 			{
-				"caption": "Personalizar Combinación de Colores",
+				"caption": "Personalizar Paleta de Colores",
 				"command": "customize_color_scheme"
 			},
 			{ "caption": "-" },
@@ -954,7 +954,7 @@
 					{ "caption": "-" },
 					{ "command": "reset_font_size", "caption": "Restablecer Tamaño" }
 				]
-			},
+			}
 		]
 	},
 	{
@@ -964,10 +964,10 @@
 		"children":
 		[
 			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Documentación" },
-			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Notificar un error" },
+			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Reportar un error" },
 			{ "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "Twitter" },
 			{ "caption": "-" },
-			{ "command": "show_progress_window", "caption": "Indexar estado…" },
+			{ "command": "show_progress_window", "caption": "Estado del índice…" },
 			{ "caption": "-" },
 			{ "command": "purchase_license", "caption": "Comprar Licencia" },
 			{ "command": "upgrade_license", "caption": "Actualizar Licencia" },

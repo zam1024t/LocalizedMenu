@@ -89,5 +89,5 @@
 			{ "caption": "-" },
 			{ "caption": "Hexadecimal", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 		]
-	},
+	}
 ]

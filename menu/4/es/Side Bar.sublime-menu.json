@@ -10,7 +10,7 @@
 	{ "caption": "Abrir Repositorio Git…", "command": "sublime_merge_open_repo", "args": {"paths": []}},
 	{ "caption": "Historial de Archivos…", "command": "sublime_merge_file_history", "args": {"files": []}},
 	{ "caption": "Historial de carpetas…", "command": "sublime_merge_folder_history", "args": {"paths": []}},
-	{ "caption": "Archivo Blame…", "command": "sublime_merge_blame_file", "args": {"files": []}},
+	{ "caption": "Abrir con Blame…", "command": "sublime_merge_blame_file", "args": {"files": []}},
 	{ "caption": "-", "id": "folder_commands" },
 	{ "caption": "Nueva Carpeta…", "command": "new_folder", "args": {"dirs": []} },
 	{ "caption": "Borrar Carpeta", "command": "delete_folder", "args": {"dirs": [], "prompt": true} },

@@ -9,8 +9,8 @@
 	{ "command": "close_unmodified_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Cerrar Pestañas No Modificadas a la Derecha" },
 	{ "command": "close_deleted_files", "args": { "group": -1 }, "caption": "Cerrar Pestañas Con el Archivo Borrado" },
 	{ "caption": "-" },
-	{ "command": "clone_file", "args": { "add_to_selection": true, "group": -1, "index": -1, "retain_viewport_position": true }, "caption": "Clonar la Vista" },
+	{ "command": "clone_file", "args": { "add_to_selection": true, "group": -1, "index": -1, "retain_viewport_position": true }, "caption": "Clonar Vista" },
 	{ "caption": "-" },
 	{ "command": "new_file", "caption": "Nuevo Archivo" },
-	{ "command": "prompt_open_file", "caption": "Abrir Archivo" },
+	{ "command": "prompt_open_file", "caption": "Abrir Archivo" }
 ]
