@@ -1,10 +1,10 @@
 [
-	{ "command": "clear_location", "caption": "Limpiar" },
+	{ "command": "clear_location", "caption": "Borrar filtros" },
 	{ "command": "add_directory", "caption": "Añadir Carpeta" },
-	{ "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Añadir el Filtro de Inclusión" },
-	{ "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Añadir el Filtro de Exclusión" },
-	{ "command": "add_where_snippet", "args": {"snippet": "<project filters>"}, "caption": "Añadir Filtros del Proyecto" },
+	{ "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Añadir al Filtro de Inclusión" },
+	{ "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Añadir al Filtro de Exclusión" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<project filters>"}, "caption": "Añadir al Filtro del Proyecto" },
 	{ "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Añadir Carpetas Abiertas" },
 	{ "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Añadir Archivos Abiertos" },
-	{ "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Añadir el Archivo Actual" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Añadir el Archivo Actual" }
 ]

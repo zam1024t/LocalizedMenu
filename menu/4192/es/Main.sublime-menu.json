@@ -283,7 +283,7 @@
 					{ "command": "convert_ident_case", "caption": "lowerCamelCase", "args": {"case": "title", "first_case": "lower"} },
 					{ "command": "convert_ident_case", "caption": "UpperCamelCase", "args": {"case": "title"} },
 					{ "command": "convert_ident_case", "caption": "snake_case", "args": {"separator": "_", "case": "lower"} },
-					{ "command": "convert_ident_case", "caption": "kebab-case", "args": {"separator": "-", "case": "lower"} },
+					{ "command": "convert_ident_case", "caption": "kebab-case", "args": {"separator": "-", "case": "lower"} }
 				]
 			},
 			{
