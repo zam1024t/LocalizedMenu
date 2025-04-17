@@ -1,0 +1,11 @@
+[
+    { "caption": "-", "id": "repo_commands" },
+    { "caption": "Abrir repositorio Git…", "command": "sublime_merge_open_repo" },
+    { "caption": "Historial del Archivo…", "command": "sublime_merge_file_history" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Abrir Carpeta Contenedora…" },
+    { "command": "copy_path", "caption": "Copiar Ruta del Archivo" },
+    { "command": "reveal_in_side_bar", "caption": "Mostrar en la Barra Lateral" },
+    { "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Reabrir Archivo Como Texto" },
+    { "caption": "-", "id": "end" }
+]
