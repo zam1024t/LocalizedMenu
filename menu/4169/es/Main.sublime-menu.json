@@ -778,7 +778,7 @@
 			{ "caption": "-", "id": "build" },
 			{
 				"caption": "Compiladores",
-				"mnemonic": "S",
+				"mnemonic": "C",
 				"children":
 				[
 					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Automático", "checkbox": true },
