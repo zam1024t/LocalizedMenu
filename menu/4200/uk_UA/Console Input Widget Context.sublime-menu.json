@@ -1,0 +1,10 @@
+[
+	{ "caption": "Вирізати", "command": "cut" },
+	{ "caption": "Копіювати", "command": "copy" },
+	{ "caption": "Вставити", "command": "paste" },
+	{ "caption": "-" },
+	{ "caption": "Виділити все", "command": "select_all" },
+	{ "caption": "-" },
+	{ "command": "console_python_version", "args": { "version": "3.8" }, "checkbox": true },
+	{ "command": "console_python_version", "args": { "version": "3.3" }, "checkbox": true }
+]

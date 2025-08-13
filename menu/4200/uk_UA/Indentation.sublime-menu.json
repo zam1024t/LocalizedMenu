@@ -1,0 +1,17 @@
+[
+	{ "caption": "Використовувати у відступах пробіли", "checkbox": true, "command": "toggle_setting", "args": { "setting": "translate_tabs_to_spaces" } },
+	{ "caption": "-" },
+	{ "caption": "Розмір відступу: 1", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 1 } },
+	{ "caption": "Розмір відступу: 2", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 2 } },
+	{ "caption": "Розмір відступу: 3", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 3 } },
+	{ "caption": "Розмір відступу: 4", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 4 } },
+	{ "caption": "Розмір відступу: 5", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 5 } },
+	{ "caption": "Розмір відступу: 6", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 6 } },
+	{ "caption": "Розмір відступу: 7", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 7 } },
+	{ "caption": "Розмір відступу: 8", "checkbox": true, "command": "set_setting", "args": { "setting": "tab_size", "value": 8 } },
+	{ "caption": "-" },
+	{ "caption": "Визначити відступ за вмістом", "command": "detect_indentation" },
+	{ "caption": "-" },
+	{ "caption": "Перетворити відступи на пробіли", "command": "expand_tabs", "args": { "set_translate_tabs": true } },
+	{ "caption": "Перетворити відступи на табуляцію", "command": "unexpand_tabs", "args": { "set_translate_tabs": true } }
+]
