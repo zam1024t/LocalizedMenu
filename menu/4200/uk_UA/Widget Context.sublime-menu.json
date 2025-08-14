@@ -1,0 +1,9 @@
+[
+	{ "caption": "Відкрити URL", "command": "open_context_url" },
+	{ "caption": "-" },
+	{ "caption": "Вирізати", "command": "cut" },
+	{ "caption": "Копіювати", "command": "copy" },
+	{ "caption": "Вставити", "command": "paste" },
+	{ "caption": "-" },
+	{ "caption": "Виділити все", "command": "select_all" }
+]

@@ -1,0 +1,11 @@
+[
+    { "caption": "-", "id": "repo_commands" },
+    { "caption": "Відкрити Git репозиторій…", "command": "sublime_merge_open_repo" },
+    { "caption": "Історія файлу…", "command": "sublime_merge_file_history" },
+    { "caption": "-", "id": "file" },
+    { "caption": "Відкрити теку з файлом…", "command": "open_dir", "args": { "dir": "$file_path", "file": "$file_name" } },
+    { "caption": "Скопіювати шлях до файлу", "command": "copy_path" },
+    { "caption": "Показати в бічній панелі", "command": "reveal_in_side_bar" },
+    { "caption": "Відкрити файл як текст", "command": "force_reopen_as", "args": { "type": "text" } },
+    { "caption": "-", "id": "end" }
+]
