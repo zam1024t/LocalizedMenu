@@ -1,0 +1,10 @@
+[
+	{ "command": "clear_location", "caption": "Glan" },
+	{ "command": "add_directory", "caption": "Cuir Fillteán Leis" },
+	{ "command": "add_where_snippet", "args": {"snippet": "*.${0:txt}"}, "caption": "Cuir Scagaire San Áireamh leis" },
+	{ "command": "add_where_snippet", "args": {"snippet": "-*.${0:txt}"}, "caption": "Cuir Scagaire Eisiaimh leis" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<project filters>"}, "caption": "Cuir Scagairí Tionscadail leis" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Cuir Fillteáin Oscailte leis" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Cuir Comhaid Oscailte leis" },
+	{ "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Cuir Comhad Reatha Leis" },
+]
