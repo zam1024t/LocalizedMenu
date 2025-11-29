@@ -1,991 +1,2157 @@
 [
-	{
-		"caption": "Comhad",
-		"mnemonic": "F",
-		"id": "file",
-		"children":
-		[
-			{ "command": "new_file", "caption": "Comhad Nua", "mnemonic": "N" },
+  {
+    "caption": "Comhad",
+    "mnemonic": "C",
+    "id": "file",
+    "children": [
+      { "command": "new_file", "caption": "Comhad Nua", "mnemonic": "N" },
 
-			{ "command": "prompt_open_file", "caption": "Oscail Comhad…", "mnemonic": "O", "platform": "!OSX" },
-			{ "command": "prompt_open_folder", "caption": "Oscail Fillteán…", "platform": "!OSX" },
-			{ "command": "prompt_open", "caption": "Oscail…", "platform": "OSX" },
-			{
-				"caption": "Oscail Le Déanaí",
-				"mnemonic": "R",
-				"children":
-				[
-					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Athoscail an Comhad Dúnta" },
-					{ "caption": "-" },
-					{ "command": "open_recent_file", "args": {"index": 0 } },
-					{ "command": "open_recent_file", "args": {"index": 1 } },
-					{ "command": "open_recent_file", "args": {"index": 2 } },
-					{ "command": "open_recent_file", "args": {"index": 3 } },
-					{ "command": "open_recent_file", "args": {"index": 4 } },
-					{ "command": "open_recent_file", "args": {"index": 5 } },
-					{ "command": "open_recent_file", "args": {"index": 6 } },
-					{ "command": "open_recent_file", "args": {"index": 7 } },
-					{ "command": "open_recent_file", "args": {"index": 8 } },
-					{ "command": "open_recent_file", "args": {"index": 9 } },
-					{ "command": "open_recent_file", "args": {"index": 10 } },
-					{ "command": "open_recent_file", "args": {"index": 11 } },
-					{ "caption": "-" },
-					{ "command": "open_recent_folder", "args": {"index": 0 } },
-					{ "command": "open_recent_folder", "args": {"index": 1 } },
-					{ "command": "open_recent_folder", "args": {"index": 2 } },
-					{ "command": "open_recent_folder", "args": {"index": 3 } },
-					{ "command": "open_recent_folder", "args": {"index": 4 } },
-					{ "command": "open_recent_folder", "args": {"index": 5 } },
-					{ "command": "open_recent_folder", "args": {"index": 6 } },
-					{ "command": "open_recent_folder", "args": {"index": 7 } },
-					{ "command": "open_recent_folder", "args": {"index": 8 } },
-					{ "command": "open_recent_folder", "args": {"index": 9 } },
-					{ "command": "open_recent_folder", "args": {"index": 10 } },
-					{ "command": "open_recent_folder", "args": {"index": 11 } },
-					{ "caption": "-" },
-					{ "command": "clear_recent_files", "caption": "Glan Míreanna" }
-				]
-			},
-			{
-				"caption": "Athoscail le hIonchódú",
-				"id": "reopen_with_encoding",
-				"children":
-				[
-					{ "caption": "UTF-8", "command": "reopen", "args": { "encoding": "utf-8" } },
-					{ "caption": "UTF-16 LE", "command": "reopen", "args": { "encoding": "utf-16 le" } },
-					{ "caption": "UTF-16 BE", "command": "reopen", "args": { "encoding": "utf-16 be" } },
-					{ "caption": "-" },
-					{ "caption": "Araibis (ISO 8859-6)", "command": "reopen", "args": { "encoding": "Arabic (ISO 8859-6)" } },
-					{ "caption": "Araibis (Windows 1256)", "command": "reopen", "args": { "encoding": "Arabic (Windows 1256)" } },
-					{ "caption": "Baltach (ISO 8859-4)", "command": "reopen", "args": { "encoding": "Baltic (ISO 8859-4)" } },
-					{ "caption": "Baltach (Windows 1257)", "command": "reopen", "args": { "encoding": "Baltic (Windows 1257)" } },
-					{ "caption": "Ceilteach (ISO 8859-14)", "command": "reopen", "args": { "encoding": "Celtic (ISO 8859-14)" } },
-					{ "caption": "Lár na hEorpa (ISO 8859-2)", "command": "reopen", "args": { "encoding": "Central European (ISO 8859-2)" } },
-					{ "caption": "Lár na hEorpa (Mac)", "command": "reopen", "args": { "encoding": "Central European (Mac)" } },
-					{ "caption": "Lár na hEorpa (Windows 1250)", "command": "reopen", "args": { "encoding": "Central European (Windows 1250)" } },
-					{ "caption": "Sínis (GB18030)", "command": "reopen", "args": { "encoding": "Chinese (GB18030)" } },
-					{ "caption": "Cirileach (ISO 8859-5)", "command": "reopen", "args": { "encoding": "Cyrillic (ISO 8859-5)" } },
-					{ "caption": "Cirileach (KOI8-R)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-R)" } },
-					{ "caption": "Cirileach (KOI8-U)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-U)" } },
-					{ "caption": "Cirileach (Windows 1251)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 1251)" } },
-					{ "caption": "Cirileach (Windows 866)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 866)" } },
-					{ "caption": "DOS (CP 437)", "command": "reopen", "args": { "encoding": "DOS (CP 437)" } },
-					{ "caption": "Eastóinis (ISO 8859-13)", "command": "reopen", "args": { "encoding": "Estonian (ISO 8859-13)" } },
-					{ "caption": "Gréigis (ISO 8859-7)", "command": "reopen", "args": { "encoding": "Greek (ISO 8859-7)" } },
-					{ "caption": "Gréigis (Windows 1253)", "command": "reopen", "args": { "encoding": "Greek (Windows 1253)" } },
-					{ "caption": "Eabhrais (CP 862)", "command": "reopen", "args": { "encoding": "Hebrew (CP 862)" } },
-					{ "caption": "Eabhrais (ISO 8859-8)", "command": "reopen", "args": { "encoding": "Hebrew (ISO 8859-8)" } },
-					{ "caption": "Eabhrais (Windows 1255)", "command": "reopen", "args": { "encoding": "Hebrew (Windows 1255)" } },
-					{ "caption": "Nordach (ISO 8859-10)", "command": "reopen", "args": { "encoding": "Nordic (ISO 8859-10)" } },
-					{ "caption": "Nordach (Windows 865)", "command": "reopen", "args": { "encoding": "Nordic (Windows 865)" } },
-					{ "caption": "Rómáinis (ISO 8859-16)", "command": "reopen", "args": { "encoding": "Romanian (ISO 8859-16)" } },
-					{ "caption": "Tuircis (ISO 8859-9)", "command": "reopen", "args": { "encoding": "Turkish (ISO 8859-9)" } },
-					{ "caption": "Tuircis (Windows 1254)", "command": "reopen", "args": { "encoding": "Turkish (Windows 1254)" } },
-					{ "caption": "Vítneamach (Windows 1258)", "command": "reopen", "args": { "encoding": "Vietnamese (Windows 1258)" } },
-					{ "caption": "Thiar (ISO 8859-1)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-1)" } },
-					{ "caption": "Thiar (ISO 8859-15)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-15)" } },
-					{ "caption": "Thiar (ISO 8859-3)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-3)" } },
-					{ "caption": "Thiar (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
-					{ "caption": "Thiar (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
-					{ "caption": "-" },
-					{ "caption": "Heicseagánach", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
-				]
-			},
-			{ "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Athoscail an Comhad mar Íomhá" },
-			{ "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Athoscail an Comhad mar Théacs" },
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Radharc Scoilte", "mnemonic": "e" },
-			{ "command": "save", "args": {"async": true}, "caption": "Sábháil", "mnemonic": "S" },
-			{
-				"caption": "Sábháil le hIonchódú",
-				"id": "save_with_encoding",
-				"children":
-				[
-					{ "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
-					{ "caption": "UTF-8 with BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
-					{ "caption": "UTF-16 LE", "command": "save", "args": { "async": true, "encoding": "utf-16 le" } },
-					{ "caption": "UTF-16 LE with BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
-					{ "caption": "UTF-16 BE", "command": "save", "args": { "async": true, "encoding": "utf-16 be" } },
-					{ "caption": "UTF-16 BE with BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
-					{ "caption": "-" },
-					{ "caption": "Araibis (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
-					{ "caption": "Araibis (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
-					{ "caption": "Baltach (ISO 8859-4)", "command": "save", "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" } },
-					{ "caption": "Baltach (Windows 1257)", "command": "save", "args": { "async": true, "encoding": "Baltic (Windows 1257)" } },
-					{ "caption": "Ceilteach (ISO 8859-14)", "command": "save", "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" } },
-					{ "caption": "Lár na hEorpa (ISO 8859-2)", "command": "save", "args": { "async": true, "encoding": "Central European (ISO 8859-2)" } },
-					{ "caption": "Lár na hEorpa (Mac)", "command": "save", "args": { "async": true, "encoding": "Central European (Mac)" } },
-					{ "caption": "Lár na hEorpa (Windows 1250)", "command": "save", "args": { "async": true, "encoding": "Central European (Windows 1250)" } },
-					{ "caption": "Sínis (GB18030)", "command": "save", "args": { "async": true, "encoding": "Chinese (GB18030)" } },
-					{ "caption": "Cirileach (ISO 8859-5)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" } },
-					{ "caption": "Cirileach (KOI8-R)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" } },
-					{ "caption": "Cirileach (KOI8-U)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" } },
-					{ "caption": "Cirileach (Windows 1251)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" } },
-					{ "caption": "Cirileach (Windows 866)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 866)" } },
-					{ "caption": "DOS (CP 437)", "command": "save", "args": { "async": true, "encoding": "DOS (CP 437)" } },
-					{ "caption": "Eastóinis (ISO 8859-13)", "command": "save", "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" } },
-					{ "caption": "Gréigis (ISO 8859-7)", "command": "save", "args": { "async": true, "encoding": "Greek (ISO 8859-7)" } },
-					{ "caption": "Gréigis (Windows 1253)", "command": "save", "args": { "async": true, "encoding": "Greek (Windows 1253)" } },
-					{ "caption": "Eabhrais (CP 862)", "command": "save", "args": { "async": true, "encoding": "Hebrew (CP 862)" } },
-					{ "caption": "Eabhrais (ISO 8859-8)", "command": "save", "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" } },
-					{ "caption": "Eabhrais (Windows 1255)", "command": "save", "args": { "async": true, "encoding": "Hebrew (Windows 1255)" } },
-					{ "caption": "Nordach (ISO 8859-10)", "command": "save", "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" } },
-					{ "caption": "Nordach (Windows 865)", "command": "save", "args": { "async": true, "encoding": "Nordic (Windows 865)" } },
-					{ "caption": "Rómáinis (ISO 8859-16)", "command": "save", "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" } },
-					{ "caption": "Tuircis (ISO 8859-9)", "command": "save", "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" } },
-					{ "caption": "Tuircis (Windows 1254)", "command": "save", "args": { "async": true, "encoding": "Turkish (Windows 1254)" } },
-					{ "caption": "Vítneamach (Windows 1258)", "command": "save", "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" } },
-					{ "caption": "Thiar (ISO 8859-1)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-1)" } },
-					{ "caption": "Thiar (ISO 8859-15)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-15)" } },
-					{ "caption": "Thiar (ISO 8859-3)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-3)" } },
-					{ "caption": "Thiar (Mac Roman)", "command": "save", "args": { "async": true, "encoding": "Western (Mac Roman)" } },
-					{ "caption": "Thiar (Windows 1252)", "command": "save", "args": { "async": true, "encoding": "Western (Windows 1252)" } },
-					{ "caption": "-" },
-					{ "caption": "Heicseagánach", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
-				]
-			},
-			{ "command": "prompt_save_as", "caption": "Sábháil Mar…", "mnemonic": "A" },
-			{ "command": "save_all", "caption": "Sábháil Uile", "mnemonic": "l" },
-			{ "command": "html_print", "caption": "Priontáil…", "mnemonic": "P" },
-			{ "caption": "-", "id": "window" },
-			{ "command": "new_window", "caption": "Fuinneog Nua", "mnemonic": "W" },
-			{ "command": "close_window", "caption": "Dún an Fhuinneog" },
-			{ "caption": "-", "id": "close" },
-			{ "command": "close", "caption": "Dún Comhad", "mnemonic": "C" },
-			{ "command": "revert", "caption": "Fill ar ais an Comhad", "mnemonic": "v" },
-			{ "command": "close_all", "caption": "Dún Gach Comhad" },
-			{ "caption": "-", "id": "exit" },
-			{ "command": "exit", "caption": "Scoir", "mnemonic": "x", "platform": "Windows" },
-			{ "command": "exit", "caption": "Scoir", "mnemonic": "Q", "platform": "Linux" },
-		]
-	},
-	{
-		"caption": "Eagar", 
-		"mnemonic": "E",
-		"id": "edit",
-		"children":
-		[
-			{ "command": "undo", "mnemonic": "U" },
-			{ "command": "redo_or_repeat", "mnemonic": "R" },
-			{
-				"caption": "Cealaigh an Roghnú",
-				"children":
-				[
-					{ "command": "soft_undo" },
-					{ "command": "soft_redo" }
-				]
-			},
-			{ "caption": "-", "id": "clipboard" },
-			{ "caption": "Gearr", "command": "cut", "mnemonic": "t" },
-			{ "caption": "Cóipeáil", "command": "copy", "mnemonic": "C" },
-			{ "caption": "Cóipeáil mar HTML", "command": "copy_as_html", "args": {"enclosing_tags": true, "font_size": false} },
-			{ "caption": "Greamaigh","command": "paste", "mnemonic": "P" },
-			{ "command": "paste_and_indent", "mnemonic": "I" ,"caption": "Greamaigh agus Líon isteach", },
-			{ "command": "paste_from_history", "caption": "Greamaigh ón Stair" },
-			{ "caption": "-" },
-			{
-				"caption": "Líne", "mnemonic": "L",
-				"id": "line",
-				"children":
-				[
-					{ "command": "indent","caption": "Eangú" },
-					{ "command": "unindent","caption": "Dí-eangú" },
-					{ "command": "reindent","caption": "Ath-eangú", "args": {"single_line": true} },
-					{ "command": "swap_line_up","caption": "Malartú Líne Suas" },
-					{ "command": "swap_line_down","caption": "Malartú Líne Síos" },
-					{ "command": "duplicate_line","caption": "Líne Dhúblach" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Scrios Líne" },
-					{ "command": "join_lines","caption": "Líne a Cheangail" }
-				]
-			},
-			{
-				"caption": "Trácht", "mnemonic": "m",
-				"id": "comment",
-				"children":
-				[
-					{ "command": "toggle_comment", "args": {"block": false}, "caption": "Athraigh Trácht" },
-					{ "command": "toggle_comment", "args": {"block": true}, "caption": "Scorán Blocáil Trácht" }
-				]
-			},
-			{
-				"caption": "Téacs", "mnemonic": "T",
-				"id": "text",
-				"children":
-				[
-					{ "command": "revert_hunk","caption": "Fill ar ais Hunk" },
-					{ "command": "revert_modification","caption": "Aisiompaigh an Modhnú" },
-					{ "command": "toggle_inline_diff","caption": "Scoránaigh Diff Hunk" },
-					{ "caption": "-" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Cuir Líne Roimhe" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Cuir Líne Isteach Tar éis" },
-					{ "caption": "-" },
-					{ "command": "delete_word", "args": { "forward": true }, "caption": "Scrios Focal Ar Aghaidh" },
-					{ "command": "delete_word", "args": { "forward": false }, "caption": "Scrios Focal Ar Ais" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Scrios Líne" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Scrios go dtí an Deireadh" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Scrios go dtí an tús" },
-					{ "caption": "-" },
-					{ "command": "transpose", "caption": "Trasuigh" }
-				]
-			},
-			{
-				"caption": "Clib",
-				"id": "tag",
-				"children":
-				[
-					{ "command": "close_tag","caption": "Dún an Clib" },
-					{ "command": "expand_selection", "args": {"to": "tag"}, "caption": "Leathnaigh an Roghnú chuig an gClib" },
-					{ "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" }, "caption": "Fill an Roghnú le Clib" }
-				]
-			},
-			{
-				"caption": "Marcáil",
-				"id": "mark",
-				"children":
-				[
-					{ "command": "set_mark","caption": "Socraigh Marcáil" },
-					{ "command": "select_to_mark", "caption": "Roghnaigh le Marcáil" },
-					{ "command": "delete_to_mark", "caption": "Scrios chun Marcáil" },
-					{ "command": "swap_with_mark", "caption": "Malartú le Marc" },
-					{ "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Glan Marcáil" },
-					{ "caption": "-" },
-					{ "command": "yank" }
-				]
-			},
-			{
-				"caption": "Fillteán Cód",
-				"id": "fold",
-				"children":
-				[
-					{ "command": "fold" ,"caption": "Filleadh" },
-					{ "command": "unfold","caption": "Dífhill" },
-					{ "command": "unfold_all", "caption": "Dífhillte Gach Rud" },
-					{ "caption": "-" },
-					{ "caption": "Fill Gach Rud", "command": "fold_by_level", "mnemonic": "A", "args": {"level": 1} },
-					{ "caption": "Leibhéal Fillte 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
-					{ "caption": "Leibhéal Fillte 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
-					{ "caption": "Leibhéal Fillte 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
-					{ "caption": "Leibhéal Fillte 5", "command": "fold_by_level", "mnemonic": "5", "args": {"level": 5} },
-					{ "caption": "Leibhéal Fillte 6", "command": "fold_by_level", "mnemonic": "6", "args": {"level": 6} },
-					{ "caption": "Leibhéal Fillte 7", "command": "fold_by_level", "mnemonic": "7", "args": {"level": 7} },
-					{ "caption": "Leibhéal Fillte 8", "command": "fold_by_level", "mnemonic": "8", "args": {"level": 8} },
-					{ "caption": "Leibhéal Fillte 9", "command": "fold_by_level", "mnemonic": "9", "args": {"level": 9} },
-					{ "caption": "-" },
-					{ "command": "fold_tag_attributes", "caption": "Tréithe an Chlib Fillte" }
-				]
-			},
-			{
-				"caption": "Tiontaigh Cás", "mnemonic": "a",
-				"id": "convert_case",
-				"children":
-				[
-					{ "command": "title_case", "caption": "Cás Teidil" },
-					{ "command": "upper_case", "caption": "Cás Uachtarach" },
-					{ "command": "lower_case", "caption": "Cás Íochtarach" },
-					{ "command": "swap_case", "caption": "Cás Malartaithe" },
-					{ "command": "convert_ident_case", "caption": "íochtarachCamallCás", "args": {"case": "title", "first_case": "lower"} },
-					{ "command": "convert_ident_case", "caption": "UachtarachCamallCás", "args": {"case": "title"} },
-					{ "command": "convert_ident_case", "caption": "cás_nathrach", "args": {"separator": "_", "case": "lower"} },
-					{ "command": "convert_ident_case", "caption": "cás-kebab", "args": {"separator": "-", "case": "lower"} },
-				]
-			},
-			{
-				"caption": "Timfhill",
-				"id": "wrap",
-				"children":
-				[
-					{ "command": "wrap_lines", "caption": "Timfhill an Mír ag an Rialóir" },
-					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Timfhill an Mír ag 70 carachtar" },
-					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Timfhill an Mír ag 72 carachtar" },
-					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Timfhill an Mír ag 78 carachtar" },
-					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "Timfhill an Mír ag 80 carachtar" },
-					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "Timfhill an Mír ag 100 carachtar" },
-					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Timfhill an Mír ag 120 carachtar" }
-				]
-			},
-			{ "command": "auto_complete", "caption": "Taispeáin Críochnuithe" },
-			{ "caption": "-", "id": "permute" },
+      {
+        "command": "prompt_open_file",
+        "caption": "Oscail Comhad…",
+        "mnemonic": "O",
+        "platform": "!OSX"
+      },
+      {
+        "command": "prompt_open_folder",
+        "caption": "Oscail Fillteán…",
+        "platform": "!OSX"
+      },
+      { "command": "prompt_open", "caption": "Oscail…", "platform": "OSX" },
+      {
+        "caption": "Oscail Le Déanaí",
+        "mnemonic": "D",
+        "children": [
+          {
+            "command": "reopen_last_file",
+            "args": { "source": "window" },
+            "caption": "Athoscail an Comhad Dúnta"
+          },
+          { "caption": "-" },
+          { "command": "open_recent_file", "args": { "index": 0 } },
+          { "command": "open_recent_file", "args": { "index": 1 } },
+          { "command": "open_recent_file", "args": { "index": 2 } },
+          { "command": "open_recent_file", "args": { "index": 3 } },
+          { "command": "open_recent_file", "args": { "index": 4 } },
+          { "command": "open_recent_file", "args": { "index": 5 } },
+          { "command": "open_recent_file", "args": { "index": 6 } },
+          { "command": "open_recent_file", "args": { "index": 7 } },
+          { "command": "open_recent_file", "args": { "index": 8 } },
+          { "command": "open_recent_file", "args": { "index": 9 } },
+          { "command": "open_recent_file", "args": { "index": 10 } },
+          { "command": "open_recent_file", "args": { "index": 11 } },
+          { "caption": "-" },
+          { "command": "open_recent_folder", "args": { "index": 0 } },
+          { "command": "open_recent_folder", "args": { "index": 1 } },
+          { "command": "open_recent_folder", "args": { "index": 2 } },
+          { "command": "open_recent_folder", "args": { "index": 3 } },
+          { "command": "open_recent_folder", "args": { "index": 4 } },
+          { "command": "open_recent_folder", "args": { "index": 5 } },
+          { "command": "open_recent_folder", "args": { "index": 6 } },
+          { "command": "open_recent_folder", "args": { "index": 7 } },
+          { "command": "open_recent_folder", "args": { "index": 8 } },
+          { "command": "open_recent_folder", "args": { "index": 9 } },
+          { "command": "open_recent_folder", "args": { "index": 10 } },
+          { "command": "open_recent_folder", "args": { "index": 11 } },
+          { "caption": "-" },
+          { "command": "clear_recent_files", "caption": "Glan Míreanna" }
+        ]
+      },
+      {
+        "caption": "Athoscail le hIonchódú",
+        "id": "reopen_with_encoding",
+        "children": [
+          {
+            "caption": "UTF-8",
+            "command": "reopen",
+            "args": { "encoding": "utf-8" }
+          },
+          {
+            "caption": "UTF-16 LE",
+            "command": "reopen",
+            "args": { "encoding": "utf-16 le" }
+          },
+          {
+            "caption": "UTF-16 BE",
+            "command": "reopen",
+            "args": { "encoding": "utf-16 be" }
+          },
+          { "caption": "-" },
+          {
+            "caption": "Araibis (ISO 8859-6)",
+            "command": "reopen",
+            "args": { "encoding": "Arabic (ISO 8859-6)" }
+          },
+          {
+            "caption": "Araibis (Windows 1256)",
+            "command": "reopen",
+            "args": { "encoding": "Arabic (Windows 1256)" }
+          },
+          {
+            "caption": "Baltach (ISO 8859-4)",
+            "command": "reopen",
+            "args": { "encoding": "Baltic (ISO 8859-4)" }
+          },
+          {
+            "caption": "Baltach (Windows 1257)",
+            "command": "reopen",
+            "args": { "encoding": "Baltic (Windows 1257)" }
+          },
+          {
+            "caption": "Ceilteach (ISO 8859-14)",
+            "command": "reopen",
+            "args": { "encoding": "Celtic (ISO 8859-14)" }
+          },
+          {
+            "caption": "Lár na hEorpa (ISO 8859-2)",
+            "command": "reopen",
+            "args": { "encoding": "Central European (ISO 8859-2)" }
+          },
+          {
+            "caption": "Lár na hEorpa (Mac)",
+            "command": "reopen",
+            "args": { "encoding": "Central European (Mac)" }
+          },
+          {
+            "caption": "Lár na hEorpa (Windows 1250)",
+            "command": "reopen",
+            "args": { "encoding": "Central European (Windows 1250)" }
+          },
+          {
+            "caption": "Sínis (GB18030)",
+            "command": "reopen",
+            "args": { "encoding": "Chinese (GB18030)" }
+          },
+          {
+            "caption": "Cirileach (ISO 8859-5)",
+            "command": "reopen",
+            "args": { "encoding": "Cyrillic (ISO 8859-5)" }
+          },
+          {
+            "caption": "Cirileach (KOI8-R)",
+            "command": "reopen",
+            "args": { "encoding": "Cyrillic (KOI8-R)" }
+          },
+          {
+            "caption": "Cirileach (KOI8-U)",
+            "command": "reopen",
+            "args": { "encoding": "Cyrillic (KOI8-U)" }
+          },
+          {
+            "caption": "Cirileach (Windows 1251)",
+            "command": "reopen",
+            "args": { "encoding": "Cyrillic (Windows 1251)" }
+          },
+          {
+            "caption": "Cirileach (Windows 866)",
+            "command": "reopen",
+            "args": { "encoding": "Cyrillic (Windows 866)" }
+          },
+          {
+            "caption": "DOS (CP 437)",
+            "command": "reopen",
+            "args": { "encoding": "DOS (CP 437)" }
+          },
+          {
+            "caption": "Eastóinis (ISO 8859-13)",
+            "command": "reopen",
+            "args": { "encoding": "Estonian (ISO 8859-13)" }
+          },
+          {
+            "caption": "Gréigis (ISO 8859-7)",
+            "command": "reopen",
+            "args": { "encoding": "Greek (ISO 8859-7)" }
+          },
+          {
+            "caption": "Gréigis (Windows 1253)",
+            "command": "reopen",
+            "args": { "encoding": "Greek (Windows 1253)" }
+          },
+          {
+            "caption": "Eabhrais (CP 862)",
+            "command": "reopen",
+            "args": { "encoding": "Hebrew (CP 862)" }
+          },
+          {
+            "caption": "Eabhrais (ISO 8859-8)",
+            "command": "reopen",
+            "args": { "encoding": "Hebrew (ISO 8859-8)" }
+          },
+          {
+            "caption": "Eabhrais (Windows 1255)",
+            "command": "reopen",
+            "args": { "encoding": "Hebrew (Windows 1255)" }
+          },
+          {
+            "caption": "Nordach (ISO 8859-10)",
+            "command": "reopen",
+            "args": { "encoding": "Nordic (ISO 8859-10)" }
+          },
+          {
+            "caption": "Nordach (Windows 865)",
+            "command": "reopen",
+            "args": { "encoding": "Nordic (Windows 865)" }
+          },
+          {
+            "caption": "Rómáinis (ISO 8859-16)",
+            "command": "reopen",
+            "args": { "encoding": "Romanian (ISO 8859-16)" }
+          },
+          {
+            "caption": "Tuircis (ISO 8859-9)",
+            "command": "reopen",
+            "args": { "encoding": "Turkish (ISO 8859-9)" }
+          },
+          {
+            "caption": "Tuircis (Windows 1254)",
+            "command": "reopen",
+            "args": { "encoding": "Turkish (Windows 1254)" }
+          },
+          {
+            "caption": "Vítneamach (Windows 1258)",
+            "command": "reopen",
+            "args": { "encoding": "Vietnamese (Windows 1258)" }
+          },
+          {
+            "caption": "Thiar (ISO 8859-1)",
+            "command": "reopen",
+            "args": { "encoding": "Western (ISO 8859-1)" }
+          },
+          {
+            "caption": "Thiar (ISO 8859-15)",
+            "command": "reopen",
+            "args": { "encoding": "Western (ISO 8859-15)" }
+          },
+          {
+            "caption": "Thiar (ISO 8859-3)",
+            "command": "reopen",
+            "args": { "encoding": "Western (ISO 8859-3)" }
+          },
+          {
+            "caption": "Thiar (Mac Roman)",
+            "command": "reopen",
+            "args": { "encoding": "Western (Mac Roman)" }
+          },
+          {
+            "caption": "Thiar (Windows 1252)",
+            "command": "reopen",
+            "args": { "encoding": "Western (Windows 1252)" }
+          },
+          { "caption": "-" },
+          {
+            "caption": "Heicseagánach",
+            "command": "reopen",
+            "args": { "encoding": "Hexadecimal" }
+          }
+        ]
+      },
+      {
+        "command": "force_reopen_as",
+        "args": { "type": "image" },
+        "caption": "Athoscail an Comhad mar Íomhá"
+      },
+      {
+        "command": "force_reopen_as",
+        "args": { "type": "text" },
+        "caption": "Athoscail an Comhad mar Théacs"
+      },
+      {
+        "command": "clone_file",
+        "args": { "add_to_selection": true, "retain_viewport_position": true },
+        "caption": "Radharc Scoilte",
+        "mnemonic": "e"
+      },
+      {
+        "command": "save",
+        "args": { "async": true },
+        "caption": "Sábháil",
+        "mnemonic": "S"
+      },
+      {
+        "caption": "Sábháil le hIonchódú",
+        "id": "save_with_encoding",
+        "children": [
+          {
+            "caption": "UTF-8",
+            "command": "save",
+            "args": { "async": true, "encoding": "utf-8" }
+          },
+          {
+            "caption": "UTF-8 with BOM",
+            "command": "save",
+            "args": { "async": true, "encoding": "utf-8 with bom" }
+          },
+          {
+            "caption": "UTF-16 LE",
+            "command": "save",
+            "args": { "async": true, "encoding": "utf-16 le" }
+          },
+          {
+            "caption": "UTF-16 LE with BOM",
+            "command": "save",
+            "args": { "async": true, "encoding": "utf-16 le with bom" }
+          },
+          {
+            "caption": "UTF-16 BE",
+            "command": "save",
+            "args": { "async": true, "encoding": "utf-16 be" }
+          },
+          {
+            "caption": "UTF-16 BE with BOM",
+            "command": "save",
+            "args": { "async": true, "encoding": "utf-16 be with bom" }
+          },
+          { "caption": "-" },
+          {
+            "caption": "Araibis (ISO 8859-6)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" }
+          },
+          {
+            "caption": "Araibis (Windows 1256)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Arabic (Windows 1256)" }
+          },
+          {
+            "caption": "Baltach (ISO 8859-4)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" }
+          },
+          {
+            "caption": "Baltach (Windows 1257)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Baltic (Windows 1257)" }
+          },
+          {
+            "caption": "Ceilteach (ISO 8859-14)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" }
+          },
+          {
+            "caption": "Lár na hEorpa (ISO 8859-2)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Central European (ISO 8859-2)"
+            }
+          },
+          {
+            "caption": "Lár na hEorpa (Mac)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Central European (Mac)" }
+          },
+          {
+            "caption": "Lár na hEorpa (Windows 1250)",
+            "command": "save",
+            "args": {
+              "async": true,
+              "encoding": "Central European (Windows 1250)"
+            }
+          },
+          {
+            "caption": "Sínis (GB18030)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Chinese (GB18030)" }
+          },
+          {
+            "caption": "Cirileach (ISO 8859-5)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" }
+          },
+          {
+            "caption": "Cirileach (KOI8-R)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" }
+          },
+          {
+            "caption": "Cirileach (KOI8-U)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" }
+          },
+          {
+            "caption": "Cirileach (Windows 1251)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" }
+          },
+          {
+            "caption": "Cirileach (Windows 866)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Cyrillic (Windows 866)" }
+          },
+          {
+            "caption": "DOS (CP 437)",
+            "command": "save",
+            "args": { "async": true, "encoding": "DOS (CP 437)" }
+          },
+          {
+            "caption": "Eastóinis (ISO 8859-13)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" }
+          },
+          {
+            "caption": "Gréigis (ISO 8859-7)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Greek (ISO 8859-7)" }
+          },
+          {
+            "caption": "Gréigis (Windows 1253)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Greek (Windows 1253)" }
+          },
+          {
+            "caption": "Eabhrais (CP 862)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Hebrew (CP 862)" }
+          },
+          {
+            "caption": "Eabhrais (ISO 8859-8)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" }
+          },
+          {
+            "caption": "Eabhrais (Windows 1255)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Hebrew (Windows 1255)" }
+          },
+          {
+            "caption": "Nordach (ISO 8859-10)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" }
+          },
+          {
+            "caption": "Nordach (Windows 865)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Nordic (Windows 865)" }
+          },
+          {
+            "caption": "Rómáinis (ISO 8859-16)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" }
+          },
+          {
+            "caption": "Tuircis (ISO 8859-9)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" }
+          },
+          {
+            "caption": "Tuircis (Windows 1254)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Turkish (Windows 1254)" }
+          },
+          {
+            "caption": "Vítneamach (Windows 1258)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" }
+          },
+          {
+            "caption": "Thiar (ISO 8859-1)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Western (ISO 8859-1)" }
+          },
+          {
+            "caption": "Thiar (ISO 8859-15)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Western (ISO 8859-15)" }
+          },
+          {
+            "caption": "Thiar (ISO 8859-3)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Western (ISO 8859-3)" }
+          },
+          {
+            "caption": "Thiar (Mac Roman)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Western (Mac Roman)" }
+          },
+          {
+            "caption": "Thiar (Windows 1252)",
+            "command": "save",
+            "args": { "async": true, "encoding": "Western (Windows 1252)" }
+          },
+          { "caption": "-" },
+          {
+            "caption": "Heicseagánach",
+            "command": "save",
+            "args": { "async": true, "encoding": "Hexadecimal" }
+          }
+        ]
+      },
+      {
+        "command": "prompt_save_as",
+        "caption": "Sábháil Mar…",
+        "mnemonic": "M"
+      },
+      { "command": "save_all", "caption": "Sábháil Uile", "mnemonic": "l" },
+      { "command": "html_print", "caption": "Priontáil…", "mnemonic": "P" },
+      { "caption": "-", "id": "window" },
+      { "command": "new_window", "caption": "Fuinneog Nua", "mnemonic": "N" },
+      { "command": "close_window", "caption": "Dún an Fhuinneog" },
+      { "caption": "-", "id": "close" },
+      { "command": "close", "caption": "Dún Comhad", "mnemonic": "C" },
+      {
+        "command": "revert",
+        "caption": "Fill ar ais an Comhad",
+        "mnemonic": "F"
+      },
+      { "command": "close_all", "caption": "Dún Gach Comhad" },
+      { "caption": "-", "id": "exit" },
+      {
+        "command": "exit",
+        "caption": "Scoir",
+        "mnemonic": "x",
+        "platform": "Windows"
+      },
+      {
+        "command": "exit",
+        "caption": "Scoir",
+        "mnemonic": "o",
+        "platform": "Linux"
+      }
+    ]
+  },
+  {
+    "caption": "Eagar",
+    "mnemonic": "E",
+    "id": "edit",
+    "children": [
+      { "command": "undo", "mnemonic": "U" },
+      { "command": "redo_or_repeat", "mnemonic": "R" },
+      {
+        "caption": "Cealaigh an Roghnú",
+        "children": [{ "command": "soft_undo" }, { "command": "soft_redo" }]
+      },
+      { "caption": "-", "id": "clipboard" },
+      { "caption": "Gearr", "command": "cut", "mnemonic": "G" },
+      { "caption": "Cóipeáil", "command": "copy", "mnemonic": "C" },
+      {
+        "caption": "Cóipeáil mar HTML",
+        "command": "copy_as_html",
+        "args": { "enclosing_tags": true, "font_size": false }
+      },
+      { "caption": "Greamaigh", "command": "paste", "mnemonic": "r" },
+      {
+        "command": "paste_and_indent",
+        "mnemonic": "m",
+        "caption": "Greamaigh agus Líon isteach"
+      },
+      { "command": "paste_from_history", "caption": "Greamaigh ón Stair" },
+      { "caption": "-" },
+      {
+        "caption": "Líne",
+        "mnemonic": "L",
+        "id": "line",
+        "children": [
+          { "command": "indent", "caption": "Eangú" },
+          { "command": "unindent", "caption": "Dí-eangú" },
+          {
+            "command": "reindent",
+            "caption": "Ath-eangú",
+            "args": { "single_line": true }
+          },
+          { "command": "swap_line_up", "caption": "Malartú Líne Suas" },
+          { "command": "swap_line_down", "caption": "Malartú Líne Síos" },
+          { "command": "duplicate_line", "caption": "Líne Dhúblach" },
+          {
+            "command": "run_macro_file",
+            "args": {
+              "file": "res://Packages/Default/Delete Line.sublime-macro"
+            },
+            "caption": "Scrios Líne"
+          },
+          { "command": "join_lines", "caption": "Líne a Cheangail" }
+        ]
+      },
+      {
+        "caption": "Trácht",
+        "mnemonic": "h",
+        "id": "comment",
+        "children": [
+          {
+            "command": "toggle_comment",
+            "args": { "block": false },
+            "caption": "Athraigh Trácht"
+          },
+          {
+            "command": "toggle_comment",
+            "args": { "block": true },
+            "caption": "Scorán Blocáil Trácht"
+          }
+        ]
+      },
+      {
+        "caption": "Téacs",
+        "mnemonic": "T",
+        "id": "text",
+        "children": [
+          { "command": "revert_hunk", "caption": "Fill ar ais Hunk" },
+          {
+            "command": "revert_modification",
+            "caption": "Aisiompaigh an Modhnú"
+          },
+          {
+            "command": "toggle_inline_diff",
+            "caption": "Scoránaigh Diff Hunk"
+          },
+          { "caption": "-" },
+          {
+            "command": "run_macro_file",
+            "args": {
+              "file": "res://Packages/Default/Add Line Before.sublime-macro"
+            },
+            "caption": "Cuir Líne Roimhe"
+          },
+          {
+            "command": "run_macro_file",
+            "args": { "file": "res://Packages/Default/Add Line.sublime-macro" },
+            "caption": "Cuir Líne Isteach Tar éis"
+          },
+          { "caption": "-" },
+          {
+            "command": "delete_word",
+            "args": { "forward": true },
+            "caption": "Scrios Focal Ar Aghaidh"
+          },
+          {
+            "command": "delete_word",
+            "args": { "forward": false },
+            "caption": "Scrios Focal Ar Ais"
+          },
+          {
+            "command": "run_macro_file",
+            "args": {
+              "file": "res://Packages/Default/Delete Line.sublime-macro"
+            },
+            "caption": "Scrios Líne"
+          },
+          {
+            "command": "run_macro_file",
+            "args": {
+              "file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"
+            },
+            "caption": "Scrios go dtí an Deireadh"
+          },
+          {
+            "command": "run_macro_file",
+            "args": {
+              "file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"
+            },
+            "caption": "Scrios go dtí an tús"
+          },
+          { "caption": "-" },
+          { "command": "transpose", "caption": "Trasuigh" }
+        ]
+      },
+      {
+        "caption": "Clib",
+        "id": "tag",
+        "children": [
+          { "command": "close_tag", "caption": "Dún an Clib" },
+          {
+            "command": "expand_selection",
+            "args": { "to": "tag" },
+            "caption": "Leathnaigh an Roghnú chuig an gClib"
+          },
+          {
+            "command": "insert_snippet",
+            "args": {
+              "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet"
+            },
+            "caption": "Fill an Roghnú le Clib"
+          }
+        ]
+      },
+      {
+        "caption": "Marcáil",
+        "id": "mark",
+        "children": [
+          { "command": "set_mark", "caption": "Socraigh Marcáil" },
+          { "command": "select_to_mark", "caption": "Roghnaigh le Marcáil" },
+          { "command": "delete_to_mark", "caption": "Scrios chun Marcáil" },
+          { "command": "swap_with_mark", "caption": "Malartú le Marc" },
+          {
+            "command": "clear_bookmarks",
+            "args": { "name": "mark" },
+            "caption": "Glan Marcáil"
+          },
+          { "caption": "-" },
+          { "command": "yank" }
+        ]
+      },
+      {
+        "caption": "Fillteán Cód",
+        "id": "fold",
+        "children": [
+          { "command": "fold", "caption": "Filleadh" },
+          { "command": "unfold", "caption": "Dífhill" },
+          { "command": "unfold_all", "caption": "Dífhillte Gach Rud" },
+          { "caption": "-" },
+          {
+            "caption": "Fill Gach Rud",
+            "command": "fold_by_level",
+            "mnemonic": "R",
+            "args": { "level": 1 }
+          },
+          {
+            "caption": "Leibhéal Fillte 2",
+            "command": "fold_by_level",
+            "mnemonic": "2",
+            "args": { "level": 2 }
+          },
+          {
+            "caption": "Leibhéal Fillte 3",
+            "command": "fold_by_level",
+            "mnemonic": "3",
+            "args": { "level": 3 }
+          },
+          {
+            "caption": "Leibhéal Fillte 4",
+            "command": "fold_by_level",
+            "mnemonic": "4",
+            "args": { "level": 4 }
+          },
+          {
+            "caption": "Leibhéal Fillte 5",
+            "command": "fold_by_level",
+            "mnemonic": "5",
+            "args": { "level": 5 }
+          },
+          {
+            "caption": "Leibhéal Fillte 6",
+            "command": "fold_by_level",
+            "mnemonic": "6",
+            "args": { "level": 6 }
+          },
+          {
+            "caption": "Leibhéal Fillte 7",
+            "command": "fold_by_level",
+            "mnemonic": "7",
+            "args": { "level": 7 }
+          },
+          {
+            "caption": "Leibhéal Fillte 8",
+            "command": "fold_by_level",
+            "mnemonic": "8",
+            "args": { "level": 8 }
+          },
+          {
+            "caption": "Leibhéal Fillte 9",
+            "command": "fold_by_level",
+            "mnemonic": "9",
+            "args": { "level": 9 }
+          },
+          { "caption": "-" },
+          {
+            "command": "fold_tag_attributes",
+            "caption": "Tréithe an Chlib Fillte"
+          }
+        ]
+      },
+      {
+        "caption": "Tiontaigh Cás",
+        "mnemonic": "a",
+        "id": "convert_case",
+        "children": [
+          { "command": "title_case", "caption": "Cás Teidil" },
+          { "command": "upper_case", "caption": "Cás Uachtarach" },
+          { "command": "lower_case", "caption": "Cás Íochtarach" },
+          { "command": "swap_case", "caption": "Cás Malartaithe" },
+          {
+            "command": "convert_ident_case",
+            "caption": "íochtarachCamallCás",
+            "args": { "case": "title", "first_case": "lower" }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "UachtarachCamallCás",
+            "args": { "case": "title" }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "cás_nathrach",
+            "args": { "separator": "_", "case": "lower" }
+          },
+          {
+            "command": "convert_ident_case",
+            "caption": "cás-kebab",
+            "args": { "separator": "-", "case": "lower" }
+          }
+        ]
+      },
+      {
+        "caption": "Timfhill",
+        "id": "wrap",
+        "children": [
+          {
+            "command": "wrap_lines",
+            "caption": "Timfhill an Mír ag an Rialóir"
+          },
+          {
+            "command": "wrap_lines",
+            "args": { "width": 70 },
+            "caption": "Timfhill an Mír ag 70 carachtar"
+          },
+          {
+            "command": "wrap_lines",
+            "args": { "width": 72 },
+            "caption": "Timfhill an Mír ag 72 carachtar"
+          },
+          {
+            "command": "wrap_lines",
+            "args": { "width": 78 },
+            "caption": "Timfhill an Mír ag 78 carachtar"
+          },
+          {
+            "command": "wrap_lines",
+            "args": { "width": 80 },
+            "caption": "Timfhill an Mír ag 80 carachtar"
+          },
+          {
+            "command": "wrap_lines",
+            "args": { "width": 100 },
+            "caption": "Timfhill an Mír ag 100 carachtar"
+          },
+          {
+            "command": "wrap_lines",
+            "args": { "width": 120 },
+            "caption": "Timfhill an Mír ag 120 carachtar"
+          }
+        ]
+      },
+      { "command": "auto_complete", "caption": "Taispeáin Críochnuithe" },
+      { "caption": "-", "id": "permute" },
 
-			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Línte Sórtála", "mnemonic": "S" },
-			{ "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Línte Sórtála (Íogair do Chás)" },
-			{
-				"caption": "Athchuir na Líneanna",
-				"children":
-				[
-					{ "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Droim ar ais" },
-					{ "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Uathúil" },
-					{ "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Athrú" }
-				]
-			},
-			{
-				"caption": "Athchuir na Roghanna",
-				"children":
-				[
-					{ "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sórtáil" },
-					{ "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sórtáil (Íogair do Chás)" },
-					{ "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Droim ar ais" },
-					{ "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Uathúil" },
-					{ "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Athrú" }
-				]
-			},
-			{ "caption": "-", "id": "end" }
-		]
-	},
-	{
-		"caption": "Rogha",
-		"mnemonic": "S",
-		"id": "selection",
-		"children":
-		[
-			{ "command": "split_selection_into_lines", "caption": "Roinn ina Línte" },
-			{ "command": "single_selection" ,"caption": "Rogha Aonair", },
-			{ "caption": "-" },
-			{ "command": "select_all","caption": "Roghnaigh Uile" },
-			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "Leathnaigh an Roghnú" },
-			{ "command": "expand_selection", "args": {"to": "line"}, "caption": "Leathnaigh an Roghnú go Líne" },
-			{ "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Leathnaigh an Roghnú chun Líneáil Suas" },
-			{ "command": "find_under_expand", "caption": "Leathnaigh an Roghnú go Focal" },
-			{ "command": "expand_selection_to_paragraph", "caption": "Leathnaigh an Roghnú go Bloc" },
-			{ "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Leathnaigh an Roghnú go Mír" },
-			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Leathnaigh an Roghnú go Raon Feidhme" },
-			{ "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Leathnaigh an Roghnú go Lúibíní" },
-			{ "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Leathnaigh an Roghnú go dtí an tIndentation" },
-			{ "caption": "-" },
-			{ "command": "select_lines", "args": {"forward": false}, "caption": "Cuir an Líne Roimhe Seo Leis" },
-			{ "command": "select_lines", "args": {"forward": true}, "caption": "Cuir an Chéad Líne Eile leis" },
-			{ "caption": "-" },
-			{
-				"caption": "Roghnú Cluaisíní",
-				"children":
-				[
-					{ "command": "unselect_others", "caption": "Díroghnaigh Daoine Eile" },
-					{ "command": "unselect_to_left", "caption": "Díroghnaigh ar Chlé" },
-					{ "command": "unselect_to_right", "caption": "Díroghnaigh ar dheis" },
-					{ "command": "unselect_current", "caption": "Díroghnaigh Reatha" },
-					{ "caption": "-" },
-					{ "command": "select_to_left", "caption": "Roghnaigh ar Chlé" },
-					{ "command": "select_to_right", "caption": "Roghnaigh ar Dheis" },
-					{ "caption": "-" },
-					{ "command": "focus_to_left", "caption": "Dírigh ar Chlé" },
-					{ "command": "focus_to_right", "caption": "Dírigh ar dheis" },
-					{ "caption": "-" },
-					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Focus Selected Tab 1", "mnemonic": "1" },
-					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Focus Selected Tab 2", "mnemonic": "2" },
-					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Focus Selected Tab 3", "mnemonic": "3" },
-					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Focus Selected Tab 4", "mnemonic": "4" },
-					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Focus Selected Tab 5", "mnemonic": "5" },
-					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Focus Selected Tab 6", "mnemonic": "6" },
-					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Focus Selected Tab 7", "mnemonic": "7" },
-					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Focus Selected Tab 8", "mnemonic": "8" },
-					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Focus Selected Tab 9", "mnemonic": "9" },
-					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Focus Selected Tab 10" },
-				]
-			},
-		]
-	},
-	{
-		"caption": "Aimsigh",
-		"mnemonic": "i",
-		"id": "find",
-		"children":
-		[
-			{ "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Aimsigh…" },
-			{ "command": "find_next", "caption": "Aimsigh Ar Aghaidh"},
-			{ "command": "find_prev", "caption": "Aimsigh Roimhe Seo" },
-			{ "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Aimsigh Incriminteach" },
-			{ "caption": "-" },
-			{ "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Cuir in ionad…" },
-			{ "command": "replace_next" ,"caption": "Ionadaigh an Chéad"},
-			{ "caption": "-" },
-			{ "command": "find_under", "caption": "Aimsigh Tapa" },
-			{ "command": "find_all_under", "caption": "Aimsigh Tapa Gach Rud" },
-			{ "command": "find_under_expand", "caption": "Cuir Tapa leis Ar Aghaidh" },
-			{ "command": "find_under_expand_skip", "caption": "Léim Thapa Ar Aghaidh", "platform": "!OSX" },
-			{ "caption": "-" },
-			{ "command": "slurp_find_string", "caption": "Úsáid Roghnú le haghaidh Aimsigh" },
-			{ "command": "slurp_replace_string", "caption": "Úsáid an Roghnú le haghaidh Ionadaigh" },
-			{ "caption": "-" },
-			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Aimsigh i gComhaid…" },
-			{
-				"caption": "Aimsigh Torthaí",
-				"mnemonic": "R",
-				"children":
-				[
-					{ "command": "show_panel", "caption": "Taispeáin Painéal na dTorthaí", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true} },
-					{ "command": "next_result", "caption": "Toradh Eile" },
-					{ "command": "prev_result", "caption": "Toradh Roimhe Seo" },
-				]
-			},
-			{ "command": "cancel_find", "caption": "Cealaigh Aimsigh i gComhaid" },
-		]
-	},
-	{
-		"caption": "Amharc",
-		"mnemonic": "V",
-		"id": "view",
-		"children":
-		[
-			{
-				"caption": "Barra Taobh",
-				"id": "side_bar",
-				"children":
-				[
-					{ "command": "toggle_side_bar", "caption": "Taispeáin an Barra Taobh" },
-					{ "caption": "-" },
-					{ "command": "toggle_show_open_files", "caption": "Taispeáin Comhaid Oscailte" }
-				]
-			},
-			{ "command": "toggle_minimap" ,"caption": "Scoránaigh Miniléarscáil", },
-			{ "command": "toggle_tabs" ,"caption": "Scoránaigh Cluaisíní", },
-			{ "command": "toggle_status_bar" ,"caption": "Scoránaigh Barra Stádais", },
-			{ "command": "toggle_menu" ,"caption": "Folaigh an Roghchlár", },
-			{ "command": "show_panel" ,"caption": "Taispeáin an Consól", "args": {"panel": "console", "toggle": true} },
-			{ "caption": "-", "id": "full_screen" },
-			{ "command": "toggle_full_screen" ,"caption": "Téigh isteach sa Scáileán Lán", },
-			{ "command": "toggle_distraction_free" ,"caption": "Téigh isteach sa Mhód Gan Seachrán", },
-			{ "caption": "-", "id": "groups"  },
-			{
-				"caption": "Leagan Amach",
-				"mnemonic": "L",
-				"id": "layout",
-				"children":
-				[
-					{
-						"caption": "Singil",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1]]
-						}
-					},
-					{
-						"caption": "Colúin: 2",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.5, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-						}
-					},
-					{
-						"caption": "Colúin: 3",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.33, 0.66, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
-						}
-					},
-					{
-						"caption": "Colúin: 4",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.25, 0.5, 0.75, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
-						}
-					},
-					{
-						"caption": "Rónna: 2",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 1.0],
-							"rows": [0.0, 0.5, 1.0],
-							"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
-						}
-					},
-					{
-						"caption": "Rónna: 3",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 1.0],
-							"rows": [0.0, 0.33, 0.66, 1.0],
-							"cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
-						}
-					},
-					{
-						"caption": "Eangach: 4",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.5, 1.0],
-							"rows": [0.0, 0.5, 1.0],
-							"cells":
-							[
-								[0, 0, 1, 1], [1, 0, 2, 1],
-								[0, 1, 1, 2], [1, 1, 2, 2]
-							]
-						}
-					}
-				]
-			},
-			{
-				"caption": "Grúpaí",
-				"children":
-				[
-					{ "command": "new_pane", "caption": "Bog Comhad go Grúpa Nua" },
-					{ "command": "new_pane", "args": {"move": false}, "caption": "Grúpa Nua" },
-					{ "command": "close_pane", "caption": "Dún Grúpa" },
+      {
+        "command": "sort_lines",
+        "args": { "case_sensitive": false },
+        "caption": "Línte Sórtála",
+        "mnemonic": "S"
+      },
+      {
+        "command": "sort_lines",
+        "args": { "case_sensitive": true },
+        "caption": "Línte Sórtála (Íogair do Chás)"
+      },
+      {
+        "caption": "Athchuir na Líneanna",
+        "children": [
+          {
+            "command": "permute_lines",
+            "args": { "operation": "reverse" },
+            "caption": "Droim ar ais"
+          },
+          {
+            "command": "permute_lines",
+            "args": { "operation": "unique" },
+            "caption": "Uathúil"
+          },
+          {
+            "command": "permute_lines",
+            "args": { "operation": "shuffle" },
+            "caption": "Athrú"
+          }
+        ]
+      },
+      {
+        "caption": "Athchuir na Roghanna",
+        "children": [
+          {
+            "command": "sort_selection",
+            "args": { "case_sensitive": false },
+            "caption": "Sórtáil"
+          },
+          {
+            "command": "sort_selection",
+            "args": { "case_sensitive": true },
+            "caption": "Sórtáil (Íogair do Chás)"
+          },
+          {
+            "command": "permute_selection",
+            "args": { "operation": "reverse" },
+            "caption": "Droim ar ais"
+          },
+          {
+            "command": "permute_selection",
+            "args": { "operation": "unique" },
+            "caption": "Uathúil"
+          },
+          {
+            "command": "permute_selection",
+            "args": { "operation": "shuffle" },
+            "caption": "Athrú"
+          }
+        ]
+      },
+      { "caption": "-", "id": "end" }
+    ]
+  },
+  {
+    "caption": "Rogha",
+    "mnemonic": "R",
+    "id": "selection",
+    "children": [
+      { "command": "split_selection_into_lines", "caption": "Roinn ina Línte" },
+      { "command": "single_selection", "caption": "Rogha Aonair" },
+      { "caption": "-" },
+      { "command": "select_all", "caption": "Roghnaigh Uile" },
+      {
+        "command": "expand_selection",
+        "args": { "to": "smart" },
+        "caption": "Leathnaigh an Roghnú"
+      },
+      {
+        "command": "expand_selection",
+        "args": { "to": "line" },
+        "caption": "Leathnaigh an Roghnú go Líne"
+      },
+      {
+        "command": "expand_selection",
+        "args": { "to": "line_prev" },
+        "caption": "Leathnaigh an Roghnú chun Líneáil Suas"
+      },
+      {
+        "command": "find_under_expand",
+        "caption": "Leathnaigh an Roghnú go Focal"
+      },
+      {
+        "command": "expand_selection_to_paragraph",
+        "caption": "Leathnaigh an Roghnú go Bloc"
+      },
+      {
+        "command": "expand_selection_to_paragraph",
+        "args": { "markup_aware": true },
+        "caption": "Leathnaigh an Roghnú go Mír"
+      },
+      {
+        "command": "expand_selection",
+        "args": { "to": "scope" },
+        "caption": "Leathnaigh an Roghnú go Raon Feidhme"
+      },
+      {
+        "command": "expand_selection",
+        "args": { "to": "brackets" },
+        "caption": "Leathnaigh an Roghnú go Lúibíní"
+      },
+      {
+        "command": "expand_selection",
+        "args": { "to": "indentation" },
+        "caption": "Leathnaigh an Roghnú go dtí an tIndentation"
+      },
+      { "caption": "-" },
+      {
+        "command": "select_lines",
+        "args": { "forward": false },
+        "caption": "Cuir an Líne Roimhe Seo Leis"
+      },
+      {
+        "command": "select_lines",
+        "args": { "forward": true },
+        "caption": "Cuir an Chéad Líne Eile leis"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Roghnú Cluaisíní",
+        "children": [
+          {
+            "command": "unselect_others",
+            "caption": "Díroghnaigh Daoine Eile"
+          },
+          { "command": "unselect_to_left", "caption": "Díroghnaigh ar Chlé" },
+          { "command": "unselect_to_right", "caption": "Díroghnaigh ar dheis" },
+          { "command": "unselect_current", "caption": "Díroghnaigh Reatha" },
+          { "caption": "-" },
+          { "command": "select_to_left", "caption": "Roghnaigh ar Chlé" },
+          { "command": "select_to_right", "caption": "Roghnaigh ar Dheis" },
+          { "caption": "-" },
+          { "command": "focus_to_left", "caption": "Dírigh ar Chlé" },
+          { "command": "focus_to_right", "caption": "Dírigh ar dheis" },
+          { "caption": "-" },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 0 },
+            "caption": "Focus Selected Tab 1",
+            "mnemonic": "1"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 1 },
+            "caption": "Focus Selected Tab 2",
+            "mnemonic": "2"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 2 },
+            "caption": "Focus Selected Tab 3",
+            "mnemonic": "3"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 3 },
+            "caption": "Focus Selected Tab 4",
+            "mnemonic": "4"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 4 },
+            "caption": "Focus Selected Tab 5",
+            "mnemonic": "5"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 5 },
+            "caption": "Focus Selected Tab 6",
+            "mnemonic": "6"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 6 },
+            "caption": "Focus Selected Tab 7",
+            "mnemonic": "7"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 7 },
+            "caption": "Focus Selected Tab 8",
+            "mnemonic": "8"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 8 },
+            "caption": "Focus Selected Tab 9",
+            "mnemonic": "9"
+          },
+          {
+            "command": "focus_by_index",
+            "args": { "index": 9 },
+            "caption": "Focus Selected Tab 10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "caption": "Aimsigh",
+    "mnemonic": "A",
+    "id": "find",
+    "children": [
+      {
+        "command": "show_panel",
+        "args": { "panel": "find", "reverse": false },
+        "caption": "Aimsigh…"
+      },
+      { "command": "find_next", "caption": "Aimsigh Ar Aghaidh" },
+      { "command": "find_prev", "caption": "Aimsigh Roimhe Seo" },
+      {
+        "command": "show_panel",
+        "args": { "panel": "incremental_find", "reverse": false },
+        "caption": "Aimsigh Incriminteach"
+      },
+      { "caption": "-" },
+      {
+        "command": "show_panel",
+        "args": { "panel": "replace", "reverse": false },
+        "caption": "Cuir in ionad…"
+      },
+      { "command": "replace_next", "caption": "Ionadaigh an Chéad" },
+      { "caption": "-" },
+      { "command": "find_under", "caption": "Aimsigh Tapa" },
+      { "command": "find_all_under", "caption": "Aimsigh Tapa Gach Rud" },
+      {
+        "command": "find_under_expand",
+        "caption": "Cuir Tapa leis Ar Aghaidh"
+      },
+      {
+        "command": "find_under_expand_skip",
+        "caption": "Léim Thapa Ar Aghaidh",
+        "platform": "!OSX"
+      },
+      { "caption": "-" },
+      {
+        "command": "slurp_find_string",
+        "caption": "Úsáid Roghnú le haghaidh Aimsigh"
+      },
+      {
+        "command": "slurp_replace_string",
+        "caption": "Úsáid an Roghnú le haghaidh Ionadaigh"
+      },
+      { "caption": "-" },
+      {
+        "command": "show_panel",
+        "args": { "panel": "find_in_files" },
+        "caption": "Aimsigh i gComhaid…"
+      },
+      {
+        "caption": "Aimsigh Torthaí",
+        "mnemonic": "A",
+        "children": [
+          {
+            "command": "show_panel",
+            "caption": "Taispeáin Painéal na dTorthaí",
+            "args": {
+              "panel": "output.find_results",
+              "panel_name": "Results Panel",
+              "toggle": true,
+              "toggle_when_not_focused": true
+            }
+          },
+          { "command": "next_result", "caption": "Toradh Eile" },
+          { "command": "prev_result", "caption": "Toradh Roimhe Seo" }
+        ]
+      },
+      { "command": "cancel_find", "caption": "Cealaigh Aimsigh i gComhaid" }
+    ]
+  },
+  {
+    "caption": "Amharc",
+    "mnemonic": "m",
+    "id": "view",
+    "children": [
+      {
+        "caption": "Barra Taobh",
+        "id": "side_bar",
+        "children": [
+          {
+            "command": "toggle_side_bar",
+            "caption": "Taispeáin an Barra Taobh"
+          },
+          { "caption": "-" },
+          {
+            "command": "toggle_show_open_files",
+            "caption": "Taispeáin Comhaid Oscailte"
+          }
+        ]
+      },
+      { "command": "toggle_minimap", "caption": "Scoránaigh Miniléarscáil" },
+      { "command": "toggle_tabs", "caption": "Scoránaigh Cluaisíní" },
+      { "command": "toggle_status_bar", "caption": "Scoránaigh Barra Stádais" },
+      { "command": "toggle_menu", "caption": "Folaigh an Roghchlár" },
+      {
+        "command": "show_panel",
+        "caption": "Taispeáin an Consól",
+        "args": { "panel": "console", "toggle": true }
+      },
+      { "caption": "-", "id": "full_screen" },
+      {
+        "command": "toggle_full_screen",
+        "caption": "Téigh isteach sa Scáileán Lán"
+      },
+      {
+        "command": "toggle_distraction_free",
+        "caption": "Téigh isteach sa Mhód Gan Seachrán"
+      },
+      { "caption": "-", "id": "groups" },
+      {
+        "caption": "Leagan Amach",
+        "mnemonic": "L",
+        "id": "layout",
+        "children": [
+          {
+            "caption": "Singil",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [[0, 0, 1, 1]]
+            }
+          },
+          {
+            "caption": "Colúin: 2",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 0.5, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [
+                [0, 0, 1, 1],
+                [1, 0, 2, 1]
+              ]
+            }
+          },
+          {
+            "caption": "Colúin: 3",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 0.33, 0.66, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [
+                [0, 0, 1, 1],
+                [1, 0, 2, 1],
+                [2, 0, 3, 1]
+              ]
+            }
+          },
+          {
+            "caption": "Colúin: 4",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [
+                [0, 0, 1, 1],
+                [1, 0, 2, 1],
+                [2, 0, 3, 1],
+                [3, 0, 4, 1]
+              ]
+            }
+          },
+          {
+            "caption": "Rónna: 2",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 1.0],
+              "rows": [0.0, 0.5, 1.0],
+              "cells": [
+                [0, 0, 1, 1],
+                [0, 1, 1, 2]
+              ]
+            }
+          },
+          {
+            "caption": "Rónna: 3",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 1.0],
+              "rows": [0.0, 0.33, 0.66, 1.0],
+              "cells": [
+                [0, 0, 1, 1],
+                [0, 1, 1, 2],
+                [0, 2, 1, 3]
+              ]
+            }
+          },
+          {
+            "caption": "Eangach: 4",
+            "command": "set_layout",
+            "args": {
+              "cols": [0.0, 0.5, 1.0],
+              "rows": [0.0, 0.5, 1.0],
+              "cells": [
+                [0, 0, 1, 1],
+                [1, 0, 2, 1],
+                [0, 1, 1, 2],
+                [1, 1, 2, 2]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "caption": "Grúpaí",
+        "children": [
+          { "command": "new_pane", "caption": "Bog Comhad go Grúpa Nua" },
+          {
+            "command": "new_pane",
+            "args": { "move": false },
+            "caption": "Grúpa Nua"
+          },
+          { "command": "close_pane", "caption": "Dún Grúpa" },
 
-					{ "caption": "-" },
+          { "caption": "-" },
 
-					{
-						"caption": "Uasmhéid na gColún: 1",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 1 },
-						"mnemonic": "1",
-					},
-					{
-						"caption": "Uasmhéid na gColún: 2",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 2 },
-						"mnemonic": "2",
-					},
-					{
-						"caption": "Uasmhéid na gColún: 3",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 3 },
-						"mnemonic": "3",
-					},
-					{
-						"caption": "Uasmhéid na gColún: 4",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 4 },
-						"mnemonic": "4",
-					},
-					{
-						"caption": "Uasmhéid na gColún: 5",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 5 },
-						"mnemonic": "5",
-					},
-				]
-			},
-			{
-				"caption": "Grúpa Fócais",
-				"mnemonic": "F",
-				"children":
-				[
-
-					{ "command": "focus_neighboring_group", "caption": "Ar Aghaidh" },
-					{ "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Roimhe Seo" },
-					{ "caption": "-" },
-					{ "command": "focus_group", "args": {"group": 0}, "caption": "Grúpa 1", "mnemonic": "1" },
-					{ "command": "focus_group", "args": {"group": 1}, "caption": "Grúpa 2", "mnemonic": "2" },
-					{ "command": "focus_group", "args": {"group": 2}, "caption": "Grúpa 3", "mnemonic": "3" },
-					{ "command": "focus_group", "args": {"group": 3}, "caption": "Grúpa 4", "mnemonic": "4" }
-				]
-			},
-			{
-				"caption": "Move File to Group",
-				"mnemonic": "M",
-				"children":
-				[
-					{ "command": "move_to_neighboring_group", "caption": "Ar Aghaidh" },
-					{ "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Roimhe Seo" },
-					{ "caption": "-" },
-					{ "command": "move_to_group", "args": {"group": 0}, "caption": "Grúpa 1", "mnemonic": "1" },
-					{ "command": "move_to_group", "args": {"group": 1}, "caption": "Grúpa 2", "mnemonic": "2" },
-					{ "command": "move_to_group", "args": {"group": 2}, "caption": "Grúpa 3", "mnemonic": "3" },
-					{ "command": "move_to_group", "args": {"group": 3}, "caption": "Grúpa 4", "mnemonic": "4" }
-				]
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Comhréir",
-				"mnemonic": "S",
-				"id": "syntax",
-				"children": [ { "command": "$file_types" } ]
-			},
-			{
-				"caption": "Eangú",
-				"mnemonic": "I",
-				"id": "indentation",
-				"children":
-				[
-					{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Eangaigh ag Úsáid Spásanna", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Leithead an Chluaisín: 1", "mnemonic": "1", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Leithead an Chluaisín: 2", "mnemonic": "2", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Leithead an Chluaisín: 3", "mnemonic": "3", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Leithead an Chluaisín: 4", "mnemonic": "4", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Leithead an Chluaisín: 5", "mnemonic": "5", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Leithead an Chluaisín: 6", "mnemonic": "6", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Leithead an Chluaisín: 7", "mnemonic": "7", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Leithead an Chluaisín: 8", "mnemonic": "8", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "detect_indentation", "caption": "Buille faoi thuairim Socruithe ón Maolán" },
-					{ "caption": "-" },
-					{ "command": "expand_tabs", "caption": "Tiontaigh Eangú go Spásanna", "args": {"set_translate_tabs": true} },
-					{ "command": "unexpand_tabs", "caption": "Tiontaigh Eangú go Cluaisíní", "args": {"set_translate_tabs": true} }
-				]
-			},
-			{
-				"caption": "Deireadh Líne",
-				"mnemonic": "n",
-				"id": "line_endings",
-				"children":
-				[
-					{ "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows", "checkbox": true },
-					{ "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix", "checkbox": true },
-					{ "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
-				]
-			},
-			{ "caption": "-", "id": "settings" },
-			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Timfhilleadh Focal", "mnemonic": "W", "checkbox": true },
-			{
-				"caption": "Colún Timfhilleadh Focal",
-				"children":
-				[
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Uathoibríoch", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 72}, "caption": "72", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}, "caption": "78", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}, "caption": "80", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}, "caption": "100", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}, "caption": "120", "checkbox": true }
-				]
-			},
-			{
-				"caption": "Rialóir",
-				"children":
-				[
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "Dada", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [72]}, "caption": "72", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [78]}, "caption": "78", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [80]}, "caption": "80", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [100]}, "caption": "100", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [120]}, "caption": "120", "checkbox": true }
-				]
-			},
-			{ "caption": "-" },
-			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Seiceáil Litrithe", "checkbox": true },
-			{ "command": "next_misspelling" },
-			{ "command": "prev_misspelling" },
-			{
-				"caption": "Foclóir",
-				"children": [ { "command": "$dictionaries" } ]
-			}
-		]
-	},
-	{
-		"caption": "Téigh",
-		"mnemonic": "G",
-		"id": "goto",
-		"children":
-		[
-			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Téigh go dtí rud ar bith…", "mnemonic": "A" },
-			{ "caption": "-" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Téigh go dtí an Siombail…" },
-			{ "command": "goto_symbol_in_project", "caption": "Téigh go dtí Siombail sa Tionscadal…" },
-			{ "command": "goto_definition", "caption": "Téigh go dtí an Sainmhíniú…" },
-			{ "command": "goto_reference", "caption": "Téigh go dtí an Tagairt…" },
-			// { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Téigh go dtí an Líne…" },
-			{ "caption": "-" },
-			{ "command": "next_modification", "caption": "An Chéad Mhodhnú Eile" },
-			{ "command": "prev_modification", "caption": "Modhnú Roimhe Seo" },
-			{ "caption": "-" },
-			{ "command": "jump_back", "caption": "Léim Ar Ais" },
-			{ "command": "jump_forward", "caption": "Léim Ar Aghaidh" },
-			{ "caption": "-" },
-			{
-				"caption": "Athraigh Comhad",
-				"mnemonic": "t",
-				"id": "switch_file",
-				"children":
-				[
-					{ "command": "next_view", "caption": "An chéad chomhad eile" },
-					{ "command": "prev_view", "caption": "Comhad Roimhe Seo" },
-					{ "caption": "-" },
-					{ "command": "next_view_in_stack", "caption": "An chéad chomhad eile sa chruach" },
-					{ "command": "prev_view_in_stack", "caption": "Comhad Roimhe Seo sa Chruach" },
-					{ "caption": "-" },
-					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Ceanntásc/Cur i bhFeidhm Athraigh", "mnemonic": "H" },
-					{ "caption": "-" },
-					{ "command": "select_by_index", "args": { "index": 0 } },
-					{ "command": "select_by_index", "args": { "index": 1 } },
-					{ "command": "select_by_index", "args": { "index": 2 } },
-					{ "command": "select_by_index", "args": { "index": 3 } },
-					{ "command": "select_by_index", "args": { "index": 4 } },
-					{ "command": "select_by_index", "args": { "index": 5 } },
-					{ "command": "select_by_index", "args": { "index": 6 } },
-					{ "command": "select_by_index", "args": { "index": 7 } },
-					{ "command": "select_by_index", "args": { "index": 8 } },
-					{ "command": "select_by_index", "args": { "index": 9 } }
-				]
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Scrollaigh",
-				"mnemonic": "S",
-				"id": "scroll",
-				"children":
-				[
-					{ "command": "show_at_center", "caption": "Scrollaigh go dtí an Rogha" },
-					{ "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "Líne Suas" },
-					{ "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "Líne Síos" }
-				]
-			},
-			{
-				"caption": "Leabharmharcanna",
-				"mnemonic": "B",
-				"id": "bookmarks",
-				"children":
-				[
-					{ "command": "toggle_bookmark", "caption": "Leabharmharc a scoránaigh" ,"args": {"toggle_line": true } },
-					{ "command": "next_bookmark", "caption": "Leabharmharc Eile" },
-					{ "command": "prev_bookmark", "caption": "Leabharmharc roimhe seo" },
-					{ "command": "clear_bookmarks", "caption": "Glan Leabharmharcanna" },
-					{ "command": "select_all_bookmarks", "caption": "Roghnaigh Gach Leabharmharc" },
-					{ "caption": "-" },
-					{ "command": "select_bookmark", "args": {"index": 0} },
-					{ "command": "select_bookmark", "args": {"index": 1} },
-					{ "command": "select_bookmark", "args": {"index": 2} },
-					{ "command": "select_bookmark", "args": {"index": 3} },
-					{ "command": "select_bookmark", "args": {"index": 4} },
-					{ "command": "select_bookmark", "args": {"index": 5} },
-					{ "command": "select_bookmark", "args": {"index": 6} },
-					{ "command": "select_bookmark", "args": {"index": 7} },
-					{ "command": "select_bookmark", "args": {"index": 8} },
-					{ "command": "select_bookmark", "args": {"index": 9} },
-					{ "command": "select_bookmark", "args": {"index": 10} },
-					{ "command": "select_bookmark", "args": {"index": 11} },
-					{ "command": "select_bookmark", "args": {"index": 12} },
-					{ "command": "select_bookmark", "args": {"index": 13} },
-					{ "command": "select_bookmark", "args": {"index": 14} },
-					{ "command": "select_bookmark", "args": {"index": 15} }
-				]
-			},
-			{ "caption": "-" },
-			{ "command": "move_to", "args": {"to": "brackets"}, "caption": "Léim go dtí an Lúibín Comhoiriúnach" }
-		]
-	},
-	{
-		"caption": "Uirlisí",
-		"mnemonic": "T",
-		"id": "tools",
-		"children":
-		[
-			{ "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Pailéad Ordú…" },
-			{ "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Sleachta…" },
-			{ "caption": "-", "id": "build" },
-			{
-				"caption": "Córas Tógála",
-				"mnemonic": "u",
-				"children":
-				[
-					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Uathoibríoch", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 2}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 3}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 4}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 8}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 9}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 10}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 11}, "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "$build_systems" },
-					{ "caption": "-" },
-					{ "command": "new_build_system", "caption": "Córas Tógála Nua…" }
-				]
-			},
-			{ "command": "build", "caption": "Tógáil", "mnemonic": "B" },
-			{ "command": "build", "args": {"select": true}, "caption": "Tógáil Le…" },
-			{ "command": "cancel_build", "caption": "Cealaigh an Tógáil", "mnemonic": "C" },
-			{
-				"caption": "Torthaí Tógála",
-				"mnemonic": "R",
-				"children":
-				[
-					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Taispeáin Torthaí Tógála", "mnemonic": "S" },
-					{ "command": "next_result","caption": "Toradh Eile", "mnemonic": "N" },
-					{ "command": "prev_result", "caption": "Toradh Roimhe Seo", "mnemonic": "P" }
-				]
-			},
-			{ "command": "toggle_save_all_on_build", "caption": "Sábháil Gach Rud ar Thógáil", "mnemonic": "A", "checkbox": true },
-			{ "caption": "-", "id": "macros" },
-			{ "command": "toggle_record_macro", "caption": "Macra Taifeadta", "mnemonic": "M" },
-			{ "command": "run_macro", "caption": "Macra Athsheinm", "mnemonic": "P" },
-			{ "command": "save_macro", "caption": "Sábháil Macra…", "mnemonic": "v" },
-			{
-				"caption": "Macraí",
-				"children": [ { "command": "$macros" } ]
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Forbróir",
-				"children":
-				[
-					{ "command": "new_plugin", "caption": "Breiseán Nua…" },
-					{ "command": "new_snippet", "caption": "Sleachta Nua…" },
-					{ "command": "new_syntax", "caption": "Comhréir Nua…" },
-					{ "command": "convert_syntax" },
-					{ "caption": "-" },
-					{ "caption": "-" },
-					{ "command": "profile_plugins" },
-					{ "caption": "-" },
-					{ "command": "view_resource", "caption": "Féach ar Chomhad an Phacáiste…" },
-					{ "command": "show_scope_name" },
-				]
-			},
-			{ "command": "install_package_control", "caption": "Suiteáil Rialú Pacáiste…" },
-			{ "caption": "-", "id": "end" }
-		]
-	},
-	{
-		"caption": "Tionscadal",
-		"id": "project",
-		"mnemonic": "P",
-		"children":
-		[
-			{ "command": "prompt_open_project_or_workspace", "caption": "Oscail an tionscadal…" },
-			{ "command": "prompt_switch_project_or_workspace", "caption": "Tionscadal Athraigh…" },
-			{ "command": "prompt_select_workspace", "caption": "Tionscadal Athraithe Tapa…", "mnemonic": "S" },
-			{
-				"caption": "Oscail Le Déanaí",
-				"children":
-				[
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 1 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 2 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 3 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 4 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 5 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
-					{ "caption": "-" },
-					{ "command": "clear_recent_projects_and_workspaces", "caption": "Glan Míreanna" },
-					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Bain Scriosta" },
-				]
-			},
-			{ "caption": "-" },
-			{ "command": "save_project_and_workspace_as", "caption": "Sábháil Tionscadal Mar…", "mnemonic": "A" },
-			{ "command": "close_workspace", "caption": "Dún an Tionscadal", "mnemonic": "C" },
-			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Cuir an tionscadal in Eagar" },
-			{ "caption": "-" },
-			{ "command": "new_window_for_project", "caption": "Spás Oibre Nua don Tionscadal" },
-			{ "command": "save_workspace_as", "caption": "Sábháil Spás Oibre Mar...", "mnemonic": "A" },
-			{ "caption": "-" },
-			{ "command": "prompt_add_folder", "caption": "Cuir Fillteán leis an Tionscadal…", "mnemonic": "d" },
-			{ "command": "close_folder_list", "caption": "Bain gach Fillteán as an Tionscadal", "mnemonic": "m" },
-			{ "command": "refresh_folder_list", "caption": "Athnuachan Fillteáin", "mnemonic": "e" },
-		]
-	},
-	{
-		"caption": "Roghanna",
-		"mnemonic": "n",
-		"id": "preferences",
-		"children":
-		[
-			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Brabhsáil Pacáistí…", "mnemonic": "B" },
-			{ "caption": "-" },
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Preferences.sublime-settings",
-					"default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
-				},
-				"caption": "Socruithe"
-			},
-			{ "command": "edit_syntax_settings", "caption": "Socruithe – Sainchomhréir" },
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Distraction Free.sublime-settings",
-					"default": "{\n\t$0\n}\n"
-				},
-				"caption": "Socruithe – Saor ó Sheachrán"
-			},
-			{ "caption": "-" },
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
-					"default": "[\n\t$0\n]\n"
-				},
-				"caption": "Ceangail Eochracha"
-			},
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
-					"default": "[\n\t$0\n]\n"
-				},
-				"caption": "Ceangail Luiche"
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Roghnaigh Scéim Dathanna…",
-				"command": "select_color_scheme"
-			},
-			{
-				"caption": "Saincheap an Scéim Dathanna",
-				"command": "customize_color_scheme"
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Roghnaigh Téama…",
-				"command": "select_theme"
-			},
-			{
-				"caption": "Saincheap an Téama",
-				"command": "customize_theme"
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Cló",
-				"children":
-				[
-					{ "command": "choose_font", "caption": "Roghnaigh…" },
-					{ "command": "increase_font_size", "caption": "Níos mó" },
-					{ "command": "decrease_font_size", "caption": "Níos lú" },
-					{ "caption": "-" },
-					{ "command": "reset_font_size", "caption": "Athshocraigh Méid" }
-				]
-			},
-		]
-	},
-	{
-		"caption": "Cabhair",
-		"mnemonic": "H",
-		"id": "help",
-		"children":
-		[
-			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Doiciméadú" },
-			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Tuairiscigh Fabht" },
-			{ "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "Twitter / X" },
-			{ "caption": "-" },
-			{ "command": "show_progress_window", "caption": "Stádas Innéacsaithe…" },
-			{ "caption": "-" },
-			{ "caption": "Ceadúnas ceannaigh", "command": "purchase_license"},
-			{ "command": "upgrade_license"},
-			{ "command": "show_license_window", "caption": "Cuir Ceadúnas Isteach" },
-			{ "command": "remove_license"},
-			{ "caption": "-" },
-			{ "command": "update_check", "caption": "Seiceáil le haghaidh Nuashonruithe…" },
-			{ "command": "show_changelog", "caption": "Logáil Athruithe…" },
-			{ "command": "show_attribution", "caption": "Ceadúnais agus Leithdháileadh…" },
-			{ "command": "show_about_window", "caption": "Maidir le Téacs Sublime", "mnemonic": "A" }
-		]
-	}
+          {
+            "caption": "Uasmhéid na gColún: 1",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 1 },
+            "mnemonic": "1"
+          },
+          {
+            "caption": "Uasmhéid na gColún: 2",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 2 },
+            "mnemonic": "2"
+          },
+          {
+            "caption": "Uasmhéid na gColún: 3",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 3 },
+            "mnemonic": "3"
+          },
+          {
+            "caption": "Uasmhéid na gColún: 4",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 4 },
+            "mnemonic": "4"
+          },
+          {
+            "caption": "Uasmhéid na gColún: 5",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 5 },
+            "mnemonic": "5"
+          }
+        ]
+      },
+      {
+        "caption": "Grúpa Fócais",
+        "mnemonic": "F",
+        "children": [
+          { "command": "focus_neighboring_group", "caption": "Ar Aghaidh" },
+          {
+            "command": "focus_neighboring_group",
+            "args": { "forward": false },
+            "caption": "Roimhe Seo"
+          },
+          { "caption": "-" },
+          {
+            "command": "focus_group",
+            "args": { "group": 0 },
+            "caption": "Grúpa 1",
+            "mnemonic": "1"
+          },
+          {
+            "command": "focus_group",
+            "args": { "group": 1 },
+            "caption": "Grúpa 2",
+            "mnemonic": "2"
+          },
+          {
+            "command": "focus_group",
+            "args": { "group": 2 },
+            "caption": "Grúpa 3",
+            "mnemonic": "3"
+          },
+          {
+            "command": "focus_group",
+            "args": { "group": 3 },
+            "caption": "Grúpa 4",
+            "mnemonic": "4"
+          }
+        ]
+      },
+      {
+        "caption": "Move File to Group",
+        "mnemonic": "M",
+        "children": [
+          { "command": "move_to_neighboring_group", "caption": "Ar Aghaidh" },
+          {
+            "command": "move_to_neighboring_group",
+            "args": { "forward": false },
+            "caption": "Roimhe Seo"
+          },
+          { "caption": "-" },
+          {
+            "command": "move_to_group",
+            "args": { "group": 0 },
+            "caption": "Grúpa 1",
+            "mnemonic": "1"
+          },
+          {
+            "command": "move_to_group",
+            "args": { "group": 1 },
+            "caption": "Grúpa 2",
+            "mnemonic": "2"
+          },
+          {
+            "command": "move_to_group",
+            "args": { "group": 2 },
+            "caption": "Grúpa 3",
+            "mnemonic": "3"
+          },
+          {
+            "command": "move_to_group",
+            "args": { "group": 3 },
+            "caption": "Grúpa 4",
+            "mnemonic": "4"
+          }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "caption": "Comhréir",
+        "mnemonic": "C",
+        "id": "syntax",
+        "children": [{ "command": "$file_types" }]
+      },
+      {
+        "caption": "Eangú",
+        "mnemonic": "g",
+        "id": "indentation",
+        "children": [
+          {
+            "command": "toggle_setting",
+            "args": { "setting": "translate_tabs_to_spaces" },
+            "caption": "Eangaigh ag Úsáid Spásanna",
+            "checkbox": true
+          },
+          { "caption": "-" },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 1 },
+            "caption": "Leithead an Chluaisín: 1",
+            "mnemonic": "1",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 2 },
+            "caption": "Leithead an Chluaisín: 2",
+            "mnemonic": "2",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 3 },
+            "caption": "Leithead an Chluaisín: 3",
+            "mnemonic": "3",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 4 },
+            "caption": "Leithead an Chluaisín: 4",
+            "mnemonic": "4",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 5 },
+            "caption": "Leithead an Chluaisín: 5",
+            "mnemonic": "5",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 6 },
+            "caption": "Leithead an Chluaisín: 6",
+            "mnemonic": "6",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 7 },
+            "caption": "Leithead an Chluaisín: 7",
+            "mnemonic": "7",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "tab_size", "value": 8 },
+            "caption": "Leithead an Chluaisín: 8",
+            "mnemonic": "8",
+            "checkbox": true
+          },
+          { "caption": "-" },
+          {
+            "command": "detect_indentation",
+            "caption": "Buille faoi thuairim Socruithe ón Maolán"
+          },
+          { "caption": "-" },
+          {
+            "command": "expand_tabs",
+            "caption": "Tiontaigh Eangú go Spásanna",
+            "args": { "set_translate_tabs": true }
+          },
+          {
+            "command": "unexpand_tabs",
+            "caption": "Tiontaigh Eangú go Cluaisíní",
+            "args": { "set_translate_tabs": true }
+          }
+        ]
+      },
+      {
+        "caption": "Deireadh Líne",
+        "mnemonic": "n",
+        "id": "line_endings",
+        "children": [
+          {
+            "command": "set_line_ending",
+            "args": { "type": "windows" },
+            "caption": "Windows",
+            "checkbox": true
+          },
+          {
+            "command": "set_line_ending",
+            "args": { "type": "unix" },
+            "caption": "Unix",
+            "checkbox": true
+          },
+          {
+            "command": "set_line_ending",
+            "args": { "type": "cr" },
+            "caption": "Mac OS 9",
+            "checkbox": true
+          }
+        ]
+      },
+      { "caption": "-", "id": "settings" },
+      {
+        "command": "toggle_setting",
+        "args": { "setting": "word_wrap" },
+        "caption": "Timfhilleadh Focal",
+        "mnemonic": "T",
+        "checkbox": true
+      },
+      {
+        "caption": "Colún Timfhilleadh Focal",
+        "children": [
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 0 },
+            "caption": "Uathoibríoch",
+            "checkbox": true
+          },
+          { "caption": "-" },
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 70 },
+            "caption": "70",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 72 },
+            "caption": "72",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 78 },
+            "caption": "78",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 80 },
+            "caption": "80",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 100 },
+            "caption": "100",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "wrap_width", "value": 120 },
+            "caption": "120",
+            "checkbox": true
+          }
+        ]
+      },
+      {
+        "caption": "Rialóir",
+        "children": [
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [] },
+            "caption": "Dada",
+            "checkbox": true
+          },
+          { "caption": "-" },
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [70] },
+            "caption": "70",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [72] },
+            "caption": "72",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [78] },
+            "caption": "78",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [80] },
+            "caption": "80",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [100] },
+            "caption": "100",
+            "checkbox": true
+          },
+          {
+            "command": "set_setting",
+            "args": { "setting": "rulers", "value": [120] },
+            "caption": "120",
+            "checkbox": true
+          }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "command": "toggle_setting",
+        "args": { "setting": "spell_check" },
+        "caption": "Seiceáil Litrithe",
+        "checkbox": true
+      },
+      { "command": "next_misspelling" },
+      { "command": "prev_misspelling" },
+      {
+        "caption": "Foclóir",
+        "children": [{ "command": "$dictionaries" }]
+      }
+    ]
+  },
+  {
+    "caption": "Téigh",
+    "mnemonic": "T",
+    "id": "goto",
+    "children": [
+      {
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "show_files": true },
+        "caption": "Téigh go dtí rud ar bith…",
+        "mnemonic": "b"
+      },
+      { "caption": "-" },
+      {
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "text": "@" },
+        "caption": "Téigh go dtí an Siombail…"
+      },
+      {
+        "command": "goto_symbol_in_project",
+        "caption": "Téigh go dtí Siombail sa Tionscadal…"
+      },
+      {
+        "command": "goto_definition",
+        "caption": "Téigh go dtí an Sainmhíniú…"
+      },
+      { "command": "goto_reference", "caption": "Téigh go dtí an Tagairt…" },
+      // { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Goto Word…" },
+      {
+        "command": "show_overlay",
+        "args": { "overlay": "goto", "text": ":" },
+        "caption": "Téigh go dtí an Líne…"
+      },
+      { "caption": "-" },
+      { "command": "next_modification", "caption": "An Chéad Mhodhnú Eile" },
+      { "command": "prev_modification", "caption": "Modhnú Roimhe Seo" },
+      { "caption": "-" },
+      { "command": "jump_back", "caption": "Léim Ar Ais" },
+      { "command": "jump_forward", "caption": "Léim Ar Aghaidh" },
+      { "caption": "-" },
+      {
+        "caption": "Athraigh Comhad",
+        "mnemonic": "t",
+        "id": "switch_file",
+        "children": [
+          { "command": "next_view", "caption": "An chéad chomhad eile" },
+          { "command": "prev_view", "caption": "Comhad Roimhe Seo" },
+          { "caption": "-" },
+          {
+            "command": "next_view_in_stack",
+            "caption": "An chéad chomhad eile sa chruach"
+          },
+          {
+            "command": "prev_view_in_stack",
+            "caption": "Comhad Roimhe Seo sa Chruach"
+          },
+          { "caption": "-" },
+          {
+            "command": "switch_file",
+            "args": {
+              "extensions": [
+                "cpp",
+                "cxx",
+                "cc",
+                "c",
+                "hpp",
+                "hxx",
+                "hh",
+                "h",
+                "ipp",
+                "inl",
+                "m",
+                "mm"
+              ]
+            },
+            "caption": "Ceanntásc/Cur i bhFeidhm Athraigh",
+            "mnemonic": "e"
+          },
+          { "caption": "-" },
+          { "command": "select_by_index", "args": { "index": 0 } },
+          { "command": "select_by_index", "args": { "index": 1 } },
+          { "command": "select_by_index", "args": { "index": 2 } },
+          { "command": "select_by_index", "args": { "index": 3 } },
+          { "command": "select_by_index", "args": { "index": 4 } },
+          { "command": "select_by_index", "args": { "index": 5 } },
+          { "command": "select_by_index", "args": { "index": 6 } },
+          { "command": "select_by_index", "args": { "index": 7 } },
+          { "command": "select_by_index", "args": { "index": 8 } },
+          { "command": "select_by_index", "args": { "index": 9 } }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "caption": "Scrollaigh",
+        "mnemonic": "S",
+        "id": "scroll",
+        "children": [
+          {
+            "command": "show_at_center",
+            "caption": "Scrollaigh go dtí an Rogha"
+          },
+          {
+            "command": "scroll_lines",
+            "args": { "amount": 1.0 },
+            "caption": "Líne Suas"
+          },
+          {
+            "command": "scroll_lines",
+            "args": { "amount": -1.0 },
+            "caption": "Líne Síos"
+          }
+        ]
+      },
+      {
+        "caption": "Leabharmharcanna",
+        "mnemonic": "L",
+        "id": "bookmarks",
+        "children": [
+          {
+            "command": "toggle_bookmark",
+            "caption": "Leabharmharc a scoránaigh",
+            "args": { "toggle_line": true }
+          },
+          { "command": "next_bookmark", "caption": "Leabharmharc Eile" },
+          { "command": "prev_bookmark", "caption": "Leabharmharc roimhe seo" },
+          { "command": "clear_bookmarks", "caption": "Glan Leabharmharcanna" },
+          {
+            "command": "select_all_bookmarks",
+            "caption": "Roghnaigh Gach Leabharmharc"
+          },
+          { "caption": "-" },
+          { "command": "select_bookmark", "args": { "index": 0 } },
+          { "command": "select_bookmark", "args": { "index": 1 } },
+          { "command": "select_bookmark", "args": { "index": 2 } },
+          { "command": "select_bookmark", "args": { "index": 3 } },
+          { "command": "select_bookmark", "args": { "index": 4 } },
+          { "command": "select_bookmark", "args": { "index": 5 } },
+          { "command": "select_bookmark", "args": { "index": 6 } },
+          { "command": "select_bookmark", "args": { "index": 7 } },
+          { "command": "select_bookmark", "args": { "index": 8 } },
+          { "command": "select_bookmark", "args": { "index": 9 } },
+          { "command": "select_bookmark", "args": { "index": 10 } },
+          { "command": "select_bookmark", "args": { "index": 11 } },
+          { "command": "select_bookmark", "args": { "index": 12 } },
+          { "command": "select_bookmark", "args": { "index": 13 } },
+          { "command": "select_bookmark", "args": { "index": 14 } },
+          { "command": "select_bookmark", "args": { "index": 15 } }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "command": "move_to",
+        "args": { "to": "brackets" },
+        "caption": "Léim go dtí an Lúibín Comhoiriúnach"
+      }
+    ]
+  },
+  {
+    "caption": "Uirlisí",
+    "mnemonic": "U",
+    "id": "tools",
+    "children": [
+      {
+        "command": "show_overlay",
+        "args": { "overlay": "command_palette" },
+        "caption": "Pailéad Ordú…"
+      },
+      {
+        "command": "show_overlay",
+        "args": { "overlay": "command_palette", "text": "Snippet: " },
+        "caption": "Sleachta…"
+      },
+      { "caption": "-", "id": "build" },
+      {
+        "caption": "Córas Tógála",
+        "mnemonic": "s",
+        "children": [
+          {
+            "command": "set_build_system",
+            "args": { "file": "" },
+            "caption": "Uathoibríoch",
+            "checkbox": true
+          },
+          { "caption": "-" },
+          {
+            "command": "set_build_system",
+            "args": { "index": 0 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 1 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 2 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 3 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 4 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 5 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 6 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 7 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 8 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 9 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 10 },
+            "checkbox": true
+          },
+          {
+            "command": "set_build_system",
+            "args": { "index": 11 },
+            "checkbox": true
+          },
+          { "caption": "-" },
+          { "command": "$build_systems" },
+          { "caption": "-" },
+          { "command": "new_build_system", "caption": "Córas Tógála Nua…" }
+        ]
+      },
+      { "command": "build", "caption": "Tógáil", "mnemonic": "i" },
+      {
+        "command": "build",
+        "args": { "select": true },
+        "caption": "Tógáil Le…"
+      },
+      {
+        "command": "cancel_build",
+        "caption": "Cealaigh an Tógáil",
+        "mnemonic": "C"
+      },
+      {
+        "caption": "Torthaí Tógála",
+        "mnemonic": "l",
+        "children": [
+          {
+            "command": "show_panel",
+            "args": { "panel": "output.exec" },
+            "caption": "Taispeáin Torthaí Tógála",
+            "mnemonic": "p"
+          },
+          {
+            "command": "next_result",
+            "caption": "Toradh Eile",
+            "mnemonic": "E"
+          },
+          {
+            "command": "prev_result",
+            "caption": "Toradh Roimhe Seo",
+            "mnemonic": "R"
+          }
+        ]
+      },
+      {
+        "command": "toggle_save_all_on_build",
+        "caption": "Sábháil Gach Rud ar Thógáil",
+        "mnemonic": "G",
+        "checkbox": true
+      },
+      { "caption": "-", "id": "macros" },
+      {
+        "command": "toggle_record_macro",
+        "caption": "Macra Taifeadta",
+        "mnemonic": "M"
+      },
+      { "command": "run_macro", "caption": "Macra Athsheinm", "mnemonic": "M" },
+      { "command": "save_macro", "caption": "Sábháil Macra…", "mnemonic": "S" },
+      {
+        "caption": "Macraí",
+        "children": [{ "command": "$macros" }]
+      },
+      { "caption": "-" },
+      {
+        "caption": "Forbróir",
+        "children": [
+          { "command": "new_plugin", "caption": "Breiseán Nua…" },
+          { "command": "new_snippet", "caption": "Sleachta Nua…" },
+          { "command": "new_syntax", "caption": "Comhréir Nua…" },
+          { "command": "convert_syntax" },
+          { "caption": "-" },
+          { "caption": "-" },
+          { "command": "profile_plugins" },
+          { "caption": "-" },
+          {
+            "command": "view_resource",
+            "caption": "Féach ar Chomhad an Phacáiste…"
+          },
+          { "command": "show_scope_name" }
+        ]
+      },
+      {
+        "command": "install_package_control",
+        "caption": "Suiteáil Rialú Pacáiste…"
+      },
+      { "caption": "-", "id": "end" }
+    ]
+  },
+  {
+    "caption": "Tionscadal",
+    "id": "project",
+    "mnemonic": "i",
+    "children": [
+      {
+        "command": "prompt_open_project_or_workspace",
+        "caption": "Oscail an tionscadal…"
+      },
+      {
+        "command": "prompt_switch_project_or_workspace",
+        "caption": "Tionscadal Athraigh…"
+      },
+      {
+        "command": "prompt_select_workspace",
+        "caption": "Tionscadal Athraithe Tapa…",
+        "mnemonic": "T"
+      },
+      {
+        "caption": "Oscail Le Déanaí",
+        "children": [
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 0 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 1 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 2 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 3 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 4 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 5 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 6 }
+          },
+          {
+            "command": "open_recent_project_or_workspace",
+            "args": { "index": 7 }
+          },
+          { "caption": "-" },
+          {
+            "command": "clear_recent_projects_and_workspaces",
+            "caption": "Glan Míreanna"
+          },
+          {
+            "command": "clear_missing_recent_projects_and_workspaces",
+            "caption": "Bain Scriosta"
+          }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "command": "save_project_and_workspace_as",
+        "caption": "Sábháil Tionscadal Mar…",
+        "mnemonic": "S"
+      },
+      {
+        "command": "close_workspace",
+        "caption": "Dún an Tionscadal",
+        "mnemonic": "D"
+      },
+      {
+        "command": "open_file",
+        "args": { "file": "${project}" },
+        "caption": "Cuir an tionscadal in Eagar"
+      },
+      { "caption": "-" },
+      {
+        "command": "new_window_for_project",
+        "caption": "Spás Oibre Nua don Tionscadal"
+      },
+      {
+        "command": "save_workspace_as",
+        "caption": "Sábháil Spás Oibre Mar...",
+        "mnemonic": "O"
+      },
+      { "caption": "-" },
+      {
+        "command": "prompt_add_folder",
+        "caption": "Cuir Fillteán leis an Tionscadal…",
+        "mnemonic": "d"
+      },
+      {
+        "command": "close_folder_list",
+        "caption": "Bain gach Fillteán as an Tionscadal",
+        "mnemonic": "T"
+      },
+      {
+        "command": "refresh_folder_list",
+        "caption": "Athnuachan Fillteáin",
+        "mnemonic": "e"
+      }
+    ]
+  },
+  {
+    "caption": "Roghanna",
+    "mnemonic": "o",
+    "id": "preferences",
+    "children": [
+      {
+        "command": "open_dir",
+        "args": { "dir": "$packages" },
+        "caption": "Brabhsáil Pacáistí…",
+        "mnemonic": "B"
+      },
+      { "caption": "-" },
+      {
+        "command": "edit_settings",
+        "args": {
+          "base_file": "${packages}/Default/Preferences.sublime-settings",
+          "default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+        },
+        "caption": "Socruithe"
+      },
+      {
+        "command": "edit_syntax_settings",
+        "caption": "Socruithe – Sainchomhréir"
+      },
+      {
+        "command": "edit_settings",
+        "args": {
+          "base_file": "${packages}/Default/Distraction Free.sublime-settings",
+          "default": "{\n\t$0\n}\n"
+        },
+        "caption": "Socruithe – Saor ó Sheachrán"
+      },
+      { "caption": "-" },
+      {
+        "command": "edit_settings",
+        "args": {
+          "base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+          "default": "[\n\t$0\n]\n"
+        },
+        "caption": "Ceangail Eochracha"
+      },
+      {
+        "command": "edit_settings",
+        "args": {
+          "base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+          "default": "[\n\t$0\n]\n"
+        },
+        "caption": "Ceangail Luiche"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Roghnaigh Scéim Dathanna…",
+        "command": "select_color_scheme"
+      },
+      {
+        "caption": "Saincheap an Scéim Dathanna",
+        "command": "customize_color_scheme"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Roghnaigh Téama…",
+        "command": "select_theme"
+      },
+      {
+        "caption": "Saincheap an Téama",
+        "command": "customize_theme"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Cló",
+        "children": [
+          { "command": "choose_font", "caption": "Roghnaigh…" },
+          { "command": "increase_font_size", "caption": "Níos mó" },
+          { "command": "decrease_font_size", "caption": "Níos lú" },
+          { "caption": "-" },
+          { "command": "reset_font_size", "caption": "Athshocraigh Méid" }
+        ]
+      }
+    ]
+  },
+  {
+    "caption": "Cabhair",
+    "mnemonic": "b",
+    "id": "help",
+    "children": [
+      {
+        "command": "open_url",
+        "args": { "url": "https://www.sublimetext.com/docs/" },
+        "caption": "Doiciméadú"
+      },
+      {
+        "command": "open_url",
+        "args": {
+          "url": "https://github.com/sublimehq/sublime_text/issues/new/choose"
+        },
+        "caption": "Tuairiscigh Fabht"
+      },
+      {
+        "command": "open_url",
+        "args": { "url": "https://twitter.com/sublimehq" },
+        "caption": "Twitter / X"
+      },
+      { "caption": "-" },
+      { "command": "show_progress_window", "caption": "Stádas Innéacsaithe…" },
+      { "caption": "-" },
+      { "caption": "Ceadúnas ceannaigh", "command": "purchase_license" },
+      { "command": "upgrade_license" },
+      { "command": "show_license_window", "caption": "Cuir Ceadúnas Isteach" },
+      { "command": "remove_license" },
+      { "caption": "-" },
+      {
+        "command": "update_check",
+        "caption": "Seiceáil le haghaidh Nuashonruithe…"
+      },
+      { "command": "show_changelog", "caption": "Logáil Athruithe…" },
+      {
+        "command": "show_attribution",
+        "caption": "Ceadúnais agus Leithdháileadh…"
+      },
+      {
+        "command": "show_about_window",
+        "caption": "Maidir le Téacs Sublime",
+        "mnemonic": "M"
+      }
+    ]
+  }
 ]
