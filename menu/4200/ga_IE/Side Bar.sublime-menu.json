@@ -1,0 +1,19 @@
+[
+	{ "caption": "Comhad Nua", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "Athainmnigh…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "Scrios Comhad", "command": "delete_file", "args": {"files": [], "prompt": false} },
+	{ "caption": "Oscail Fillteán…", "command": "open_folder", "args": {"dirs": []} },
+	{ "caption": "Oscail an Fillteán ina bhfuil…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "Cóipeáil an Cosán", "command": "copy_path_sidebar", "args": {"paths": []} },
+	{ "caption": "Nochtadh Foinse an Nasc", "command": "reveal_link_source", "args": {"dirs": []} },
+	{ "caption": "-", "id": "repo_commands" },
+	{ "caption": "Oscail Stóras Git…", "command": "sublime_merge_open_repo", "args": {"paths": []}},
+	{ "caption": "Stair Chomhad…", "command": "sublime_merge_file_history", "args": {"files": []}},
+	{ "caption": "Stair na bhFillteán…", "command": "sublime_merge_folder_history", "args": {"paths": []}},
+	{ "caption": "Comhad Milleáin…", "command": "sublime_merge_blame_file", "args": {"files": []}},
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Fillteán Nua…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "Scrios Fillteán", "command": "delete_folder", "args": {"dirs": [], "prompt": true} },
+	{ "caption": "Aimsigh i bhFillteán…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]

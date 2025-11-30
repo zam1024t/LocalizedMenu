@@ -1,0 +1,11 @@
+[
+    { "caption": "-", "id": "repo_commands" },
+    { "caption": "Oscail Stóras Git…", "command": "sublime_merge_open_repo" },
+    { "caption": "Stair Chomhad…", "command": "sublime_merge_file_history" },
+    { "caption": "-", "id": "file" },
+    { "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"}, "caption": "Oscail an Fillteán ina bhfuil…" },
+    { "command": "copy_path", "caption": "Cóipeáil Cosán Comhaid" },
+    { "command": "reveal_in_side_bar", "caption": "Nochtadh sa Bharra Taobh" },
+    { "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Athoscail an Comhad mar Théacs" },
+    { "caption": "-", "id": "end" }
+]

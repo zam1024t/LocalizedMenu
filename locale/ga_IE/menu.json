@@ -1,0 +1,72 @@
+[
+	{
+		"id": "preferences",
+		"children": [
+			{
+				"id": "package-settings",
+				"caption": "Socruithe Pacáiste",
+				"children":
+				[
+					{
+						"caption": "LocalizedMenu",
+						"children":
+						[
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Socruithe – Réamhshocrú"
+							},
+							{
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/LocalizedMenu.sublime-settings"
+								},
+								"caption": "Socruithe – Úsáideoir"
+							},
+							{ "caption": "-" }
+						]
+					}
+				]
+			},
+			{ "caption": "-" },
+			{
+				"id": "locales",
+				"caption": "Teangacha",
+				"children": [
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "detect"
+						},
+						"caption": "Braith"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "reset"
+						},
+						"caption": "Athshocraigh"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "add"
+						},
+						"caption": "Cuir Teanga leis…"
+					},
+					{
+						"command": "localize_run",
+						"args": {
+							"action": "submit"
+						},
+						"caption": "Cuir isteach Teanga…"
+					},
+					{ "caption": "-" }
+				]
+			},
+			{ "caption": "-" }
+		]
+	}
+]
