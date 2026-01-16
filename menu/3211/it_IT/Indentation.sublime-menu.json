@@ -1,0 +1,17 @@
+[
+     { "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Indenta usando gli spazi", "checkbox": true },
+     { "caption": "-" },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Larghezza tabulazione: 1", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Larghezza tabulazione: 2", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Larghezza tabulazione: 3", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Larghezza tabulazione: 4", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Larghezza tabulazione: 5", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Larghezza tabulazione: 6", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Larghezza tabulazione: 7", "checkbox": true },
+     { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Larghezza tabulazione: 8", "checkbox": true },
+     { "caption": "-" },
+     { "command": "detect_indentation", "caption": "Indovina impostazioni buffer" },
+     { "caption": "-" },
+     { "command": "expand_tabs", "caption": "Converti indentazione in spazi", "args": {"set_translate_tabs": true} },
+     { "command": "unexpand_tabs", "caption": "Converti indentazione in tabulazioni", "args": {"set_translate_tabs": true} }
+ ]
