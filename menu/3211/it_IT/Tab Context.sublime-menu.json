@@ -1,0 +1,8 @@
+[
+	{ "command": "close_by_index", "args": { "group": -1, "index": -1 }, "caption": "Chiudi" },
+	{ "command": "close_others_by_index", "args": { "group": -1, "index": -1 }, "caption": "Chiudi altre schede" },
+	{ "command": "close_to_right_by_index", "args": { "group": -1, "index": -1 }, "caption": "Chiudi schede a destra" },
+	{ "caption": "-" },
+	{ "command": "new_file", "caption": "Nuovo file" },
+	{ "command": "prompt_open_file", "caption": "Apri file" }
+]

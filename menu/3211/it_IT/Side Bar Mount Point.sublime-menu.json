@@ -1,0 +1,4 @@
+[
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Rimuovi cartella dal progetto", "command": "remove_folder", "args": { "dirs": []} }
+]
