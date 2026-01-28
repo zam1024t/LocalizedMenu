@@ -4,7 +4,7 @@
 		"children": [
 			{
 				"id": "package-settings",
-				"caption": "Package Settings",
+				"caption": "Paramètres du paquet",
 				"children":
 				[
 					{
@@ -16,14 +16,14 @@
 								{
 									"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
 								},
-								"caption": "Settings – Default"
+								"caption": "Paramètres - Par défaut"
 							},
 							{
 								"command": "open_file", "args":
 								{
 									"file": "${packages}/User/LocalizedMenu.sublime-settings"
 								},
-								"caption": "Settings – User"
+								"caption": "Paramètres – Utilisateur"
 							},
 							{ "caption": "-" }
 						]
@@ -33,7 +33,7 @@
 			{ "caption": "-" },
 			{
 				"id": "locales",
-				"caption": "Langues",
+				"caption": "Langues", "mnemonic": "L",
 				"children": [
 					{
 						"command": "localize_run",
@@ -54,14 +54,14 @@
 						"args": {
 							"action": "add"
 						},
-						"caption": "Ajouter…"
+						"caption": "Ajouter une langue…"
 					},
 					{
 						"command": "localize_run",
 						"args": {
 							"action": "submit"
 						},
-						"caption": "Soumettre…"
+						"caption": "Soumettre la langue…"
 					},
 					{ "caption": "-" }
 				]
