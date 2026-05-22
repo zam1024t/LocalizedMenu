@@ -5,6 +5,7 @@
 			{
 				"id": "package-settings",
 				"caption": "Ajustes de paquetes",
+				"mnemonic": "A",
 				"children": [
 					{
 						"caption": "LocalizedMenu",
