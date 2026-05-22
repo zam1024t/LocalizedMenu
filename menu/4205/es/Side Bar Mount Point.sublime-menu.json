@@ -1,10 +1,4 @@
 [
 	{ "caption": "-", "id": "folder_commands" },
-	{
-		"caption": "Cerrar carpeta",
-		"command": "remove_folder",
-		"args": {
-			"dirs": []
-		}
-	}
+	{ "caption": "Cerrar carpeta", "command": "remove_folder", "args": {"dirs": []} }
 ]

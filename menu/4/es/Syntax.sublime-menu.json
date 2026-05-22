@@ -1,8 +1,6 @@
 [
 	{
 		"caption": "Sintaxis",
-		"children": [
-			{ "command": "$file_types" }
-		]
+		"children": [ { "command": "$file_types" } ]
 	}
 ]
