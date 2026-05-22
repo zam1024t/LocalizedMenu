@@ -36,6 +36,13 @@
 		}
 	},
 	{
+		"caption": "Abrir terminal aquí…",
+		"command": "open_terminal",
+		"args": {
+			"dirs": []
+		}
+	},
+	{
 		"caption": "Copiar ruta",
 		"command": "copy_path_sidebar",
 		"args": {

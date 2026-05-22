@@ -87,18 +87,20 @@
 					{ "caption": "Hexadecimal", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "clone_file", "args": { "add_to_selection": true, "retain_viewport_position": true }, "caption": "Clonar vista", "mnemonic": "C" },
+			{ "command": "force_reopen_as", "args": { "type": "image" }, "caption": "Volver a abrir archivo como imagen" },
+			{ "command": "force_reopen_as", "args": { "type": "text" }, "caption": "Volver a abrir archivo como texto" },
+			{ "command": "clone_file", "args": { "add_to_selection": true, "retain_viewport_position": true }, "caption": "Vista dividida", "mnemonic": "V" },
 			{ "command": "save", "args": { "async": true }, "caption": "Guardar", "mnemonic": "G" },
 			{
 				"caption": "Guardar con la codificación",
 				"id": "save_with_encoding",
 				"children": [
 					{ "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
-					{ "caption": "UTF-8 con BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
+					{ "caption": "UTF-8 with BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
 					{ "caption": "UTF-16 LE", "command": "save", "args": { "async": true, "encoding": "utf-16 le" } },
-					{ "caption": "UTF-16 LE con BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
+					{ "caption": "UTF-16 LE with BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
 					{ "caption": "UTF-16 BE", "command": "save", "args": { "async": true, "encoding": "utf-16 be" } },
-					{ "caption": "UTF-16 BE con BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
+					{ "caption": "UTF-16 BE with BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
 					{ "caption": "-" },
 					{ "caption": "Árabe (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
 					{ "caption": "Árabe (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
@@ -280,7 +282,7 @@
 				"caption": "Envolver",
 				"id": "wrap",
 				"children": [
-					{ "command": "wrap_lines", "caption": "Envolver párrafo en una regla" },
+					{ "command": "wrap_lines", "caption": "Envolver párrafo" },
 					{ "command": "wrap_lines", "args": { "width": 70 }, "caption": "Envolver párrafo de 70 caracteres" },
 					{ "command": "wrap_lines", "args": { "width": 72 }, "caption": "Envolver párrafo de 72 caracteres" },
 					{ "command": "wrap_lines", "args": { "width": 78 }, "caption": "Envolver párrafo de 78 caracteres" },
@@ -320,7 +322,7 @@
 		"id": "selection",
 		"children": [
 			{ "command": "split_selection_into_lines", "caption": "Dividir en líneas" },
-			{ "command": "single_selection", "caption": "Seleccíon única" },
+			{ "command": "single_selection", "caption": "Selección única" },
 			{ "caption": "-" },
 			{ "command": "select_all", "caption": "Seleccionar todo" },
 			{ "command": "expand_selection", "args": { "to": "smart" }, "caption": "Expandir selección" },
@@ -342,6 +344,7 @@
 					{ "command": "unselect_others", "caption": "Deseleccionar otras" },
 					{ "command": "unselect_to_left", "caption": "Deseleccionar a la izquierda" },
 					{ "command": "unselect_to_right", "caption": "Deseleccionar a la derecha" },
+					{ "command": "unselect_current", "caption": "Deseleccionar actual" },
 					{ "caption": "-" },
 					{ "command": "select_to_left", "caption": "Seleccionar a la izquierda" },
 					{ "command": "select_to_right", "caption": "Seleccionar a la derecha" },
@@ -671,11 +674,11 @@
 					{ "command": "new_pane", "args": { "move": false }, "caption": "Nuevo grupo" },
 					{ "command": "close_pane", "caption": "Cerrar grupo" },
 					{ "caption": "-" },
-					{ "caption": "1 columna como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 1 } },
-					{ "caption": "2 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 2 } },
-					{ "caption": "3 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 3 } },
-					{ "caption": "4 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 4 } },
-					{ "caption": "5 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 5 } }
+					{ "caption": "1 columna como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 1 }, "mnemonic": "1" },
+					{ "caption": "2 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 2 }, "mnemonic": "2" },
+					{ "caption": "3 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 3 }, "mnemonic": "3" },
+					{ "caption": "4 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 4 }, "mnemonic": "4" },
+					{ "caption": "5 columnas como máximo", "command": "set_max_columns", "checkbox": true, "args": { "columns": 5 }, "mnemonic": "5" }
 				]
 			},
 			{
@@ -720,14 +723,14 @@
 				"children": [
 					{ "command": "toggle_setting", "args": { "setting": "translate_tabs_to_spaces" }, "caption": "Alternar indentación con espacios", "checkbox": true },
 					{ "caption": "-" },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 1 }, "caption": "Ancho de tabulación: 1", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 2 }, "caption": "Ancho de tabulación: 2", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 3 }, "caption": "Ancho de tabulación: 3", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 4 }, "caption": "Ancho de tabulación: 4", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 5 }, "caption": "Ancho de tabulación: 5", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 6 }, "caption": "Ancho de tabulación: 6", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 7 }, "caption": "Ancho de tabulación: 7", "checkbox": true },
-					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 8 }, "caption": "Ancho de tabulación: 8", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 1 }, "caption": "Ancho de tabulación: 1", "mnemonic": "1", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 2 }, "caption": "Ancho de tabulación: 2", "mnemonic": "2", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 3 }, "caption": "Ancho de tabulación: 3", "mnemonic": "3", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 4 }, "caption": "Ancho de tabulación: 4", "mnemonic": "4", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 5 }, "caption": "Ancho de tabulación: 5", "mnemonic": "5", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 6 }, "caption": "Ancho de tabulación: 6", "mnemonic": "6", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 7 }, "caption": "Ancho de tabulación: 7", "mnemonic": "7", "checkbox": true },
+					{ "command": "set_setting", "args": { "setting": "tab_size", "value": 8 }, "caption": "Ancho de tabulación: 8", "mnemonic": "8", "checkbox": true },
 					{ "caption": "-" },
 					{ "command": "detect_indentation", "caption": "Detectar la configuración de indentación" },
 					{ "caption": "-" },
@@ -745,7 +748,7 @@
 					{ "command": "set_line_ending", "args": { "type": "cr" }, "caption": "Mac OS 9", "checkbox": true }
 				]
 			},
-			{ "caption": "-", "id": "Ajustes" },
+			{ "caption": "-", "id": "settings" },
 			{ "command": "toggle_setting", "args": { "setting": "word_wrap" }, "caption": "Alternar envoltura de palabras", "mnemonic": "A", "checkbox": true },
 			{
 				"caption": "Columnas de envoltura de palabras",
@@ -864,7 +867,6 @@
 			{ "command": "goto_symbol_in_project", "caption": "Ir a un símbolo en el proyecto…" },
 			{ "command": "goto_definition", "caption": "Ir a una definición…" },
 			{ "command": "goto_reference", "caption": "Ir a una referencia…" },
-			{ "command": "show_overlay", "args": { "overlay": "goto", "text": "#" }, "caption": "Ir a la palabra…" },
 			{ "command": "show_overlay", "args": { "overlay": "goto", "text": ":" }, "caption": "Ir a una línea…" },
 			{ "caption": "-" },
 			{ "command": "next_modification", "caption": "Modificación siguiente" },
@@ -996,17 +998,17 @@
 			},
 			{ "command": "build", "caption": "Compilar", "mnemonic": "C" },
 			{ "command": "build", "args": { "select": true }, "caption": "Compilar con…" },
-			{ "command": "cancel_build", "caption": "Cancelar construcción", "mnemonic": "C" },
+			{ "command": "cancel_build", "caption": "Cancelar compilación", "mnemonic": "C" },
 			{
 				"caption": "Resultados del compilador",
 				"mnemonic": "R",
 				"children": [
-					{ "command": "show_panel", "args": { "panel": "output.exec" }, "caption": "Mostrar los resultados de la construcción", "mnemonic": "M" },
+					{ "command": "show_panel", "args": { "panel": "output.exec" }, "caption": "Mostrar los resultados de la compilación", "mnemonic": "M" },
 					{ "command": "next_result", "caption": "Resultado siguiente", "mnemonic": "s" },
 					{ "command": "prev_result", "caption": "Resultado anterior", "mnemonic": "R" }
 				]
 			},
-			{ "command": "toggle_save_all_on_build", "caption": "Guardar todo en el compilador", "mnemonic": "G", "checkbox": true },
+			{ "command": "toggle_save_all_on_build", "caption": "Guardar todo al compilar", "mnemonic": "G", "checkbox": true },
 			{ "caption": "-", "id": "macros" },
 			{ "command": "toggle_record_macro", "caption": "Grabar una macro", "mnemonic": "G" },
 			{ "command": "run_macro", "caption": "Reproducir macro", "mnemonic": "R" },
@@ -1021,19 +1023,20 @@
 			{
 				"caption": "Desarrollador",
 				"children": [
-					{ "command": "new_plugin", "caption": "Nuevo paquete…" },
+					{ "command": "new_plugin", "caption": "Nuevo plugin…" },
 					{ "command": "new_snippet", "caption": "Nuevo snippet…" },
 					{ "command": "new_syntax", "caption": "Nueva sintaxis…" },
 					{ "command": "convert_syntax", "caption": "Convertir sintaxis…" },
 					{ "caption": "-" },
 					{ "caption": "-" },
-					{ "command": "profile_plugins", "caption": "Perfil de paquetes" },
+					{ "command": "profile_plugins", "caption": "Perfil de plugins" },
 					{ "caption": "-" },
 					{ "command": "view_resource", "caption": "Ver los archivos de los paquetes…" },
 					{ "command": "show_scope_name", "caption": "Mostrar nombre del scope" }
 				]
 			},
-			{ "command": "install_package_control", "caption": "Instalar el panel de paquetes…" },
+			{ "command": "install_package_control", "caption": "Instalar Package Control…" },
+			{ "command": "enable_package_control", "caption": "Habilitar Package Control" },
 			{ "caption": "-", "id": "end" }
 		]
 	},
@@ -1044,7 +1047,7 @@
 		"children": [
 			{ "command": "prompt_open_project_or_workspace", "caption": "Abrir proyecto…" },
 			{ "command": "prompt_switch_project_or_workspace", "caption": "Cambiar proyecto…" },
-			{ "command": "prompt_select_workspace", "caption": "Cambiar rápido de proyecto…", "mnemonic": "C" },
+			{ "command": "prompt_select_workspace", "caption": "Cambio rápido de proyecto…", "mnemonic": "C" },
 			{
 				"caption": "Abrir recientes",
 				"children": [
@@ -1082,10 +1085,10 @@
 			{ "command": "open_dir", "args": { "dir": "$packages" }, "caption": "Buscar paquetes…", "mnemonic": "B" },
 			{ "caption": "-" },
 			{ "command": "edit_settings", "args": { "base_file": "${packages}/Default/Preferences.sublime-settings", "default": "// Los ajustes de esta opción anulan los de \"Default/Preferences.sublime-settings\",\n// y son anulados a su vez por ajustes específicos de la sintaxis.\n{\n\t$0\n}\n" }, "caption": "Ajustes" },
-			{ "command": "edit_syntax_settings", "caption": "Ajustes - específicos del sintaxis" },
+			{ "command": "edit_syntax_settings", "caption": "Ajustes - específicos de sintaxis" },
 			{ "command": "edit_settings", "args": { "base_file": "${packages}/Default/Distraction Free.sublime-settings", "default": "{\n\t$0\n}\n" }, "caption": "Ajustes - sin distracciones" },
 			{ "caption": "-" },
-			{ "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap", "default": "[\n\t$0\n]\n" }, "caption": "Atajos de botones" },
+			{ "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap", "default": "[\n\t$0\n]\n" }, "caption": "Atajos de teclado" },
 			{ "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-mousemap", "default": "[\n\t$0\n]\n" }, "caption": "Atajos de ratón" },
 			{ "caption": "-" },
 			{ "caption": "Seleccionar paleta de colores…", "command": "select_color_scheme" },
@@ -1120,10 +1123,11 @@
 			{ "command": "purchase_license", "caption": "Comprar licencia" },
 			{ "command": "upgrade_license", "caption": "Actualizar licencia" },
 			{ "command": "show_license_window", "caption": "Introducir licencia" },
-			{ "command": "remove_license", "caption": "Borrar licencia" },
+			{ "command": "remove_license", "caption": "Eliminar licencia" },
 			{ "caption": "-" },
 			{ "command": "update_check", "caption": "Buscar actualizaciones…" },
 			{ "command": "show_changelog", "caption": "Registro de cambios…" },
+			{ "command": "show_attribution", "caption": "Licencias y atribución…" },
 			{ "command": "show_about_window", "caption": "Acerca de Sublime Text", "mnemonic": "A" }
 		]
 	}

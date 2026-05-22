@@ -2,8 +2,7 @@
 	{
 		"caption": "Establecer codificación",
 		"id": "set_encoding",
-		"children":
-		[
+		"children": [
 			{ "caption": "UTF-8", "command": "set_encoding", "args": { "encoding": "utf-8" } },
 			{ "caption": "UTF-16 LE", "command": "set_encoding", "args": { "encoding": "utf-16 le" } },
 			{ "caption": "UTF-16 BE", "command": "set_encoding", "args": { "encoding": "utf-16 be" } },
@@ -44,12 +43,10 @@
 			{ "caption": "Hexadecimal", "command": "set_encoding", "args": { "encoding": "Hexadecimal" } }
 		]
 	},
-
 	{
 		"caption": "Reabrir con la codificación",
 		"id": "reopen_with_encoding",
-		"children":
-		[
+		"children": [
 			{ "caption": "UTF-8", "command": "reopen", "args": { "encoding": "utf-8" } },
 			{ "caption": "UTF-16 LE", "command": "reopen", "args": { "encoding": "utf-16 le" } },
 			{ "caption": "UTF-16 BE", "command": "reopen", "args": { "encoding": "utf-16 be" } },
