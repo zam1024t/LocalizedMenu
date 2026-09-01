@@ -1,991 +1,990 @@
 [
-	{
-		"caption": "Tệp",
-		"mnemonic": "T",
-		"id": "file",
-		"children":
-		[
-			{ "command": "new_file", "caption": "Tệp mới", "mnemonic": "m" },
+  {
+    "caption": "Tệp",
+    "mnemonic": "T",
+    "id": "file",
+    "children":
+    [
+      { "command": "new_file", "caption": "Tệp mới", "mnemonic": "m" },
 
-			{ "command": "prompt_open_file", "caption": "Mở tệp...", "mnemonic": "t", "platform": "!OSX" },
-			{ "command": "prompt_open_folder", "caption": "Mở thư mục...", "platform": "!OSX" },
-			{ "command": "prompt_open", "caption": "Mở...", "platform": "OSX" },
-			{
-				"caption": "Mở gần đây",
-				"mnemonic": "g",
-				"children":
-				[
-					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Mở lại tệp đã đóng" },
-					{ "caption": "-" },
-					{ "command": "open_recent_file", "args": {"index": 0 } },
-					{ "command": "open_recent_file", "args": {"index": 1 } },
-					{ "command": "open_recent_file", "args": {"index": 2 } },
-					{ "command": "open_recent_file", "args": {"index": 3 } },
-					{ "command": "open_recent_file", "args": {"index": 4 } },
-					{ "command": "open_recent_file", "args": {"index": 5 } },
-					{ "command": "open_recent_file", "args": {"index": 6 } },
-					{ "command": "open_recent_file", "args": {"index": 7 } },
-					{ "command": "open_recent_file", "args": {"index": 8 } },
-					{ "command": "open_recent_file", "args": {"index": 9 } },
-					{ "command": "open_recent_file", "args": {"index": 10 } },
-					{ "command": "open_recent_file", "args": {"index": 11 } },
-					{ "caption": "-" },
-					{ "command": "open_recent_folder", "args": {"index": 0 } },
-					{ "command": "open_recent_folder", "args": {"index": 1 } },
-					{ "command": "open_recent_folder", "args": {"index": 2 } },
-					{ "command": "open_recent_folder", "args": {"index": 3 } },
-					{ "command": "open_recent_folder", "args": {"index": 4 } },
-					{ "command": "open_recent_folder", "args": {"index": 5 } },
-					{ "command": "open_recent_folder", "args": {"index": 6 } },
-					{ "command": "open_recent_folder", "args": {"index": 7 } },
-					{ "command": "open_recent_folder", "args": {"index": 8 } },
-					{ "command": "open_recent_folder", "args": {"index": 9 } },
-					{ "command": "open_recent_folder", "args": {"index": 10 } },
-					{ "command": "open_recent_folder", "args": {"index": 11 } },
-					{ "caption": "-" },
-					{ "command": "clear_recent_files", "caption": "Xóa mục" }
-				]
-			},
-			{
-				"caption": "Mở lại với mã hóa",
-				"id": "reopen_with_encoding",
-				"children":
-				[
-					{ "caption": "UTF-8", "command": "reopen", "args": { "encoding": "utf-8" } },
-					{ "caption": "UTF-16 LE", "command": "reopen", "args": { "encoding": "utf-16 le" } },
-					{ "caption": "UTF-16 BE", "command": "reopen", "args": { "encoding": "utf-16 be" } },
-					{ "caption": "-" },
-					{ "caption": "Ả Rập (ISO 8859-6)", "command": "reopen", "args": { "encoding": "Arabic (ISO 8859-6)" } },
-					{ "caption": "Ả Rập (Windows 1256)", "command": "reopen", "args": { "encoding": "Arabic (Windows 1256)" } },
-					{ "caption": "Ban Tích (ISO 8859-4)", "command": "reopen", "args": { "encoding": "Baltic (ISO 8859-4)" } },
-					{ "caption": "Ban Tích (Windows 1257)", "command": "reopen", "args": { "encoding": "Baltic (Windows 1257)" } },
-					{ "caption": "Celt (ISO 8859-14)", "command": "reopen", "args": { "encoding": "Celtic (ISO 8859-14)" } },
-					{ "caption": "Trung Âu (ISO 8859-2)", "command": "reopen", "args": { "encoding": "Central European (ISO 8859-2)" } },
-					{ "caption": "Trung Âu (Mac)", "command": "reopen", "args": { "encoding": "Central European (Mac)" } },
-					{ "caption": "Trung Âu (Windows 1250)", "command": "reopen", "args": { "encoding": "Central European (Windows 1250)" } },
-					{ "caption": "Trung Quốc (GB18030)", "command": "reopen", "args": { "encoding": "Chinese (GB18030)" } },
-					{ "caption": "Cyrillic (ISO 8859-5)", "command": "reopen", "args": { "encoding": "Cyrillic (ISO 8859-5)" } },
-					{ "caption": "Cyrillic (KOI8-R)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-R)" } },
-					{ "caption": "Cyrillic (KOI8-U)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-U)" } },
-					{ "caption": "Cyrillic (Windows 1251)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 1251)" } },
-					{ "caption": "Cyrillic (Windows 866)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 866)" } },
-					{ "caption": "DOS (CP 437)", "command": "reopen", "args": { "encoding": "DOS (CP 437)" } },
-					{ "caption": "Estonia (ISO 8859-13)", "command": "reopen", "args": { "encoding": "Estonian (ISO 8859-13)" } },
-					{ "caption": "Hy Lạp (ISO 8859-7)", "command": "reopen", "args": { "encoding": "Greek (ISO 8859-7)" } },
-					{ "caption": "Hy Lạp (Windows 1253)", "command": "reopen", "args": { "encoding": "Greek (Windows 1253)" } },
-					{ "caption": "Do Thái (CP 862)", "command": "reopen", "args": { "encoding": "Hebrew (CP 862)" } },
-					{ "caption": "Do Thái (ISO 8859-8)", "command": "reopen", "args": { "encoding": "Hebrew (ISO 8859-8)" } },
-					{ "caption": "Do Thái (Windows 1255)", "command": "reopen", "args": { "encoding": "Hebrew (Windows 1255)" } },
-					{ "caption": "Bắc Âu (ISO 8859-10)", "command": "reopen", "args": { "encoding": "Nordic (ISO 8859-10)" } },
-					{ "caption": "Bắc Âu (Windows 865)", "command": "reopen", "args": { "encoding": "Nordic (Windows 865)" } },
-					{ "caption": "Romania (ISO 8859-16)", "command": "reopen", "args": { "encoding": "Romanian (ISO 8859-16)" } },
-					{ "caption": "Thổ Nhĩ Kỳ (ISO 8859-9)", "command": "reopen", "args": { "encoding": "Turkish (ISO 8859-9)" } },
-					{ "caption": "Thổ Nhĩ Kỳ (Windows 1254)", "command": "reopen", "args": { "encoding": "Turkish (Windows 1254)" } },
-					{ "caption": "Tiếng Việt (Windows 1258)", "command": "reopen", "args": { "encoding": "Vietnamese (Windows 1258)" } },
-					{ "caption": "Tây Âu (ISO 8859-1)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-1)" } },
-					{ "caption": "Tây Âu (ISO 8859-15)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-15)" } },
-					{ "caption": "Tây Âu (ISO 8859-3)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-3)" } },
-					{ "caption": "Tây Âu (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
-					{ "caption": "Tây Âu (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
-					{ "caption": "-" },
-					{ "caption": "Hệ thập lục phân", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
-				]
-			},
-			{ "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Mở lại tệp dạng ảnh" },
-			{ "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Mở lại tệp dạng văn bản" },
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Chia đôi giao diện", "mnemonic": "C" },
-			{ "command": "save", "args": {"async": true}, "caption": "Lưu", "mnemonic": "L" },
-			{
-				"caption": "Lưu với mã hóa",
-				"id": "save_with_encoding",
-				"children":
-				[
-					{ "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
-					{ "caption": "UTF-8 với BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
-					{ "caption": "UTF-16 LE", "command": "save", "args": { "async": true, "encoding": "utf-16 le" } },
-					{ "caption": "UTF-16 LE với BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
-					{ "caption": "UTF-16 BE", "command": "save", "args": { "async": true, "encoding": "utf-16 be" } },
-					{ "caption": "UTF-16 BE với BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
-					{ "caption": "-" },
-					{ "caption": "Ả Rập (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
-					{ "caption": "Ả Rập (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
-					{ "caption": "Ban Tích (ISO 8859-4)", "command": "save", "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" } },
-					{ "caption": "Ban Tích (Windows 1257)", "command": "save", "args": { "async": true, "encoding": "Baltic (Windows 1257)" } },
-					{ "caption": "Celt (ISO 8859-14)", "command": "save", "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" } },
-					{ "caption": "Trung Âu (ISO 8859-2)", "command": "save", "args": { "async": true, "encoding": "Central European (ISO 8859-2)" } },
-					{ "caption": "Trung Âu (Mac)", "command": "save", "args": { "async": true, "encoding": "Central European (Mac)" } },
-					{ "caption": "Trung Âu (Windows 1250)", "command": "save", "args": { "async": true, "encoding": "Central European (Windows 1250)" } },
-					{ "caption": "Trung Quốc (GB18030)", "command": "save", "args": { "async": true, "encoding": "Chinese (GB18030)" } },
-					{ "caption": "Cyrillic (ISO 8859-5)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" } },
-					{ "caption": "Cyrillic (KOI8-R)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" } },
-					{ "caption": "Cyrillic (KOI8-U)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" } },
-					{ "caption": "Cyrillic (Windows 1251)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" } },
-					{ "caption": "Cyrillic (Windows 866)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 866)" } },
-					{ "caption": "DOS (CP 437)", "command": "save", "args": { "async": true, "encoding": "DOS (CP 437)" } },
-					{ "caption": "Estonia (ISO 8859-13)", "command": "save", "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" } },
-					{ "caption": "Hy Lạp (ISO 8859-7)", "command": "save", "args": { "async": true, "encoding": "Greek (ISO 8859-7)" } },
-					{ "caption": "Hy Lạp (Windows 1253)", "command": "save", "args": { "async": true, "encoding": "Greek (Windows 1253)" } },
-					{ "caption": "Do Thái (CP 862)", "command": "save", "args": { "async": true, "encoding": "Hebrew (CP 862)" } },
-					{ "caption": "Do Thái (ISO 8859-8)", "command": "save", "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" } },
-					{ "caption": "Do Thái (Windows 1255)", "command": "save", "args": { "async": true, "encoding": "Hebrew (Windows 1255)" } },
-					{ "caption": "Bắc Âu (ISO 8859-10)", "command": "save", "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" } },
-					{ "caption": "Bắc Âu (Windows 865)", "command": "save", "args": { "async": true, "encoding": "Nordic (Windows 865)" } },
-					{ "caption": "Romania (ISO 8859-16)", "command": "save", "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" } },
-					{ "caption": "Thổ Nhĩ Kỳ (ISO 8859-9)", "command": "save", "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" } },
-					{ "caption": "Thổ Nhĩ Kỳ (Windows 1254)", "command": "save", "args": { "async": true, "encoding": "Turkish (Windows 1254)" } },
-					{ "caption": "Tiếng Việt (Windows 1258)", "command": "save", "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" } },
-					{ "caption": "Tây Âu (ISO 8859-1)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-1)" } },
-					{ "caption": "Tây Âu (ISO 8859-15)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-15)" } },
-					{ "caption": "Tây Âu (ISO 8859-3)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-3)" } },
-					{ "caption": "Tây Âu (Mac Roman)", "command": "save", "args": { "async": true, "encoding": "Western (Mac Roman)" } },
-					{ "caption": "Tây Âu (Windows 1252)", "command": "save", "args": { "async": true, "encoding": "Western (Windows 1252)" } },
-					{ "caption": "-" },
-					{ "caption": "Hệ thập lục phân", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
-				]
-			},
-			{ "command": "prompt_save_as", "caption": "Lưu thành...", "mnemonic": "u" },
-			{ "command": "save_all", "caption": "Lưu tất cả", "mnemonic": "c" },
-			{ "command": "html_print", "caption": "In...", "mnemonic": "n" },
-			{ "caption": "-", "id": "window" },
-			{ "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "s" },
-			{ "command": "close_window", "caption": "Đóng cửa sổ" },
-			{ "caption": "-", "id": "close" },
-			{ "command": "close", "caption": "Đóng tệp", "mnemonic": "p" },
-			{ "command": "revert", "caption": "Hoàn tác tệp", "mnemonic": "H" },
-			{ "command": "close_all", "caption": "Đóng tất cả tệp" },
-			{ "caption": "-", "id": "exit" },
-			{ "command": "exit", "caption": "Thoát", "mnemonic": "o", "platform": "Windows" },
-			{ "command": "exit", "caption": "Thoát", "mnemonic": "o", "platform": "Linux" }
-		]
-	},
-	{
-		"caption": "Chỉnh sửa",
-		"mnemonic": "h",
-		"id": "edit",
-		"children":
-		[
-			{ "command": "undo", "mnemonic": "U" },
-			{ "command": "redo_or_repeat", "mnemonic": "R" },
-			{
-				"caption": "Hoàn tác vùng chọn",
-				"children":
-				[
-					{ "command": "soft_undo" },
-					{ "command": "soft_redo" }
-				]
-			},
-			{ "caption": "-", "id": "clipboard" },
-			{ "command": "cut", "mnemonic": "t" },
-			{ "command": "copy", "mnemonic": "C" },
-			{ "caption": "Sao chép dạng HTML", "command": "copy_as_html", "args": {"enclosing_tags": true, "font_size": false} },
-			{ "command": "paste", "mnemonic": "P" },
-			{ "command": "paste_and_indent", "mnemonic": "I" },
-			{ "command": "paste_from_history", "caption": "Dán từ lịch sử" },
-			{ "caption": "-" },
-			{
-				"caption": "Dòng", "mnemonic": "D",
-				"id": "line",
-				"children":
-				[
-					{ "command": "indent" },
-					{ "command": "unindent" },
-					{ "command": "reindent", "args": {"single_line": true} },
-					{ "command": "swap_line_up" },
-					{ "command": "swap_line_down" },
-					{ "command": "duplicate_line" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Xóa dòng" },
-					{ "command": "join_lines" }
-				]
-			},
-			{
-				"caption": "Chú thích", "mnemonic": "C",
-				"id": "comment",
-				"children":
-				[
-					{ "command": "toggle_comment", "args": {"block": false}, "caption": "Bật/tắt chú thích" },
-					{ "command": "toggle_comment", "args": {"block": true}, "caption": "Bật/tắt chú thích khối" }
-				]
-			},
-			{
-				"caption": "Văn bản", "mnemonic": "V",
-				"id": "text",
-				"children":
-				[
-					{ "command": "revert_hunk" },
-					{ "command": "revert_modification" },
-					{ "command": "toggle_inline_diff" },
-					{ "caption": "-" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Chèn dòng lên trên" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Chèn dòng xuống dưới" },
-					{ "caption": "-" },
-					{ "command": "delete_word", "args": { "forward": true }, "caption": "Xóa từ phía trước" },
-					{ "command": "delete_word", "args": { "forward": false }, "caption": "Xóa từ phía sau" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Xóa dòng" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Xóa đến cuối dòng" },
-					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Xóa đến đầu dòng" },
-					{ "caption": "-" },
-					{ "command": "transpose" }
-				]
-			},
-			{
-				"caption": "Thẻ",
-				"id": "tag",
-				"children":
-				[
-					{ "command": "close_tag" },
-					{ "command": "expand_selection", "args": {"to": "tag"}, "caption": "Mở rộng vùng chọn đến thẻ" },
-					{ "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" }, "caption": "Bọc vùng chọn bằng thẻ" }
-				]
-			},
-			{
-				"caption": "Đánh dấu",
-				"id": "mark",
-				"children":
-				[
-					{ "command": "set_mark" },
-					{ "command": "select_to_mark", "caption": "Chọn đến điểm đánh dấu" },
-					{ "command": "delete_to_mark", "caption": "Xóa đến điểm đánh dấu" },
-					{ "command": "swap_with_mark", "caption": "Đổi chỗ với điểm đánh dấu" },
-					{ "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Xóa đánh dấu" },
-					{ "caption": "-" },
-					{ "command": "yank" }
-				]
-			},
-			{
-				"caption": "Thu gọn mã",
-				"id": "fold",
-				"children":
-				[
-					{ "command": "fold" },
-					{ "command": "unfold" },
-					{ "command": "unfold_all", "caption": "Mở rộng tất cả" },
-					{ "caption": "-" },
-					{ "caption": "Thu gọn tất cả", "command": "fold_by_level", "mnemonic": "u", "args": {"level": 1} },
-					{ "caption": "Thu gọn cấp 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
-					{ "caption": "Thu gọn cấp 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
-					{ "caption": "Thu gọn cấp 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
-					{ "caption": "Thu gọn cấp 5", "command": "fold_by_level", "mnemonic": "5", "args": {"level": 5} },
-					{ "caption": "Thu gọn cấp 6", "command": "fold_by_level", "mnemonic": "6", "args": {"level": 6} },
-					{ "caption": "Thu gọn cấp 7", "command": "fold_by_level", "mnemonic": "7", "args": {"level": 7} },
-					{ "caption": "Thu gọn cấp 8", "command": "fold_by_level", "mnemonic": "8", "args": {"level": 8} },
-					{ "caption": "Thu gọn cấp 9", "command": "fold_by_level", "mnemonic": "9", "args": {"level": 9} },
-					{ "caption": "-" },
-					{ "command": "fold_tag_attributes", "caption": "Thu gọn thuộc tính thẻ" }
-				]
-			},
-			{
-				"caption": "Chuyển đổi kiểu chữ", "mnemonic": "k",
-				"id": "convert_case",
-				"children":
-				[
-					{ "command": "title_case", "caption": "Viết hoa chữ cái đầu" },
-					{ "command": "upper_case", "caption": "Viết hoa tất cả" },
-					{ "command": "lower_case", "caption": "Viết thường tất cả" },
-					{ "command": "swap_case", "caption": "Đảo ngược kiểu chữ" },
-					{ "command": "convert_ident_case", "caption": "lowerCamelCase", "args": {"case": "title", "first_case": "lower"} },
-					{ "command": "convert_ident_case", "caption": "UpperCamelCase", "args": {"case": "title"} },
-					{ "command": "convert_ident_case", "caption": "snake_case", "args": {"separator": "_", "case": "lower"} },
-					{ "command": "convert_ident_case", "caption": "kebab-case", "args": {"separator": "-", "case": "lower"} }
-				]
-			},
-			{
-				"caption": "Ngắt dòng",
-				"id": "wrap",
-				"children":
-				[
-					{ "command": "wrap_lines", "caption": "Ngắt đoạn tại thước đo" },
-					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Ngắt đoạn ở 70 ký tự" },
-					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Ngắt đoạn ở 72 ký tự" },
-					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Ngắt đoạn ở 78 ký tự" },
-					{ "command": "wrap_lines", "args": {"width": 80}, "caption": "Ngắt đoạn ở 80 ký tự" },
-					{ "command": "wrap_lines", "args": {"width": 100}, "caption": "Ngắt đoạn ở 100 ký tự" },
-					{ "command": "wrap_lines", "args": {"width": 120}, "caption": "Ngắt đoạn ở 120 ký tự" }
-				]
-			},
-			{ "command": "auto_complete", "caption": "Hiển thị gợi ý" },
-			{ "caption": "-", "id": "permute" },
+      { "command": "prompt_open_file", "caption": "Mở tệp…", "mnemonic": "M", "platform": "!OSX" },
+      { "command": "prompt_open_folder", "caption": "Mở thư mục…", "platform": "!OSX" },
+      { "command": "prompt_open", "caption": "Mở…", "platform": "OSX" },
+      {
+        "caption": "Mở tệp gần đây",
+        "mnemonic": "g",
+        "children":
+        [
+          { "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Mở lại tệp đã đóng" },
+          { "caption": "-" },
+          { "command": "open_recent_file", "args": {"index": 0 } },
+          { "command": "open_recent_file", "args": {"index": 1 } },
+          { "command": "open_recent_file", "args": {"index": 2 } },
+          { "command": "open_recent_file", "args": {"index": 3 } },
+          { "command": "open_recent_file", "args": {"index": 4 } },
+          { "command": "open_recent_file", "args": {"index": 5 } },
+          { "command": "open_recent_file", "args": {"index": 6 } },
+          { "command": "open_recent_file", "args": {"index": 7 } },
+          { "command": "open_recent_file", "args": {"index": 8 } },
+          { "command": "open_recent_file", "args": {"index": 9 } },
+          { "command": "open_recent_file", "args": {"index": 10 } },
+          { "command": "open_recent_file", "args": {"index": 11 } },
+          { "caption": "-" },
+          { "command": "open_recent_folder", "args": {"index": 0 } },
+          { "command": "open_recent_folder", "args": {"index": 1 } },
+          { "command": "open_recent_folder", "args": {"index": 2 } },
+          { "command": "open_recent_folder", "args": {"index": 3 } },
+          { "command": "open_recent_folder", "args": {"index": 4 } },
+          { "command": "open_recent_folder", "args": {"index": 5 } },
+          { "command": "open_recent_folder", "args": {"index": 6 } },
+          { "command": "open_recent_folder", "args": {"index": 7 } },
+          { "command": "open_recent_folder", "args": {"index": 8 } },
+          { "command": "open_recent_folder", "args": {"index": 9 } },
+          { "command": "open_recent_folder", "args": {"index": 10 } },
+          { "command": "open_recent_folder", "args": {"index": 11 } },
+          { "caption": "-" },
+          { "command": "clear_recent_files", "caption": "Xóa các mục" }
+        ]
+      },
+      {
+        "caption": "Mở lại với mã hóa",
+        "id": "reopen_with_encoding",
+        "children":
+        [
+          { "caption": "UTF-8", "command": "reopen", "args": { "encoding": "utf-8" } },
+          { "caption": "UTF-16 LE", "command": "reopen", "args": { "encoding": "utf-16 le" } },
+          { "caption": "UTF-16 BE", "command": "reopen", "args": { "encoding": "utf-16 be" } },
+          { "caption": "-" },
+          { "caption": "Ả Rập (ISO 8859-6)", "command": "reopen", "args": { "encoding": "Arabic (ISO 8859-6)" } },
+          { "caption": "Ả Rập (Windows 1256)", "command": "reopen", "args": { "encoding": "Arabic (Windows 1256)" } },
+          { "caption": "Baltic (ISO 8859-4)", "command": "reopen", "args": { "encoding": "Baltic (ISO 8859-4)" } },
+          { "caption": "Baltic (Windows 1257)", "command": "reopen", "args": { "encoding": "Baltic (Windows 1257)" } },
+          { "caption": "Celtic (ISO 8859-14)", "command": "reopen", "args": { "encoding": "Celtic (ISO 8859-14)" } },
+          { "caption": "Trung Âu (ISO 8859-2)", "command": "reopen", "args": { "encoding": "Central European (ISO 8859-2)" } },
+          { "caption": "Trung Âu (Mac)", "command": "reopen", "args": { "encoding": "Central European (Mac)" } },
+          { "caption": "Trung Âu (Windows 1250)", "command": "reopen", "args": { "encoding": "Central European (Windows 1250)" } },
+          { "caption": "Tiếng Trung (GB18030)", "command": "reopen", "args": { "encoding": "Chinese (GB18030)" } },
+          { "caption": "Cyrillic (ISO 8859-5)", "command": "reopen", "args": { "encoding": "Cyrillic (ISO 8859-5)" } },
+          { "caption": "Cyrillic (KOI8-R)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-R)" } },
+          { "caption": "Cyrillic (KOI8-U)", "command": "reopen", "args": { "encoding": "Cyrillic (KOI8-U)" } },
+          { "caption": "Cyrillic (Windows 1251)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 1251)" } },
+          { "caption": "Cyrillic (Windows 866)", "command": "reopen", "args": { "encoding": "Cyrillic (Windows 866)" } },
+          { "caption": "DOS (CP 437)", "command": "reopen", "args": { "encoding": "DOS (CP 437)" } },
+          { "caption": "Estonia (ISO 8859-13)", "command": "reopen", "args": { "encoding": "Estonian (ISO 8859-13)" } },
+          { "caption": "Hy Lạp (ISO 8859-7)", "command": "reopen", "args": { "encoding": "Greek (ISO 8859-7)" } },
+          { "caption": "Hy Lạp (Windows 1253)", "command": "reopen", "args": { "encoding": "Greek (Windows 1253)" } },
+          { "caption": "Do Thái (CP 862)", "command": "reopen", "args": { "encoding": "Hebrew (CP 862)" } },
+          { "caption": "Do Thái (ISO 8859-8)", "command": "reopen", "args": { "encoding": "Hebrew (ISO 8859-8)" } },
+          { "caption": "Do Thái (Windows 1255)", "command": "reopen", "args": { "encoding": "Hebrew (Windows 1255)" } },
+          { "caption": "Bắc Âu (ISO 8859-10)", "command": "reopen", "args": { "encoding": "Nordic (ISO 8859-10)" } },
+          { "caption": "Bắc Âu (Windows 865)", "command": "reopen", "args": { "encoding": "Nordic (Windows 865)" } },
+          { "caption": "Romania (ISO 8859-16)", "command": "reopen", "args": { "encoding": "Romanian (ISO 8859-16)" } },
+          { "caption": "Thổ Nhĩ Kỳ (ISO 8859-9)", "command": "reopen", "args": { "encoding": "Turkish (ISO 8859-9)" } },
+          { "caption": "Thổ Nhĩ Kỳ (Windows 1254)", "command": "reopen", "args": { "encoding": "Turkish (Windows 1254)" } },
+          { "caption": "Việt Nam (Windows 1258)", "command": "reopen", "args": { "encoding": "Vietnamese (Windows 1258)" } },
+          { "caption": "Phương Tây (ISO 8859-1)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-1)" } },
+          { "caption": "Phương Tây (ISO 8859-15)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-15)" } },
+          { "caption": "Phương Tây (ISO 8859-3)", "command": "reopen", "args": { "encoding": "Western (ISO 8859-3)" } },
+          { "caption": "Phương Tây (Mac Roman)", "command": "reopen", "args": { "encoding": "Western (Mac Roman)" } },
+          { "caption": "Phương Tây (Windows 1252)", "command": "reopen", "args": { "encoding": "Western (Windows 1252)" } },
+          { "caption": "-" },
+          { "caption": "Hệ thập lục phân", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
+        ]
+      },
+      { "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Mở lại tệp dưới dạng hình ảnh" },
+      { "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Mở lại tệp dưới dạng văn bản" },
+      { "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Chia đôi giao diện", "mnemonic": "C" },
+      { "command": "save", "args": {"async": true}, "caption": "Lưu", "mnemonic": "L" },
+      {
+        "caption": "Lưu với mã hóa",
+        "id": "save_with_encoding",
+        "children":
+        [
+          { "caption": "UTF-8", "command": "save", "args": { "async": true, "encoding": "utf-8" } },
+          { "caption": "UTF-8 BOM", "command": "save", "args": { "async": true, "encoding": "utf-8 with bom" } },
+          { "caption": "UTF-16 LE", "command": "save", "args": { "async": true, "encoding": "utf-16 le" } },
+          { "caption": "UTF-16 LE BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 le with bom" } },
+          { "caption": "UTF-16 BE", "command": "save", "args": { "async": true, "encoding": "utf-16 be" } },
+          { "caption": "UTF-16 BE BOM", "command": "save", "args": { "async": true, "encoding": "utf-16 be with bom" } },
+          { "caption": "-" },
+          { "caption": "Ả Rập (ISO 8859-6)", "command": "save", "args": { "async": true, "encoding": "Arabic (ISO 8859-6)" } },
+          { "caption": "Ả Rập (Windows 1256)", "command": "save", "args": { "async": true, "encoding": "Arabic (Windows 1256)" } },
+          { "caption": "Baltic (ISO 8859-4)", "command": "save", "args": { "async": true, "encoding": "Baltic (ISO 8859-4)" } },
+          { "caption": "Baltic (Windows 1257)", "command": "save", "args": { "async": true, "encoding": "Baltic (Windows 1257)" } },
+          { "caption": "Celtic (ISO 8859-14)", "command": "save", "args": { "async": true, "encoding": "Celtic (ISO 8859-14)" } },
+          { "caption": "Trung Âu (ISO 8859-2)", "command": "save", "args": { "async": true, "encoding": "Central European (ISO 8859-2)" } },
+          { "caption": "Trung Âu (Mac)", "command": "save", "args": { "async": true, "encoding": "Central European (Mac)" } },
+          { "caption": "Trung Âu (Windows 1250)", "command": "save", "args": { "async": true, "encoding": "Central European (Windows 1250)" } },
+          { "caption": "Tiếng Trung (GB18030)", "command": "save", "args": { "async": true, "encoding": "Chinese (GB18030)" } },
+          { "caption": "Cyrillic (ISO 8859-5)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (ISO 8859-5)" } },
+          { "caption": "Cyrillic (KOI8-R)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-R)" } },
+          { "caption": "Cyrillic (KOI8-U)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (KOI8-U)" } },
+          { "caption": "Cyrillic (Windows 1251)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 1251)" } },
+          { "caption": "Cyrillic (Windows 866)", "command": "save", "args": { "async": true, "encoding": "Cyrillic (Windows 866)" } },
+          { "caption": "DOS (CP 437)", "command": "save", "args": { "async": true, "encoding": "DOS (CP 437)" } },
+          { "caption": "Estonia (ISO 8859-13)", "command": "save", "args": { "async": true, "encoding": "Estonian (ISO 8859-13)" } },
+          { "caption": "Hy Lạp (ISO 8859-7)", "command": "save", "args": { "async": true, "encoding": "Greek (ISO 8859-7)" } },
+          { "caption": "Hy Lạp (Windows 1253)", "command": "save", "args": { "async": true, "encoding": "Greek (Windows 1253)" } },
+          { "caption": "Do Thái (CP 862)", "command": "save", "args": { "async": true, "encoding": "Hebrew (CP 862)" } },
+          { "caption": "Do Thái (ISO 8859-8)", "command": "save", "args": { "async": true, "encoding": "Hebrew (ISO 8859-8)" } },
+          { "caption": "Do Thái (Windows 1255)", "command": "save", "args": { "async": true, "encoding": "Hebrew (Windows 1255)" } },
+          { "caption": "Bắc Âu (ISO 8859-10)", "command": "save", "args": { "async": true, "encoding": "Nordic (ISO 8859-10)" } },
+          { "caption": "Bắc Âu (Windows 865)", "command": "save", "args": { "async": true, "encoding": "Nordic (Windows 865)" } },
+          { "caption": "Romania (ISO 8859-16)", "command": "save", "args": { "async": true, "encoding": "Romanian (ISO 8859-16)" } },
+          { "caption": "Thổ Nhĩ Kỳ (ISO 8859-9)", "command": "save", "args": { "async": true, "encoding": "Turkish (ISO 8859-9)" } },
+          { "caption": "Thổ Nhĩ Kỳ (Windows 1254)", "command": "save", "args": { "async": true, "encoding": "Turkish (Windows 1254)" } },
+          { "caption": "Việt Nam (Windows 1258)", "command": "save", "args": { "async": true, "encoding": "Vietnamese (Windows 1258)" } },
+          { "caption": "Phương Tây (ISO 8859-1)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-1)" } },
+          { "caption": "Phương Tây (ISO 8859-15)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-15)" } },
+          { "caption": "Phương Tây (ISO 8859-3)", "command": "save", "args": { "async": true, "encoding": "Western (ISO 8859-3)" } },
+          { "caption": "Phương Tây (Mac Roman)", "command": "save", "args": { "async": true, "encoding": "Western (Mac Roman)" } },
+          { "caption": "Phương Tây (Windows 1252)", "command": "save", "args": { "async": true, "encoding": "Western (Windows 1252)" } },
+          { "caption": "-" },
+          { "caption": "Hệ thập lục phân", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
+        ]
+      },
+      { "command": "prompt_save_as", "caption": "Lưu thành…", "mnemonic": "L" },
+      { "command": "save_all", "caption": "Lưu tất cả", "mnemonic": "t" },
+      { "command": "html_print", "caption": "In…", "mnemonic": "I" },
+      { "caption": "-", "id": "window" },
+      { "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "C" },
+      { "command": "close_window", "caption": "Đóng cửa sổ" },
+      { "caption": "-", "id": "close" },
+      { "command": "close", "caption": "Đóng tệp", "mnemonic": "p" },
+      { "command": "revert", "caption": "Hoàn nguyên tệp", "mnemonic": "H" },
+      { "command": "close_all", "caption": "Đóng tất cả tệp" },
+      { "caption": "-", "id": "exit" },
+      { "command": "exit", "caption": "Thoát", "mnemonic": "T", "platform": "Windows" },
+      { "command": "exit", "caption": "Thoát", "mnemonic": "T", "platform": "Linux" }
+    ]
+  },
+  {
+  "caption": "Chỉnh sửa",
+    "mnemonic": "C",
+    "id": "edit",
+    "children":
+    [
+      { "command": "undo", "mnemonic": "H", "caption": "Hoàn tác" },
+      { "command": "redo_or_repeat", "mnemonic": "L", "caption": "Làm lại" },
+      {
+        "caption": "Hoàn tác lựa chọn",
+        "children":
+        [
+          { "command": "soft_undo", "caption": "Hoàn tác lựa chọn" },
+          { "command": "soft_redo", "caption": "Làm lại lựa chọn" }
+        ]
+      },
+      { "caption": "-", "id": "clipboard" },
+      { "command": "cut", "mnemonic": "C", "caption": "Cắt" },
+      { "command": "copy", "mnemonic": "S", "caption": "Sao chép" },
+      { "caption": "Sao chép dưới dạng HTML", "command": "copy_as_html", "args": {"enclosing_tags": true, "font_size": false} },
+      { "command": "paste", "mnemonic": "D", "caption": "Dán" },
+      { "command": "paste_and_indent", "mnemonic": "v", "caption": "Dán và thụt lề" },
+      { "command": "paste_from_history", "caption": "Dán từ lịch sử" },
+      { "caption": "-" },
+      {
+        "caption": "Dòng", "mnemonic": "D",
+        "id": "line",
+        "children":
+        [
+          { "command": "indent", "caption": "Tăng mức thụt lề" },
+          { "command": "unindent", "caption": "Giảm mức thụt lề" },
+          { "command": "reindent", "args": {"single_line": true}, "caption": "Thụt lề lại" },
+          { "command": "swap_line_up", "caption": "Di chuyển dòng lên trên" },
+          { "command": "swap_line_down", "caption": "Di chuyển dòng xuống dưới" },
+          { "command": "duplicate_line", "caption": "Nhân bản dòng" },
+          { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Xóa dòng" },
+          { "command": "join_lines", "caption": "Nối các dòng" }
+        ]
+      },
+      {
+        "caption": "Chú thích", "mnemonic": "C",
+        "id": "comment",
+        "children":
+        [
+          { "command": "toggle_comment", "args": {"block": false}, "caption": "Bật/Tắt chú thích dòng" },
+          { "command": "toggle_comment", "args": {"block": true}, "caption": "Bật/Tắt chú thích khối" }
+        ]
+      },
+      {
+        "caption": "Văn bản", "mnemonic": "V",
+        "id": "text",
+        "children":
+        [
+          { "command": "revert_hunk", "caption": "Hoàn tác khối thay đổi" },
+          { "command": "revert_modification", "caption": "Hoàn tác thay đổi" },
+          { "command": "toggle_inline_diff", "caption": "Hiện/Ẩn khác biệt nội dòng" },
+          { "caption": "-" },
+          { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line Before.sublime-macro"}, "caption": "Thêm dòng trước" },
+          { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}, "caption": "Thêm dòng sau" },
+          { "caption": "-" },
+          { "command": "delete_word", "args": { "forward": true }, "caption": "Xóa từ phía trước" },
+          { "command": "delete_word", "args": { "forward": false }, "caption": "Xóa từ phía sau" },
+          { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Xóa dòng" },
+          { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"}, "caption": "Xóa đến cuối dòng" },
+          { "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"}, "caption": "Xóa đến đầu dòng" },
+          { "caption": "-" },
+          { "command": "transpose", "caption": "Hoán đổi ký tự/từ" }
+        ]
+      },
+      {
+        "caption": "Thẻ",
+        "id": "tag",
+        "children":
+        [
+          { "command": "close_tag", "caption": "Đóng thẻ" },
+          { "command": "expand_selection", "args": {"to": "tag"}, "caption": "Mở rộng lựa chọn đến thẻ" },
+          { "command": "insert_snippet", "args": { "name": "Packages/XML/Snippets/xml-long-tag.sublime-snippet" }, "caption": "Bao bọc lựa chọn bằng thẻ" }
+        ]
+      },
+      {
+        "caption": "Đánh dấu",
+        "id": "mark",
+        "children":
+        [
+          { "command": "set_mark", "caption": "Đặt dấu" },
+          { "command": "select_to_mark", "caption": "Chọn đến vị trí đánh dấu" },
+          { "command": "delete_to_mark", "caption": "Xóa đến vị trí đánh dấu" },
+          { "command": "swap_with_mark", "caption": "Hoán đổi vị trí với dấu" },
+          { "command": "clear_bookmarks", "args": {"name": "mark"}, "caption": "Xóa đánh dấu" },
+          { "caption": "-" },
+          { "command": "yank", "caption": "Dán từ bộ đệm (Yank)" }
+        ]
+      },
+      {
+        "caption": "Thu gọn mã",
+        "id": "fold",
+        "children":
+        [
+        { "command": "fold", "caption": "Thu gọn" },
+          { "command": "unfold", "caption": "Mở rộng" },
+          { "command": "unfold_all", "caption": "Mở rộng tất cả" },
+          { "caption": "-" },
+          { "caption": "Thu gọn tất cả", "command": "fold_by_level", "mnemonic": "T", "args": {"level": 1} },
+          { "caption": "Mức thu gọn 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
+          { "caption": "Mức thu gọn 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
+          { "caption": "Mức thu gọn 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
+          { "caption": "Mức thu gọn 5", "command": "fold_by_level", "mnemonic": "5", "args": {"level": 5} },
+          { "caption": "Mức thu gọn 6", "command": "fold_by_level", "mnemonic": "6", "args": {"level": 6} },
+          { "caption": "Mức thu gọn 7", "command": "fold_by_level", "mnemonic": "7", "args": {"level": 7} },
+          { "caption": "Mức thu gọn 8", "command": "fold_by_level", "mnemonic": "8", "args": {"level": 8} },
+          { "caption": "Mức thu gọn 9", "command": "fold_by_level", "mnemonic": "9", "args": {"level": 9} },
+          { "caption": "-" },
+          { "command": "fold_tag_attributes", "caption": "Thu gọn thuộc tính thẻ" }
+        ]
+      },
+      {
+        "caption": "Chuyển đổi chữ hoa/thường", "mnemonic": "C",
+        "id": "convert_case",
+        "children":
+        [
+          { "command": "title_case", "caption": "Viết hoa chữ cái đầu" },
+          { "command": "upper_case", "caption": "CHỮ HOA" },
+          { "command": "lower_case", "caption": "chữ thường" },
+          { "command": "swap_case", "caption": "Đổi kiểu chữ hoa/thường" },
+          { "command": "convert_ident_case", "caption": "lowerCamelCase", "args": {"case": "title", "first_case": "lower"} },
+          { "command": "convert_ident_case", "caption": "UpperCamelCase", "args": {"case": "title"} },
+          { "command": "convert_ident_case", "caption": "snake_case", "args": {"separator": "_", "case": "lower"} },
+          { "command": "convert_ident_case", "caption": "kebab-case", "args": {"separator": "-", "case": "lower"} }
+        ]
+      },
+      {
+        "caption": "Ngắt dòng",
+        "id": "wrap",
+        "children":
+        [
+          { "command": "wrap_lines", "caption": "Ngắt dòng đoạn văn theo thước kẻ" },
+          { "command": "wrap_lines", "args": {"width": 70}, "caption": "Ngắt dòng đoạn văn ở 70 ký tự" },
+          { "command": "wrap_lines", "args": {"width": 72}, "caption": "Ngắt dòng đoạn văn ở 72 ký tự" },
+          { "command": "wrap_lines", "args": {"width": 78}, "caption": "Ngắt dòng đoạn văn ở 78 ký tự" },
+          { "command": "wrap_lines", "args": {"width": 80}, "caption": "Ngắt dòng đoạn văn ở 80 ký tự" },
+          { "command": "wrap_lines", "args": {"width": 100}, "caption": "Ngắt dòng đoạn văn ở 100 ký tự" },
+          { "command": "wrap_lines", "args": {"width": 120}, "caption": "Ngắt dòng đoạn văn ở 120 ký tự" }
+        ]
+      },
+      { "command": "auto_complete", "caption": "Hiện gợi ý tự động" },
+      { "caption": "-", "id": "permute" },
 
-			{ "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Sắp xếp dòng", "mnemonic": "S" },
-			{ "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Sắp xếp dòng (Phân biệt hoa thường)" },
-			{
-				"caption": "Hoán vị dòng",
-				"children":
-				[
-					{ "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Đảo ngược" },
-					{ "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Lọc duy nhất" },
-					{ "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Trộn ngẫu nhiên" }
-				]
-			},
-			{
-				"caption": "Hoán vị vùng chọn",
-				"children":
-				[
-					{ "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sắp xếp" },
-					{ "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sắp xếp (Phân biệt hoa thường)" },
-					{ "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Đảo ngược" },
-					{ "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Lọc duy nhất" },
-					{ "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Trộn ngẫu nhiên" }
-				]
-			},
-			{ "caption": "-", "id": "end" }
-		]
-	},
-	{
-		"caption": "Vùng chọn",
-		"mnemonic": "V",
-		"id": "selection",
-		"children":
-		[
-			{ "command": "split_selection_into_lines", "caption": "Chia thành các dòng" },
-			{ "command": "single_selection" },
-			{ "caption": "-" },
-			{ "command": "select_all" },
-			{ "command": "expand_selection", "args": {"to": "smart"}, "caption": "Mở rộng vùng chọn" },
-			{ "command": "expand_selection", "args": {"to": "line"}, "caption": "Mở rộng vùng chọn đến dòng" },
-			{ "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Mở rộng vùng chọn lên dòng trên" },
-			{ "command": "find_under_expand", "caption": "Mở rộng vùng chọn đến từ" },
-			{ "command": "expand_selection_to_paragraph", "caption": "Mở rộng vùng chọn đến khối" },
-			{ "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Mở rộng vùng chọn đến đoạn" },
-			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Mở rộng vùng chọn đến phạm vi" },
-			{ "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Mở rộng vùng chọn đến dấu ngoặc" },
-			{ "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Mở rộng vùng chọn đến khoảng lề" },
-			{ "caption": "-" },
-			{ "command": "select_lines", "args": {"forward": false}, "caption": "Thêm dòng trước" },
-			{ "command": "select_lines", "args": {"forward": true}, "caption": "Thêm dòng tiếp theo" },
-			{ "caption": "-" },
-			{
-				"caption": "Chọn thẻ",
-				"children":
-				[
-					{ "command": "unselect_others", "caption": "Bỏ chọn các thẻ khác" },
-					{ "command": "unselect_to_left", "caption": "Bỏ chọn sang trái" },
-					{ "command": "unselect_to_right", "caption": "Bỏ chọn sang phải" },
-					{ "command": "unselect_current", "caption": "Bỏ chọn hiện tại" },
-					{ "caption": "-" },
-					{ "command": "select_to_left", "caption": "Chọn sang trái" },
-					{ "command": "select_to_right", "caption": "Chọn sang phải" },
-					{ "caption": "-" },
-					{ "command": "focus_to_left", "caption": "Tiêu điểm sang trái" },
-					{ "command": "focus_to_right", "caption": "Tiêu điểm sang phải" },
-					{ "caption": "-" },
-					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Chuyển đến thẻ 1", "mnemonic": "1" },
-					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Chuyển đến thẻ 2", "mnemonic": "2" },
-					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Chuyển đến thẻ 3", "mnemonic": "3" },
-					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Chuyển đến thẻ 4", "mnemonic": "4" },
-					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Chuyển đến thẻ 5", "mnemonic": "5" },
-					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Chuyển đến thẻ 6", "mnemonic": "6" },
-					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Chuyển đến thẻ 7", "mnemonic": "7" },
-					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Chuyển đến thẻ 8", "mnemonic": "8" },
-					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Chuyển đến thẻ 9", "mnemonic": "9" },
-					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Chuyển đến thẻ 10" }
-				]
-			}
-		]
-	},
-	{
-		"caption": "Tìm kiếm",
-		"mnemonic": "i",
-		"id": "find",
-		"children":
-		[
-			{ "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Tìm..." },
-			{ "command": "find_next" },
-			{ "command": "find_prev", "caption": "Tìm kết quả trước" },
-			{ "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Tìm kiếm tức thời" },
-			{ "caption": "-" },
-			{ "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Thay thế..." },
-			{ "command": "replace_next" },
-			{ "caption": "-" },
-			{ "command": "find_under", "caption": "Tìm nhanh" },
-			{ "command": "find_all_under", "caption": "Tìm tất cả nhanh" },
-			{ "command": "find_under_expand", "caption": "Thêm nhanh tiếp theo" },
-			{ "command": "find_under_expand_skip", "caption": "Bỏ qua nhanh tiếp theo", "platform": "!OSX" },
-			{ "caption": "-" },
-			{ "command": "slurp_find_string", "caption": "Dùng vùng chọn để tìm" },
-			{ "command": "slurp_replace_string", "caption": "Dùng vùng chọn để thay thế" },
-			{ "caption": "-" },
-			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Tìm trong tệp..." },
-			{
-				"caption": "Kết quả tìm kiếm",
-				"mnemonic": "q",
-				"children":
-				[
-					{ "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true} },
-					{ "command": "next_result" },
-					{ "command": "prev_result", "caption": "Kết quả trước" }
-				]
-			},
-			{ "command": "cancel_find", "caption": "Hủy tìm trong tệp" }
-		]
-	},
-	{
-		"caption": "Hiển thị",
-		"mnemonic": "n",
-		"id": "view",
-		"children":
-		[
-			{
-				"caption": "Thanh bên",
-				"id": "side_bar",
-				"children":
-				[
-					{ "command": "toggle_side_bar" },
-					{ "caption": "-" },
-					{ "command": "toggle_show_open_files" }
-				]
-			},
-			{ "command": "toggle_minimap" },
-			{ "command": "toggle_tabs" },
-			{ "command": "toggle_status_bar" },
-			{ "command": "toggle_menu" },
-			{ "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-			{ "caption": "-", "id": "full_screen" },
-			{ "command": "toggle_full_screen" },
-			{ "command": "toggle_distraction_free" },
-			{ "caption": "-", "id": "groups" },
-			{
-				"caption": "Bố cục",
-				"mnemonic": "B",
-				"id": "layout",
-				"children":
-				[
-					{
-						"caption": "Đơn",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1]]
-						}
-					},
-					{
-						"caption": "Cột: 2",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.5, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
-						}
-					},
-					{
-						"caption": "Cột: 3",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.33, 0.66, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
-						}
-					},
-					{
-						"caption": "Cột: 4",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.25, 0.5, 0.75, 1.0],
-							"rows": [0.0, 1.0],
-							"cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
-						}
-					},
-					{
-						"caption": "Dòng: 2",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 1.0],
-							"rows": [0.0, 0.5, 1.0],
-							"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
-						}
-					},
-					{
-						"caption": "Dòng: 3",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 1.0],
-							"rows": [0.0, 0.33, 0.66, 1.0],
-							"cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
-						}
-					},
-					{
-						"caption": "Lưới: 4",
-						"command": "set_layout",
-						"args":
-						{
-							"cols": [0.0, 0.5, 1.0],
-							"rows": [0.0, 0.5, 1.0],
-							"cells":
-							[
-								[0, 0, 1, 1], [1, 0, 2, 1],
-								[0, 1, 1, 2], [1, 1, 2, 2]
-							]
-						}
-					}
-				]
-			},
-			{
-				"caption": "Nhóm",
-				"children":
-				[
-					{ "command": "new_pane", "caption": "Chuyển tệp sang nhóm mới" },
-					{ "command": "new_pane", "args": {"move": false}, "caption": "Nhóm mới" },
-					{ "command": "close_pane", "caption": "Đóng nhóm" },
+      { "command": "sort_lines", "args": {"case_sensitive": false}, "caption": "Sắp xếp dòng", "mnemonic": "S" },
+      { "command": "sort_lines", "args": {"case_sensitive": true}, "caption": "Sắp xếp dòng (Phân biệt chữ hoa/thường)" },
+      {
+        "caption": "Hoán đổi dòng",
+        "children":
+        [
+          { "command": "permute_lines", "args": {"operation": "reverse"}, "caption": "Đảo ngược" },
+          { "command": "permute_lines", "args": {"operation": "unique"}, "caption": "Làm cho duy nhất" },
+          { "command": "permute_lines", "args": {"operation": "shuffle"}, "caption": "Trộn ngẫu nhiên" }
+        ]
+      },
+      {
+        "caption": "Hoán đổi lựa chọn",
+        "children":
+        [
+          { "command": "sort_selection", "args": {"case_sensitive": false}, "caption": "Sắp xếp" },
+          { "command": "sort_selection", "args": {"case_sensitive": true}, "caption": "Sắp xếp (Phân biệt chữ hoa/thường)" },
+          { "command": "permute_selection", "args": {"operation": "reverse"}, "caption": "Đảo ngược" },
+          { "command": "permute_selection", "args": {"operation": "unique"}, "caption": "Làm cho duy nhất" },
+          { "command": "permute_selection", "args": {"operation": "shuffle"}, "caption": "Trộn ngẫu nhiên" }
+        ]
+      },
+      { "caption": "-", "id": "end" }
+    ]
+  },
+  {
+    "caption": "Lựa chọn",
+    "mnemonic": "L",
+    "id": "selection",
+    "children":
+    [
+      { "command": "split_selection_into_lines", "caption": "Chia lựa chọn thành các dòng" },
+      { "command": "single_selection", "caption": "Lựa chọn đơn" },
+      { "caption": "-" },
+      { "command": "select_all", "caption": "Chọn tất cả" },
+      { "command": "expand_selection", "args": {"to": "smart"}, "caption": "Mở rộng lựa chọn thông minh" },
+      { "command": "expand_selection", "args": {"to": "line"}, "caption": "Mở rộng lựa chọn đến dòng" },
+      { "command": "expand_selection", "args": {"to": "line_prev"}, "caption": "Mở rộng lựa chọn lên dòng trên" },
+      { "command": "find_under_expand", "caption": "Mở rộng lựa chọn đến từ" },
+      { "command": "expand_selection_to_paragraph", "caption": "Mở rộng lựa chọn đến khối" },
+      { "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Mở rộng lựa chọn đến đoạn văn" },
+      { "command": "expand_selection", "args": {"to": "scope"}, "caption": "Mở rộng lựa chọn đến phạm vi" },
+      { "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Mở rộng lựa chọn đến dấu ngoặc" },
+      { "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Mở rộng lựa chọn đến mức thụt lề" },
+      { "caption": "-" },
+      { "command": "select_lines", "args": {"forward": false}, "caption": "Thêm dòng trước đó" },
+      { "command": "select_lines", "args": {"forward": true}, "caption": "Thêm dòng tiếp theo" },
+      { "caption": "-" },
+      {
+        "caption": "Lựa chọn tab",
+        "children":
+        [
+          { "command": "unselect_others", "caption": "Bỏ chọn các mục khác" },
+          { "command": "unselect_to_left", "caption": "Bỏ chọn các mục bên trái" },
+          { "command": "unselect_to_right", "caption": "Bỏ chọn các mục bên phải" },
+          { "command": "unselect_current", "caption": "Bỏ chọn mục hiện tại" },
+          { "caption": "-" },
+          { "command": "select_to_left", "caption": "Chọn sang trái" },
+          { "command": "select_to_right", "caption": "Chọn sang phải" },
+          { "caption": "-" },
+          { "command": "focus_to_left", "caption": "Tập trung sang trái" },
+          { "command": "focus_to_right", "caption": "Tập trung sang phải" },
+          { "caption": "-" },
+          { "command": "focus_by_index", "args": {"index": 0}, "caption": "Tập trung tab đã chọn 1", "mnemonic": "1" },
+          { "command": "focus_by_index", "args": {"index": 1}, "caption": "Tập trung tab đã chọn 2", "mnemonic": "2" },
+          { "command": "focus_by_index", "args": {"index": 2}, "caption": "Tập trung tab đã chọn 3", "mnemonic": "3" },
+          { "command": "focus_by_index", "args": {"index": 3}, "caption": "Tập trung tab đã chọn 4", "mnemonic": "4" },
+          { "command": "focus_by_index", "args": {"index": 4}, "caption": "Tập trung tab đã chọn 5", "mnemonic": "5" },
+          { "command": "focus_by_index", "args": {"index": 5}, "caption": "Tập trung tab đã chọn 6", "mnemonic": "6" },
+          { "command": "focus_by_index", "args": {"index": 6}, "caption": "Tập trung tab đã chọn 7", "mnemonic": "7" },
+          { "command": "focus_by_index", "args": {"index": 7}, "caption": "Tập trung tab đã chọn 8", "mnemonic": "8" },
+          { "command": "focus_by_index", "args": {"index": 8}, "caption": "Tập trung tab đã chọn 9", "mnemonic": "9" },
+          { "command": "focus_by_index", "args": {"index": 9}, "caption": "Tập trung tab đã chọn 10" }
+        ]
+      }
+    ]
+  },
+  {
+    "caption": "Tìm kiếm",
+    "mnemonic": "T",
+    "id": "find",
+    "children":
+    [
+      { "command": "show_panel", "args": {"panel": "find", "reverse": false}, "caption": "Tìm…" },
+      { "command": "find_next", "caption": "Tìm tiếp theo" },
+      { "command": "find_prev", "caption": "Tìm trước đó" },
+      { "command": "show_panel", "args": {"panel": "incremental_find", "reverse": false}, "caption": "Tìm kiếm tăng dần" },
+      { "caption": "-" },
+      { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Thay thế…" },
+      { "command": "replace_next", "caption": "Thay thế tiếp theo" },
+      { "caption": "-" },
+      { "command": "find_under", "caption": "Tìm nhanh" },
+      { "command": "find_all_under", "caption": "Tìm tất cả nhanh" },
+      { "command": "find_under_expand", "caption": "Thêm nhanh tiếp theo" },
+      { "command": "find_under_expand_skip", "caption": "Bỏ qua nhanh tiếp theo", "platform": "!OSX" },
+      { "caption": "-" },
+      { "command": "slurp_find_string", "caption": "Sử dụng lựa chọn để tìm" },
+      { "command": "slurp_replace_string", "caption": "Sử dụng lựa chọn để thay thế" },
+      { "caption": "-" },
+      { "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Tìm trong các tệp…" },
+      {
+        "caption": "Kết quả tìm kiếm",
+        "mnemonic": "K",
+        "children":
+        [
+          { "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true}, "caption": "Hiển thị bảng kết quả" },
+          { "command": "next_result", "caption": "Kết quả tiếp theo" },
+          { "command": "prev_result", "caption": "Kết quả trước đó" }
+        ]
+      },
+      { "command": "cancel_find", "caption": "Hủy tìm trong tệp" }
+    ]
+  },
+  {
+    "caption": "Xem",
+    "mnemonic": "X",
+    "id": "view",
+    "children":
+    [
+      {
+        "caption": "Thanh bên",
+        "id": "side_bar",
+        "children":
+        [
+          { "command": "toggle_side_bar", "caption": "Hiện/Ẩn thanh bên" },
+          { "caption": "-" },
+          { "command": "toggle_show_open_files", "caption": "Hiện/Ẩn tệp đang mở" }
+        ]
+      },
+      { "command": "toggle_minimap", "caption": "Hiện/Ẩn bản đồ thu nhỏ" },
+      { "command": "toggle_tabs", "caption": "Hiện/Ẩn các tab" },
+      { "command": "toggle_status_bar", "caption": "Hiện/Ẩn thanh trạng thái" },
+      { "command": "toggle_menu", "caption": "Hiện/Ẩn menu" },
+      { "command": "show_panel", "args": {"panel": "console", "toggle": true}, "caption": "Hiện bảng điều khiển" },
+      { "caption": "-", "id": "full_screen" },
+      { "command": "toggle_full_screen", "caption": "Chế độ toàn màn hình" },
+      { "command": "toggle_distraction_free", "caption": "Chế độ tập trung" },
+      { "caption": "-", "id": "groups" },
+      {
+        "caption": "Bố cục",
+        "mnemonic": "B",
+        "id": "layout",
+        "children":
+        [
+          {
+            "caption": "Đơn",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [[0, 0, 1, 1]]
+            }
+          },
+          {
+            "caption": "Cột: 2",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 0.5, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+            }
+          },
+          {
+            "caption": "Cột: 3",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 0.33, 0.66, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+            }
+          },
+          {
+            "caption": "Cột: 4",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+              "rows": [0.0, 1.0],
+              "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+            }
+          },
+          {
+            "caption": "Dòng: 2",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 1.0],
+              "rows": [0.0, 0.5, 1.0],
+              "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+            }
+            },
+            {
+            "caption": "Dòng: 3",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 1.0],
+              "rows": [0.0, 0.33, 0.66, 1.0],
+              "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]]
+            }
+          },
+          {
+            "caption": "Lưới: 4",
+            "command": "set_layout",
+            "args":
+            {
+              "cols": [0.0, 0.5, 1.0],
+              "rows": [0.0, 0.5, 1.0],
+              "cells":
+              [
+                [0, 0, 1, 1], [1, 0, 2, 1],
+                [0, 1, 1, 2], [1, 1, 2, 2]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "caption": "Nhóm",
+        "children":
+        [
+          { "command": "new_pane", "caption": "Chuyển tệp sang nhóm mới" },
+          { "command": "new_pane", "args": {"move": false}, "caption": "Nhóm mới" },
+          { "command": "close_pane", "caption": "Đóng nhóm" },
 
-					{ "caption": "-" },
+          { "caption": "-" },
 
-					{
-						"caption": "Số cột tối đa: 1",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 1 },
-						"mnemonic": "1"
-					},
-					{
-						"caption": "Số cột tối đa: 2",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 2 },
-						"mnemonic": "2"
-					},
-					{
-						"caption": "Số cột tối đa: 3",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 3 },
-						"mnemonic": "3"
-					},
-					{
-						"caption": "Số cột tối đa: 4",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 4 },
-						"mnemonic": "4"
-					},
-					{
-						"caption": "Số cột tối đa: 5",
-						"command": "set_max_columns",
-						"checkbox": true,
-						"args": { "columns": 5 },
-						"mnemonic": "5"
-					}
-				]
-			},
-			{
-				"caption": "Tiêu điểm nhóm",
-				"mnemonic": "T",
-				"children":
-				[
+          {
+            "caption": "Số cột tối đa: 1",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 1 },
+            "mnemonic": "1"
+          },
+          {
+            "caption": "Số cột tối đa: 2",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 2 },
+            "mnemonic": "2"
+          },
+          {
+            "caption": "Số cột tối đa: 3",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 3 },
+            "mnemonic": "3"
+          },
+          {
+            "caption": "Số cột tối đa: 4",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 4 },
+            "mnemonic": "4"
+          },
+          {
+            "caption": "Số cột tối đa: 5",
+            "command": "set_max_columns",
+            "checkbox": true,
+            "args": { "columns": 5 },
+            "mnemonic": "5"
+          }
+        ]
+      },
+      {
+        "caption": "Tập trung nhóm",
+        "mnemonic": "T",
+        "children":
+        [
 
-					{ "command": "focus_neighboring_group", "caption": "Tiếp theo" },
-					{ "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Trước đó" },
-					{ "caption": "-" },
-					{ "command": "focus_group", "args": {"group": 0}, "caption": "Nhóm 1", "mnemonic": "1" },
-					{ "command": "focus_group", "args": {"group": 1}, "caption": "Nhóm 2", "mnemonic": "2" },
-					{ "command": "focus_group", "args": {"group": 2}, "caption": "Nhóm 3", "mnemonic": "3" },
-					{ "command": "focus_group", "args": {"group": 3}, "caption": "Nhóm 4", "mnemonic": "4" }
-				]
-			},
-			{
-				"caption": "Chuyển tệp sang nhóm",
-				"mnemonic": "s",
-				"children":
-				[
-					{ "command": "move_to_neighboring_group", "caption": "Tiếp theo" },
-					{ "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Trước đó" },
-					{ "caption": "-" },
-					{ "command": "move_to_group", "args": {"group": 0}, "caption": "Nhóm 1", "mnemonic": "1" },
-					{ "command": "move_to_group", "args": {"group": 1}, "caption": "Nhóm 2", "mnemonic": "2" },
-					{ "command": "move_to_group", "args": {"group": 2}, "caption": "Nhóm 3", "mnemonic": "3" },
-					{ "command": "move_to_group", "args": {"group": 3}, "caption": "Nhóm 4", "mnemonic": "4" }
-				]
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Cú pháp",
-				"mnemonic": "p",
-				"id": "syntax",
-				"children": [ { "command": "$file_types" } ]
-			},
-			{
-				"caption": "Khoảng lề",
-				"mnemonic": "l",
-				"id": "indentation",
-				"children":
-				[
-					{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Thụt lề bằng khoảng trắng", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Độ rộng Tab: 1", "mnemonic": "1", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Độ rộng Tab: 2", "mnemonic": "2", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Độ rộng Tab: 3", "mnemonic": "3", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Độ rộng Tab: 4", "mnemonic": "4", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Độ rộng Tab: 5", "mnemonic": "5", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Độ rộng Tab: 6", "mnemonic": "6", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Độ rộng Tab: 7", "mnemonic": "7", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Độ rộng Tab: 8", "mnemonic": "8", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "detect_indentation", "caption": "Đoán cài đặt từ bộ đệm" },
-					{ "caption": "-" },
-					{ "command": "expand_tabs", "caption": "Chuyển thụt lề thành khoảng trắng", "args": {"set_translate_tabs": true} },
-					{ "command": "unexpand_tabs", "caption": "Chuyển thụt lề thành Tab", "args": {"set_translate_tabs": true} }
-				]
-			},
-			{
-				"caption": "Ký tự kết thúc dòng",
-				"mnemonic": "n",
-				"id": "line_endings",
-				"children":
-				[
-					{ "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows", "checkbox": true },
-					{ "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix", "checkbox": true },
-					{ "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
-				]
-			},
-			{ "caption": "-", "id": "settings" },
-			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Tự động xuống dòng", "mnemonic": "x", "checkbox": true },
-			{
-				"caption": "Cột xuống dòng",
-				"children":
-				[
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Tự động", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 72}, "caption": "72", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}, "caption": "78", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}, "caption": "80", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}, "caption": "100", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}, "caption": "120", "checkbox": true }
-				]
-			},
-			{
-				"caption": "Thước đo",
-				"children":
-				[
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "Không", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [72]}, "caption": "72", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [78]}, "caption": "78", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [80]}, "caption": "80", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [100]}, "caption": "100", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "rulers", "value": [120]}, "caption": "120", "checkbox": true }
-				]
-			},
-			{ "caption": "-" },
-			{ "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Kiểm tra chính tả", "checkbox": true },
-			{ "command": "next_misspelling" },
-			{ "command": "prev_misspelling" },
-			{
-				"caption": "Từ điển",
-				"children": [ { "command": "$dictionaries" } ]
-			}
-		]
-	},
-	{
-		"caption": "Đi tới",
-		"mnemonic": "t",
-		"id": "goto",
-		"children":
-		[
-			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Đi tới bất kỳ đâu…", "mnemonic": "b" },
-			{ "caption": "-" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Đi tới ký hiệu…" },
-			{ "command": "goto_symbol_in_project", "caption": "Đi tới ký hiệu trong dự án…" },
-			{ "command": "goto_definition", "caption": "Đi tới định nghĩa…" },
-			{ "command": "goto_reference", "caption": "Đi tới tham chiếu…" },
-			// { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Đi tới từ…" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Đi tới dòng…" },
-			{ "caption": "-" },
-			{ "command": "next_modification", "caption": "Sửa đổi tiếp theo" },
-			{ "command": "prev_modification", "caption": "Sửa đổi trước đó" },
-			{ "caption": "-" },
-			{ "command": "jump_back", "caption": "Nhảy lùi" },
-			{ "command": "jump_forward", "caption": "Nhảy tới" },
-			{ "caption": "-" },
-			{
-				"caption": "Chuyển tệp",
-				"mnemonic": "t",
-				"id": "switch_file",
-				"children":
-				[
-					{ "command": "next_view", "caption": "Tệp tiếp theo" },
-					{ "command": "prev_view", "caption": "Tệp trước đó" },
-					{ "caption": "-" },
-					{ "command": "next_view_in_stack", "caption": "Tệp tiếp theo trong ngăn xếp" },
-					{ "command": "prev_view_in_stack", "caption": "Tệp trước đó trong ngăn xếp" },
-					{ "caption": "-" },
-					{ "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Chuyển đổi Header/Implementation", "mnemonic": "H" },
-					{ "caption": "-" },
-					{ "command": "select_by_index", "args": { "index": 0 } },
-					{ "command": "select_by_index", "args": { "index": 1 } },
-					{ "command": "select_by_index", "args": { "index": 2 } },
-					{ "command": "select_by_index", "args": { "index": 3 } },
-					{ "command": "select_by_index", "args": { "index": 4 } },
-					{ "command": "select_by_index", "args": { "index": 5 } },
-					{ "command": "select_by_index", "args": { "index": 6 } },
-					{ "command": "select_by_index", "args": { "index": 7 } },
-					{ "command": "select_by_index", "args": { "index": 8 } },
-					{ "command": "select_by_index", "args": { "index": 9 } }
-				]
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Cuộn",
-				"mnemonic": "u",
-				"id": "scroll",
-				"children":
-				[
-					{ "command": "show_at_center", "caption": "Cuộn đến vùng chọn" },
-					{ "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "Cuộn dòng lên" },
-					{ "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "Cuộn dòng xuống" }
-				]
-			},
-			{
-				"caption": "Đánh dấu trang",
-				"mnemonic": "a",
-				"id": "bookmarks",
-				"children":
-				[
-					{ "command": "toggle_bookmark", "args": {"toggle_line": true } },
-					{ "command": "next_bookmark" },
-					{ "command": "prev_bookmark" },
-					{ "command": "clear_bookmarks" },
-					{ "command": "select_all_bookmarks" },
-					{ "caption": "-" },
-					{ "command": "select_bookmark", "args": {"index": 0} },
-					{ "command": "select_bookmark", "args": {"index": 1} },
-					{ "command": "select_bookmark", "args": {"index": 2} },
-					{ "command": "select_bookmark", "args": {"index": 3} },
-					{ "command": "select_bookmark", "args": {"index": 4} },
-					{ "command": "select_bookmark", "args": {"index": 5} },
-					{ "command": "select_bookmark", "args": {"index": 6} },
-					{ "command": "select_bookmark", "args": {"index": 7} },
-					{ "command": "select_bookmark", "args": {"index": 8} },
-					{ "command": "select_bookmark", "args": {"index": 9} },
-					{ "command": "select_bookmark", "args": {"index": 10} },
-					{ "command": "select_bookmark", "args": {"index": 11} },
-					{ "command": "select_bookmark", "args": {"index": 12} },
-					{ "command": "select_bookmark", "args": {"index": 13} },
-					{ "command": "select_bookmark", "args": {"index": 14} },
-					{ "command": "select_bookmark", "args": {"index": 15} }
-				]
-			},
-			{ "caption": "-" },
-			{ "command": "move_to", "args": {"to": "brackets"}, "caption": "Nhảy đến dấu ngoặc tương ứng" }
-		]
-	},
-	{
-		"caption": "Công cụ",
-		"mnemonic": "C",
-		"id": "tools",
-		"children":
-		[
-			{ "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Bảng lệnh…" },
-			{ "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Đoạn mã mẫu…" },
-			{ "caption": "-", "id": "build" },
-			{
-				"caption": "Hệ thống biên dịch",
-				"mnemonic": "n",
-				"children":
-				[
-					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Tự động", "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 2}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 3}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 4}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 8}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 9}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 10}, "checkbox": true },
-					{ "command": "set_build_system", "args": {"index": 11}, "checkbox": true },
-					{ "caption": "-" },
-					{ "command": "$build_systems" },
-					{ "caption": "-" },
-					{ "command": "new_build_system", "caption": "Hệ thống biên dịch mới…" }
-				]
-			},
-			{ "command": "build", "mnemonic": "u" },
-			{ "command": "build", "args": {"select": true}, "caption": "Biên dịch với…" },
-			{ "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "d" },
-			{
-				"caption": "Kết quả biên dịch",
-				"mnemonic": "K",
-				"children":
-				[
-					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Hiển thị kết quả biên dịch", "mnemonic": "i" },
-					{ "command": "next_result", "mnemonic": "N" },
-					{ "command": "prev_result", "caption": "Kết quả trước", "mnemonic": "q" }
-				]
-			},
-			{ "command": "toggle_save_all_on_build", "caption": "Lưu tất cả khi biên dịch", "mnemonic": "L", "checkbox": true },
-			{ "caption": "-", "id": "macros" },
-			{ "command": "toggle_record_macro", "mnemonic": "M" },
-			{ "command": "run_macro", "caption": "Phát lại Macro", "mnemonic": "P" },
-			{ "command": "save_macro", "caption": "Lưu Macro…", "mnemonic": "M" },
-			{
-				"caption": "Macro",
-				"children": [ { "command": "$macros" } ]
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Lập trình viên",
-				"children":
-				[
-					{ "command": "new_plugin", "caption": "Tiện ích mở rộng mới…" },
-					{ "command": "new_snippet", "caption": "Đoạn mã mẫu mới…" },
-					{ "command": "new_syntax", "caption": "Cú pháp mới…" },
-					{ "command": "convert_syntax" },
-					{ "caption": "-" },
-					{ "caption": "-" },
-					{ "command": "profile_plugins" },
-					{ "caption": "-" },
-					{ "command": "view_resource", "caption": "Xem tệp gói…" },
-					{ "command": "show_scope_name" }
-				]
-			},
-			{ "command": "install_package_control", "caption": "Cài đặt Package Control…" },
-			{ "caption": "-", "id": "end" }
-		]
-	},
-	{
-		"caption": "Dự án",
-		"id": "project",
-		"mnemonic": "D",
-		"children":
-		[
-			{ "command": "prompt_open_project_or_workspace", "caption": "Mở dự án…" },
-			{ "command": "prompt_switch_project_or_workspace", "caption": "Chuyển dự án…" },
-			{ "command": "prompt_select_workspace", "caption": "Chuyển nhanh dự án…", "mnemonic": "C" },
-			{
-				"caption": "Mở gần đây",
-				"children":
-				[
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 1 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 2 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 3 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 4 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 5 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
-					{ "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
-					{ "caption": "-" },
-					{ "command": "clear_recent_projects_and_workspaces", "caption": "Xóa mục" },
-					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Xóa mục đã xóa" }
-				]
-			},
-			{ "caption": "-" },
-			{ "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "L" },
-			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "g" },
-			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Chỉnh sửa dự án" },
-			{ "caption": "-" },
-			{ "command": "new_window_for_project", "caption": "Không gian làm việc mới cho dự án" },
-			{ "command": "save_workspace_as", "caption": "Lưu không gian làm việc thành…", "mnemonic": "k" },
-			{ "caption": "-" },
-			{ "command": "prompt_add_folder", "caption": "Thêm thư mục vào dự án…", "mnemonic": "d" },
-			{ "command": "close_folder_list", "caption": "Xóa tất cả thư mục khỏi dự án", "mnemonic": "m" },
-			{ "command": "refresh_folder_list", "caption": "Làm mới thư mục", "mnemonic": "h" }
-		]
-	},
-	{
-		"caption": "Tùy chọn",
-		"mnemonic": "n",
-		"id": "preferences",
-		"children":
-		[
-			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Duyệt gói…", "mnemonic": "g" },
-			{ "caption": "-" },
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Preferences.sublime-settings",
-					"default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
-				},
-				"caption": "Cài đặt"
-			},
-			{ "command": "edit_syntax_settings", "caption": "Cài đặt – Theo cú pháp" },
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Distraction Free.sublime-settings",
-					"default": "{\n\t$0\n}\n"
-				},
-				"caption": "Cài đặt – Không gian tập trung"
-			},
-			{ "caption": "-" },
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Default ($platform).sublime-keymap",
-					"default": "[\n\t$0\n]\n"
-				},
-				"caption": "Phím tắt"
-			},
-			{
-				"command": "edit_settings", "args":
-				{
-					"base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
-					"default": "[\n\t$0\n]\n"
-				},
-				"caption": "Thao tác chuột"
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Chọn bảng màu…",
-				"command": "select_color_scheme"
-			},
-			{
-				"caption": "Tùy chỉnh bảng màu",
-				"command": "customize_color_scheme"
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Chọn giao diện…",
-				"command": "select_theme"
-			},
-			{
-				"caption": "Tùy chỉnh giao diện",
-				"command": "customize_theme"
-			},
-			{ "caption": "-" },
-			{
-				"caption": "Phông chữ",
-				"children":
-				[
-					{ "command": "choose_font", "caption": "Chọn…" },
-					{ "command": "increase_font_size", "caption": "Lớn hơn" },
-					{ "command": "decrease_font_size", "caption": "Nhỏ hơn" },
-					{ "caption": "-" },
-					{ "command": "reset_font_size", "caption": "Đặt lại kích thước" }
-				]
-			}
-		]
-	},
-	{
-		"caption": "Trợ giúp",
-		"mnemonic": "r",
-		"id": "help",
-		"children":
-		[
-			{ "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Tài liệu" },
-			{ "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Báo cáo lỗi" },
-			{ "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "Twitter" },
-			{ "caption": "-" },
-			{ "command": "show_progress_window", "caption": "Trạng thái lập chỉ mục…" },
-			{ "caption": "-" },
-			{ "command": "purchase_license"},
-			{ "command": "upgrade_license"},
-			{ "command": "show_license_window", "caption": "Nhập giấy phép" },
-			{ "command": "remove_license"},
-			{ "caption": "-" },
-			{ "command": "update_check", "caption": "Kiểm tra bản cập nhật…" },
-			{ "command": "show_changelog", "caption": "Nhật ký thay đổi…" },
-			{ "command": "show_attribution", "caption": "Giấy phép và Ghi công…" },
-			{ "command": "show_about_window", "caption": "Giới thiệu về Sublime Text", "mnemonic": "S" }
-		]
-	}
+          { "command": "focus_neighboring_group", "caption": "Tiếp theo" },
+          { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Trước đó" },
+          { "caption": "-" },
+          { "command": "focus_group", "args": {"group": 0}, "caption": "Nhóm 1", "mnemonic": "1" },
+          { "command": "focus_group", "args": {"group": 1}, "caption": "Nhóm 2", "mnemonic": "2" },
+          { "command": "focus_group", "args": {"group": 2}, "caption": "Nhóm 3", "mnemonic": "3" },
+          { "command": "focus_group", "args": {"group": 3}, "caption": "Nhóm 4", "mnemonic": "4" }
+        ]
+      },
+      {
+        "caption": "Chuyển tệp đến nhóm",
+        "mnemonic": "C",
+        "children":
+        [
+          { "command": "move_to_neighboring_group", "caption": "Tiếp theo" },
+          { "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Trước đó" },
+          { "caption": "-" },
+          { "command": "move_to_group", "args": {"group": 0}, "caption": "Nhóm 1", "mnemonic": "1" },
+          { "command": "move_to_group", "args": {"group": 1}, "caption": "Nhóm 2", "mnemonic": "2" },
+          { "command": "move_to_group", "args": {"group": 2}, "caption": "Nhóm 3", "mnemonic": "3" },
+          { "command": "move_to_group", "args": {"group": 3}, "caption": "Nhóm 4", "mnemonic": "4" }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "caption": "Cú pháp",
+        "mnemonic": "C",
+        "id": "syntax",
+        "children": [ { "command": "$file_types" } ]
+      },
+      {
+        "caption": "Thụt lề",
+        "mnemonic": "T",
+        "id": "indentation",
+        "children":
+        [
+{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Dùng khoảng trắng để thụt lề (&B)", "checkbox": true },
+          { "caption": "-" },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Độ rộng tab: 1", "mnemonic": "1", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Độ rộng tab: 2", "mnemonic": "2", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Độ rộng tab: 3", "mnemonic": "3", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Độ rộng tab: 4", "mnemonic": "4", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Độ rộng tab: 5", "mnemonic": "5", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Độ rộng tab: 6", "mnemonic": "6", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Độ rộng tab: 7", "mnemonic": "7", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Độ rộng tab: 8", "mnemonic": "8", "checkbox": true },
+          { "caption": "-" },
+          { "command": "detect_indentation", "caption": "Đoán cài đặt từ nội dung" },
+          { "caption": "-" },
+          { "command": "expand_tabs", "caption": "Chuyển thụt lề thành khoảng trắng", "args": {"set_translate_tabs": true} },
+          { "command": "unexpand_tabs", "caption": "Chuyển thụt lề thành tab", "args": {"set_translate_tabs": true} }
+        ]
+      },
+      {
+        "caption": "Kết thúc dòng",
+        "mnemonic": "K",
+        "id": "line_endings",
+        "children":
+        [
+          { "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Windows", "checkbox": true },
+          { "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Unix", "checkbox": true },
+          { "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
+        ]
+      },
+      { "caption": "-", "id": "settings" },
+      { "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Xuống dòng tự động", "mnemonic": "X", "checkbox": true },
+      {
+        "caption": "Cột xuống dòng tự động",
+        "children":
+        [
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 0}, "caption": "Tự động", "checkbox": true },
+          { "caption": "-" },
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 70}, "caption": "70", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 72}, "caption": "72", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 78}, "caption": "78", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 80}, "caption": "80", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 100}, "caption": "100", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "wrap_width", "value": 120}, "caption": "120", "checkbox": true }
+        ]
+      },
+      {
+        "caption": "Thước kẻ",
+        "children":
+        [
+          { "command": "set_setting", "args": {"setting": "rulers", "value": []}, "caption": "Không", "checkbox": true },
+          { "caption": "-" },
+          { "command": "set_setting", "args": {"setting": "rulers", "value": [70]}, "caption": "70", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "rulers", "value": [72]}, "caption": "72", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "rulers", "value": [78]}, "caption": "78", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "rulers", "value": [80]}, "caption": "80", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "rulers", "value": [100]}, "caption": "100", "checkbox": true },
+          { "command": "set_setting", "args": {"setting": "rulers", "value": [120]}, "caption": "120", "checkbox": true }
+        ]
+      },
+      { "caption": "-" },
+      { "command": "toggle_setting", "args": {"setting": "spell_check"}, "caption": "Kiểm tra chính tả", "checkbox": true },
+      { "command": "next_misspelling", "caption": "Lỗi chính tả tiếp theo" },
+      { "command": "prev_misspelling", "caption": "Lỗi chính tả trước đó" },
+      {
+        "caption": "Từ điển",
+        "children": [ { "command": "$dictionaries" } ]
+      }
+    ]
+  },
+  {
+    "caption": "Đi tới",
+    "mnemonic": "t",
+    "id": "goto",
+    "children":
+    [
+      { "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Đi tới bất kỳ đâu…", "mnemonic": "b" },
+      { "caption": "-" },
+      { "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Đi tới ký hiệu…" },
+      { "command": "goto_symbol_in_project", "caption": "Đi tới ký hiệu trong dự án…" },
+      { "command": "goto_definition", "caption": "Đi tới định nghĩa…" },
+      { "command": "goto_reference", "caption": "Đi tới tham chiếu…" },
+      { "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Đi tới dòng…" },
+      { "caption": "-" },
+      { "command": "next_modification", "caption": "Thay đổi tiếp theo" },
+      { "command": "prev_modification", "caption": "Thay đổi trước đó" },
+      { "caption": "-" },
+      { "command": "jump_back", "caption": "Nhảy lại" },
+      { "command": "jump_forward", "caption": "Nhảy tới" },
+      { "caption": "-" },
+      {
+        "caption": "Chuyển đổi tệp",
+        "mnemonic": "C",
+        "id": "switch_file",
+        "children":
+        [
+          { "command": "next_view", "caption": "Tệp tiếp theo" },
+          { "command": "prev_view", "caption": "Tệp trước đó" },
+          { "caption": "-" },
+          { "command": "next_view_in_stack", "caption": "Tệp tiếp theo trong ngăn xếp" },
+          { "command": "prev_view_in_stack", "caption": "Tệp trước đó trong ngăn xếp" },
+          { "caption": "-" },
+          { "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]}, "caption": "Chuyển đổi tiêu đề/nguồn", "mnemonic": "u" },
+          { "caption": "-" },
+          { "command": "select_by_index", "args": { "index": 0 } },
+          { "command": "select_by_index", "args": { "index": 1 } },
+          { "command": "select_by_index", "args": { "index": 2 } },
+          { "command": "select_by_index", "args": { "index": 3 } },
+          { "command": "select_by_index", "args": { "index": 4 } },
+          { "command": "select_by_index", "args": { "index": 5 } },
+          { "command": "select_by_index", "args": { "index": 6 } },
+          { "command": "select_by_index", "args": { "index": 7 } },
+          { "command": "select_by_index", "args": { "index": 8 } },
+          { "command": "select_by_index", "args": { "index": 9 } }
+        ]
+      },
+      { "caption": "-" },
+      {
+        "caption": "Cuộn",
+        "mnemonic": "C",
+        "id": "scroll",
+        "children":
+        [
+          { "command": "show_at_center", "caption": "Cuộn đến vùng chọn" },
+          { "command": "scroll_lines", "args": {"amount": 1.0 }, "caption": "Cuộn lên một dòng" },
+          { "command": "scroll_lines", "args": {"amount": -1.0 }, "caption": "Cuộn xuống một dòng" }
+        ]
+      },
+      {
+        "caption": "Đánh dấu",
+        "mnemonic": "d",
+        "id": "bookmarks",
+        "children":
+        [
+          { "command": "toggle_bookmark", "args": {"toggle_line": true }, "caption": "Bật/Tắt đánh dấu" },
+          { "command": "next_bookmark", "caption": "Đánh dấu tiếp theo" },
+          { "command": "prev_bookmark", "caption": "Đánh dấu trước đó" },
+          { "command": "clear_bookmarks", "caption": "Xóa các đánh dấu" },
+          { "command": "select_all_bookmarks", "caption": "Chọn tất cả đánh dấu" },
+          { "caption": "-" },
+          { "command": "select_bookmark", "args": {"index": 0} },
+          { "command": "select_bookmark", "args": {"index": 1} },
+          { "command": "select_bookmark", "args": {"index": 2} },
+          { "command": "select_bookmark", "args": {"index": 3} },
+          { "command": "select_bookmark", "args": {"index": 4} },
+          { "command": "select_bookmark", "args": {"index": 5} },
+          { "command": "select_bookmark", "args": {"index": 6} },
+          { "command": "select_bookmark", "args": {"index": 7} },
+          { "command": "select_bookmark", "args": {"index": 8} },
+          { "command": "select_bookmark", "args": {"index": 9} },
+          { "command": "select_bookmark", "args": {"index": 10} },
+          { "command": "select_bookmark", "args": {"index": 11} },
+          { "command": "select_bookmark", "args": {"index": 12} },
+          { "command": "select_bookmark", "args": {"index": 13} },
+          { "command": "select_bookmark", "args": {"index": 14} },
+          { "command": "select_bookmark", "args": {"index": 15} }
+        ]
+      },
+      { "caption": "-" },
+      { "command": "move_to", "args": {"to": "brackets"}, "caption": "Nhảy tới dấu ngoặc tương ứng" }
+    ]
+  },
+  {
+    "caption": "Công cụ",
+    "mnemonic": "C",
+    "id": "tools",
+    "children":
+    [
+      { "command": "show_overlay", "args": {"overlay": "command_palette"}, "caption": "Bảng lệnh…" },
+      { "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "}, "caption": "Đoạn mã mẫu…" },
+      { "caption": "-", "id": "build" },
+      {
+        "caption": "Hệ thống biên dịch",
+        "mnemonic": "H",
+        "children":
+        [
+          { "command": "set_build_system", "args": { "file": "" }, "caption": "Tự động", "checkbox": true },
+          { "caption": "-" },
+          { "command": "set_build_system", "args": {"index": 0}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 1}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 2}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 3}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 4}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 5}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 6}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 7}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 8}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 9}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 10}, "checkbox": true },
+          { "command": "set_build_system", "args": {"index": 11}, "checkbox": true },
+          { "caption": "-" },
+          { "command": "$build_systems" },
+          { "caption": "-" },
+          { "command": "new_build_system", "caption": "Hệ thống biên dịch mới…" }
+        ]
+      },
+      { "command": "build", "mnemonic": "B", "caption": "Biên dịch" },
+      { "command": "build", "args": {"select": true}, "caption": "Biên dịch với…" },
+      { "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "H" },
+      {
+        "caption": "Kết quả biên dịch",
+        "mnemonic": "K",
+        "children":
+        [
+          { "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Hiện kết quả biên dịch", "mnemonic": "H" },
+          { "command": "next_result", "mnemonic": "K", "caption": "Kết quả tiếp theo" },
+          { "command": "prev_result", "caption": "Kết quả trước đó", "mnemonic": "r" }
+        ]
+      },
+      { "command": "toggle_save_all_on_build", "caption": "Lưu tất cả khi biên dịch", "mnemonic": "L", "checkbox": true },
+      { "caption": "-", "id": "macros" },
+      { "command": "toggle_record_macro", "mnemonic": "g", "caption": "Bật/Tắt ghi macro" },
+      { "command": "run_macro", "caption": "Phát lại macro", "mnemonic": "P" },
+      { "command": "save_macro", "caption": "Lưu macro…", "mnemonic": "m" },
+      {
+        "caption": "Macro",
+        "children": [ { "command": "$macros" } ]
+      },
+      { "caption": "-" },
+      {
+        "caption": "Nhà phát triển",
+        "children":
+        [
+          { "command": "new_plugin", "caption": "Tiện ích mở rộng mới…" },
+          { "command": "new_snippet", "caption": "Đoạn mã mẫu mới…" },
+          { "command": "new_syntax", "caption": "Cú pháp mới…" },
+          { "command": "convert_syntax", "caption": "Chuyển đổi cú pháp" },
+          { "caption": "-" },
+          { "caption": "-" },
+          { "command": "profile_plugins", "caption": "Đoạn mã cấu hình tiện ích" },
+          { "caption": "-" },
+          { "command": "view_resource", "caption": "Xem tệp gói…" },
+          { "command": "show_scope_name", "caption": "Hiển thị tên phạm vi" }
+        ]
+      },
+      { "command": "install_package_control", "caption": "Cài đặt Package Control…" },
+      { "caption": "-", "id": "end" }
+    ]
+  },
+  {
+    "caption": "Dự án",
+    "mnemonic": "D",
+    "id": "project",
+    "children":
+    [
+      { "command": "prompt_open_project_or_workspace", "caption": "Mở dự án…" },
+      { "command": "prompt_switch_project_or_workspace", "caption": "Chuyển đổi dự án…" },
+      { "command": "prompt_select_workspace", "caption": "Chuyển đổi dự án nhanh…", "mnemonic": "n" },
+      {
+        "caption": "Mở gần đây",
+        "children":
+        [
+          { "command": "open_recent_project_or_workspace", "args": {"index": 0 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 1 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 2 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 3 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 4 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 5 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 6 } },
+          { "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
+          { "caption": "-" },
+          { "command": "clear_recent_projects_and_workspaces", "caption": "Xóa các mục" },
+          { "command": "clear_missing_recent_projects_and_workspaces", "caption": "Xóa các mục đã mất" }
+        ]
+      },
+      { "caption": "-" },
+      { "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "L" },
+      { "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "d" },
+      { "command": "open_file", "args": {"file": "${project}"}, "caption": "Chỉnh sửa dự án" },
+      { "caption": "-" },
+      { "command": "new_window_for_project", "caption": "Không gian làm việc mới cho dự án" },
+      { "command": "save_workspace_as", "caption": "Lưu không gian làm việc thành…", "mnemonic": "k" },
+      { "caption": "-" },
+      { "command": "prompt_add_folder", "caption": "Thêm thư mục vào dự án…", "mnemonic": "T" },
+      { "command": "close_folder_list", "caption": "Loại bỏ tất cả thư mục khỏi dự án", "mnemonic": "b" },
+      { "command": "refresh_folder_list", "caption": "Làm mới thư mục", "mnemonic": "m" }
+    ]
+  },
+  {
+    "caption": "Tùy chọn",
+    "mnemonic": "T",
+    "id": "preferences",
+    "children":
+    [
+      { "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Duyệt qua các gói…", "mnemonic": "g" },
+      { "caption": "-" },
+      {
+        "command": "edit_settings", "args":
+        {
+          "base_file": "${packages}/Default/Preferences.sublime-settings",
+          "default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
+        },
+        "caption": "Cài đặt"
+      },
+      { "command": "edit_syntax_settings", "caption": "Cài đặt – Theo cú pháp" },
+      {
+        "command": "edit_settings", "args":
+        {
+          "base_file": "${packages}/Default/Distraction Free.sublime-settings",
+          "default": "{\n\t$0\n}\n"
+        },
+        "caption": "Cài đặt – Chế độ tập trung"
+      },
+      { "caption": "-" },
+      {
+        "command": "edit_settings", "args":
+        {
+          "base_file": "${packages}/Default/Default ($platform).sublime-keymap",
+          "default": "[\n\t$0\n]\n"
+        },
+        "caption": "Phím tắt"
+      },
+      {
+        "command": "edit_settings", "args":
+        {
+          "base_file": "${packages}/Default/Default ($platform).sublime-mousemap",
+          "default": "[\n\t$0\n]\n"
+        },
+        "caption": "Thao tác chuột"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Chọn bảng màu…",
+        "command": "select_color_scheme"
+      },
+      {
+        "caption": "Tùy chỉnh bảng màu",
+        "command": "customize_color_scheme"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Chọn giao diện…",
+        "command": "select_theme"
+      },
+      {
+        "caption": "Tùy chỉnh giao diện",
+        "command": "customize_theme"
+      },
+      { "caption": "-" },
+      {
+        "caption": "Phông chữ",
+        "children":
+        [
+          { "command": "choose_font", "caption": "Chọn…" },
+          { "command": "increase_font_size", "caption": "Lớn hơn" },
+          { "command": "decrease_font_size", "caption": "Nhỏ hơn" },
+          { "caption": "-" },
+          { "command": "reset_font_size", "caption": "Đặt lại kích thước" }
+        ]
+      }
+    ]
+  },
+{
+    "caption": "Trợ giúp",
+    "mnemonic": "T",
+    "id": "help",
+    "children":
+    [
+      { "command": "open_url", "args": {"url": "https://www.sublimetext.com/docs/"}, "caption": "Tài liệu" },
+      { "command": "open_url", "args": {"url": "https://github.com/sublimehq/sublime_text/issues/new/choose"}, "caption": "Báo cáo lỗi" },
+      { "command": "open_url", "args": {"url": "https://twitter.com/sublimehq"}, "caption": "Twitter" },
+      { "caption": "-" },
+      { "command": "show_progress_window", "caption": "Trạng thái lập chỉ mục…" },
+      { "caption": "-" },
+      { "command": "purchase_license", "caption": "Mua giấy phép"},
+      { "command": "upgrade_license", "caption": "Nâng cấp giấy phép"},
+      { "command": "show_license_window", "caption": "Nhập giấy phép" },
+      { "command": "remove_license", "caption": "Gỡ bỏ giấy phép"},
+      { "caption": "-" },
+      { "command": "update_check", "caption": "Kiểm tra cập nhật…" },
+      { "command": "show_changelog", "caption": "Nhật ký thay đổi…" },
+      { "command": "show_attribution", "caption": "Bản quyền và ghi công…" },
+      { "command": "show_about_window", "caption": "Giới thiệu Sublime Text", "mnemonic": "G" }
+    ]
+  }
 ]

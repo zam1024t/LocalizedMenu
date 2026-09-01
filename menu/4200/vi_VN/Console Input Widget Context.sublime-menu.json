@@ -1,10 +1,10 @@
 [
-	{ "command": "cut" },
-	{ "command": "copy" },
-	{ "command": "paste" },
-	{ "caption": "-" },
-	{ "command": "select_all" },
-	{ "caption": "-" },
-	{ "command": "console_python_version", "args": {"version": "3.8"}, "checkbox": true },
-	{ "command": "console_python_version", "args": {"version": "3.3"}, "checkbox": true },
+  { "command": "cut", "caption": "Cắt" },
+  { "command": "copy", "caption": "Sao chép" },
+  { "command": "paste", "caption": "Dán" },
+  { "caption": "-" },
+  { "command": "select_all", "caption": "Chọn tất cả" },
+  { "caption": "-" },
+  { "command": "console_python_version", "args": {"version": "3.8"}, "caption": "Python 3.8", "checkbox": true },
+  { "command": "console_python_version", "args": {"version": "3.3"}, "caption": "Python 3.3", "checkbox": true }
 ]
