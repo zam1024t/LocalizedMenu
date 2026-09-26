@@ -5,5 +5,5 @@
 	{ "command": "copy", "caption": "Copiar" },
 	{ "command": "paste", "caption": "Pegar" },
 	{ "caption": "-" },
-	{ "command": "select_all", "caption": "Seleccionar Todo" }
+	{ "command": "select_all", "caption": "Seleccionar todo" }
 ]

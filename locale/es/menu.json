@@ -4,7 +4,7 @@
 		"children": [
 			{
 				"id": "package-settings",
-				"caption": "Ajustes de Paquetes",
+				"caption": "Ajustes de paquetes",
 				"children":
 				[
 					{
@@ -16,14 +16,14 @@
 								{
 									"file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
 								},
-								"caption": "Ajustes – Por defecto"
+								"caption": "Ajustes – por defecto"
 							},
 							{
 								"command": "open_file", "args":
 								{
 									"file": "${packages}/User/LocalizedMenu.sublime-settings"
 								},
-								"caption": "Ajustes – Usuario"
+								"caption": "Ajustes – usuario"
 							},
 							{ "caption": "-" }
 						]
@@ -54,14 +54,14 @@
 						"args": {
 							"action": "add"
 						},
-						"caption": "Añadir Idioma…"
+						"caption": "Añadir idioma…"
 					},
 					{
 						"command": "localize_run",
 						"args": {
 							"action": "submit"
 						},
-						"caption": "Subir Idioma…"
+						"caption": "Subir idioma…"
 					},
 					{ "caption": "-" }
 				]
