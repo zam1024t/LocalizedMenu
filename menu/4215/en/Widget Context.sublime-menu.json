@@ -1,0 +1,9 @@
+[
+	{ "command": "open_context_url" },
+	{ "caption": "-" },
+	{ "command": "cut" },
+	{ "command": "copy" },
+	{ "command": "paste" },
+	{ "caption": "-" },
+	{ "command": "select_all" }
+]
