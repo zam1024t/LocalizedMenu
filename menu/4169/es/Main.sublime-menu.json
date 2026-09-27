@@ -810,7 +810,7 @@
 				"children":
 				[
 					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Mostrar los resultados de la construcción", "mnemonic": "M" },
-					{ "command": "next_result", "caption": "Resultado siguiente", "mnemonic": "S" },
+					{ "command": "next_result", "caption": "Resultado siguiente", "mnemonic": "s" },
 					{ "command": "prev_result", "caption": "Resultado anterior", "mnemonic": "R" }
 				]
 			},
