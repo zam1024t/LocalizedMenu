@@ -12,5 +12,5 @@
 	{ "command": "clone_file", "args": { "add_to_selection": true, "group": -1, "index": -1, "retain_viewport_position": true }, "caption": "Clonar vista" },
 	{ "caption": "-" },
 	{ "command": "new_file", "caption": "Nuevo archivo" },
-	{ "command": "prompt_open_file", "caption": "Abrir archivo" }
+	{ "command": "prompt_open_file", "caption": "Abrir archivo" },
 ]

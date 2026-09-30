@@ -6,5 +6,5 @@
 	{ "command": "add_where_snippet", "args": {"snippet": "<project filters>"}, "caption": "Añadir al filtro del proyecto" },
 	{ "command": "add_where_snippet", "args": {"snippet": "<open folders>"}, "caption": "Añadir carpetas abiertas" },
 	{ "command": "add_where_snippet", "args": {"snippet": "<open files>"}, "caption": "Añadir archivos abiertos" },
-	{ "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Añadir el archivo actual" }
+	{ "command": "add_where_snippet", "args": {"snippet": "<current file>"}, "caption": "Añadir el archivo actual" },
 ]

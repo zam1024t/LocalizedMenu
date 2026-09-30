@@ -91,6 +91,8 @@
 					{ "caption": "Hexadecimal", "command": "reopen", "args": { "encoding": "Hexadecimal" } }
 				]
 			},
+			{ "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Reabrir archivo como imagen" },
+			{ "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Reabrir archivo como texto" },
 			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Clonar vista", "mnemonic": "C" },
 			{ "command": "save", "args": {"async": true}, "caption": "Guardar", "mnemonic": "G" },
 			{
@@ -149,11 +151,11 @@
 			{ "command": "close_window", "caption": "Cerrar ventana" },
 			{ "caption": "-", "id": "close" },
 			{ "command": "close", "caption": "Cerrar archivo", "mnemonic": "C" },
-			{ "command": "revert", "caption": "Revertir archivo", "mnemonic": "R" },
+			{ "command": "revert", "caption": "Revertir archivo", "mnemonic": "v" },
 			{ "command": "close_all", "caption": "Cerrar todos los archivos" },
 			{ "caption": "-", "id": "exit" },
 			{ "command": "exit", "caption": "Salir", "mnemonic": "S", "platform": "Windows" },
-			{ "command": "exit", "caption": "Cerrar", "mnemonic": "C", "platform": "Linux" }
+			{ "command": "exit", "caption": "Cerrar", "mnemonic": "C", "platform": "Linux" },
 		]
 	},
 	{
@@ -188,7 +190,7 @@
 					{ "command": "indent", "caption": "Indentar" },
 					{ "command": "unindent", "caption": "Quitar indentación" },
 					{ "command": "reindent", "caption": "Volver a indentar", "args": {"single_line": true} },
-					{ "command": "swap_line_up", "caption": "Intercambiar línea por la de arriba"  },
+					{ "command": "swap_line_up", "caption": "Intercambiar línea por la de arriba" },
 					{ "command": "swap_line_down", "caption": "Intercambiar línea por la de abajo" },
 					{ "command": "duplicate_line", "caption": "Duplicar línea" },
 					{ "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}, "caption": "Borrar línea" },
@@ -196,7 +198,7 @@
 				]
 			},
 			{
-				"caption": "Comentario", "mnemonic": "C",
+				"caption": "Comentario", "mnemonic": "m",
 				"id": "comment",
 				"children":
 				[
@@ -258,21 +260,21 @@
 					{ "command": "unfold", "caption": "Desplegar" },
 					{ "command": "unfold_all", "caption": "Desplegar todo" },
 					{ "caption": "-" },
-					{ "caption": "Plegar todo", "command": "fold_by_level", "args": {"level": 1} },
-					{ "caption": "Nivel de plegado: 2", "command": "fold_by_level", "args": {"level": 2} },
-					{ "caption": "Nivel de plegado: 3", "command": "fold_by_level", "args": {"level": 3} },
-					{ "caption": "Nivel de plegado: 4", "command": "fold_by_level", "args": {"level": 4} },
-					{ "caption": "Nivel de plegado: 5", "command": "fold_by_level", "args": {"level": 5} },
-					{ "caption": "Nivel de plegado: 6", "command": "fold_by_level", "args": {"level": 6} },
-					{ "caption": "Nivel de plegado: 7", "command": "fold_by_level", "args": {"level": 7} },
-					{ "caption": "Nivel de plegado: 8", "command": "fold_by_level", "args": {"level": 8} },
-					{ "caption": "Nivel de plegado: 9", "command": "fold_by_level", "args": {"level": 9} },
+					{ "caption": "Plegar todo", "command": "fold_by_level", "mnemonic": "P", "args": {"level": 1} },
+					{ "caption": "Nivel de plegado: 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
+					{ "caption": "Nivel de plegado: 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
+					{ "caption": "Nivel de plegado: 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
+					{ "caption": "Nivel de plegado: 5", "command": "fold_by_level", "mnemonic": "5", "args": {"level": 5} },
+					{ "caption": "Nivel de plegado: 6", "command": "fold_by_level", "mnemonic": "6", "args": {"level": 6} },
+					{ "caption": "Nivel de plegado: 7", "command": "fold_by_level", "mnemonic": "7", "args": {"level": 7} },
+					{ "caption": "Nivel de plegado: 8", "command": "fold_by_level", "mnemonic": "8", "args": {"level": 8} },
+					{ "caption": "Nivel de plegado: 9", "command": "fold_by_level", "mnemonic": "9", "args": {"level": 9} },
 					{ "caption": "-" },
 					{ "command": "fold_tag_attributes", "caption": "Plegar los atributos de la etiqueta" }
 				]
 			},
 			{
-				"caption": "Conversiones de “Case”", "mnemonic": "C",
+				"caption": "Conversiones de “Case”", "mnemonic": "a",
 				"id": "convert_case",
 				"children":
 				[
@@ -291,7 +293,7 @@
 				"id": "wrap",
 				"children":
 				[
-					{ "command": "wrap_lines", "caption": "Envolver párrafo en una regla" },
+					{ "command": "wrap_lines", "caption": "Envolver párrafo" },
 					{ "command": "wrap_lines", "args": {"width": 70}, "caption": "Envolver párrafo de 70 caracteres" },
 					{ "command": "wrap_lines", "args": {"width": 72}, "caption": "Envolver párrafo de 72 caracteres" },
 					{ "command": "wrap_lines", "args": {"width": 78}, "caption": "Envolver párrafo de 78 caracteres" },
@@ -344,7 +346,7 @@
 			{ "command": "find_under_expand", "caption": "Expandir selección de la palabra" },
 			{ "command": "expand_selection_to_paragraph", "caption": "Expandir selección al bloque" },
 			{ "command": "expand_selection_to_paragraph", "args": {"markup_aware": true}, "caption": "Expandir selección al párrafo" },
-			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Expandir selección al perímetro (Scope)" },
+			{ "command": "expand_selection", "args": {"to": "scope"}, "caption": "Expandir selección al perímetro (scope)" },
 			{ "command": "expand_selection", "args": {"to": "brackets"}, "caption": "Expandir selección a los corchetes" },
 			{ "command": "expand_selection", "args": {"to": "indentation"}, "caption": "Expandir selección a la indentación" },
 			{ "caption": "-" },
@@ -358,6 +360,7 @@
 					{ "command": "unselect_others", "caption": "Deseleccionar otras" },
 					{ "command": "unselect_to_left", "caption": "Deseleccionar a la izquierda" },
 					{ "command": "unselect_to_right", "caption": "Deseleccionar a la derecha" },
+					{ "command": "unselect_current", "caption": "Deseleccionar actual" },
 					{ "caption": "-" },
 					{ "command": "select_to_left", "caption": "Seleccionar a la izquierda" },
 					{ "command": "select_to_right", "caption": "Seleccionar a la derecha" },
@@ -365,18 +368,18 @@
 					{ "command": "focus_to_left", "caption": "Enfocar a la izquierda" },
 					{ "command": "focus_to_right", "caption": "Enfocar a la derecha" },
 					{ "caption": "-" },
-					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Enfocar pestaña seleccionada: 1" },
-					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Enfocar pestaña seleccionada: 2" },
-					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Enfocar pestaña seleccionada: 3" },
-					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Enfocar pestaña seleccionada: 4" },
-					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Enfocar pestaña seleccionada: 5" },
-					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Enfocar pestaña seleccionada: 6" },
-					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Enfocar pestaña seleccionada: 7" },
-					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Enfocar pestaña seleccionada: 8" },
-					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Enfocar pestaña seleccionada: 9" },
-					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Enfocar pestaña seleccionada: 10" }
+					{ "command": "focus_by_index", "args": {"index": 0}, "caption": "Enfocar pestaña seleccionada: 1", "mnemonic": "1" },
+					{ "command": "focus_by_index", "args": {"index": 1}, "caption": "Enfocar pestaña seleccionada: 2", "mnemonic": "2" },
+					{ "command": "focus_by_index", "args": {"index": 2}, "caption": "Enfocar pestaña seleccionada: 3", "mnemonic": "3" },
+					{ "command": "focus_by_index", "args": {"index": 3}, "caption": "Enfocar pestaña seleccionada: 4", "mnemonic": "4" },
+					{ "command": "focus_by_index", "args": {"index": 4}, "caption": "Enfocar pestaña seleccionada: 5", "mnemonic": "5" },
+					{ "command": "focus_by_index", "args": {"index": 5}, "caption": "Enfocar pestaña seleccionada: 6", "mnemonic": "6" },
+					{ "command": "focus_by_index", "args": {"index": 6}, "caption": "Enfocar pestaña seleccionada: 7", "mnemonic": "7" },
+					{ "command": "focus_by_index", "args": {"index": 7}, "caption": "Enfocar pestaña seleccionada: 8", "mnemonic": "8" },
+					{ "command": "focus_by_index", "args": {"index": 8}, "caption": "Enfocar pestaña seleccionada: 9", "mnemonic": "9" },
+					{ "command": "focus_by_index", "args": {"index": 9}, "caption": "Enfocar pestaña seleccionada: 10" },
 				]
-			}
+			},
 		]
 	},
 	{
@@ -412,7 +415,7 @@
 					{ "command": "prev_result", "caption": "Resultado anterior" }
 				]
 			},
-			{ "command": "cancel_find", "caption": "Cancelar la búsqueda en archivos" }
+			{ "command": "cancel_find", "caption": "Cancelar la búsqueda en archivos" },
 		]
 	},
 	{
@@ -536,32 +539,37 @@
 						"caption": "1 columna como máximo",
 						"command": "set_max_columns",
 						"checkbox": true,
-						"args": { "columns": 1 }
+						"args": { "columns": 1 },
+						"mnemonic": "1",
 					},
 					{
 						"caption": "2 columnas como máximo",
 						"command": "set_max_columns",
 						"checkbox": true,
-						"args": { "columns": 2 }
+						"args": { "columns": 2 },
+						"mnemonic": "2",
 					},
 					{
 						"caption": "3 columnas como máximo",
 						"command": "set_max_columns",
 						"checkbox": true,
-						"args": { "columns": 3 }
+						"args": { "columns": 3 },
+						"mnemonic": "3",
 					},
 					{
 						"caption": "4 columnas como máximo",
 						"command": "set_max_columns",
 						"checkbox": true,
-						"args": { "columns": 4 }
+						"args": { "columns": 4 },
+						"mnemonic": "4",
 					},
 					{
 						"caption": "5 columnas como máximo",
 						"command": "set_max_columns",
 						"checkbox": true,
-						"args": { "columns": 5 }
-					}
+						"args": { "columns": 5 },
+						"mnemonic": "5",
+					},
 				]
 			},
 			{
@@ -573,10 +581,10 @@
 					{ "command": "focus_neighboring_group", "caption": "Siguiente" },
 					{ "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Anterior" },
 					{ "caption": "-" },
-					{ "command": "focus_group", "args": {"group": 0}, "caption": "Grupo 1" },
-					{ "command": "focus_group", "args": {"group": 1}, "caption": "Grupo 2" },
-					{ "command": "focus_group", "args": {"group": 2}, "caption": "Grupo 3" },
-					{ "command": "focus_group", "args": {"group": 3}, "caption": "Grupo 4" }
+					{ "command": "focus_group", "args": {"group": 0}, "caption": "Grupo 1", "mnemonic": "1" },
+					{ "command": "focus_group", "args": {"group": 1}, "caption": "Grupo 2", "mnemonic": "2" },
+					{ "command": "focus_group", "args": {"group": 2}, "caption": "Grupo 3", "mnemonic": "3" },
+					{ "command": "focus_group", "args": {"group": 3}, "caption": "Grupo 4", "mnemonic": "4" }
 				]
 			},
 			{
@@ -587,10 +595,10 @@
 					{ "command": "move_to_neighboring_group", "caption": "Siguiente" },
 					{ "command": "move_to_neighboring_group", "args": {"forward": false}, "caption": "Anterior" },
 					{ "caption": "-" },
-					{ "command": "move_to_group", "args": {"group": 0}, "caption": "Grupo 1" },
-					{ "command": "move_to_group", "args": {"group": 1}, "caption": "Grupo 2" },
-					{ "command": "move_to_group", "args": {"group": 2}, "caption": "Grupo 3" },
-					{ "command": "move_to_group", "args": {"group": 3}, "caption": "Grupo 4" }
+					{ "command": "move_to_group", "args": {"group": 0}, "caption": "Grupo 1", "mnemonic": "1" },
+					{ "command": "move_to_group", "args": {"group": 1}, "caption": "Grupo 2", "mnemonic": "2" },
+					{ "command": "move_to_group", "args": {"group": 2}, "caption": "Grupo 3", "mnemonic": "3" },
+					{ "command": "move_to_group", "args": {"group": 3}, "caption": "Grupo 4", "mnemonic": "4" }
 				]
 			},
 			{ "caption": "-" },
@@ -608,14 +616,14 @@
 				[
 					{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Alternar indentación con espacios", "checkbox": true },
 					{ "caption": "-" },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Ancho de tabulación: 1", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Ancho de tabulación: 2", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Ancho de tabulación: 3", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Ancho de tabulación: 4", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Ancho de tabulación: 5", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Ancho de tabulación: 6", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Ancho de tabulación: 7", "checkbox": true },
-					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Ancho de tabulación: 8", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Ancho de tabulación: 1", "mnemonic": "1", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Ancho de tabulación: 2", "mnemonic": "2", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Ancho de tabulación: 3", "mnemonic": "3", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Ancho de tabulación: 4", "mnemonic": "4", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Ancho de tabulación: 5", "mnemonic": "5", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Ancho de tabulación: 6", "mnemonic": "6", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Ancho de tabulación: 7", "mnemonic": "7", "checkbox": true },
+					{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Ancho de tabulación: 8", "mnemonic": "8", "checkbox": true },
 					{ "caption": "-" },
 					{ "command": "detect_indentation", "caption": "Detectar la configuración de indentación" },
 					{ "caption": "-" },
@@ -625,7 +633,7 @@
 			},
 			{
 				"caption": "Finales de línea",
-				"mnemonic": "F",
+				"mnemonic": "n",
 				"id": "line_endings",
 				"children":
 				[
@@ -634,7 +642,7 @@
 					{ "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Mac OS 9", "checkbox": true }
 				]
 			},
-			{ "caption": "-", "id": "Ajustes" },
+			{ "caption": "-", "id": "settings" },
 			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Alternar envoltura de palabras", "mnemonic": "A", "checkbox": true },
 			{
 				"caption": "Columnas de envoltura de palabras",
@@ -686,7 +694,7 @@
 			{ "command": "goto_symbol_in_project", "caption": "Ir a un símbolo en el proyecto…" },
 			{ "command": "goto_definition", "caption": "Ir a una definición…" },
 			{ "command": "goto_reference", "caption": "Ir a una referencia…" },
-			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ir a la palabra…" },
+			// { "command": "show_overlay", "args": {"overlay": "goto", "text": "#"}, "caption": "Ir a la palabra…" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": ":"}, "caption": "Ir a una línea…" },
 			{ "caption": "-" },
 			{ "command": "next_modification", "caption": "Modificación siguiente" },
@@ -837,10 +845,11 @@
 					{ "command": "profile_plugins", "caption": "Perfil de paquetes" },
 					{ "caption": "-" },
 					{ "command": "view_resource", "caption": "Ver los archivos de los paquetes…" },
-					{ "command": "show_scope_name", "caption": "Mostrar nombre del Scope" }
+					{ "command": "show_scope_name", "caption": "Mostrar nombre del scope" },
 				]
 			},
 			{ "command": "install_package_control", "caption": "Instalar el panel de paquetes…" },
+			{ "command": "enable_package_control", "caption": "Activar el panel de paquetes" },
 			{ "caption": "-", "id": "end" }
 		]
 	},
@@ -867,7 +876,7 @@
 					{ "command": "open_recent_project_or_workspace", "args": {"index": 7 } },
 					{ "caption": "-" },
 					{ "command": "clear_recent_projects_and_workspaces", "caption": "Borrar proyectos recientes" },
-					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Borrar proyectos eliminados" }
+					{ "command": "clear_missing_recent_projects_and_workspaces", "caption": "Borrar proyectos eliminados" },
 				]
 			},
 			{ "caption": "-" },
@@ -878,14 +887,14 @@
 			{ "command": "new_window_for_project", "caption": "Nuevo espacio de trabajo para el proyecto" },
 			{ "command": "save_workspace_as", "caption": "Guardar espacio de trabajo como…", "mnemonic": "G" },
 			{ "caption": "-" },
-			{ "command": "prompt_add_folder", "caption": "Añadir carpeta al proyecto…", "mnemonic": "A" },
+			{ "command": "prompt_add_folder", "caption": "Añadir carpeta al proyecto…", "mnemonic": "d" },
 			{ "command": "close_folder_list", "caption": "Borrar todas las carpetas del proyecto", "mnemonic": "B" },
-			{ "command": "refresh_folder_list", "caption": "Refrescar carpetas", "mnemonic": "R" }
+			{ "command": "refresh_folder_list", "caption": "Refrescar carpetas", "mnemonic": "e" },
 		]
 	},
 	{
 		"caption": "Preferencias",
-		"mnemonic": "P",
+		"mnemonic": "n",
 		"id": "preferences",
 		"children":
 		[
@@ -895,7 +904,7 @@
 				"command": "edit_settings", "args":
 				{
 					"base_file": "${packages}/Default/Preferences.sublime-settings",
-					"default": "// Los ajustes de esta opción anulan los de \"Default/Preferences.sublime-settings\",\n// y son anulados a su vez por ajustes específicos de la sintaxis.\n{\n\t$0\n}\n"
+					"default": "// Settings in here override those in \"Default/Preferences.sublime-settings\",\n// and are overridden in turn by syntax-specific settings.\n{\n\t$0\n}\n"
 				},
 				"caption": "Ajustes"
 			},
@@ -954,7 +963,7 @@
 					{ "caption": "-" },
 					{ "command": "reset_font_size", "caption": "Restablecer tamaño" }
 				]
-			}
+			},
 		]
 	},
 	{
@@ -969,13 +978,14 @@
 			{ "caption": "-" },
 			{ "command": "show_progress_window", "caption": "Estado del índice…" },
 			{ "caption": "-" },
-			{ "command": "purchase_license", "caption": "Comprar licencia" },
-			{ "command": "upgrade_license", "caption": "Actualizar licencia" },
+			{ "command": "purchase_license", "caption": "Comprar licencia"},
+			{ "command": "upgrade_license", "caption": "Actualizar licencia"},
 			{ "command": "show_license_window", "caption": "Introducir licencia" },
-			{ "command": "remove_license", "caption": "Borrar licencia" },
+			{ "command": "remove_license", "caption": "Borrar licencia"},
 			{ "caption": "-" },
 			{ "command": "update_check", "caption": "Buscar actualizaciones…" },
 			{ "command": "show_changelog", "caption": "Registro de cambios…" },
+			{ "command": "show_attribution", "caption": "Licencias y atribución…" },
 			{ "command": "show_about_window", "caption": "Acerca de Sublime Text", "mnemonic": "A" }
 		]
 	}
