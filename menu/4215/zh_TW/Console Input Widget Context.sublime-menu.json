@@ -1,0 +1,10 @@
+[
+	{ "command": "cut", "caption": "剪下" },
+	{ "command": "copy", "caption": "複製" },
+	{ "command": "paste", "caption": "貼上" },
+	{ "caption": "-" },
+	{ "command": "select_all", "caption": "全選" },
+	{ "caption": "-" },
+	{ "command": "console_python_version", "args": {"version": "3.14"}, "checkbox": true },
+	{ "command": "console_python_version", "args": {"version": "3.3"}, "checkbox": true },
+]

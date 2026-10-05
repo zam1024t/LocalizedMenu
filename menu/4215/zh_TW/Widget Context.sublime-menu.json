@@ -1,0 +1,9 @@
+[
+    { "command": "open_context_url", "caption": "開啟URL連結" },
+    { "caption": "-" },
+    { "command": "cut", "caption": "剪下" },
+    { "command": "copy", "caption": "複製" },
+    { "command": "paste", "caption": "貼上" },
+    { "caption": "-" },
+    { "command": "select_all", "caption": "全選" }
+]

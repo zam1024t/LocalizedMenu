@@ -1,0 +1,20 @@
+[
+	{ "caption": "新建檔案", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "重新命名…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "刪除檔案", "command": "delete_file", "args": {"files": [], "prompt": false} },
+	{ "caption": "開啟資料夾…", "command": "open_folder", "args": {"dirs": []} },
+	{ "caption": "開啟所在資料夾…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "在終端中開啟…", "command": "open_terminal", "args": {"dirs": []} },
+	{ "caption": "複製檔案路徑", "command": "copy_path_sidebar", "args": {"paths": []} },
+	{ "caption": "顯示連結目錄", "command": "reveal_link_source", "args": {"dirs": []} },
+	{ "caption": "-", "id": "repo_commands" },
+	{ "caption": "開啟Git倉庫…", "command": "sublime_merge_open_repo", "args": {"paths": []}},
+	{ "caption": "檔案歷史…", "command": "sublime_merge_file_history", "args": {"files": []}},
+	{ "caption": "目錄歷史…", "command": "sublime_merge_folder_history", "args": {"paths": []}},
+	{ "caption": "追溯檔案…", "command": "sublime_merge_blame_file", "args": {"files": []}},
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "新建資料夾…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "刪除資料夾", "command": "delete_folder", "args": {"dirs": [], "prompt": true} },
+	{ "caption": "在資料夾中查詢…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]
