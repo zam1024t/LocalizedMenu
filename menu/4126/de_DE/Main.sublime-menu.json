@@ -135,7 +135,7 @@
 			{ "caption": "Fenster schließen", "command": "close_window" },
 			{ "caption": "-", "id": "close" },
 			{ "caption": "Datei schließen", "command": "close", "mnemonic": "c" },
-			{ "caption": "Datei zurücksetzen", "command": "revert", "mnemonic": "h" },
+			{ "caption": "Datei zurücksetzen", "command": "revert", "mnemonic": "z" },
 			{ "caption": "Alle Dateien schließen", "command": "close_all" },
 			{ "caption": "-", "id": "exit" },
 			{ "caption": "Schließen", "command": "exit", "mnemonic": "S", "platform": "Windows" },
@@ -339,7 +339,7 @@
 			{ "caption": "Auswahl zum Ersetzen nutzen", "command": "slurp_replace_string" },
 			{ "caption": "-" },
 			{ "caption": "In Dateien suchen…", "command": "show_panel", "args": {"panel": "find_in_files"} },
-			{ "caption": "Suchergebnisse", "mnemonic": "E", "children":
+			{ "caption": "Suchergebnisse", "mnemonic": "u", "children":
 				[
 					{ "caption": "Suchergebnisse anzeigen", "command": "show_panel", "args": {"panel": "output.find_results"} },
 					{ "caption": "Springe zum nächsten", "command": "next_result" },
