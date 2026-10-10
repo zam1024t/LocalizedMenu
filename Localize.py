@@ -291,7 +291,7 @@ def getJson(filename):
 				continue
 			data = data + "\n" + line
 	data = re.sub(",[ \t\r\n]+}", '}', data)
-	data = re.sub(",[ \t\r\n]+\]", ']', data)
+	data = re.sub(r",[ \t\r\n]+\]", ']', data)
 	arr = []
 	try:
 		arr = json.loads(data)
