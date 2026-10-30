@@ -25,6 +25,10 @@ cFile = pName + '.sublime-commands'
 class LocalizeRunCommand(sublime_plugin.WindowCommand):
 	def run(self, action):
 		if action == 'reset':
+			tDir = pkgs + os.sep + 'ZZZZZZZZ-' + pName
+			if os.path.isdir(tDir):
+				shutil.rmtree(tDir)
+			makeMenu('en')
 			restoreMenu()
 			saveSetting('locale', '')
 			return
