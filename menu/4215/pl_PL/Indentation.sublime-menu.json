@@ -1,0 +1,17 @@
+[
+	{ "command": "toggle_setting", "args": {"setting": "translate_tabs_to_spaces"}, "caption": "Wcięcia za pomocą spacji", "checkbox": true },
+	{ "caption": "-" },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 1}, "caption": "Szerokość tabulatora: 1", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 2}, "caption": "Szerokość tabulatora: 2", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 3}, "caption": "Szerokość tabulatora: 3", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 4}, "caption": "Szerokość tabulatora: 4", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 5}, "caption": "Szerokość tabulatora: 5", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 6}, "caption": "Szerokość tabulatora: 6", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 7}, "caption": "Szerokość tabulatora: 7", "checkbox": true },
+	{ "command": "set_setting", "args": {"setting": "tab_size", "value": 8}, "caption": "Szerokość tabulatora: 8", "checkbox": true },
+	{ "caption": "-" },
+	{ "command": "detect_indentation", "caption": "Wykryj ustawienia na podstawie tekstu" },
+	{ "caption": "-" },
+	{ "command": "expand_tabs", "caption": "Zamień wcięcia na spacje", "args": {"set_translate_tabs": true} },
+	{ "command": "unexpand_tabs", "caption": "Zamień wcięcia na tabulatory", "args": {"set_translate_tabs": true} }
+ ]

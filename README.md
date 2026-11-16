@@ -13,6 +13,7 @@ Localize Tool & Localized Menu for Sublime Text 2/3/4 End User
 - es_ES [Español](readme/README.es_ES.md)
 - fr_FR [Français](readme/README.fr_FR.md)
 - hu [Magyar](readme/README.hu.md)
+- pl_PL Polski (Sublime Text build 4215)
 - hy [Հայերեն](readme/README.hy.md)
 - pt_BR [Português do Brasil](readme/README.pt_BR.md)
 - ru [Русский](readme/README.ru.md)

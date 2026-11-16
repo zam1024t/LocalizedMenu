@@ -1,0 +1,5 @@
+[
+	{ "command": "set_line_ending", "args": {"type": "windows"}, "caption": "Zakończenia wierszy Windows (CRLF)", "checkbox": true },
+	{ "command": "set_line_ending", "args": {"type": "unix"}, "caption": "Zakończenia wierszy Unix (LF)", "checkbox": true },
+	{ "command": "set_line_ending", "args": {"type": "cr"}, "caption": "Zakończenia wierszy Mac OS 9 (CR)", "checkbox": true }
+]
