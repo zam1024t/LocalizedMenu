@@ -1,0 +1,10 @@
+[
+	{ "command": "cut", "caption": "Wytnij" },
+	{ "command": "copy", "caption": "Kopiuj" },
+	{ "command": "paste", "caption": "Wklej" },
+	{ "caption": "-" },
+	{ "command": "select_all", "caption": "Zaznacz wszystko" },
+	{ "caption": "-" },
+	{ "command": "console_python_version", "args": {"version": "3.14"}, "checkbox": true },
+	{ "command": "console_python_version", "args": {"version": "3.3"}, "checkbox": true },
+]

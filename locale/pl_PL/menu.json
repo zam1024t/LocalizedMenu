@@ -1,0 +1,79 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "caption": "Ustawienia pakietów",
+                "mnemonic": "a",
+                "children": [
+                    {
+                        "caption": "LocalizedMenu",
+                        "children": [
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/LocalizedMenu/LocalizedMenu.sublime-settings"
+                                },
+                                "caption": "Ustawienia domyślne"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/LocalizedMenu.sublime-settings"
+                                },
+                                "caption": "Ustawienia użytkownika"
+                            },
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "caption": "-"
+            },
+            {
+                "id": "locales",
+                "caption": "Języki",
+                "children": [
+                    {
+                        "command": "localize_run",
+                        "args": {
+                            "action": "detect"
+                        },
+                        "caption": "Wykryj języki"
+                    },
+                    {
+                        "command": "localize_run",
+                        "args": {
+                            "action": "reset"
+                        },
+                        "caption": "Przywróć menu"
+                    },
+                    {
+                        "command": "localize_run",
+                        "args": {
+                            "action": "add"
+                        },
+                        "caption": "Dodaj język…"
+                    },
+                    {
+                        "command": "localize_run",
+                        "args": {
+                            "action": "submit"
+                        },
+                        "caption": "Prześlij tłumaczenie…"
+                    },
+                    {
+                        "caption": "-"
+                    }
+                ]
+            },
+            {
+                "caption": "-"
+            }
+        ]
+    }
+]

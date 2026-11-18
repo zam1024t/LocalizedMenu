@@ -1,0 +1,20 @@
+[
+	{ "caption": "Nowy plik", "command": "new_file_at", "args": {"dirs": []} },
+	{ "caption": "Zmień nazwę…", "command": "rename_path", "args": {"paths": []} },
+	{ "caption": "Usuń plik", "command": "delete_file", "args": {"files": [], "prompt": false} },
+	{ "caption": "Otwórz folder…", "command": "open_folder", "args": {"dirs": []} },
+	{ "caption": "Otwórz folder zawierający plik…", "command": "open_containing_folder", "args": {"files": []} },
+	{ "caption": "Otwórz tutaj terminal…", "command": "open_terminal", "args": {"dirs": []} },
+	{ "caption": "Kopiuj ścieżkę", "command": "copy_path_sidebar", "args": {"paths": []} },
+	{ "caption": "Pokaż cel dowiązania", "command": "reveal_link_source", "args": {"dirs": []} },
+	{ "caption": "-", "id": "repo_commands" },
+	{ "caption": "Otwórz repozytorium Git…", "command": "sublime_merge_open_repo", "args": {"paths": []}},
+	{ "caption": "Historia pliku…", "command": "sublime_merge_file_history", "args": {"files": []}},
+	{ "caption": "Historia folderu…", "command": "sublime_merge_folder_history", "args": {"paths": []}},
+	{ "caption": "Historia autorów pliku…", "command": "sublime_merge_blame_file", "args": {"files": []}},
+	{ "caption": "-", "id": "folder_commands" },
+	{ "caption": "Nowy folder…", "command": "new_folder", "args": {"dirs": []} },
+	{ "caption": "Usuń folder", "command": "delete_folder", "args": {"dirs": [], "prompt": true} },
+	{ "caption": "Znajdź w folderze…", "command": "find_in_folder", "args": {"dirs": []} },
+	{ "caption": "-", "id": "end" }
+]
